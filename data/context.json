@@ -1,0 +1,2253 @@
+{
+  "entries": [
+    {
+      "id": "bind1-geologi-tapestid",
+      "title": "Landheving og fjordbunn",
+      "year_from": -8000,
+      "year_to": -5000,
+      "year_display": "Etter istiden (tapestiden)",
+      "bind": 1,
+      "tags": [
+        "geologi",
+        "natur",
+        "klima"
+      ],
+      "place_ids": [],
+      "summary": "Kristianiafjorden er dannet av landsenkning og landheving over lang tid. I tapestiden lå stranden høyere enn i dag, og mildt klima gav gode forhold for de første bosetterne ved fjorden. Geologiske lag og strandforskyvninger forklarer hvor forhistoriske funn er funnet.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "5-21",
+        "note": "Bind I: Geologi og forhistorie"
+      },
+      "supplementary_note": "sources/excerpts/bind-I-s21-26-forhistorie-funn.md"
+    },
+    {
+      "id": "bind1-sosial-reformasjon",
+      "title": "Sosiale forhold etter reformasjonen",
+      "year_from": 1537,
+      "year_to": 1620,
+      "year_display": "1500-1600-tallet",
+      "bind": 1,
+      "tags": [
+        "sosial",
+        "kultur"
+      ],
+      "place_ids": [],
+      "summary": "Etter reformasjonen i 1537 endret kirke, administrasjon og dagligliv seg i Oslo. Byen bar fortsatt preg av middelalderens sosiale ordninger på Gamlebyen-siden, men makt og embedsstruktur fulgte nå København og den danske kronen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "471-488",
+        "note": "Bind I: Sociale forhold efter reformationen (TOC)"
+      }
+    },
+    {
+      "id": "bind1-byanlaeg-oslo",
+      "title": "Kong Harald og kjøbstad øster i Oslo",
+      "year_from": 1040,
+      "year_to": 1060,
+      "year_display": "ca. 1048",
+      "bind": 1,
+      "tags": [
+        "bygrunn",
+        "kultur"
+      ],
+      "place_ids": [
+        "middelalderparken"
+      ],
+      "summary": "Sagaene forteller at kong Harald Hardråde lot reise en kjøbstad øster i Oslo og satte byen ofte. Her var det god tilførsel langs fjorden og et gunstig punkt for landverns styrker mot angrep fra Danmark.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "22-36",
+        "note": "Bind I: Byanlæg; saga om Oslo anlæg"
+      },
+      "supplementary_note": "sources/excerpts/bind-I-s37-39-bispedom.md"
+    },
+    {
+      "id": "bind1-oslo-bispedom",
+      "title": "Oslo bispedømme og kirkelig tyngde",
+      "year_from": 1100,
+      "year_to": 1200,
+      "year_display": "1000-1200-tallet",
+      "bind": 1,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "domkirken-gamlebyen",
+        "bispegarden"
+      ],
+      "summary": "Oslo bispedømme knyttet byen til det norske kirkesamfunnet og erkebispesetet i Nidaros. Kirker, klostre og bispegaard ga byen kirkelig autoritet og preget bebyggelsen ved Hallvardskirken og langs Akerselvas utløp.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "37-57",
+        "note": "Bind I: Oslobispedømme"
+      },
+      "supplementary_note": "sources/excerpts/bind-I-s37-39-bispedom.md"
+    },
+    {
+      "id": "bind1-bispeborg-ruiner",
+      "title": "Bispeborgen ved Hallvardskirken",
+      "year_from": 1200,
+      "year_to": 1300,
+      "year_display": "1200-1300-tallet",
+      "bind": 1,
+      "tags": [
+        "kultur",
+        "festning"
+      ],
+      "place_ids": [
+        "bispegarden"
+      ],
+      "summary": "Bispeborgen lå ved bispegaarden og var knyttet til Hallvardskirken over gaten. Utgravninger i Ladegårdshaven i 1917 viste ringmur, kjellervalg og rom som vitner om en sterk geistlig festning i konfliktstiden mellom kirke og kongemakt.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "219-221",
+        "note": "Bind I: Bispeborgen / utgravninger"
+      },
+      "supplementary_note": "sources/excerpts/bind-I-s219-221-bispegaard.md",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Ruinene_av_bispeborgen%2C_Oslo.jpg/640px-Ruinene_av_bispeborgen%2C_Oslo.jpg",
+        "credit": "Wikimedia Commons (Kjetil Ree, CC BY-SA 3.0)"
+      }
+    },
+    {
+      "id": "bind1-handel-haandverk",
+      "title": "Handel og håndverk i middelalderbyen",
+      "year_from": 1250,
+      "year_to": 1400,
+      "year_display": "1200-1400-tallet",
+      "bind": 1,
+      "tags": [
+        "havn",
+        "kultur"
+      ],
+      "place_ids": [
+        "gamle-raadhus-torvet"
+      ],
+      "summary": "På torvet og i gatene øst for Hallvardskirken møttes kjøpmenn, håndverkere og skip fra fjorden. Handelslivet knyttet byen til resten av Norge og til utenlandsk sjøfart, med privilegier og byvedtekter som styrte hvem som fikk drive næring.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "119-130",
+        "note": "Bind I: Handel og haandverk"
+      },
+      "supplementary_note": "sources/excerpts/bind-I-s119-130-handel.md"
+    },
+    {
+      "id": "bind1-nederlandsk-handel",
+      "title": "Nederlandsk handelsvelde",
+      "year_from": 1550,
+      "year_to": 1620,
+      "year_display": "1500-1600-tallet",
+      "bind": 1,
+      "tags": [
+        "havn"
+      ],
+      "place_ids": [
+        "havn-ved-akershus"
+      ],
+      "summary": "I årene før brannen i 1624 vokste nederlandsk innflytelse ved Oslos havn. Hollendere drev handel, delvis i eget miljø, og presset inn på det monopol osloborgere kjempet for å holde.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "391-402",
+        "note": "Bind I: Nederlendernes handelsvælde"
+      },
+      "supplementary_note": "sources/excerpts/bind-I-s391-402-nederland.md"
+    },
+    {
+      "id": "bind1-reformationen",
+      "title": "Reformasjonen og maktskiftet",
+      "year_from": 1537,
+      "year_to": 1540,
+      "year_display": "1537",
+      "bind": 1,
+      "tags": [
+        "kultur",
+        "sosial"
+      ],
+      "place_ids": [
+        "domkirken-gamlebyen"
+      ],
+      "summary": "Da Norge fulgte den evangeliske lære i 1537, mistet Oslo bispedømme sin gamle kirkelige makt. Kirker og klostre ble lagt om, og byen ble i økende grad styrt fra København.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "403-409",
+        "note": "Bind I: Reformationen"
+      },
+      "supplementary_note": "sources/excerpts/bind-I-s403-409-reformasjon.md"
+    },
+    {
+      "id": "bind1-ladestedene",
+      "title": "Ladestedene ved fjorden",
+      "year_from": 1580,
+      "year_to": 1624,
+      "year_display": "sen 1500-tall",
+      "bind": 1,
+      "tags": [
+        "havn",
+        "bygrunn"
+      ],
+      "place_ids": [
+        "havn-ved-akershus",
+        "gronland-ladested"
+      ],
+      "summary": "Utenfor den gamle bykjernen lå ladesteder der husnæring, båtbygging og handel tok mer plass. Grønland og havneområdet ved Akershus hører til det bildet av en by som hadde vokst utover middelaldergrensene da brannen kom.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "457-464",
+        "note": "Bind I: Ladestedene"
+      },
+      "supplementary_note": "sources/excerpts/bind-I-s457-464-ladested.md"
+    },
+    {
+      "id": "bind1-oslo-humanistene",
+      "title": "Oslo-humanistene",
+      "year_from": 1580,
+      "year_to": 1620,
+      "year_display": "1580-1620",
+      "bind": 1,
+      "tags": [
+        "kultur",
+        "utdanning"
+      ],
+      "place_ids": [],
+      "summary": "På slutten av den gamle byens tid dannet en krets av humanister seg i Oslo, med bøker, latinskoler og debatt om religion og vitenskap. De bar forbindelsen mellom middelalderbyen og den lærte kulturen kong Christian IV ville ta med til Christiania.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "489-502",
+        "note": "Bind I: Oslohumanistene"
+      },
+      "supplementary_note": "sources/excerpts/bind-I-s489-502-humanister.md"
+    },
+    {
+      "id": "bind1-bispeneorm-torkel-og-haakonstid-s91",
+      "title": "Tidlige biskoper",
+      "year_from": 900,
+      "year_to": 1624,
+      "year_display": "1000-1100-tallet",
+      "bind": 1,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "domkirken-oslo",
+        "bispegarden"
+      ],
+      "summary": "Biskopene Orm, Torkel og Haakon bygde kirkestrukturen i Oslo i vikingtid og tidlig middelalder. Domkirken og bispegården la grunnlaget for kirke og kongemakt i byen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "91-99",
+        "note": "Bind 1: BispeneOrm, Torkel og Haakonstid (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-I-s91-99-torkel-og-haakonstid-s91.md"
+    },
+    {
+      "id": "bind1-biskopandres-i-domkapitlet-s100",
+      "title": "Domkapitlet",
+      "year_from": 900,
+      "year_to": 1624,
+      "year_display": "1100-tallet",
+      "bind": 1,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "domkirken-oslo"
+      ],
+      "summary": "Domkapitlet samlet prestene rundt Oslo domkirke og knyttet byen til kirkens ledelse. Biskop Andres og kapittelet styrte liturgi, skoler og kirkens eiendommer i byen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "100-103",
+        "note": "Bind 1: BiskopAndres I. Domkapitlet (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-I-s100-103-i-domkapitlet-s100.md"
+    },
+    {
+      "id": "bind1-byensstyre-s107",
+      "title": "Byens styre og strid",
+      "year_from": 900,
+      "year_to": 1624,
+      "year_display": "1200-tallet",
+      "bind": 1,
+      "tags": [
+        "kommune"
+      ],
+      "place_ids": [
+        "middelalderparken",
+        "domkirken-gamlebyen",
+        "akershus"
+      ],
+      "summary": "Vårblokkene og birkebeinerne kjempet om kongemakten i Oslo by. Slaget ved kirkegårdsledet og Martestokker bandt festning, kirker og gater i byens eldste politiske drama.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "107-118",
+        "note": "Bind 1: Byensstyre (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-I-s107-118-s107.md"
+    },
+    {
+      "id": "bind1-haakonv-s-tid-s137",
+      "title": "Hanse og handel",
+      "year_from": 900,
+      "year_to": 1624,
+      "year_display": "1200-1300-tallet",
+      "bind": 1,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "gammeltorvet",
+        "kontraskjerp"
+      ],
+      "summary": "Tyske hankjøpmenn fra Rostock og andre havner knyttet Oslo til kontinentets handelsnett. Privilegier og konkurransen mellom byborgere og utenlandske kjøpmenn preget torv og kaianlegg.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "137",
+        "note": "Bind 1: HaakonV's tid (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-I-s137-s-tid-s137.md"
+    },
+    {
+      "id": "bind1-de-aeldstebyprivilegiene-s229",
+      "title": "De eldste byprivilegier",
+      "year_from": 900,
+      "year_to": 1624,
+      "year_display": "middelalder",
+      "bind": 1,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "gammeltorvet",
+        "stortorvet"
+      ],
+      "summary": "De gamle kjøpstadsprivilegiene ga borgere enerett på handel og satte rammer for hvem som fikk drive næring i Christiania. Bestemmelsene bandt byen til kronen og skapte grunnlag for århundrer med strid om marked, toll og forsteder.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "229-238",
+        "note": "Bind 1: De ældstebyprivilegiene (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-I-s229-238-aeldstebyprivilegiene-s2.md"
+    },
+    {
+      "id": "bind1-administration-og-embedsmaendi-senmiddelalderen-s239",
+      "title": "Embetsmenn i senmiddelalder",
+      "year_from": 900,
+      "year_to": 1624,
+      "year_display": "1300-1500",
+      "bind": 1,
+      "tags": [
+        "kommune"
+      ],
+      "place_ids": [
+        "gamle-raadhus-torvet",
+        "domkirken-oslo"
+      ],
+      "summary": "Fogeder, fehirder og borgermestre styret skatt, rettsvesen og forsvar fra Akershus og rådhuset. Oslo var administrasjonssenter der kongemakt og kirke møtte hverandre.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "239-252",
+        "note": "Bind 1: Administration og embedsmændi senmiddelalderen (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-I-s239-252-og-embedsmaendi-senmidde.md"
+    },
+    {
+      "id": "bind1-biskopsalomonstid-1322-51-s253",
+      "title": "Biskop Salomon og Akershus",
+      "year_from": 1322,
+      "year_to": 1322,
+      "year_display": "1322-1351",
+      "bind": 1,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "akershus",
+        "bispegarden"
+      ],
+      "summary": "Reform av kongens finanser knyttet fehird på Akershus tett til politisk makt. Borgensherrer som Torgils Smidsson styrte både festning og skatteoppkreveri i byen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "253-262",
+        "note": "Bind 1: BiskopSalomonstid (1322-51) (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-I-s253-262-1322-51-s253.md"
+    },
+    {
+      "id": "bind1-haakonvfs-og-dronning-margretestid-s263",
+      "title": "Unionstid med Margrete",
+      "year_from": 900,
+      "year_to": 1624,
+      "year_display": "1300-tallet",
+      "bind": 1,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "akershus",
+        "gammeltorvet"
+      ],
+      "summary": "Da dronning Margrete styrket unionen, hang Oslo tett sammen med kongemakt og handel. Borgermestre vekslet mellom nordmenn og utlendinger mens byen holdt sin plass i Kalmarunionen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "263-267",
+        "note": "Bind 1: HaakonVFs og dronning Margretestid (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-I-s263-267-og-dronning-margretestid.md"
+    },
+    {
+      "id": "bind1-bispenesigfrid-hallvard-og-jon-1352-85-s268",
+      "title": "Biskoper i unionsårene",
+      "year_from": 1352,
+      "year_to": 1352,
+      "year_display": "1352-1385",
+      "bind": 1,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "domkirken-oslo",
+        "bispegarden"
+      ],
+      "summary": "Biskop Sigfrid, Hallvard og Jon ledet kirken i Oslo da union og pest preget Østlandet. Domkirken og bispegården var sentre for tro, skrift og byens vitnesbyrd om middelalderen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "268-274",
+        "note": "Bind 1: BispeneSigfrid, Hallvard og Jon (1352-85) (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-I-s268-274-hallvard-og-jon-1352-85-.md"
+    },
+    {
+      "id": "bind1-biskop-eystein-1385-1407-s275",
+      "title": "Biskop Eystein",
+      "year_from": 1385,
+      "year_to": 1407,
+      "year_display": "1385-1407",
+      "bind": 1,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "domkirken-oslo",
+        "gamle-aker-kirke"
+      ],
+      "summary": "Biskop Eystein organiserte kirkegårder, sykehus og peterskap i det gamle Oslo og ble husket som en av de mest virksomme kirkelige byggerne før reformasjonen. Hans tid faller sammen med at kongemakten på nytt tok bolig på Akershus, mens byen på vanlig vis bar preg av borgere, handel og trange år når pest og knapphet rammet.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "275-283",
+        "note": "Bind 1: Biskop Eystein (1385-1407) (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-I-s275-283-eystein-1385-1407-s275.md"
+    },
+    {
+      "id": "bind1-biskopenejakob-og-jens-1407-52-s284",
+      "title": "Biskoper Jakob og Jens",
+      "year_from": 1407,
+      "year_to": 1407,
+      "year_display": "1407-1452",
+      "bind": 1,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "domkirken-oslo",
+        "bispegarden"
+      ],
+      "summary": "Biskop Jakob kom til Oslo i 1407 og ble fulgt av biskop Jens i 1408. De førte kirken gjennom unionstida og sorte pest, kjempet mot reformatoriske strømninger og måtte forvalte bispegårdens jorder og lemninger når pesten tømte byen. Deres tid binder sammen kirke, geistlig makt og det myrdede middelalder-Oslo.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "284-302",
+        "note": "Bind 1: BiskopeneJakob og Jens(1407-52) (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-I-s284-302-og-jens-1407-52-s284.md"
+    },
+    {
+      "id": "bind1-rostockernei-osloi-det15-aarh-s303",
+      "title": "Rostock-kjøpmenn i Oslo",
+      "year_from": 900,
+      "year_to": 1624,
+      "year_display": "1400-tallet",
+      "bind": 1,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "kontraskjerp",
+        "gammeltorvet"
+      ],
+      "summary": "Kjøpmenn fra Rostock og andre hanseater konkurrerte med lokale borgere om handel ved Oslo-torvet og kaianleggene. Konfliktene om toll, privilegier og hvem som fikk kjøpe og selge på torget preget middelalderbyens økonomi lenge før Christian IV la grunnen til nye Kristiania.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "303-322",
+        "note": "Bind 1: Rostockernei Osloi det15.aarh , (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-I-s303-322-osloi-det15-aarh-s303.md"
+    },
+    {
+      "id": "bind1-biskopgunnar-holk-nils-kalib-og-herlog-korning-1-s323",
+      "title": "Senesmiddelalders biskoper",
+      "year_from": 1453,
+      "year_to": 1505,
+      "year_display": "1453-1505",
+      "bind": 1,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "domkirken-oslo",
+        "vor-frelsers"
+      ],
+      "summary": "Gunnar Holk, Nils Kalib og Herlog Korning styrte kirken i overgangen til tidlig moderne tid. Reformasjonen nærmet seg, og byens kirker stod sentralt i tro og administrasjon.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "323-332",
+        "note": "Bind 1: BiskopGunnar Holk, Nils Kalib og Herlog Korning (1453-1505) (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-I-s323-332-holk-nils-kalib-og-herlo.md"
+    },
+    {
+      "id": "bind1-bispeneanders-mus-hansmule-og-hansraev-1505-37-s349",
+      "title": "Biskoper før reformasjonen",
+      "year_from": 1505,
+      "year_to": 1505,
+      "year_display": "1505-1537",
+      "bind": 1,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "domkirken-oslo"
+      ],
+      "summary": "Reformasjonstiden rammet bispeborgen og geistlig makt i Oslo. Biskop Anders Mus, Hans Mule og Hans Raef måtte forvalte kirken og gods i en by der nye læresetninger og politisk press endret rollen deres etter at middelalderens strukturer brøt sammen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "349-380",
+        "note": "Bind 1: BispeneAnders Mus,HansMule og HansRæv(1505-37) (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-I-s349-380-mus-hansmule-og-hansraev.md"
+    },
+    {
+      "id": "bind1-privilegiene-av-7-januar1508-s381",
+      "title": "Privilegier 7. januar 1508",
+      "year_from": 1508,
+      "year_to": 1508,
+      "year_display": "1508",
+      "bind": 1,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "gammeltorvet",
+        "kontraskjerp"
+      ],
+      "summary": "Nye privilegier i 1508 styrket byens handel og selvstyre på overgangen til reformasjonstiden. Kjøpmenn fikk tydeligere rammer for toll, torghandel og borgernes plikter.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "381-390",
+        "note": "Bind 1: Privilegiene av 7.'januar1508 (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-I-s381-390-av-7-januar1508-s381.md"
+    },
+    {
+      "id": "bind1-syvaarskrigen-s423",
+      "title": "Festning under syvårskrigen",
+      "year_from": 900,
+      "year_to": 1624,
+      "year_display": "1560-årene",
+      "bind": 1,
+      "tags": [
+        "festning"
+      ],
+      "place_ids": [
+        "akershus",
+        "domkirken-gamlebyen"
+      ],
+      "summary": "Under syvårskrigen på 1560-tallet måtte Akershus forsterkes med nye murer og det såkalte munketårnet. Stein fra nedrevne kirker i gamle Oslo ble brukt i arbeidet, og forsvarsvridet bandt sammen festning, borg og den krisen kysten sto i mot Sverige og Danmark.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "423-428",
+        "note": "Bind 1: Syvaarskrigen (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-I-s423-428-s423.md"
+    },
+    {
+      "id": "bind1-kampenfor-handelsmonopolet-s451",
+      "title": "Kampen om handelsmonopol",
+      "year_from": 900,
+      "year_to": 1624,
+      "year_display": "1500-tallet",
+      "bind": 1,
+      "tags": [
+        "havn"
+      ],
+      "place_ids": [
+        "gammeltorvet",
+        "kontraskjerp"
+      ],
+      "summary": "Kronen, Hansaen og innenlandske kjøpmenn konkurrerte om hvem som skulle få kjøpe og selge korn og trelast. Privilegier og monopol regulerte torvhandel og utenrikshandel; kampen handlet om inntekter til kronen og om hvem som kontrollerte Oslos knutepunkt mot fjorden.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "451-456",
+        "note": "Bind 1: Kampenfor handelsmonopolet (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-I-s451-456-handelsmonopolet-s451.md"
+    },
+    {
+      "id": "bind1-byvedtaegteneav-1595-s465",
+      "title": "Byvedtekten 1595",
+      "year_from": 1595,
+      "year_to": 1595,
+      "year_display": "1595",
+      "bind": 1,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "gammeltorvet",
+        "stortorvet"
+      ],
+      "summary": "Byens ordensregler fra 1595 skulle holde orden på brannfare, renovasjon og offentlig oppførsel. Vedtektene viser hvordan magistrat og borgere styrte dagliglivet i Christiania på slutten av 1500-tallet.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "465-470",
+        "note": "Bind 1: Byvedtægteneav 1595 (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-I-s465-470-1595-s465.md"
+    },
+    {
+      "id": "bind1-borgermestererik-olssonssak-og-jensholms-kampmot-s503",
+      "title": "Borgermesterstrid",
+      "year_from": 900,
+      "year_to": 1624,
+      "year_display": "1600-tallet",
+      "bind": 1,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "gamle-raadhus-torvet",
+        "garmanngaarden-raadhus"
+      ],
+      "summary": "Erik Olssønssak og Jens Holm kjempet mot kongelige og lokale maktpersoner om byens selvstyre. Konflikten om borgermesterembetet viste at borgerne ikke lot seg styre uten motstand.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "503-520",
+        "note": "Bind 1: BorgermesterErik Olssønssak og JensHolms kampmot øvrigheten (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-I-s503-520-olssonssak-og-jensholms-.md"
+    },
+    {
+      "id": "bind2-befolkningen-53-s68",
+      "title": "Befolkning og byelite",
+      "year_from": 1624,
+      "year_to": 1740,
+      "year_display": "1600-1700-tallet",
+      "bind": 2,
+      "tags": [
+        "sosial"
+      ],
+      "place_ids": [
+        "gamle-raadhus-torvet",
+        "radmannsgaarden"
+      ],
+      "summary": "Kristianias befolkning ble styrket av indvandrende kjøpmenn og embedsmenn. Familier som Gaarman og Krefting knyttet seg til skog, verk og lån til kronen, og investerte i bygninger og gods rundt byen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "68",
+        "note": "Bind 2: Befolkningen 53_ (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-II-s68-53-s68.md"
+    },
+    {
+      "id": "bind2-byen-og-oplandet-s123",
+      "title": "Byen og oplandet",
+      "year_from": 1624,
+      "year_to": 1740,
+      "year_display": "1600-1700-tallet",
+      "bind": 2,
+      "tags": [
+        "bygrunn"
+      ],
+      "place_ids": [
+        "pipervika",
+        "tollbugata-havn"
+      ],
+      "summary": "Freden mellom Spania og Nederlandene i 1648 endret kontinenthandelen. Hollendere formidlet norsk trelast videre mot Sør-Europa, og Kristiania sto i et nett av sjøfart som bandt byen til oplandet.",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "123-128",
+        "note": "Bind 2: Byen og oplandet (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-II-s123-128-og-oplandet-s123.md"
+    },
+    {
+      "id": "bind2-gamlebyen-s141",
+      "title": "Gamlebyen etter 1624",
+      "year_from": 1624,
+      "year_to": 1740,
+      "year_display": "1600-1700-tallet",
+      "bind": 2,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "domkirken-gamlebyen",
+        "middelalderparken",
+        "bispegarden"
+      ],
+      "summary": "Skole og domkapittel flyttet til Kristiania etter at gymnas og ny kirke sto ferdig. Mariakirken og Hallvardskirken i gamle Oslo forfalt og ble ruiner og bygningsmaterialer. Kjernen i Gamlebyen ble Osloladegaarden og det gamle bispeanlegget som senere ble kjent som Ladegaarden.",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "141-152",
+        "note": "Bind 2: Gamlebyen (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-II-s141-152-s141.md"
+    },
+    {
+      "id": "bind2-forstaedene-153-s154",
+      "title": "Forstædene utenfor murene",
+      "year_from": 1624,
+      "year_to": 1740,
+      "year_display": "1600-1700-tallet",
+      "bind": 2,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "gronland-ladested",
+        "vaterland-bjorvika",
+        "pipervika"
+      ],
+      "summary": "Utenfor kjøbmannsbyen vokste forstæder med billig trehus og husnæring. Myndighetene ville begrense ulovlig handel i Vaterland og samle folk innenfor festningen, men forstedene besto fordi topografi og bondehandel trakk bebyggelsen utover.",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "154",
+        "note": "Bind 2: Forstædene 153 (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-II-s154-153-s154.md"
+    },
+    {
+      "id": "bind2-pest-og-fest-s165",
+      "title": "Pest og byliv",
+      "year_from": 1624,
+      "year_to": 1740,
+      "year_display": "1600-1700-tallet",
+      "bind": 2,
+      "tags": [
+        "klima"
+      ],
+      "place_ids": [
+        "vaterland-bjorvika",
+        "christiania-torv"
+      ],
+      "summary": "Pest og brann preget byens rytme sammen med sommerliv ved havnen og vinterstille. Pestepidemien i 1654 tok mange liv; kirkegårdene tok ikke imot alle, og ny gravplass ble anlagt ved Hammersborg.",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "165-172",
+        "note": "Bind 2: Pest og fest (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-II-s165-172-og-fest-s165.md"
+    },
+    {
+      "id": "bind2-privilegiene-s173",
+      "title": "Privilegier og byens rammer",
+      "year_from": 1624,
+      "year_to": 1740,
+      "year_display": "1600-1700-tallet",
+      "bind": 2,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "gammeltorvet",
+        "vaterland-bjorvika"
+      ],
+      "summary": "Bylivet svingte mellom travl sommer ved havnen og stille vintre, avbrutt av marked og hofflige seremonier. Pest og brann viste at byen ennå ikke hadde lært å begrense de store ulykkene som traff en hovedstad ved fjorden.",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "173-182",
+        "note": "Bind 2: Privilegiene (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-II-s173-182-s173.md"
+    },
+    {
+      "id": "bind2-de-aeldste-laugene-i-kristiania-s199",
+      "title": "De eldste lavene",
+      "year_from": 1624,
+      "year_to": 1740,
+      "year_display": "1600-tallet",
+      "bind": 2,
+      "tags": [
+        "kommune"
+      ],
+      "place_ids": [
+        "youngstorget",
+        "gammeltorvet"
+      ],
+      "summary": "Håndverkslavene og kjøbmennene i Christiania kjempet mot råd og stattholder om privilegier, toldfrihet og hvem som fikk bestemme i byen. I 1651 leverte borgerskapet en lang klage om ulovlig handel, skatter og bymarken - og striden endte først i et skjørt forlik i 1652.",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "199-210",
+        "note": "Bind 2: De ældste laugene i Kristiania (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-II-s199-210-aeldste-laugene-i-kristi.md"
+    },
+    {
+      "id": "bind2-byprivilegiene-av-1662-s291",
+      "title": "Byprivilegier 1662",
+      "year_from": 1662,
+      "year_to": 1662,
+      "year_display": "1662",
+      "bind": 2,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "tollbugata-havn",
+        "kontraskjerp"
+      ],
+      "summary": "Nye tollregler og skibsprivilegier fra 1662 skulle styrke norsk skipsfart og trelasthandel. Christiania fikk gunstige ordninger for innenlandske skip mot utenlands konkurranse.",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "291-296",
+        "note": "Bind 2: Byprivilegiene av 1662 (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-II-s291-296-av-1662-s291.md"
+    },
+    {
+      "id": "bind2-den-store-toldsvig-403-s416",
+      "title": "Den store toljsvindelen",
+      "year_from": 1624,
+      "year_to": 1740,
+      "year_display": "1700-tallet",
+      "bind": 2,
+      "tags": [
+        "havn"
+      ],
+      "place_ids": [
+        "tollbugata-havn"
+      ],
+      "summary": "En omfattende toljsvindel satte hele Christiania i opprør rundt 1705. Da toldinspektøren og en embetsmann ble arrestert, hang vrede pasquiler på kirken og gapestokken, og byen levde i uro mens kommisjonen og generalfiskalen forfulgte saken ved tollboden og i gatene.",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "416",
+        "note": "Bind 2: Den store toldsvig 403 (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-II-s416-store-toldsvig-403-s416.md"
+    },
+    {
+      "id": "bind2-handel-og-skibsfart-i-krigs-og-nedgangstider-s417",
+      "title": "Handel i krigstid",
+      "year_from": 1624,
+      "year_to": 1740,
+      "year_display": "1700-tallet",
+      "bind": 2,
+      "tags": [
+        "havn",
+        "festning"
+      ],
+      "place_ids": [
+        "havn-ved-akershus",
+        "pipervika"
+      ],
+      "summary": "Etter en stor tollsak i 1705 ble kjøbmenn og skippsførere kalt inn til forhør og truet med at bøker og regnskap skulle granskes. Vicegouverør Gabel mente mange var uskyldige, men undersøkelsen skapte panikk: handelen stanset opp, kreditten sviktet, og borgerskapet fryktet både ruin og å måtte sverge seg til forklaringer de ikke stod inne for. Slikt satte preg på Christianias handel i krigs- og nedgangstider ved havnen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "417-444",
+        "note": "Bind 2: Handel og skibsfart i krigs- og nedgangstider (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-II-s417-444-og-skibsfart-i-krigs-og-.md"
+    },
+    {
+      "id": "bind3-forfatnings-og-forvaltningsutviklingen-fra-1740-s35",
+      "title": "Forvaltning fra 1740",
+      "year_from": 1740,
+      "year_to": 1740,
+      "year_display": "1740-årene",
+      "bind": 3,
+      "tags": [
+        "kommune"
+      ],
+      "place_ids": [
+        "stortinget",
+        "kommunegaarden-logen"
+      ],
+      "summary": "Etter 1740 ble embetsstrukturen og byforvaltningen styrket i takt med sentralmaktens krav. Kristiania utviklet seg som administrasjonssenter der magistrat, embedsmenn og kongelig myndighet møttes.",
+      "verified": false,
+      "source_ref": {
+        "bind": 3,
+        "pages": "35-86",
+        "note": "Bind 3: Forfatnings- og forvaltningsutviklingen fra 1740-aarene av (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-III-s35-86-og-forvaltningsutvikling.md"
+    },
+    {
+      "id": "bind3-privilegiene-s87",
+      "title": "Byens privilegier og skatt",
+      "year_from": 1740,
+      "year_to": 1814,
+      "year_display": "1700-tallet",
+      "bind": 3,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "gammeltorvet",
+        "youngstorget"
+      ],
+      "summary": "Kjøpmannsbyen regulerte handel, skatt og fattigvesen gjennom privilegier og offentlige kunngjøringer. Borgerne fikk vite hvordan byens utgifter og ligning skulle beregnes og fordeles.",
+      "verified": false,
+      "source_ref": {
+        "bind": 3,
+        "pages": "87-102",
+        "note": "Bind 3: Privilegiene (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-III-s87-102-s87.md"
+    },
+    {
+      "id": "bind3-byen-og-oplandet-s103",
+      "title": "By og opland",
+      "year_from": 1740,
+      "year_to": 1814,
+      "year_display": "1700-1800-tallet",
+      "bind": 3,
+      "tags": [
+        "bygrunn"
+      ],
+      "place_ids": [
+        "pipervika",
+        "akerselva-utløp",
+        "nydalens-compagnie"
+      ],
+      "summary": "De tolv utvalgte kjøpmenn møttes jevnlig fra 1780-årene og talte byens interesser overfor magistraten og kongen. De diskuterte veier, laug og budsjett, og høsten 1788 reiste de sterkt mot Bernt Ankers oppkjøp av slakt i Aker fordi det truet forsyningene til byens fattigste.",
+      "verified": false,
+      "source_ref": {
+        "bind": 3,
+        "pages": "103-158",
+        "note": "Bind 3: Byen og oplandet ' (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-III-s103-158-og-oplandet-s103.md"
+    },
+    {
+      "id": "bind3-befolkningen-s159",
+      "title": "Befolkningsvekst",
+      "year_from": 1740,
+      "year_to": 1814,
+      "year_display": "1700-1800-tallet",
+      "bind": 3,
+      "tags": [
+        "sosial"
+      ],
+      "place_ids": [
+        "st-hanshaugen-haugen",
+        "gronland-ladested"
+      ],
+      "summary": "Byen vokste med håndverk, tjenestefolk og folk utenfor de gamle bygrensene. Folketellinger viser flere tusen innbyggere og et sosialt spekter fra kjøpmenn til dagleiere.",
+      "verified": false,
+      "source_ref": {
+        "bind": 3,
+        "pages": "159-174",
+        "note": "Bind 3: Befolkningen (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-III-s159-174-s159.md"
+    },
+    {
+      "id": "bind3-offentlighet-s175",
+      "title": "Folketelling og samfunnslag",
+      "year_from": 1740,
+      "year_to": 1814,
+      "year_display": "ca. 1801",
+      "bind": 3,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "stortorvet",
+        "stortinget"
+      ],
+      "summary": "Folketellingen i 1801 delte byen i yrkesgrupper: kjøpmenn, håndverkere, tjenestefolk og soldater. Tallene viser en by på vei mot unionshovedstad, med tusenvis av innbyggere fordelt på arbeid og embed.",
+      "verified": false,
+      "source_ref": {
+        "bind": 3,
+        "pages": "175-204",
+        "note": "Bind 3: Offentlighet (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-III-s175-204-s175.md"
+    },
+    {
+      "id": "bind3-handel-og-skibsfart-i-revolutionstiden-s375",
+      "title": "Handel og sjøfart i krigstid",
+      "year_from": 1740,
+      "year_to": 1814,
+      "year_display": "Napoleonskrigenes tid",
+      "bind": 3,
+      "tags": [
+        "havn"
+      ],
+      "place_ids": [
+        "havn-ved-akershus",
+        "tollbugata-havn"
+      ],
+      "summary": "Under revolusjonskrigen på slutten av 1700-tallet måtte Christianias handel og sjøfart finne nye veier. Blokader, priser og politisk uro gjorde byens kjøpmenn og skip til pionerer i et farlig handelsmiljø.",
+      "verified": false,
+      "source_ref": {
+        "bind": 3,
+        "pages": "375-426",
+        "note": "Bind 3: Handel og skibsfart i revolutionstiden (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-III-s375-426-og-skibsfart-i-revolutio.md"
+    },
+    {
+      "id": "bind3-laugene-s453",
+      "title": "Laug og uro i byen",
+      "year_from": 1740,
+      "year_to": 1814,
+      "year_display": "1795",
+      "bind": 3,
+      "tags": [
+        "kommune"
+      ],
+      "place_ids": [
+        "youngstorget",
+        "lo-bygget-storgata"
+      ],
+      "summary": "Spenninger rundt håndverkslaug og forsyninger kunne utløse folkemengder og vakthold i gatene. Myndigheten fryktet opprør og brukte militær støtte når konflikten mellom folk og embetsmenn ble skarp.",
+      "verified": false,
+      "source_ref": {
+        "bind": 3,
+        "pages": "453-484",
+        "note": "Bind 3: Laugene (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-III-s453-484-s453.md"
+    },
+    {
+      "id": "bind4-menneskerog-forhold-ide-forste-selvstaendighetsa-s27",
+      "title": "1814 i hovedstaden",
+      "year_from": 1814,
+      "year_to": 1877,
+      "year_display": "1814",
+      "bind": 4,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "stortinget",
+        "eidsvolls-plass",
+        "slottsplassen"
+      ],
+      "summary": "Sommeren 1814 kom stormaktiges sendebud til Christiania og bodde blant annet i Collettgården ved Kirkegata. Forhandlingene med Christian Frederik og ultimatumet 7. juli satte press på avisene og gatene, mens byen fulgte spørsmålet om union, fred og norsk selvstendighet.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "27-46",
+        "note": "Bind 4: Menneskerog forhold ide første selvstændighetsaar (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-IV-s27-46-forhold-ide-forste-selvs.md"
+    },
+    {
+      "id": "bind4-socialeog-kulturelle-motsaetninger-s47",
+      "title": "Sosiale og kulturelle motsetninger",
+      "year_from": 1814,
+      "year_to": 1877,
+      "year_display": "1814-1840",
+      "bind": 4,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "universitetsplassen",
+        "homansbyen"
+      ],
+      "summary": "Embetskultur, borgerskap og nye strømninger støtte mot hverandre i unionshovedstaden. Utdanning og offentlig ordelagte premisser for hvem som ble hørt i byens debatter.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "47-66",
+        "note": "Bind 4: Socialeog kulturelle motsætninger (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-IV-s47-66-kulturelle-motsaetninger.md"
+    },
+    {
+      "id": "bind4-byen-og-statsmagterne-s67",
+      "title": "Byen og statsmakten",
+      "year_from": 1814,
+      "year_to": 1877,
+      "year_display": "1815-1820",
+      "bind": 4,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "stortinget",
+        "youngstorget"
+      ],
+      "summary": "I de første unionsårene preget skandaler, handelsmoral og trykkefrihet offentligheten i hovedstaden. Avisene fulgte kjøpmenn, studenter og embedsmenn tett, og stemningen var ofte sarkastisk og opphisset.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "67-78",
+        "note": "Bind 4: Byen og statsmagterne (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-IV-s67-78-og-statsmagterne-s67.md"
+    },
+    {
+      "id": "bind4-brandenpaabordtomterne-s79",
+      "title": "Brannen på bordtomtene",
+      "year_from": 1814,
+      "year_to": 1877,
+      "year_display": "ca. 1820",
+      "bind": 4,
+      "tags": [
+        "brann"
+      ],
+      "place_ids": [
+        "vaterland-bjorvika",
+        "oslo-sentralstasjon",
+        "paleet-christiania"
+      ],
+      "summary": "Brannen brøt ut på utfylte tomter mellom byen og Vaterland, der jernbanetorvet senere kom. Borgerlige brannsvender, garnison og frivillige rykket ut, men vannledningene holdt ikke, og flammene truet både fattige og velstående strøk.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "79-90",
+        "note": "Bind 4: Brandenpaabordtomterne (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-IV-s79-90-s79.md"
+    },
+    {
+      "id": "bind4-kristiania-oppositionenav-1821-og-forutsaetninge-s91",
+      "title": "Opposisjonen 1821",
+      "year_from": 1821,
+      "year_to": 1821,
+      "year_display": "1821",
+      "bind": 4,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "stortinget",
+        "paleet-christiania"
+      ],
+      "summary": "Politisk motsetning mellom embedsmenn og reformvennlige grupper preget hovedstaden rundt 1821. Debatt om union, økonomi og byens selvstendige interesser fikk stor plass i avisene og på Stortinget.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "91-106",
+        "note": "Bind 4: Kristiania-oppositionenav 1821 og forutsætningernefor den (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-IV-s91-106-oppositionenav-1821-og-f.md"
+    },
+    {
+      "id": "bind4-hovedstadenog-17-mai-til-og-medtorvslaget-s107",
+      "title": "17. mai og Torvslaget",
+      "year_from": 1814,
+      "year_to": 1877,
+      "year_display": "1820-årene",
+      "bind": 4,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "stortorvet",
+        "stortinget"
+      ],
+      "summary": "17. mai-feiring og politisk uro rundt stortorget skapte spanning mellom folk og myndigheter. Konflikten som ble kjent som Torvslaget viste at nasjonaldagen ikke var uproblematisk i hovedstaden.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "107-124",
+        "note": "Bind 4: Hovedstadenog 17.mai til og medTorvslaget (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-IV-s107-124-17-mai-til-og-medtorvsla.md"
+    },
+    {
+      "id": "bind4-kongeboligenog-byen-s141",
+      "title": "Kongeboligen og byen",
+      "year_from": 1814,
+      "year_to": 1877,
+      "year_display": "1820-årene",
+      "bind": 4,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "slottsplassen",
+        "paleet-christiania"
+      ],
+      "summary": "Nytt kongelig bygg og byens voksende kulturliv endret hverdagsbildet i unionshovedstaden. Kvinners utdanning og husflid ble diskutert, blant annet gjennom forslag om håndverksskole for piker i byen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "141-156",
+        "note": "Bind 4: Kongeboligenog byen (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-IV-s141-156-byen-s141.md"
+    },
+    {
+      "id": "bind4-okonomisketiltak-og-forskyvninger-gjennem1820-aa-s157",
+      "title": "Økonomi i 1820-årene",
+      "year_from": 1820,
+      "year_to": 1820,
+      "year_display": "1820-årene",
+      "bind": 4,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "youngstorget",
+        "norges-bank-bankplassen"
+      ],
+      "summary": "Statsbankerott og gjeldssanering preget handel og forventninger i byen etter Napoleonskrigene. Nye økonomiske tiltak og skiftende konjunkturer preget hovedstadens borgeres hverdag.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "157-174",
+        "note": "Bind 4: Økonomisketiltak og forskyvninger gjennem1820-aarene (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-IV-s157-174-og-forskyvninger-gjennem.md"
+    },
+    {
+      "id": "bind4-arbeiderkaarog-arbeidsforholdi-1820-og-1830-aare-s175",
+      "title": "Arbeid og bolig",
+      "year_from": 1820,
+      "year_to": 1820,
+      "year_display": "1820-1830-årene",
+      "bind": 4,
+      "tags": [
+        "sosial"
+      ],
+      "place_ids": [
+        "gronland-ladested",
+        "sagene-loken"
+      ],
+      "summary": "Arbeidsfolk i forstedene bodde trangt med ett kjøkken til flere familier. Undersøkelser viser tette leiligheter, lav boligkvalitet og birente for mange hustruer.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "175-188",
+        "note": "Bind 4: Arbeiderkaarog arbeidsforholdi 1820-og 1830-aarene (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-IV-s175-188-arbeidsforholdi-1820-og-.md"
+    },
+    {
+      "id": "bind4-hovedstadenog-dennye-tidsaand-s189",
+      "title": "Ny tidsånd",
+      "year_from": 1814,
+      "year_to": 1877,
+      "year_display": "1828-1830-årene",
+      "bind": 4,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "gronland-ladested",
+        "universitetsplassen"
+      ],
+      "summary": "Aviser og reisende beskrev trange skjul i forstedene og synlig fattigdom blant arbeidsfolk. Samtidig vokste offentlig debatt om sedelighet, bolig og forskjellen mellom Bergen og Kristiania.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "189-210",
+        "note": "Bind 4: Hovedstadenog dennye tidsaand (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-IV-s189-210-dennye-tidsaand-s189.md"
+    },
+    {
+      "id": "bind4-de-forste-kommunestyrerog-deresgrundsyn-socialto-s227",
+      "title": "Første kommunestyrer",
+      "year_from": 1814,
+      "year_to": 1877,
+      "year_display": "1837",
+      "bind": 4,
+      "tags": [
+        "kommune"
+      ],
+      "place_ids": [
+        "kommunegaarden-logen",
+        "gamle-raadhus-torvet"
+      ],
+      "summary": "Etter formannskapsloven av 1837 fikk Kristiania folkevalgte styremenn med ansvar for skoler, fattigvesen, veier og økonomi. De første kommunestyrene la grunnlaget for moderne lokalstyre og skulle balansere mellom byens vekst, fattigdom og nye sosiale krav.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "227-244",
+        "note": "Bind 4: De første kommunestyrerog deresgrundsyn,socialtog økonomisk (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-IV-s227-244-forste-kommunestyrerog-d.md"
+    },
+    {
+      "id": "bind4-reguleringsproblemetog-denoffentlige-mening-s245",
+      "title": "Regulering og kommuneøkonomi",
+      "year_from": 1814,
+      "year_to": 1877,
+      "year_display": "1838-1840",
+      "bind": 4,
+      "tags": [
+        "bygrunn"
+      ],
+      "place_ids": [
+        "pipervika",
+        "kommunegaarden-logen"
+      ],
+      "summary": "Formannskapet gikk varsomt frem med utgifter til skoler og offentlige anlegg, også i Pipervika. Kommunen ville ikke ta unødige lån, men ønsket forbedringer trinnvis der behovet var størst.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "245-258",
+        "note": "Bind 4: Reguleringsproblemetog denoffentlige mening (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-IV-s245-258-denoffentlige-mening-s24.md"
+    },
+    {
+      "id": "bind4-stromningerog-bakevjer-henimotslutten-av-wergela-s259",
+      "title": "Mot slutten av Wergelands tid",
+      "year_from": 1814,
+      "year_to": 1877,
+      "year_display": "1840-årene",
+      "bind": 4,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "stortorvet",
+        "eidsvolls-plass"
+      ],
+      "summary": "Yngre forfattere og offentlige strømninger utfordret Wergelands generasjon i byens kulturliv. Politisk og litterær debatt foregikk side om side med gatepreget hverdagsliv i sentrum.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "259-276",
+        "note": "Bind 4: Strømningerog bakevjer henimotslutten av Wergelandstiden (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-IV-s259-276-bakevjer-henimotslutten-.md"
+    },
+    {
+      "id": "bind4-socialeog-kulturelle-nydannelseri-1840-aarene-s277",
+      "title": "Nydannelser på 1840-tallet",
+      "year_from": 1840,
+      "year_to": 1840,
+      "year_display": "1840-årene",
+      "bind": 4,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "universitetsplassen",
+        "nationaltheatret"
+      ],
+      "summary": "På 1840-tallet vokste foreninger, leseselskap og nye idéer frem i hovedstaden. Sammen med utdanning og avisliv dannet de et bymiljø der borgerskap og arbeidere møttes om kultur, frivillighet og krav om mer medbestemmelse.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "277-296",
+        "note": "Bind 4: Socialeog kulturelle nydannelseri 1840-aarene (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-IV-s277-296-kulturelle-nydannelseri-.md"
+    },
+    {
+      "id": "bind4-storfolk-og-smaafolki-1840-aarene-s297",
+      "title": "Storfolk og småfolk",
+      "year_from": 1840,
+      "year_to": 1840,
+      "year_display": "1840-årene",
+      "bind": 4,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "gronland-ladested",
+        "homansbyen"
+      ],
+      "summary": "Skillene mellom velstående gatestrøk og trange forsteder ble tydeligere i 1840-årene. Borgerliv og arbeiderboliger fantes få kvartaler fra hverandre i den voksende hovedstaden.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "297-312",
+        "note": "Bind 4: Storfolk og smaafolki 1840-aarene (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-IV-s297-312-og-smaafolki-1840-aarene.md"
+    },
+    {
+      "id": "bind4-tanke-og-folelseslivfra-wergelandsdodtil-gjennem-s313",
+      "title": "Etter Wergelands død",
+      "year_from": 1814,
+      "year_to": 1877,
+      "year_display": "1840-1850-årene",
+      "bind": 4,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "eidsvolls-plass",
+        "var-frelsers-gravlund"
+      ],
+      "summary": "Fra Wergelands død og utover midten av 1800-tallet skiftet stemninger i byen. Romantikk, nasjonalfølelse og moralsk debatt ble båret av aviser, foredrag og gatekultur, og satte preg på hvordan folk forsto Kristiania som unionshovedstad.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "313-328",
+        "note": "Bind 4: Tanke- og følelseslivfra Wergelandsdødtil gjennembruddetav pietismen (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-IV-s313-328-og-folelseslivfra-wergel.md"
+    },
+    {
+      "id": "bind4-romantikog-skandinavismei-krig-og-fred-s329",
+      "title": "Romantikk og skandinavisme",
+      "year_from": 1814,
+      "year_to": 1877,
+      "year_display": "1840-1860-årene",
+      "bind": 4,
+      "tags": [
+        "festning"
+      ],
+      "place_ids": [
+        "stortinget",
+        "nationaltheatret"
+      ],
+      "summary": "Romantikken og skandinavismen fikk fotfeste i hovedstaden samtidig som Norden gikk inn i krig og fred med hverandre. Stemninger i kulturlivet vekslet med union, press og ny selvbevissthet i byen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "329-348",
+        "note": "Bind 4: Romantikog skandinavismei krig og fred (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-IV-s329-348-skandinavismei-krig-og-f.md"
+    },
+    {
+      "id": "bind4-hoikonjunktur-og-formuer-s387",
+      "title": "Høykonjunktur og formuer",
+      "year_from": 1814,
+      "year_to": 1877,
+      "year_display": "1850-årene",
+      "bind": 4,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "homansbyen",
+        "paleet-christiania"
+      ],
+      "summary": "Høykonjunktur og kapitalformuer på slutten av 1800-tallet forsterket klasseforskjeller i Christiania. Store villastrøk og luksus stod side om side med trange arbeiderkvarterer, og debatten om formue, skatt og anstendighet ble stadig tydeligere i byens offentlige liv.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "387-404",
+        "note": "Bind 4: Høikonjunktur og formuer (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-IV-s387-404-og-formuer-s387.md"
+    },
+    {
+      "id": "bind4-byen-og-samfundsforholdeneved-midtenav-1850-aare-s405",
+      "title": "Samfunn ved midten av 1850-årene",
+      "year_from": 1850,
+      "year_to": 1850,
+      "year_display": "ca. 1855",
+      "bind": 4,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "christiania-spigerverk",
+        "ankerbrua"
+      ],
+      "summary": "Jernbane, telegraf og engelske teknikker endret hverdagen i Christiania midt på 1850-tallet. Gasverk, rørkloakk og dampskip bandt byen til europeiske moderniseringsstrømninger.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "405-422",
+        "note": "Bind 4: Byen og samfundsforholdeneved midtenav 1850-aarene (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-IV-s405-422-og-samfundsforholdeneved.md"
+    },
+    {
+      "id": "bind4-branden14-april-1858-s423",
+      "title": "Bybrannen 14. april 1858",
+      "year_from": 1858,
+      "year_to": 1858,
+      "year_display": "1858",
+      "bind": 4,
+      "tags": [
+        "brann"
+      ],
+      "place_ids": [
+        "skippergata",
+        "christiania-torv",
+        "gammeltorvet"
+      ],
+      "summary": "Den store brannen i april 1858 herjet et omfattende område i Kvadraturen. Slukningsmannskap trakk seil over hustak i Kongens gate, men ilden blusset opp igjen ved Peter Petersens gård før den ble stanset mot formiddag.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "423-438",
+        "note": "Bind 4: Branden14.april 1858 (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-IV-s423-438-april-1858-s423.md"
+    },
+    {
+      "id": "bind4-havnenog-havnelivetfra-1830-til-1860-aarene-s439",
+      "title": "Havn og havneliv",
+      "year_from": 1830,
+      "year_to": 1830,
+      "year_display": "1830-1860",
+      "bind": 4,
+      "tags": [
+        "havn"
+      ],
+      "place_ids": [
+        "havn-ved-akershus",
+        "tollbugata-havn",
+        "pipervika"
+      ],
+      "summary": "Havnen vokste med handel, dampskip og trevareomlasting i årene før århundreskiftet. Molene og bryggene ved Pipervika og Akershus holdt byen i stadig kontakt med sjøen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "439-458",
+        "note": "Bind 4: Havnenog havnelivetfra 1830-til 1860-aarene (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-IV-s439-458-havnelivetfra-1830-til-1.md"
+    },
+    {
+      "id": "bind4-tidsaandenog-forholdenefor-og-efter-branden-s459",
+      "title": "Etter brannen i 1858",
+      "year_from": 1814,
+      "year_to": 1877,
+      "year_display": "1858-1860",
+      "bind": 4,
+      "tags": [
+        "brann"
+      ],
+      "place_ids": [
+        "skippergata",
+        "tollbugata-havn"
+      ],
+      "summary": "Etter den store brannen ble havn, losseforhold og navngiving diskutert med ny selvtillit i byen. Trang kaiplass og tungvint utløsning preget havnen inntil reguleringen ble utvidet.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "459-482",
+        "note": "Bind 4: Tidsaandenog forholdenefør og efter branden (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-IV-s459-482-forholdenefor-og-efter-b.md"
+    },
+    {
+      "id": "bind4-kristiania-skandinavismenog-denationaleminder-s521",
+      "title": "Skandinavisme og monumenter",
+      "year_from": 1814,
+      "year_to": 1877,
+      "year_display": "1860-1870-årene",
+      "bind": 4,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "eidsvolls-plass",
+        "stortinget"
+      ],
+      "summary": "Skandinavisk samfølelse og nasjonale minnesmerker fikk plass i bybildet i andre halvdel av 1800-tallet. Monumenter og festligheter knyttet hovedstaden til hele Norden.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "521-538",
+        "note": "Bind 4: Kristiania-skandinavismenog denationaleminder (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-IV-s521-538-skandinavismenog-denatio.md"
+    },
+    {
+      "id": "bind4-det-storetidsskifte-s539",
+      "title": "Det store tidsskifte",
+      "year_from": 1814,
+      "year_to": 1877,
+      "year_display": "1870-årene",
+      "bind": 4,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "grunerlokka-folketeater",
+        "st-hanshaugen-haugen"
+      ],
+      "summary": "Årtusenskiftet og tiden rundt 1900 bar preg av elektrisitet, ny teknikk og urban vekst. Byen investerte i infrastruktur, transport og kulturbygg, og mange opplevde at Christiania gikk inn i en ny storbyfase før navneskiftet til Oslo.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "539-554",
+        "note": "Bind 4: Det storetidsskifte (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-IV-s539-554-storetidsskifte-s539.md"
+    },
+    {
+      "id": "bind4-byutvidelsenav-1877-og-forutsaetningernefor-den-s555",
+      "title": "Byutvidelsen 1877",
+      "year_from": 1877,
+      "year_to": 1877,
+      "year_display": "1877",
+      "bind": 4,
+      "tags": [
+        "bygrunn"
+      ],
+      "place_ids": [
+        "st-hanshaugen-haugen",
+        "grunerlokka-folketeater"
+      ],
+      "summary": "Utvidelsen i 1877 gjorde store deler av bymarken til en del av byen. Nye bydeler som Grünerløkka og Sagene kom inn i det regulerte bykartet etter hard politisk strid.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "555-572",
+        "note": "Bind 4: Byutvidelsenav 1877 og forutsætningernefor den (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-IV-s555-572-1877-og-forutsaetningern.md"
+    },
+    {
+      "id": "bind5-statuerog-mennesker-s35",
+      "title": "Statuer og monumenter",
+      "year_from": 1878,
+      "year_to": 1924,
+      "year_display": "1880-årene",
+      "bind": 5,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "eidsvolls-plass",
+        "stortinget",
+        "slottsplassen"
+      ],
+      "summary": "Offentlige statuer og minnesmerker ble et samlingspunkt for debatt om nasjon og kultur. Byen diskuterte hvem som fortjente et monument og hvordan gater og plasser skulle pyntes.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "35-54",
+        "note": "Bind 5: Statuerog mennesker (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-V-s35-54-mennesker-s35.md"
+    },
+    {
+      "id": "bind5-tidsaandenog-forholdeneomkring-1880-s55",
+      "title": "Kulturkampen rundt 1880",
+      "year_from": 1880,
+      "year_to": 1880,
+      "year_display": "1880-1882",
+      "bind": 5,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "eidsvolls-plass",
+        "universitetsplassen",
+        "nationaltheatret"
+      ],
+      "summary": "Diskusjonen om et Eidsvollsmonument og feiring av kronprinsparet viste dyp splittelse i byens kulturliv. Venstre og høyre strid om Wergeland og nasjonssymboler preget avisene og studentmiljøet.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "55-68",
+        "note": "Bind 5: Tidsaandenog forholdeneomkring 1880 (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-V-s55-68-forholdeneomkring-1880-s.md"
+    },
+    {
+      "id": "bind5-muligheterog-tillop-s69",
+      "title": "Muligheter og tilløp",
+      "year_from": 1878,
+      "year_to": 1924,
+      "year_display": "1880-årene",
+      "bind": 5,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "karl-johan-jubileet",
+        "youngstorget"
+      ],
+      "summary": "Ny teknologi, handel og foreningsliv ga hovedstaden et mer moderne preg på 1880-tallet. Tilløp til industri, bankvesen og byliv skapte både optimisme og konkurransetenkning.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "69-84",
+        "note": "Bind 5: Muligheterog tilløp (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-V-s69-84-tillop-s69.md"
+    },
+    {
+      "id": "bind5-kommunestyretog-oppositioneni-begyndelsenav-1880-s85",
+      "title": "Nybygging i sentrum",
+      "year_from": 1880,
+      "year_to": 1880,
+      "year_display": "1880-1881",
+      "bind": 5,
+      "tags": [
+        "kommune"
+      ],
+      "place_ids": [
+        "norges-bank-bankplassen",
+        "tollbugata-havn",
+        "christiania-torv",
+        "storebrand-kirkegaten",
+        "steen-strom-slottsgate",
+        "schweigaards-bro",
+        "handelsstand-toldbodgaten",
+        "wessels-plass",
+        "victoria-terrasse",
+        "piperviksbakken"
+      ],
+      "summary": "Storebrand, Handelsstandsforeningen og Steen og Strøm reiste nye fasader i kvadraturen. Gjennombrudd i Slottsgate og Schweigaards bro bandt Bjørvika og Pipervika til et moderne gatebilde.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "85-98",
+        "note": "Bind 5: Kommunestyretog oppositioneni begyndelsenav 1880-aarene (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-V-s85-98-oppositioneni-begyndelse.md"
+    },
+    {
+      "id": "bind5-okonomisketiltak-og-forskyvninger-i-begyndelsena-s133",
+      "title": "Økonomi i storbytiden",
+      "year_from": 1878,
+      "year_to": 1924,
+      "year_display": "1880-årene",
+      "bind": 5,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "norges-bank-bankplassen",
+        "youngstorget"
+      ],
+      "summary": "Banker, aksjer og konjunkturer satte preg på byens økonomi da Kristiania vokste raskt. Kommunen og næringslivet måtte finne balanse mellom vekst, lån og nedgangstider.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "133-148",
+        "note": "Bind 5: Økonomisketiltak og forskyvninger i begyndelsenav storbytiden (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-V-s133-148-og-forskyvninger-i-begyn.md"
+    },
+    {
+      "id": "bind5-byen-og-det-begyndendesocial-demokrati-s149",
+      "title": "Aksjer og arbeiderbevegelse",
+      "year_from": 1878,
+      "year_to": 1924,
+      "year_display": "ca. 1880",
+      "bind": 5,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "youngstorget",
+        "mollergata"
+      ],
+      "summary": "Aksieomsætning og nye pengeinstitutter vokste side om side med industri og håndverk. Samtidig begynte sosialdemokratiske strømninger å samle arbeidsfolk i byens presserom og gater.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "149-168",
+        "note": "Bind 5: Byen og det begyndendesocial-demokrati (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-V-s149-168-og-det-begyndendesocial-.md"
+    },
+    {
+      "id": "bind5-forhold-og-begivenhetersidsti-otti-aarene-s169",
+      "title": "Slutten av 1880-årene",
+      "year_from": 1878,
+      "year_to": 1924,
+      "year_display": "1888-1889",
+      "bind": 5,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "karl-johan-jubileet",
+        "nationaltheatret"
+      ],
+      "summary": "På 1880-tallet sto byen mellom liberal fremgang og sosial uro. Arbeidskonflikter, nye organisasjoner og politiske skiftninger gjorde gatebildet mer krevende, samtidig som magistraten og staten måtte finne svar på vekst og misnøye.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "169-186",
+        "note": "Bind 5: Forhold og begivenhetersidsti otti-aarene (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-V-s169-186-og-begivenhetersidsti-ot.md"
+    },
+    {
+      "id": "bind5-fra-otti-ind-i-nitti-aarene-s187",
+      "title": "Fra 1880- til 1890-årene",
+      "year_from": 1878,
+      "year_to": 1924,
+      "year_display": "1890-årene",
+      "bind": 5,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "oslo-sentralstasjon",
+        "grunerlokka-folketeater"
+      ],
+      "summary": "Fra 1880-årene og inn i 1890-årene ble tempoet i byutviklingen høyere. Boligpress, teknisk modernisering og utvidet kommunal virksomhet hele tiden nye temaer i rådhuset, avisene og på arbeidsplassene.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "187-200",
+        "note": "Bind 5: Fra otti- ind i nitti-aarene (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-V-s187-200-otti-ind-i-nitti-aarene-.md"
+    },
+    {
+      "id": "bind5-hovedstadenved-indledningentil-unionskrisen-s201",
+      "title": "Før unionskrisen",
+      "year_from": 1878,
+      "year_to": 1924,
+      "year_display": "1890-årene",
+      "bind": 5,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "stortinget",
+        "paleet-christiania"
+      ],
+      "summary": "Hovedstaden fulgte unionsspørsmål og kommunal byggelov med stigende spenning før 1905. Magistrat og Storting diskuterte både arkitektur og den politiske balansen i unionen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "201-214",
+        "note": "Bind 5: Hovedstadenved indledningentil unionskrisen (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-V-s201-214-indledningentil-unionskr.md"
+    },
+    {
+      "id": "bind5-fra-kongetogettil-systemskiftetinden-kommunen-s215",
+      "title": "Kongetog og kommuneskifte",
+      "year_from": 1878,
+      "year_to": 1924,
+      "year_display": "1890-årene",
+      "bind": 5,
+      "tags": [
+        "kommune"
+      ],
+      "place_ids": [
+        "slottsplassen",
+        "kommunegaarden-logen"
+      ],
+      "summary": "Kong Haakon og dronning Mauds ankomst i 1905 markerte et nytt politisk kapittel. Samtidig diskuterte byen radikalt systemskifte i kommunen, der skille mellom byråkrati og politikk ble et sentralt spørsmål for demokratisering og effektiv forvaltning.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "215-230",
+        "note": "Bind 5: Fra kongetogettil systemskiftetinden kommunen (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-V-s215-230-kongetogettil-systemskif.md"
+    },
+    {
+      "id": "bind5-systemskifteti-teori-og-virkelighet-indtil-utgan-s231",
+      "title": "Systemskifte i kommune",
+      "year_from": 1896,
+      "year_to": 1896,
+      "year_display": "til 1896",
+      "bind": 5,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "kommunegaarden-logen",
+        "gamle-raadhus-torvet"
+      ],
+      "summary": "Ideene om et rent byråkratisk systemskifte møtte motstand og tilpasning i praksis. Kristiania forsøkte å hente inn profesjonell styring i kommunen uten å miste politisk kontroll, og debatten varte til neste tiårs skifte i lokaladministrasjonen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "231-246",
+        "note": "Bind 5: Systemskifteti teori og virkelighet indtil utgangenav 1896 (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-V-s231-246-teori-og-virkelighet-ind.md"
+    },
+    {
+      "id": "bind5-jobbetidenogforutsaetningernefor-denokonomiskog-s247",
+      "title": "Jobbetiden",
+      "year_from": 1878,
+      "year_to": 1924,
+      "year_display": "1890-årene",
+      "bind": 5,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "norges-bank-bankplassen",
+        "youngstorget"
+      ],
+      "summary": "Banksammenbrudd og spekulasjon preget jobbetiden etter overstrekte investeringer. Kommunen diskuterte om den skulle bygge arbeiderboliger og hvem som bar ansvaret.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "247-262",
+        "note": "Bind 5: Jobbetidenogforutsætningernefor denøkonomiskog socialt (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-V-s247-262-denokonomiskog-s247.md"
+    },
+    {
+      "id": "bind5-krisen-og-densettervirkninger-s263",
+      "title": "Krise og ettervirkninger",
+      "year_from": 1878,
+      "year_to": 1924,
+      "year_display": "ca. 1899",
+      "bind": 5,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "youngstorget",
+        "mollergata"
+      ],
+      "summary": "Etter økonomisk krise på slutten av 1890-tallet måtte byen stramme inn og ta stilling til arbeidsledighet, fattigdom og svekket skatteinntekt. Krisen satte spor i boligmarkedet, veldedighet og i tilliten mellom styre og befolkning.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "263-278",
+        "note": "Bind 5: Krisen og densettervirkninger (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-V-s263-278-og-densettervirkninger-s.md"
+    },
+    {
+      "id": "bind5-kommunenved-utgangenav-detnittendeaarhundrede-s279",
+      "title": "Kommunen ved 1900",
+      "year_from": 1878,
+      "year_to": 1924,
+      "year_display": "1899-1900",
+      "bind": 5,
+      "tags": [
+        "kommune"
+      ],
+      "place_ids": [
+        "pipervika",
+        "kommunegaarden-logen"
+      ],
+      "summary": "Ved 1900 sto kommunen foran elektrifisering, sanitæranlegg og stor utvidelse av offentlige tjenester. Christiania investerte i fremtiden samtidig som gamle privilegier og et statsleg preg fortsatt preget hvordan byen ble styrt.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "279-296",
+        "note": "Bind 5: Kommunenved utgangenav detnittendeaarhundrede (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-V-s279-296-utgangenav-detnittendeaa.md"
+    },
+    {
+      "id": "bind5-bryggeforholdog-havnereguleringeromkring-aarhund-s297",
+      "title": "Havn og kommunefinans",
+      "year_from": 1878,
+      "year_to": 1924,
+      "year_display": "1899-1900",
+      "bind": 5,
+      "tags": [
+        "havn",
+        "bygrunn"
+      ],
+      "place_ids": [
+        "tollbugata-havn",
+        "pipervika",
+        "oslo-sentralstasjon"
+      ],
+      "summary": "Ved århundreskiftet lånte kommunen tungt for kai-anlegg, havneforlengelser og opplag langs Pipervika og inn mot sentrum. Debatt om eiendomskjøp, renter og magistratens finansplan preget hvordan Christiania skulle vinne plass til moderne havne- og jernbanebygg.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "297-312",
+        "note": "Bind 5: Bryggeforholdog havnereguleringeromkring aarhundreskiftet (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-V-s297-312-havnereguleringeromkring.md"
+    },
+    {
+      "id": "bind5-nedgangsaareneog-folgerneav-demi-slutten-avunion-s313",
+      "title": "Nedgang og unionsavslutning",
+      "year_from": 1878,
+      "year_to": 1924,
+      "year_display": "1900-1905",
+      "bind": 5,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "grunerlokka-folketeater",
+        "akerselva-utløp"
+      ],
+      "summary": "Nedgangstiden før unionsoppløsningen rammet næringsliv og kommuneøkonomi. Spørsmål om arbeid, forsvar og nasjonal politikk ble koblet til hverdagslivet i byen, der presset mot endring ble sterkere mot slutten av unionen med Sverige.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "313-326",
+        "note": "Bind 5: Nedgangsaareneog følgerneav demi slutten avunionstiden (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-V-s313-326-folgerneav-demi-slutten-.md"
+    },
+    {
+      "id": "bind5-kristiania-i-1905-s327",
+      "title": "Kristiania i 1905",
+      "year_from": 1905,
+      "year_to": 1905,
+      "year_display": "1904-1905",
+      "bind": 5,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "stortinget",
+        "var-frelsers-gravlund"
+      ],
+      "summary": "Brann i Kongens gate, banksammenbrudd og valgpreget gatenes stemning rundt unionskrisen. Byen fulgte Stortinget og finansverdenen tett mens Norge løsnet fra unionen med Sverige.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "327-352",
+        "note": "Bind 5: Kristiania i 1905 (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-V-s327-352-i-1905-s327.md"
+    },
+    {
+      "id": "bind5-den-nye-arbeidsdagog-hovedstadenindtil-bjornsons-s353",
+      "title": "Ny arbeidsdag",
+      "year_from": 1878,
+      "year_to": 1924,
+      "year_display": "1900-1910",
+      "bind": 5,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "mollergata",
+        "aker-mek-pipervika"
+      ],
+      "summary": "På slutten av 1800-tallet ble arbeidsdagen preget av fabrikk og verksted, fagforeninger og streiker. I hovedstaden møttes gamle laugtradisjoner og ny organisering; arbeidere slo seg sammen i gate, presse og møterom inntil krigen og Bjørnsons siste år.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "353-374",
+        "note": "Bind 5: Den nye arbeidsdagog hovedstadenindtil Bjørnsonsdød (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-V-s353-374-nye-arbeidsdagog-hovedst.md"
+    },
+    {
+      "id": "bind5-fra-unionsbruddettil-jubilaeumsaaret1914-s375",
+      "title": "Mot jubileumsåret 1914",
+      "year_from": 1914,
+      "year_to": 1914,
+      "year_display": "1908-1914",
+      "bind": 5,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "eidsvolls-plass",
+        "nationaltheatret",
+        "var-frelsers-gravlund"
+      ],
+      "summary": "Wergelandsdag, nye monumenter og nasjonale minner la grunnlag for 300-årsjubileet. Kristiania brukte festtaler, teater og statuer til å markere byens plass i fedrelandshistorien.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "375-392",
+        "note": "Bind 5: Fra unionsbruddettil jubilæumsaaret1914 (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-V-s375-392-unionsbruddettil-jubilae.md"
+    },
+    {
+      "id": "bind5-kommunenog-boligsporsmaalet-s393",
+      "title": "Bolig og kommune",
+      "year_from": 1878,
+      "year_to": 1924,
+      "year_display": "1910-årene",
+      "bind": 5,
+      "tags": [
+        "kommune"
+      ],
+      "place_ids": [
+        "gronland-ladested",
+        "grunerlokka-folketeater"
+      ],
+      "summary": "Bolignød og leiegårder ble et hovedspørsmål da folketallet vokste inn i jubileumsårene. Kommunen bygde leieboliger og diskuterte grenser mot Akers for å få plass til arbeidsfolk.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "393-412",
+        "note": "Bind 5: Kommunenog boligspørsmaalet (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-V-s393-412-boligsporsmaalet-s393.md"
+    },
+    {
+      "id": "bind5-traek-av-spekulationslivetunderhoikonjunkturen-s433",
+      "title": "Spekulasjon i høykonjunktur",
+      "year_from": 1878,
+      "year_to": 1924,
+      "year_display": "før 1914",
+      "bind": 5,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "norges-bank-bankplassen",
+        "karl-johan-jubileet"
+      ],
+      "summary": "Høye priser og spekulasjon i eiendom og aksjer fanget byens næringsliv før krigen. Gevinster og fall skapte både rikdom og bitterhet i gatene rundt Bankplassen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "433-454",
+        "note": "Bind 5: Træk av spekulationslivetunderhøikonjunkturen (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-V-s433-454-av-spekulationslivetunde.md"
+    },
+    {
+      "id": "bind5-stemningerog-forhold-indtil-utgangenav-1918-s455",
+      "title": "Mot slutten av krigen",
+      "year_from": 1918,
+      "year_to": 1918,
+      "year_display": "1918",
+      "bind": 5,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "stortinget",
+        "youngstorget"
+      ],
+      "summary": "Før første verdenskrig sluttet, bar Christiania preg av krise, knapphet og fornyet tro på fremtid. Stemninger i pressen og gatene speilte en by som var vant til storpolitikk, men nå skulle definere hverdagen på nytt.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "455-476",
+        "note": "Bind 5: Stemningerog forhold indtil utgangenav 1918 (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-V-s455-476-forhold-indtil-utgangena.md"
+    },
+    {
+      "id": "bind5-kristiania-kommunegjennemkrigsaarene-477-s492",
+      "title": "Kommunen i krigsårene",
+      "year_from": 1878,
+      "year_to": 1924,
+      "year_display": "1914-1918",
+      "bind": 5,
+      "tags": [
+        "festning",
+        "kommune"
+      ],
+      "place_ids": [
+        "kommunegaarden-logen",
+        "gronland-ladested"
+      ],
+      "summary": "Under første verdenskrig måtte Christiania håndtere knapphet, mangel og økt statlig inngripen. Gatekøer, rasjonering og nye krav til planlegging stod på dagordenen mens byen ventet på fred og det jubileumsåret som fulgte etterpå.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "492",
+        "note": "Bind 5: Kristiania kommunegjennemkrigsaarene 477 (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-V-s492-kommunegjennemkrigsaaren.md"
+    },
+    {
+      "id": "bind5-de-sidstefernaarfor-navnskiftet-s493",
+      "title": "Før navnet ble Oslo",
+      "year_from": 1878,
+      "year_to": 1924,
+      "year_display": "1920-1924",
+      "bind": 5,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "karl-johan-jubileet",
+        "stortinget"
+      ],
+      "summary": "De siste årene som Kristiania ble preget av boligbygging, grenseutvidelse og modernisering. Byen nærmet seg 1924-jubileet og det kommende navneskiftet til Oslo.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "493-512",
+        "note": "Bind 5: De sidstefernaarfør navnskiftet (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-V-s493-512-sidstefernaarfor-navnski.md"
+    },
+    {
+      "id": "bind5-literaturensog-virkelighetenskristiania-s523",
+      "title": "Litteratur og byliv",
+      "year_from": 1878,
+      "year_to": 1924,
+      "year_display": "1900-årene",
+      "bind": 5,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "nationaltheatret",
+        "henrik-ibsen-hjem"
+      ],
+      "summary": "På 1920-tallet møttes litteratur og hverdagsliv i en by i vekst. Forfattere, aviser og teater speilet storbyens karakter, samtidig som jubileet og navneskiftet minnet folk om at Kristiania og Oslo var samme bys ulike kapitler.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "523-532",
+        "note": "Bind 5: Literaturensog virkelighetensKristiania (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-V-s523-532-virkelighetenskristiania.md"
+    },
+    {
+      "id": "bind5-kristianias-ordforere1837-1924-s533",
+      "title": "Ordførere 1837-1924",
+      "year_from": 1837,
+      "year_to": 1837,
+      "year_display": "1837-1924",
+      "bind": 5,
+      "tags": [
+        "kultur"
+      ],
+      "place_ids": [
+        "kommunegaarden-logen",
+        "gamle-raadhus-torvet"
+      ],
+      "summary": "Fra formannskapsloven til jubileumsåret førte en rekke ordførere kommunen gjennom vekst og reform. Deres beslutninger om skoler, gater og bolig satte spor i gatebildet vi går i i dag.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "533-551",
+        "note": "Bind 5: Kristianias ordførere1837-1924 (TOC)"
+      },
+      "supplementary_note": "sources/excerpts/bind-V-s533-551-ordforere1837-1924-s533.md"
+    }
+  ]
+}

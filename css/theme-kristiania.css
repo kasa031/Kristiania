@@ -1,0 +1,238 @@
+/* Kristiania: Dronningensgate 1714 (tegl/oker) + avis-layout */
+
+:root {
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-body: "Newsreader", Georgia, serif;
+  --font-ui: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --bg: #f0e4d4;
+  --surface: #fff8f0;
+  --ink: #2a221c;
+  --muted: #6b5d54;
+  --accent: #b24a3a;
+  --accent-warm: #c9a04a;
+  --accent-orange: #e07a32;
+  --cta-home-bg: #2a221c;
+  --cta-home-bg-hover: #352b24;
+  --cta-search-ink: #ebc94f;
+  --cta-search-hint: #c9a04a;
+  --cta-routes-ink: #e07a32;
+  --cta-routes-hint: #f0a050;
+  --accent-soft: #f3e4d0;
+  --text-muted: #564a42;
+  --spot: #b24a3a;
+  --rule: #c9b8a4;
+  --bind-1: #6b5d54;
+  --bind-2: #b24a3a;
+  --bind-3: #5c4d6a;
+  --bind-4: #8b5a3c;
+  --bind-5: #4a4e55;
+  --danger: #9e4a3a;
+  --radius: 8px;
+  --shadow: 0 6px 20px rgba(42, 34, 28, 0.08);
+}
+
+body {
+  font-family: var(--font-ui);
+  background: var(--bg);
+}
+
+body.theme-dronningensgate1714 {
+  background: var(--bg);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.theme-dronningensgate1714 {
+  --muted: var(--text-muted);
+}
+
+header.app-header.masthead {
+  flex-shrink: 0;
+  background: var(--ink);
+  border-bottom: 4px solid var(--accent-warm);
+  box-shadow: inset 0 -4px 0 0 var(--accent);
+  padding: clamp(0.65rem, 2vw, 0.85rem) clamp(1rem, 3vw, 1.35rem) clamp(0.75rem, 2vw, 1rem);
+  padding-top: max(clamp(0.65rem, 2vw, 0.85rem), env(safe-area-inset-top, 0px));
+}
+
+.masthead-inner {
+  width: 100%;
+  max-width: 36rem;
+}
+
+.masthead-rubric {
+  margin: 0;
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--accent-warm);
+}
+
+.masthead-title {
+  margin: 0.2rem 0 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 5.2vw, 2.05rem);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: 0.015em;
+  color: #fff8f0;
+}
+
+.masthead-pitch {
+  margin: 0.3rem 0 0;
+  max-width: 36rem;
+  font-family: var(--font-ui);
+  font-size: clamp(0.82rem, 2.2vw, 0.92rem);
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  color: var(--accent-warm);
+}
+
+.masthead-dek,
+header.app-header.masthead .masthead-dek {
+  margin: 0.4rem 0 0;
+  max-width: 36rem;
+  font-family: var(--font-body);
+  font-size: clamp(0.82rem, 2.15vw, 0.94rem);
+  font-weight: 400;
+  line-height: 1.55;
+  color: #d9cfc4;
+}
+
+header.app-header.masthead p.masthead-dek {
+  color: #c9bbb0;
+}
+
+header.app-header h1 {
+  font-family: var(--font-display);
+}
+
+.panel-header h2 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.panel-header h2::before {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 2px;
+  background: var(--accent);
+  margin-bottom: 0.35rem;
+}
+
+.detail-drawer {
+  background: var(--surface);
+  border-top: 1px solid var(--rule);
+}
+
+.detail-drawer h3 {
+  font-family: var(--font-display);
+}
+
+.detail-drawer h3::after {
+  content: "";
+  display: block;
+  width: 100%;
+  max-width: 12rem;
+  height: 1px;
+  background: var(--ink);
+  margin-top: 0.35rem;
+  opacity: 0.35;
+}
+
+.detail-drawer p,
+.detail-drawer li,
+.popup-links {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.62;
+}
+
+.detail-body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.62;
+  max-width: 42ch;
+  margin: 0.6rem 0 0;
+  color: var(--ink);
+  text-wrap: pretty;
+}
+
+.detail-muted,
+.detail-drawer .detail-muted {
+  font-family: var(--font-ui);
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.routes-panel-lead {
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  line-height: 1.58;
+  color: var(--ink);
+  max-width: 44ch;
+}
+
+.timeline-list .event-card p,
+.timeline-list .find-card p,
+.timeline-list .context-card p {
+  font-family: var(--font-body);
+  line-height: 1.58;
+}
+
+.timeline-list > li {
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.5rem;
+}
+
+.timeline-list > li:last-child {
+  border-bottom: none;
+}
+
+.episode-era-title {
+  color: var(--accent);
+  letter-spacing: 0.08em;
+}
+
+.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.primary:hover {
+  background: #9a3f32;
+}
+
+.map-locate[aria-pressed="true"] {
+  background: var(--accent-warm);
+  color: var(--ink);
+}
+
+button.linkish {
+  color: #8b5a3c;
+}
+
+.filters summary,
+.nearby-summary {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.episode-cards {
+  background: #e8dcc8;
+  border-bottom-color: var(--rule);
+}
+
+.panel-map {
+  border-color: var(--rule);
+}

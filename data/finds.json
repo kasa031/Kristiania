@@ -1,0 +1,488 @@
+{
+  "finds": [
+    {
+      "id": "funn-skivespaiter-torshov",
+      "title": "Skivespaiter (flint)",
+      "year_from": -5000,
+      "year_to": -5000,
+      "year_display": "tapestiden",
+      "chronology_era_id": "steinalder",
+      "district_id": "sagene",
+      "lat": 59.9355,
+      "lng": 10.762,
+      "summary": "De tidligste menneskespor her går tilbake til tapestiden, da havet sto langt høyere og strandlinjen lå oppe ved området som nå er Torshovjordet. En flintskivespaiter - et redskap til skjæring og hogging - er funnet på jordet innenfor dagens bygrense, i omkring 70 meters høyde over havet, altså ikke langt fra den gamle kyststripen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "21-22",
+        "note": "Bull bind I: Geologi og forhistorie"
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Scraper_%28archaeology%29.jpg/640px-Scraper_%28archaeology%29.jpg",
+        "credit": "Wikimedia Commons - flintredskap (illustrasjon)"
+      }
+    },
+    {
+      "id": "funn-nostvet-daeleneng",
+      "title": "Nøstvet-funn i Dælenenggaten",
+      "year_from": -5000,
+      "year_to": -5000,
+      "year_display": "Nøstvet / steinalder",
+      "chronology_era_id": "steinalder",
+      "district_id": "grunerlokka",
+      "lat": 59.9242,
+      "lng": 10.7545,
+      "summary": "I Dælenenggaten er det gjort et funn fra samme fjerne tid som på Torshov: omkring førti økser av Nøstvettypen, flintstykker, slipestensstumper, østerskaller og tildsrest. Dette tyder på fast boplass, ikke bare flakkende jegere. Folk bodde ikke der det senere ble Oslo - det lå under vann - men langs fjorden der landet var tørt. Fundet ligger noen meter lavere enn på Torshov, så strandlinjen kan ikke beregnes helt nøyaktig. Området har også vært et viktig gravningsfelt for arkeologer.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "22",
+        "note": "Bull bind I: Geologi og forhistorie"
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/N%C3%B8stvet%C3%B8ks.jpg/640px-N%C3%B8stvet%C3%B8ks.jpg",
+        "credit": "Wikimedia Commons - Nøstvetøks (illustrasjon)"
+      }
+    },
+    {
+      "id": "funn-netstikke-jernbanetorvet",
+      "title": "Netstikke av ben (Jernbanetorvet)",
+      "year_from": -8000,
+      "year_to": -8000,
+      "year_display": "eldre enn steinalder",
+      "chronology_era_id": "steinalder",
+      "district_id": "gamle-oslo",
+      "lat": 59.911,
+      "lng": 10.7525,
+      "summary": "I 1917 ble det ved Jernbanetorvet, på tomten til et nytt hus, funnet en netstikke av ben - et primitivt redskap til fiskegarn. Den er antatt fra en svært gammel tid, eldre enn steinalderfunnene på Torshov og Dæleneng.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "21",
+        "note": "Bull bind I: Geologi og forhistorie"
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Bone_awl%2C_Scandinavia%2C_500_BC-500_AD.jpg/640px-Bone_awl%2C_Scandinavia%2C_500_BC-500_AD.jpg",
+        "credit": "Wikimedia Commons - benredskap (illustrasjon)"
+      }
+    },
+    {
+      "id": "funn-teisen-solv-1844",
+      "title": "Sølvskatt på Teisen (funn 1844)",
+      "year_from": 900,
+      "year_to": 1000,
+      "year_display": "vikingtid (funn 1844)",
+      "chronology_era_id": "jernalder",
+      "district_id": "nordre-aker",
+      "lat": 59.949,
+      "lng": 10.808,
+      "summary": "På Teisen i Østre Aker ble det i 1844 funnet en stor mengde sølvsaker i jordskorpen: mest ringer, men også barrer og stenger. Med sølvet lå kufiske mynter fra kalifene østover - betalingsmidler som nådde Norden via øst-europeisk handel. De yngste myntene er fra omkring år 920. Skatten kan sannsynligvis ikke være gravlagt før midten av 900-tallet; den kan tenkes knyttet til uroen på 960-tallet, da rivaler kjempet om Viken. Funnet viser tett bebyggelse og samferdsel med fremmede land ved fjordbunnen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "24",
+        "note": "Bull bind I: Geologi og forhistorie"
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Viking_Silver_in_the_British_Museum.jpg/640px-Viking_Silver_in_the_British_Museum.jpg",
+        "credit": "Wikimedia Commons - vikingtidssølv (illustrasjon)"
+      }
+    },
+    {
+      "id": "funn-grav-viking-st-hanshaugen",
+      "title": "Gravfunn (vikingtid) ved St. Hanshaugen",
+      "year_from": 900,
+      "year_to": 1000,
+      "year_display": "vikingtid",
+      "chronology_era_id": "jernalder",
+      "district_id": "st-hanshaugen",
+      "lat": 59.9245,
+      "lng": 10.738,
+      "summary": "Gravfunn fra vikingtiden viser vanlig bygdebebyggelse og jordbruk i Aker, ikke tegn på markedsplass før Oslo ble anlagt. Mye er ødelagt av senere bygging og rot i grunnen. Flere gravfunn er kjent fra distriktet omkring St. Hanshaugen. En gravhaug på selve St. Hanshaugen er senere forsvunnet fordi byen bygde og gravde uten å ta vare på oldsaker.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "23",
+        "note": "Bull bind I: gravfunn i bydelene"
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Oval_brooch_-_Viking.jpg/640px-Oval_brooch_-_Viking.jpg",
+        "credit": "Wikimedia Commons - vikingtidssmykker (illustrasjon)"
+      }
+    },
+    {
+      "id": "funn-grav-viking-kampen",
+      "title": "Gravfunn (vikingtid) ved Kampen",
+      "year_from": 900,
+      "year_to": 1000,
+      "year_display": "vikingtid",
+      "chronology_era_id": "jernalder",
+      "district_id": "grunerlokka",
+      "lat": 59.922,
+      "lng": 10.762,
+      "summary": "Gravfunn fra vikingtiden viser vanlig bygdebebyggelse og jordbruk i Aker, ikke tegn på markedsplass før Oslo ble anlagt. Mye er ødelagt av senere bygging og rot i grunnen. Fra Kampen er det gravfunn fra vikingtiden. På toppen av Kampen lå også en gravhaug som i dag er borte.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "23",
+        "note": "Bull bind I: gravfunn i bydelene"
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Oval_brooch_-_Viking.jpg/640px-Oval_brooch_-_Viking.jpg",
+        "credit": "Wikimedia Commons - vikingtidssmykker (illustrasjon)"
+      }
+    },
+    {
+      "id": "funn-grav-viking-frogner",
+      "title": "Gravfunn (vikingtid) fra Frogner",
+      "year_from": 900,
+      "year_to": 1000,
+      "year_display": "vikingtid",
+      "chronology_era_id": "jernalder",
+      "district_id": "frogner",
+      "lat": 59.915,
+      "lng": 10.702,
+      "summary": "Gravfunn fra vikingtiden viser vanlig bygdebebyggelse og jordbruk i Aker, ikke tegn på markedsplass før Oslo ble anlagt. Mye er ødelagt av senere bygging og rot i grunnen. Flere gravfunn fra vikingtiden er dokumentert fra Frogner, i de øvre bydelene langs bygden.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "23",
+        "note": "Bull bind I: gravfunn i bydelene"
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Oval_brooch_-_Viking.jpg/640px-Oval_brooch_-_Viking.jpg",
+        "credit": "Wikimedia Commons - vikingtidssmykker (illustrasjon)"
+      }
+    },
+    {
+      "id": "funn-grav-viking-pilestredet",
+      "title": "Gravfunn (vikingtid) ved Pilestrædet",
+      "year_from": 900,
+      "year_to": 1000,
+      "year_display": "vikingtid",
+      "chronology_era_id": "jernalder",
+      "district_id": "st-hanshaugen",
+      "lat": 59.917,
+      "lng": 10.728,
+      "summary": "Gravfunn fra vikingtiden viser vanlig bygdebebyggelse og jordbruk i Aker, ikke tegn på markedsplass før Oslo ble anlagt. Mye er ødelagt av senere bygging og rot i grunnen. Det er gravfunn fra vikingtiden ved Pilestrædet, i det øvre Kristiania-området.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "23",
+        "note": "Bull bind I: gravfunn i bydelene"
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Oval_brooch_-_Viking.jpg/640px-Oval_brooch_-_Viking.jpg",
+        "credit": "Wikimedia Commons - vikingtidssmykker (illustrasjon)"
+      }
+    },
+    {
+      "id": "funn-grav-viking-ullevaal",
+      "title": "Gravfunn (vikingtid) ved Ullevålsveien",
+      "year_from": 900,
+      "year_to": 1000,
+      "year_display": "vikingtid",
+      "chronology_era_id": "jernalder",
+      "district_id": "vestre-aker",
+      "lat": 59.934,
+      "lng": 10.735,
+      "summary": "Gravfunn fra vikingtiden viser vanlig bygdebebyggelse og jordbruk i Aker, ikke tegn på markedsplass før Oslo ble anlagt. Mye er ødelagt av senere bygging og rot i grunnen. Det er gravfunn fra vikingtiden langs Ullevålsveien, i de øvre bydelene.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "23",
+        "note": "Bull bind I: gravfunn i bydelene"
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Oval_brooch_-_Viking.jpg/640px-Oval_brooch_-_Viking.jpg",
+        "credit": "Wikimedia Commons - vikingtidssmykker (illustrasjon)"
+      }
+    },
+    {
+      "id": "funn-grav-viking-disen",
+      "title": "Gravfunn (vikingtid) ved Disen",
+      "year_from": 900,
+      "year_to": 1000,
+      "year_display": "vikingtid",
+      "chronology_era_id": "jernalder",
+      "district_id": "bjerke",
+      "lat": 59.949,
+      "lng": 10.812,
+      "summary": "Gravfunn fra vikingtiden viser vanlig bygdebebyggelse og jordbruk i Aker, ikke tegn på markedsplass før Oslo ble anlagt. Mye er ødelagt av senere bygging og rot i grunnen. To ulike gravfunn fra vikingtiden er registrert ved Disen i Østre Aker.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "23",
+        "note": "Bull bind I: Østre Aker, to funn fra Disen"
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Oval_brooch_-_Viking.jpg/640px-Oval_brooch_-_Viking.jpg",
+        "credit": "Wikimedia Commons - vikingtidssmykker (illustrasjon)"
+      }
+    },
+    {
+      "id": "funn-grav-viking-sinsen",
+      "title": "Gravfunn (vikingtid) ved Sinsen",
+      "year_from": 900,
+      "year_to": 1000,
+      "year_display": "vikingtid",
+      "chronology_era_id": "jernalder",
+      "district_id": "alna",
+      "lat": 59.919,
+      "lng": 10.788,
+      "summary": "Gravfunn fra vikingtiden viser vanlig bygdebebyggelse og jordbruk i Aker, ikke tegn på markedsplass før Oslo ble anlagt. Mye er ødelagt av senere bygging og rot i grunnen. Ett gravfunn fra vikingtiden er kjent fra Sinsen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "23",
+        "note": "Bull bind I: gravfunn i bydelene"
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Oval_brooch_-_Viking.jpg/640px-Oval_brooch_-_Viking.jpg",
+        "credit": "Wikimedia Commons - vikingtidssmykker (illustrasjon)"
+      }
+    },
+    {
+      "id": "funn-grav-viking-ulven",
+      "title": "Gravfunn (vikingtid) ved Ulven",
+      "year_from": 900,
+      "year_to": 1000,
+      "year_display": "vikingtid",
+      "chronology_era_id": "jernalder",
+      "district_id": "alna",
+      "lat": 59.908,
+      "lng": 10.768,
+      "summary": "Gravfunn fra vikingtiden viser vanlig bygdebebyggelse og jordbruk i Aker, ikke tegn på markedsplass før Oslo ble anlagt. Mye er ødelagt av senere bygging og rot i grunnen. To ulike gravfunn fra vikingtiden er dokumentert ved Ulven i Østre Aker.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "23",
+        "note": "Bull bind I: Østre Aker, to funn fra Ulven"
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Oval_brooch_-_Viking.jpg/640px-Oval_brooch_-_Viking.jpg",
+        "credit": "Wikimedia Commons - vikingtidssmykker (illustrasjon)"
+      }
+    },
+    {
+      "id": "funn-grav-viking-frydenberg",
+      "title": "Gravfunn (vikingtid) ved Frydenberg (Hasle)",
+      "year_from": 900,
+      "year_to": 1000,
+      "year_display": "vikingtid",
+      "chronology_era_id": "jernalder",
+      "district_id": "grorud",
+      "lat": 59.938,
+      "lng": 10.828,
+      "summary": "Gravfunn fra vikingtiden viser vanlig bygdebebyggelse og jordbruk i Aker, ikke tegn på markedsplass før Oslo ble anlagt. Mye er ødelagt av senere bygging og rot i grunnen. To gravfunn fra vikingtiden er gjort ved Frydenberg ved Hasle.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "23",
+        "note": "Bull bind I: Østre Aker"
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Oval_brooch_-_Viking.jpg/640px-Oval_brooch_-_Viking.jpg",
+        "credit": "Wikimedia Commons - vikingtidssmykker (illustrasjon)"
+      }
+    },
+    {
+      "id": "funn-grav-viking-bjolsen",
+      "title": "Gravfunn (vikingtid) ved Bjølsen",
+      "year_from": 900,
+      "year_to": 1000,
+      "year_display": "vikingtid",
+      "chronology_era_id": "jernalder",
+      "district_id": "sagene",
+      "lat": 59.938,
+      "lng": 10.752,
+      "summary": "Gravfunn fra vikingtiden viser vanlig bygdebebyggelse og jordbruk i Aker, ikke tegn på markedsplass før Oslo ble anlagt. Mye er ødelagt av senere bygging og rot i grunnen. Det er gravfunn fra vikingtiden ved Bjølsen i Vestre Aker.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "23",
+        "note": "Bull bind I: Vestre Aker"
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Oval_brooch_-_Viking.jpg/640px-Oval_brooch_-_Viking.jpg",
+        "credit": "Wikimedia Commons - vikingtidssmykker (illustrasjon)"
+      }
+    },
+    {
+      "id": "funn-grav-viking-nydalen",
+      "title": "Gravfunn (vikingtid) ved Nydalen",
+      "year_from": 900,
+      "year_to": 1000,
+      "year_display": "vikingtid",
+      "chronology_era_id": "jernalder",
+      "district_id": "sagene",
+      "lat": 59.948,
+      "lng": 10.765,
+      "summary": "Gravfunn fra vikingtiden viser vanlig bygdebebyggelse og jordbruk i Aker, ikke tegn på markedsplass før Oslo ble anlagt. Mye er ødelagt av senere bygging og rot i grunnen. Det er gravfunn fra vikingtiden ved Nydalen i Vestre Aker.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "23",
+        "note": "Bull bind I: Vestre Aker"
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Oval_brooch_-_Viking.jpg/640px-Oval_brooch_-_Viking.jpg",
+        "credit": "Wikimedia Commons - vikingtidssmykker (illustrasjon)"
+      }
+    },
+    {
+      "id": "funn-grav-viking-bestum",
+      "title": "Gravfunn (vikingtid) ved Bestum",
+      "year_from": 900,
+      "year_to": 1000,
+      "year_display": "vikingtid",
+      "chronology_era_id": "jernalder",
+      "district_id": "ullern",
+      "lat": 59.905,
+      "lng": 10.678,
+      "summary": "Gravfunn fra vikingtiden viser vanlig bygdebebyggelse og jordbruk i Aker, ikke tegn på markedsplass før Oslo ble anlagt. Mye er ødelagt av senere bygging og rot i grunnen. Det er gravfunn fra vikingtiden ved Bestum i Vestre Aker.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "23",
+        "note": "Bull bind I: Vestre Aker"
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Oval_brooch_-_Viking.jpg/640px-Oval_brooch_-_Viking.jpg",
+        "credit": "Wikimedia Commons - vikingtidssmykker (illustrasjon)"
+      }
+    },
+    {
+      "id": "funn-grav-viking-rod",
+      "title": "Gravfunn (vikingtid) ved Rød",
+      "year_from": 900,
+      "year_to": 1000,
+      "year_display": "vikingtid",
+      "chronology_era_id": "jernalder",
+      "district_id": "nordre-aker",
+      "lat": 59.928,
+      "lng": 10.798,
+      "summary": "Gravfunn fra vikingtiden viser vanlig bygdebebyggelse og jordbruk i Aker, ikke tegn på markedsplass før Oslo ble anlagt. Mye er ødelagt av senere bygging og rot i grunnen. Det er gravfunn fra vikingtiden ved Rød.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "23",
+        "note": "Bull bind I: Vestre Aker"
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Oval_brooch_-_Viking.jpg/640px-Oval_brooch_-_Viking.jpg",
+        "credit": "Wikimedia Commons - vikingtidssmykker (illustrasjon)"
+      }
+    },
+    {
+      "id": "funn-grav-viking-taasen",
+      "title": "Gravfunn (vikingtid) ved Taasen",
+      "year_from": 900,
+      "year_to": 1000,
+      "year_display": "vikingtid",
+      "chronology_era_id": "jernalder",
+      "district_id": "nordre-aker",
+      "lat": 59.942,
+      "lng": 10.778,
+      "summary": "Gravfunn fra vikingtiden viser vanlig bygdebebyggelse og jordbruk i Aker, ikke tegn på markedsplass før Oslo ble anlagt. Mye er ødelagt av senere bygging og rot i grunnen. Det er gravfunn fra vikingtiden ved Taasen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "23",
+        "note": "Bull bind I: Vestre Aker"
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Oval_brooch_-_Viking.jpg/640px-Oval_brooch_-_Viking.jpg",
+        "credit": "Wikimedia Commons - vikingtidssmykker (illustrasjon)"
+      }
+    },
+    {
+      "id": "funn-grav-viking-hov",
+      "title": "Gravfunn (vikingtid) ved Hov",
+      "year_from": 900,
+      "year_to": 1000,
+      "year_display": "vikingtid",
+      "chronology_era_id": "jernalder",
+      "district_id": "vestre-aker",
+      "lat": 59.932,
+      "lng": 10.715,
+      "summary": "Gravfunn fra vikingtiden viser vanlig bygdebebyggelse og jordbruk i Aker, ikke tegn på markedsplass før Oslo ble anlagt. Mye er ødelagt av senere bygging og rot i grunnen. Det er gravfunn fra vikingtiden ved Hov i Vestre Aker.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "23",
+        "note": "Bull bind I: Vestre Aker"
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Oval_brooch_-_Viking.jpg/640px-Oval_brooch_-_Viking.jpg",
+        "credit": "Wikimedia Commons - vikingtidssmykker (illustrasjon)"
+      }
+    },
+    {
+      "id": "funn-gravhaug-blaasen",
+      "title": "Gravhaug på Blåsen (forsvunnet)",
+      "year_from": 500,
+      "year_to": 1100,
+      "year_display": "forhistorisk gravhaug",
+      "chronology_era_id": "jernalder",
+      "district_id": "st-hanshaugen",
+      "lat": 59.951,
+      "lng": 10.688,
+      "summary": "Innenfor dagens bygrense fantes flere gravhauger som er borte i dag. På Blåsen lå en slik haug som forsvant når byen bygde og gravde i grunnen uten å ta vare på det som dukket opp. Gull og sølv ble gjerne tatt av folk; annet ble kastet.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "23",
+        "note": "Bull bind I: forsvunnede gravhauger"
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Viking_Age_grave_mound.jpg/640px-Viking_Age_grave_mound.jpg",
+        "credit": "Wikimedia Commons - gravhaug (illustrasjon)"
+      }
+    },
+    {
+      "id": "funn-gravhaug-ostre-aker-kirke",
+      "title": "Gravhaug ved Østre Aker kirke",
+      "year_from": 500,
+      "year_to": 1100,
+      "year_display": "bevart gravhaug",
+      "chronology_era_id": "jernalder",
+      "district_id": "grorud",
+      "lat": 59.958,
+      "lng": 10.843,
+      "summary": "Ved Østre Aker kirke står en stor gravhaug fortsatt bevart. I motsetning til mange hauger i byen er den ikke revet ned av bygging, men det er ikke gjort funn inne i den.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "23",
+        "note": "Bull bind I: bevart haug uten funn"
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Viking_Age_grave_mound.jpg/640px-Viking_Age_grave_mound.jpg",
+        "credit": "Wikimedia Commons - gravhaug (illustrasjon)"
+      }
+    },
+    {
+      "id": "funn-bispeborg-utgravning-1917",
+      "title": "Utgravning av bispeborgen (1917)",
+      "year_from": 1917,
+      "year_to": 1917,
+      "year_display": "utgravning 1917",
+      "chronology_era_id": "middelalder",
+      "district_id": "gamle-oslo",
+      "lat": 59.9058,
+      "lng": 10.7672,
+      "summary": "Da man gravde i Ladegårdshaven i 1917, kom rester av bispeborgen frem: ringmur, kjellervelvinger og rom i middelalderens geistlige festning. Det som er funnet, er eldre enn Akershus som vi kjenner det etter Håkon V, men mer komplekst enn den tidlige bispeborgen fra 1200-tallet. Utgravningene bidro til å forstå festningen som ble brent i 1287.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "219-221",
+        "note": "Bull bind I: bispeborg og utgravning"
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Middelalderrom_Osloladegard.jpg/640px-Middelalderrom_Osloladegard.jpg",
+        "credit": "Wikimedia Commons - middelalderrom Osloladegård (illustrasjon)"
+      }
+    }
+  ]
+}

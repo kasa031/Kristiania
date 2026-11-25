@@ -1,0 +1,10 @@
+sources/pdf/
+sources/ocr/
+literature/
+sources/excerpts/*.txt
+data/map-config.local.json
+.env
+.env.*
+*.pem
+.DS_Store
+Thumbs.db

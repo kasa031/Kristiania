@@ -1,0 +1,143 @@
+body {
+  margin: 0 auto;
+  max-width: 52rem;
+  padding: 1.5rem 1.25rem 3rem;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: #1e2433;
+  background: #f6f1e8;
+}
+
+.nav-top {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  padding: 0.65rem 0.85rem;
+  background: #fffdf8;
+  border: 1px solid #ddd5c8;
+  border-radius: 8px;
+}
+
+.nav-top a {
+  color: #2a6f97;
+}
+
+h1 {
+  margin: 0 0 0.35rem;
+  font-size: 1.5rem;
+  font-weight: 650;
+}
+
+section h3 {
+  font-size: 1rem;
+  margin: 1rem 0 0.35rem;
+  color: #3d4450;
+}
+
+.lead {
+  margin: 0 0 1.5rem;
+  color: #5c6370;
+}
+
+.now-box {
+  background: #fff5e8;
+  border: 2px solid #bc6c25;
+  border-radius: 12px;
+  padding: 1rem 1.15rem;
+  margin-bottom: 2rem;
+}
+
+.now-box h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+  color: #bc6c25;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  background: #fff;
+  font-size: 0.92rem;
+}
+
+th,
+td {
+  border: 1px solid #e4ddd1;
+  padding: 0.5rem 0.6rem;
+  vertical-align: top;
+}
+
+th {
+  background: #efe6d8;
+  text-align: left;
+}
+
+td a {
+  color: #2a6f97;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  font-size: 1.15rem;
+  margin: 0 0 0.75rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid #2a6f97;
+}
+
+.check-cell {
+  text-align: center;
+  width: 4rem;
+}
+
+.check-cell input {
+  width: 1.15rem;
+  height: 1.15rem;
+  cursor: pointer;
+}
+
+.step-current td:first-child {
+  font-weight: 700;
+}
+
+.rules ol {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.rules li {
+  margin-bottom: 0.4rem;
+}
+
+.bind-list {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.log-area {
+  width: 100%;
+  min-height: 5rem;
+  font-family: inherit;
+  font-size: 0.95rem;
+  padding: 0.6rem;
+  border: 1px solid #cfc6b8;
+  border-radius: 8px;
+  background: #fff;
+  resize: vertical;
+}
+
+.log-hint {
+  font-size: 0.85rem;
+  color: #5c6370;
+  margin-top: 0.35rem;
+}
+
+code {
+  font-size: 0.88em;
+  background: #efe6d8;
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
+}

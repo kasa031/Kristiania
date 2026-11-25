@@ -1,0 +1,181 @@
+/* Kristiania - bevegelse (respekterer prefers-reduced-motion) */
+
+@keyframes kristiania-title-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+    letter-spacing: 0.02em;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    letter-spacing: 0.01em;
+  }
+}
+
+@keyframes kristiania-tagline-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes kristiania-panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes kristiania-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes kristiania-marker-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.06);
+    opacity: 0.92;
+  }
+}
+
+body:not(.app-ready) .app-header .masthead-rubric,
+body:not(.app-ready) .app-header .masthead-title,
+body:not(.app-ready) .app-header .masthead-dek {
+  opacity: 0;
+}
+
+body.app-ready .app-header .masthead-rubric {
+  animation: kristiania-tagline-in 0.45s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  opacity: 0;
+}
+
+body.app-ready .app-header .masthead-title {
+  animation: kristiania-title-in 0.65s cubic-bezier(0.22, 1, 0.36, 1) 0.06s forwards;
+  opacity: 0;
+}
+
+body.app-ready .app-header .masthead-dek {
+  animation: kristiania-tagline-in 0.55s cubic-bezier(0.22, 1, 0.36, 1) 0.14s forwards;
+  opacity: 0;
+}
+
+.ui-reveal {
+  animation: kristiania-panel-in 0.34s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.timeline-list.ui-stagger-reveal > li {
+  animation: kristiania-fade-up 0.38s cubic-bezier(0.22, 1, 0.36, 1) backwards;
+}
+
+.timeline-list.ui-stagger-reveal > li:nth-child(1) {
+  animation-delay: 0ms;
+}
+.timeline-list.ui-stagger-reveal > li:nth-child(2) {
+  animation-delay: 40ms;
+}
+.timeline-list.ui-stagger-reveal > li:nth-child(3) {
+  animation-delay: 80ms;
+}
+.timeline-list.ui-stagger-reveal > li:nth-child(4) {
+  animation-delay: 120ms;
+}
+.timeline-list.ui-stagger-reveal > li:nth-child(5) {
+  animation-delay: 160ms;
+}
+.timeline-list.ui-stagger-reveal > li:nth-child(n + 6) {
+  animation-delay: 200ms;
+}
+
+.episode-card-btn {
+  transition:
+    transform 0.22s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.22s ease,
+    background-color 0.2s ease;
+}
+
+.episode-card-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(30, 36, 51, 0.1);
+}
+
+.episode-card-btn:active {
+  transform: translateY(0);
+}
+
+.filters summary,
+.nearby-wrap summary,
+.walk-optional summary {
+  transition: color 0.2s ease;
+}
+
+.primary,
+.map-locate,
+button.linkish {
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.18s ease,
+    box-shadow 0.2s ease;
+}
+
+.primary:active:not(:disabled),
+.map-locate:active {
+  transform: scale(0.98);
+}
+
+#map.leaflet-container {
+  transition: filter 0.35s ease;
+}
+
+body.app-ready #map.leaflet-container {
+  filter: saturate(1.02);
+}
+
+.leaflet-marker-icon.kristiania-marker-pulse {
+  animation: kristiania-marker-pulse 1.6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.app-ready .app-header .masthead-rubric,
+  body.app-ready .app-header .masthead-title,
+  body.app-ready .app-header .masthead-dek,
+  .ui-reveal,
+  .timeline-list.ui-stagger-reveal > li {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .episode-card-btn:hover {
+    transform: none;
+  }
+
+  .primary:active:not(:disabled),
+  .map-locate:active {
+    transform: none;
+  }
+
+  .leaflet-marker-icon.kristiania-marker-pulse {
+    animation: none;
+  }
+}

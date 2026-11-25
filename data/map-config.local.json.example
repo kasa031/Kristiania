@@ -1,0 +1,6 @@
+{
+  "_comment": "Kopier til map-config.local.json (gitignorert). Uten denne filen: OpenStreetMap.",
+  "default_layer": "mapbox-streets",
+  "mapbox_access_token": "pk.eyJ...fra-account.mapbox.com",
+  "carto_basemaps_api_key": "valgfritt-fra-carto.com/basemaps/apikey"
+}

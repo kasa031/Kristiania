@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kristiania</title>
+    <script>
+      (function () {
+        var path = window.location.pathname;
+        var base = path.replace(/\/(home|kart|tur)(\/.*)?$/, "") || "";
+        var route = path.match(/\/(home|kart|tur)\/?$/);
+        if (route) {
+          sessionStorage.setItem("kristiania-spa-path", path + window.location.search + window.location.hash);
+        }
+        window.location.replace((base || "/") + "/index.html" + window.location.search);
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>

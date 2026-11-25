@@ -1,0 +1,212 @@
+{
+  "_generated": "2026-11-25T19:10:20Z",
+  "summary": {
+    "pdfs_on_disk": 5,
+    "pdfs_expected": 5,
+    "toc_ready": 5,
+    "toc_reviewed": 0,
+    "json_items_total": 175,
+    "draft_refs_total": 0,
+    "verified_total": 0,
+    "priority_bind_for_page_work": null
+  },
+  "blocking_new_json": [],
+  "binds": [
+    {
+      "bind": 1,
+      "roman": "I",
+      "title": "Oslos historie",
+      "pdf_filename": "Oslos_historie1.pdf",
+      "episodes": [
+        "middelalder-oslo",
+        "1624-ny-by"
+      ],
+      "flags": {
+        "pdf_on_disk": true,
+        "toc_file": true,
+        "toc_reviewed": false,
+        "json_has_items": true,
+        "json_pages_firm": true,
+        "json_verified_all": false,
+        "karina_spot_check": false
+      },
+      "counts": {
+        "json_items": 24,
+        "json_places": 9,
+        "json_events": 15,
+        "draft_refs": 0,
+        "verified": 0,
+        "excerpts": 90,
+        "toc_lines": 52,
+        "pdf_bytes": 71567632
+      },
+      "permissions": {
+        "may_add_json_content": true,
+        "may_replace_tilde_pages": false,
+        "may_set_verified_true": false
+      },
+      "next_steps": [
+        "Sammenlign TOC med fysisk bind; sett toc_reviewed i manifest.json",
+        "Sluttkontroll: verified mot bind (etter feltgatur)"
+      ]
+    },
+    {
+      "bind": 2,
+      "roman": "II",
+      "title": "Kristiania 1624-1740",
+      "pdf_filename": "Kristianias_historie._Bind_II._1624-1740.pdf",
+      "episodes": [
+        "1624-ny-by",
+        "kvadraturen-1600",
+        "akerselva-tidlig"
+      ],
+      "flags": {
+        "pdf_on_disk": true,
+        "toc_file": true,
+        "toc_reviewed": false,
+        "json_has_items": true,
+        "json_pages_firm": true,
+        "json_verified_all": false,
+        "karina_spot_check": false
+      },
+      "counts": {
+        "json_items": 41,
+        "json_places": 19,
+        "json_events": 22,
+        "draft_refs": 0,
+        "verified": 0,
+        "excerpts": 32,
+        "toc_lines": 41,
+        "pdf_bytes": 66269045
+      },
+      "permissions": {
+        "may_add_json_content": true,
+        "may_replace_tilde_pages": false,
+        "may_set_verified_true": false
+      },
+      "next_steps": [
+        "Sammenlign TOC med fysisk bind; sett toc_reviewed i manifest.json",
+        "Sluttkontroll: verified mot bind (etter feltgatur)"
+      ]
+    },
+    {
+      "bind": 3,
+      "roman": "III",
+      "title": "Kristiania 1740-1814",
+      "pdf_filename": "Kristianias_historie._Bind_III._1740-1814.pdf",
+      "episodes": [
+        "akerselva-tidlig",
+        "1814-hovedstaden"
+      ],
+      "flags": {
+        "pdf_on_disk": true,
+        "toc_file": true,
+        "toc_reviewed": false,
+        "json_has_items": true,
+        "json_pages_firm": true,
+        "json_verified_all": false,
+        "karina_spot_check": false
+      },
+      "counts": {
+        "json_items": 39,
+        "json_places": 20,
+        "json_events": 19,
+        "draft_refs": 0,
+        "verified": 0,
+        "excerpts": 14,
+        "toc_lines": 122,
+        "pdf_bytes": 73563094
+      },
+      "permissions": {
+        "may_add_json_content": true,
+        "may_replace_tilde_pages": false,
+        "may_set_verified_true": false
+      },
+      "next_steps": [
+        "Sammenlign TOC med fysisk bind; sett toc_reviewed i manifest.json",
+        "Sluttkontroll: verified mot bind (etter feltgatur)"
+      ]
+    },
+    {
+      "bind": 4,
+      "roman": "IV",
+      "title": "Kristiania 1814-1877",
+      "pdf_filename": "Kristianias_historie._Bind_IV._1814-1877.pdf",
+      "episodes": [
+        "1814-hovedstaden",
+        "mot-1924"
+      ],
+      "flags": {
+        "pdf_on_disk": true,
+        "toc_file": true,
+        "toc_reviewed": false,
+        "json_has_items": true,
+        "json_pages_firm": true,
+        "json_verified_all": false,
+        "karina_spot_check": false
+      },
+      "counts": {
+        "json_items": 43,
+        "json_places": 22,
+        "json_events": 21,
+        "draft_refs": 0,
+        "verified": 0,
+        "excerpts": 26,
+        "toc_lines": 48,
+        "pdf_bytes": 65155248
+      },
+      "permissions": {
+        "may_add_json_content": true,
+        "may_replace_tilde_pages": false,
+        "may_set_verified_true": false
+      },
+      "next_steps": [
+        "Sammenlign TOC med fysisk bind; sett toc_reviewed i manifest.json",
+        "Sluttkontroll: verified mot bind (etter feltgatur)"
+      ]
+    },
+    {
+      "bind": 5,
+      "roman": "V",
+      "title": "Kristiania 1878-1924",
+      "pdf_filename": "Kristianias_historie._Bind_V._1878-1924.pdf",
+      "episodes": [
+        "mot-1924"
+      ],
+      "flags": {
+        "pdf_on_disk": true,
+        "toc_file": true,
+        "toc_reviewed": false,
+        "json_has_items": true,
+        "json_pages_firm": true,
+        "json_verified_all": false,
+        "karina_spot_check": false
+      },
+      "counts": {
+        "json_items": 28,
+        "json_places": 15,
+        "json_events": 13,
+        "draft_refs": 0,
+        "verified": 0,
+        "excerpts": 29,
+        "toc_lines": 232,
+        "pdf_bytes": 63770329
+      },
+      "permissions": {
+        "may_add_json_content": true,
+        "may_replace_tilde_pages": false,
+        "may_set_verified_true": false
+      },
+      "next_steps": [
+        "Sammenlign TOC med fysisk bind; sett toc_reviewed i manifest.json",
+        "Sluttkontroll: verified mot bind (etter feltgatur)"
+      ]
+    }
+  ],
+  "ai_checklist_before_more_content": [
+    "Les denne filen (status.json) eller INNSAMLING.md",
+    "Ikke legg til nye steder/hendelser for bind uten pdf_on_disk + toc_file",
+    "Erstatt ~-sidetall kun nar toc_reviewed er true for bindet",
+    "Bruk sources/excerpts/ ved tvil - ikke store OCR-filer"
+  ]
+}

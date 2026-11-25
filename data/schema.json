@@ -1,0 +1,131 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Oslo Historie datafelter",
+  "definitions": {
+    "source_ref": {
+      "type": "object",
+      "properties": {
+        "bind": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "pages": { "type": "string" },
+        "note": { "type": "string" }
+      },
+      "required": ["bind", "pages"]
+    },
+    "place": {
+      "type": "object",
+      "required": ["id", "name", "lat", "lng", "bind", "summary", "source_ref"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "lat": { "type": "number" },
+        "lng": { "type": "number" },
+        "bind": { "type": "integer" },
+        "year_from": { "type": "integer" },
+        "year_to": { "type": "integer" },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "episode_id": { "type": "string" },
+        "related_events": { "type": "array", "items": { "type": "string" } },
+        "related_people": { "type": "array", "items": { "type": "string" } },
+        "summary": { "type": "string" },
+        "standpoint": {
+          "type": "string",
+          "description": "Kort hint om hvor pa stedet du ser best (gatur)"
+        },
+        "image": {
+          "type": "object",
+          "properties": {
+            "url": { "type": "string" },
+            "credit": { "type": "string" }
+          },
+          "required": ["url"]
+        },
+        "verified": { "type": "boolean" },
+        "source_ref": { "$ref": "#/definitions/source_ref" },
+        "supplementary_note": {
+          "type": "string",
+          "description": "Valgfri peker til sources/supplementary/notater/ nar teksten ikke er ren Bull-side"
+        },
+        "external_links": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "label": { "type": "string" },
+              "url": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "event": {
+      "type": "object",
+      "required": ["id", "title", "year", "bind", "summary", "source_ref"],
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "year": { "type": "integer" },
+        "year_display": { "type": "string" },
+        "bind": { "type": "integer" },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "episode_id": { "type": "string" },
+        "place_ids": { "type": "array", "items": { "type": "string" } },
+        "summary": { "type": "string" },
+        "verified": { "type": "boolean" },
+        "source_ref": { "$ref": "#/definitions/source_ref" }
+      }
+    },
+    "person": {
+      "type": "object",
+      "required": ["id", "name", "bind", "summary", "source_ref", "place_ids"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "year_from": { "type": "integer" },
+        "year_to": { "type": "integer" },
+        "bind": { "type": "integer" },
+        "place_ids": { "type": "array", "items": { "type": "string" } },
+        "summary": { "type": "string" },
+        "image": { "type": "object" },
+        "verified": { "type": "boolean" },
+        "source_ref": { "$ref": "#/definitions/source_ref" }
+      }
+    },
+    "context_entry": {
+      "type": "object",
+      "required": ["id", "title", "bind", "summary", "source_ref"],
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "year_from": { "type": "integer" },
+        "year_to": { "type": "integer" },
+        "year_display": { "type": "string" },
+        "bind": { "type": "integer" },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "place_ids": { "type": "array", "items": { "type": "string" } },
+        "summary": { "type": "string" },
+        "image": { "type": "object" },
+        "verified": { "type": "boolean" },
+        "source_ref": { "$ref": "#/definitions/source_ref" }
+      }
+    },
+    "episode": {
+      "type": "object",
+      "required": ["id", "title", "place_order"],
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "subtitle": { "type": "string" },
+        "bind_range": { "type": "array", "items": { "type": "integer" } },
+        "duration_minutes": { "type": "integer" },
+        "place_order": { "type": "array", "items": { "type": "string" } },
+        "map_place_order": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Ekstra stopp kun for kart/filter, ikke gåtur-rekkefølge"
+        },
+        "description": { "type": "string" },
+        "era_id": { "type": "string" }
+      }
+    }
+  }
+}

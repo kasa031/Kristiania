@@ -1,0 +1,44 @@
+name: Static site (GitHub Pages)
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Prepare static bundle
+        run: |
+          mkdir -p _site
+          rsync -a \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='literature' \
+            --exclude='sources/toc' \
+            --exclude='scripts' \
+            --exclude='templates' \
+            --exclude='content/*.pdf' \
+            --exclude='node_modules' \
+            --exclude='data/map-config.local.json' \
+            ./ _site/
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

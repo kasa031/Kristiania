@@ -1,0 +1,545 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "gamle-oslo",
+        "name": "Gamle Oslo",
+        "center_lat": 59.898,
+        "center_lng": 10.7715
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.748,
+              59.888
+            ],
+            [
+              10.795,
+              59.888
+            ],
+            [
+              10.795,
+              59.908
+            ],
+            [
+              10.748,
+              59.908
+            ],
+            [
+              10.748,
+              59.888
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "grunerlokka",
+        "name": "Grünerløkka",
+        "center_lat": 59.9235,
+        "center_lng": 10.7615
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.748,
+              59.915
+            ],
+            [
+              10.775,
+              59.915
+            ],
+            [
+              10.775,
+              59.932
+            ],
+            [
+              10.748,
+              59.932
+            ],
+            [
+              10.748,
+              59.915
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sagene",
+        "name": "Sagene",
+        "center_lat": 59.938,
+        "center_lng": 10.7735
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.752,
+              59.928
+            ],
+            [
+              10.795,
+              59.928
+            ],
+            [
+              10.795,
+              59.948
+            ],
+            [
+              10.752,
+              59.948
+            ],
+            [
+              10.752,
+              59.928
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "st-hanshaugen",
+        "name": "St. Hanshaugen",
+        "center_lat": 59.925,
+        "center_lng": 10.735
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.722,
+              59.918
+            ],
+            [
+              10.748,
+              59.918
+            ],
+            [
+              10.748,
+              59.932
+            ],
+            [
+              10.722,
+              59.932
+            ],
+            [
+              10.722,
+              59.918
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "frogner",
+        "name": "Frogner",
+        "center_lat": 59.9165,
+        "center_lng": 10.705
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.688,
+              59.908
+            ],
+            [
+              10.722,
+              59.908
+            ],
+            [
+              10.722,
+              59.925
+            ],
+            [
+              10.688,
+              59.925
+            ],
+            [
+              10.688,
+              59.908
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ullern",
+        "name": "Ullern",
+        "center_lat": 59.9265,
+        "center_lng": 10.658
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.628,
+              59.908
+            ],
+            [
+              10.688,
+              59.908
+            ],
+            [
+              10.688,
+              59.945
+            ],
+            [
+              10.628,
+              59.945
+            ],
+            [
+              10.628,
+              59.908
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "vestre-aker",
+        "name": "Vestre Aker",
+        "center_lat": 59.933,
+        "center_lng": 10.685
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.648,
+              59.918
+            ],
+            [
+              10.722,
+              59.918
+            ],
+            [
+              10.722,
+              59.948
+            ],
+            [
+              10.648,
+              59.948
+            ],
+            [
+              10.648,
+              59.918
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "nordre-aker",
+        "name": "Nordre Aker",
+        "center_lat": 59.9535,
+        "center_lng": 10.7535
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.722,
+              59.932
+            ],
+            [
+              10.785,
+              59.932
+            ],
+            [
+              10.785,
+              59.975
+            ],
+            [
+              10.722,
+              59.975
+            ],
+            [
+              10.722,
+              59.932
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bjerke",
+        "name": "Bjerke",
+        "center_lat": 59.9415,
+        "center_lng": 10.815
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.785,
+              59.928
+            ],
+            [
+              10.845,
+              59.928
+            ],
+            [
+              10.845,
+              59.955
+            ],
+            [
+              10.785,
+              59.955
+            ],
+            [
+              10.785,
+              59.928
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "grorud",
+        "name": "Grorud",
+        "center_lat": 59.955,
+        "center_lng": 10.875
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.845,
+              59.935
+            ],
+            [
+              10.905,
+              59.935
+            ],
+            [
+              10.905,
+              59.975
+            ],
+            [
+              10.845,
+              59.975
+            ],
+            [
+              10.845,
+              59.935
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "stovner",
+        "name": "Stovner",
+        "center_lat": 59.92,
+        "center_lng": 10.885
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.845,
+              59.905
+            ],
+            [
+              10.925,
+              59.905
+            ],
+            [
+              10.925,
+              59.935
+            ],
+            [
+              10.845,
+              59.935
+            ],
+            [
+              10.845,
+              59.905
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "alna",
+        "name": "Alna",
+        "center_lat": 59.908,
+        "center_lng": 10.835
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.795,
+              59.888
+            ],
+            [
+              10.875,
+              59.888
+            ],
+            [
+              10.875,
+              59.928
+            ],
+            [
+              10.795,
+              59.928
+            ],
+            [
+              10.795,
+              59.888
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ostensjo",
+        "name": "Østensjø",
+        "center_lat": 59.8715,
+        "center_lng": 10.825
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.785,
+              59.855
+            ],
+            [
+              10.865,
+              59.855
+            ],
+            [
+              10.865,
+              59.888
+            ],
+            [
+              10.785,
+              59.888
+            ],
+            [
+              10.785,
+              59.855
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "nordstrand",
+        "name": "Nordstrand",
+        "center_lat": 59.8715,
+        "center_lng": 10.7535
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.722,
+              59.855
+            ],
+            [
+              10.785,
+              59.855
+            ],
+            [
+              10.785,
+              59.888
+            ],
+            [
+              10.722,
+              59.888
+            ],
+            [
+              10.722,
+              59.855
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sondre-nordstrand",
+        "name": "Søndre Nordstrand",
+        "center_lat": 59.84,
+        "center_lng": 10.766
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.722,
+              59.825
+            ],
+            [
+              10.81,
+              59.825
+            ],
+            [
+              10.81,
+              59.855
+            ],
+            [
+              10.722,
+              59.855
+            ],
+            [
+              10.722,
+              59.825
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

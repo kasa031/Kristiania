@@ -1,0 +1,195 @@
+{
+  "_comment": "Oslo bydeler. bbox: [minLat, minLng, maxLat, maxLng]. era_notes er parafrase fra kilde der angitt.",
+  "districts": [
+    {
+      "id": "gamle-oslo",
+      "name": "Gamle Oslo",
+      "bbox": [
+        59.888,
+        10.748,
+        59.908,
+        10.795
+      ],
+      "era_notes": {
+        "steinalder": "Ved Jernbanetorvet ble det i 1917 funnet en netstikke av ben, et redskap til fiskegarn, antatt fra en langt eldre tid enn steinalderen"
+      }
+    },
+    {
+      "id": "grunerlokka",
+      "name": "Grünerløkka",
+      "bbox": [
+        59.915,
+        10.748,
+        59.932,
+        10.775
+      ],
+      "era_notes": {
+        "steinalder": "I Dælenenggaten er det gjort funn fra steinalderen, blant annet omtrent førti økser av Nøstvettypen Gamle gravhauger som er forsvunnet, blant annet på Kampen",
+        "jernalder": "Det er gravfunn fra vikingtiden fra Kampen"
+      }
+    },
+    {
+      "id": "sagene",
+      "name": "Sagene",
+      "bbox": [
+        59.928,
+        10.752,
+        59.948,
+        10.795
+      ],
+      "era_notes": {
+        "steinalder": "På Torshovjordet, innenfor bygrensen, er det funnet en skivespaiter av flint fra tapestiden",
+        "jernalder": "Det er gravfunn fra vikingtiden fra Bjølsen og Nydalen"
+      }
+    },
+    {
+      "id": "st-hanshaugen",
+      "name": "St. Hanshaugen",
+      "bbox": [
+        59.918,
+        10.722,
+        59.932,
+        10.748
+      ],
+      "era_notes": {
+        "steinalder": "Ved tapestiden gikk strandlinjen omtrent ved Smestad, Diakonhjemmet og Torshov Gamle gravhauger innenfor byen er forsvunnet, blant annet på St. Hanshaugen",
+        "jernalder": "Det er gravfunn fra vikingtiden fra distriktet omkring St. Hanshaugen og fra Pilestrædet"
+      }
+    },
+    {
+      "id": "frogner",
+      "name": "Frogner",
+      "bbox": [
+        59.908,
+        10.688,
+        59.925,
+        10.722
+      ],
+      "era_notes": {
+        "jernalder": "Det er flere gravfunn fra vikingtiden fra Frogner"
+      }
+    },
+    {
+      "id": "ullern",
+      "name": "Ullern",
+      "bbox": [
+        59.908,
+        10.628,
+        59.945,
+        10.688
+      ],
+      "era_notes": {
+        "jernalder": "Det er gravfunn fra vikingtiden fra Bestum"
+      }
+    },
+    {
+      "id": "vestre-aker",
+      "name": "Vestre Aker",
+      "bbox": [
+        59.918,
+        10.648,
+        59.948,
+        10.722
+      ],
+      "era_notes": {
+        "jernalder": "Det er gravfunn fra vikingtiden fra Ullevålsveien, Hov, Bjølsen og Nydalen"
+      }
+    },
+    {
+      "id": "nordre-aker",
+      "name": "Nordre Aker",
+      "bbox": [
+        59.932,
+        10.722,
+        59.975,
+        10.785
+      ],
+      "era_notes": {
+        "jernalder": "På Teisen i Østre Aker ble det i 1844 funnet en mengde sølvsaker, blant annet ringer, barrer og stenger, samt såkalte kufiske mynter Det er gravfunn fra vikingtiden fra Rød og Taasen"
+      }
+    },
+    {
+      "id": "bjerke",
+      "name": "Bjerke",
+      "bbox": [
+        59.928,
+        10.785,
+        59.955,
+        10.845
+      ],
+      "era_notes": {
+        "jernalder": "Det er gravfunn fra vikingtiden fra Disen i Østre Aker"
+      }
+    },
+    {
+      "id": "grorud",
+      "name": "Grorud",
+      "bbox": [
+        59.935,
+        10.845,
+        59.975,
+        10.905
+      ],
+      "era_notes": {
+        "jernalder": "Det er gravfunn fra vikingtiden fra Frydenberg ved Hasle"
+      }
+    },
+    {
+      "id": "stovner",
+      "name": "Stovner",
+      "bbox": [
+        59.905,
+        10.845,
+        59.935,
+        10.925
+      ],
+      "era_notes": {}
+    },
+    {
+      "id": "alna",
+      "name": "Alna",
+      "bbox": [
+        59.888,
+        10.795,
+        59.928,
+        10.875
+      ],
+      "era_notes": {
+        "jernalder": "Det er gravfunn fra vikingtiden fra Sinsen og Ulven i Østre Aker"
+      }
+    },
+    {
+      "id": "ostensjo",
+      "name": "Østensjø",
+      "bbox": [
+        59.855,
+        10.785,
+        59.888,
+        10.865
+      ],
+      "era_notes": {}
+    },
+    {
+      "id": "nordstrand",
+      "name": "Nordstrand",
+      "bbox": [
+        59.855,
+        10.722,
+        59.888,
+        10.785
+      ],
+      "era_notes": {}
+    },
+    {
+      "id": "sondre-nordstrand",
+      "name": "Søndre Nordstrand",
+      "bbox": [
+        59.825,
+        10.722,
+        59.855,
+        10.81
+      ],
+      "era_notes": {}
+    }
+  ]
+}

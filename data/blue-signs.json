@@ -1,0 +1,1280 @@
+{
+  "signs": [
+    {
+      "id": "blaaskilt-place-henrik-ibsen-hjem",
+      "name": "Henrik Ibsens hjem (Arbins gate)",
+      "address": "Foran inngangen til Ibsenmuseet i Arbins gate.",
+      "lat": 59.9148,
+      "lng": 10.7313,
+      "year_from": 1895,
+      "year_to": 1898,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Henrik Ibsen bodde her i Arbins gate mot slutten av 1890-årene, i et hus som senere er bevart som Ibsenmuseet. Leiligheten ligger like ved Slottsparken og viser hvordan forfatteren var forankret i Christianias borgerlige sentrum.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "henrik-ibsen-hjem",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-filipstad-havn",
+      "name": "Filipstad (godshavn)",
+      "address": "Filipstadkaien, mot fjorden og de gamle sporområdene.",
+      "lat": 59.9048,
+      "lng": 10.7195,
+      "year_from": 1879,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "På Filipstad bygde jernbanen ut mot havnen på 1870- og 1880-tallet, med godsterminal og lokomotivstaller. Området ble en viktig del av Christianias forbindelse mellom tog og skipsfart før Pipervika gradvis ble fylt ut.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "filipstad-havn",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-stortinget",
+      "name": "Stortingsbygningen",
+      "address": "Lovbakken: se fasaden mot Eidsvolls plass.",
+      "lat": 59.9139,
+      "lng": 10.7376,
+      "year_from": 1814,
+      "year_to": 1900,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Slottsplassen og riksinstitusjonene hørte til Christiania som unionshovedstad etter 1814.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "stortinget",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-paleet-christiania",
+      "name": "Paleet",
+      "address": "Fred. Olsens gate, like øst for Karl Johan og Slottsparken.",
+      "lat": 59.9116,
+      "lng": 10.7482,
+      "year_from": 1740,
+      "year_to": 1903,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Paleet i Fred. Olsens gate ble bygget på 1740-tallet og testamentert til staten i 1801. Fra 1814 var det residens for stattholdere og kongelige fyrster, og det ble et sentralt møtested for embets- og unionspolitikk.",
+      "verified": false,
+      "source_ref": {
+        "bind": 3,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "paleet-christiania",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-gamle-raadhus-torvet",
+      "name": "Gamle rådhus (Christiania torv)",
+      "address": "Nedre Slottsgate 1 ved Christiania torv. Fasaden mot torget.",
+      "lat": 59.9116,
+      "lng": 10.7398,
+      "year_from": 1641,
+      "year_to": 1733,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Christianias første rådhus sto ferdig i 1641 på hjørnet av Nedre Slottsgate og Rådhusgata. Bygningen var byens politiske og sosiale sentrum, med møter, teater og arrest i kjelleren, inntil byen flyttet rådhusfunksjonen videre i 1733.",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "gamle-raadhus-torvet",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-slottsplassen",
+      "name": "Slottsplassen",
+      "address": "Slottsplassen med utsikt mot Slottet og parken.",
+      "lat": 59.9169,
+      "lng": 10.7265,
+      "year_from": 1814,
+      "year_to": 1905,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "1814 gjorde Christiania til hovedstad i den nye unionsstaten. Slottsanlegget ble symbol på embetskultur og nasjonalt sentrum.",
+      "verified": false,
+      "source_ref": {
+        "bind": 3,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "slottsplassen",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-voyen-hjula",
+      "name": "Vøyenfallene (Hjula veverier)",
+      "address": "Vestbredden ved Vøyenfallene, mot elva og fabrikkfasadene.",
+      "lat": 59.9329,
+      "lng": 10.7564,
+      "year_from": 1840,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Ved Vøyenfallene på Akerselva lå sagbruk og fabrikker som gjorde Sagene til et typisk industristrøk fra 1840-årene. Bevaringsområdet med blant annet Hjula veverier viser fabrikkbebyggelse som senere ble tatt i bruk til boliger og næring.",
+      "verified": false,
+      "source_ref": {
+        "bind": 3,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "voyen-hjula",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-stortorvets-gjestgiveri",
+      "name": "Stortorvets Gjestgiveri (Møllergata 1)",
+      "address": "Møllergata 1 ved hjørnet mot Stortorget og Torggata.",
+      "lat": 59.9142,
+      "lng": 10.7488,
+      "year_from": 1750,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Ved Stortorget og ned mot Møllergata lå gjestgiverier og handelssteder som tok imot reisende og torghandlende. Bygningen i Møllergata 1 hører til det gamle sentrum der møte mellom taverna og folkeferdsel preget livet.",
+      "verified": false,
+      "source_ref": {
+        "bind": 3,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "stortorvets-gjestgiveri",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-eidsvolls-plass",
+      "name": "Eidsvolls plass",
+      "address": "Mellom Stortinget og Karl Johan, mot Wergelandstatuen og Spikersuppa.",
+      "lat": 59.9142,
+      "lng": 10.7395,
+      "year_from": 1858,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Parken mellom Karl Johans gate og Stortingsgata ble beplantet på 1840-tallet, ervervet av staten i 1858 og fikk navnet Eidsvolls plass i 1864 med henvisning til Stortingsbygningen. Plassen ble et samlingssted for byliv og monumenter i unionshovedstaden.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "eidsvolls-plass",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-hausmanns-bru",
+      "name": "Hausmanns bru",
+      "address": "Hausmanns bru over Akerselva, mellom Grünerløkka og sentrum.",
+      "lat": 59.9178,
+      "lng": 10.7522,
+      "year_from": 1892,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Hausmanns bru over Akerselva sto ferdig i 1892 som støpejernsbro med buespenn. Den bandt Grünerløkka og fabrikkstrøket til resten av byen da elvebreddene var i full industrivekst.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "hausmanns-bru",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-gronland-ladested",
+      "name": "Grønland (ladested og husnæring)",
+      "address": "Ved Grønland torg. Se retning mot Gamlebyen og bymuren - forstaden var «på utsiden» av privilegienes by.",
+      "lat": 59.9138,
+      "lng": 10.7618,
+      "year_from": 1700,
+      "year_to": 1775,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Grønland og Leret som forstæder med husnæring: småutsalg av mat og tobakk til bønder og arbeidsfolk. Kristianias kjøpmenn mente slik handel brøt byens privilegier, men reskriptet fra 1770 ga likevel indbyggerne lov til å fortsette husnæringen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "gronland-ladested",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-youngstorget",
+      "name": "Youngstorget",
+      "address": "Midt på torget, mot Torggata og basarene.",
+      "lat": 59.9149,
+      "lng": 10.7497,
+      "year_from": 1846,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Youngstorget ble anlagt i 1846 på Youngsløkken, oppkalt etter kjøpmann Jørgen Young. Torget skulle være marked for landbruksvarer, men ble lenge særlig kjent som kutorg, og før jul var handelen livlig fra 1860- til 1880-årene.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "youngstorget",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-vaterland-bjorvika",
+      "name": "Vaterland og Bjørvikabryggene",
+      "address": "Vaterland og Jernbanetorget-området, mot Akershus og Bjørvika.",
+      "lat": 59.9105,
+      "lng": 10.755,
+      "year_from": 1624,
+      "year_to": 1900,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Etter 1624 ble de første bryggene i Christiania lagt som forlengelser av Tollbugata og Rådhusgata ut i den grunne Bjørvika. På Vaterland og østsiden vokste uregulert bebyggelse og trelasthandel inntil byen gradvis fylte bukten.",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "vaterland-bjorvika",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-brugata",
+      "name": "Brugata (mot Grønland)",
+      "address": "Brugata ved Grønlands torget, mot Torggata og sentrum.",
+      "lat": 59.9138,
+      "lng": 10.7548,
+      "year_from": 1860,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Brugata ble en viktig handelsåre fra Torggata mot Grønland og tidlige trehusområder. Ved Grønlands torget lå sjøgamarkedet, og gaten knyttet sentrum til bolig- og arbeiderstrøk på østsiden.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "brugata",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-mollergata",
+      "name": "Møllergata (arbeiderpressen)",
+      "address": "Møllergata ved Torggata, retning mot Youngstorget og Stortorget.",
+      "lat": 59.9155,
+      "lng": 10.7492,
+      "year_from": 1892,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Møllergata knyttet Stortorget til Youngstorget og ble et sentrum for arbeiderbevegelsens presse. Fra 1909 hadde avisen Arbeideren sitt tilhold her, i et strøk der trykkerier og foreningsliv preget sentrum på begynnelsen av 1900-tallet.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "mollergata",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-tollbugata-havn",
+      "name": "Tollbugata og havnekai",
+      "address": "Tollbugata mot Rådhusbryggene og fjorden.",
+      "lat": 59.9076,
+      "lng": 10.7418,
+      "year_from": 1624,
+      "year_to": 1900,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Langs Tollbugata og ned mot fjorden lå brygger og havneanlegg som bandt Christiania til sjøgående handel. Kai og lagring her hørte sammen med Pipervika som byens utløp mot fjorden.",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "tollbugata-havn",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-paulus-kirke",
+      "name": "Paulus kirke (Grünerløkka)",
+      "address": "Paulus kirkes plass, mot tårnet og elva.",
+      "lat": 59.9235,
+      "lng": 10.758,
+      "year_from": 1892,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Paulus kirke sto ferdig ved Akerselva på Grünerløkka i 1892. Den nygotiske kirken med røde teglstein vitner om at arbeiderstrøket fikk tydelig kirke- og samlingsplass da byen vokste mot øst.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "paulus-kirke",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-christiania-spigerverk",
+      "name": "Christiania Spigerverk",
+      "address": "Nydalen ved Gullhaug, der spikerfabrikken lå på østsiden av elva.",
+      "lat": 59.9478,
+      "lng": 10.7712,
+      "year_from": 1853,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Christiania Spigerverk ble grunnlagt i 1853 ved Lillo gård langs Akerselva og startet produksjon i 1854 med spiker og valsede jernvarer basert på skrapjern. Verket ble en mannsdominert industrigren ved siden av tekstilfabrikkene i Nydalen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 3,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "christiania-spigerverk",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-grunerlokka-folketeater",
+      "name": "Folketeateret (Storgata)",
+      "address": "Foran Folketeateret: her møttes arbeiderkultur og storbyliv på østkanten.",
+      "lat": 59.9149,
+      "lng": 10.7515,
+      "year_from": 1878,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Omkring Storgata og Grünerløkka vokste et tett bymiljø fram. teater, utfart og arbeiderboliger til Christianias modernisering før jubileumsåret.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "grunerlokka-folketeater",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-nationaltheatret",
+      "name": "Nationaltheatret",
+      "address": "Foran inngangen mot Johanne Dybwads plass. Statuene av Ibsen og Bjørnson markerer teatertradisjonen.",
+      "lat": 59.9141,
+      "lng": 10.7346,
+      "year_from": 1891,
+      "year_to": 1899,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Nationaltheatret ved Johanne Dybwads plass i Studenterlunden åpnet i 1899 og overtok da posisjonen som byens og landets hovedscene etter Christiania Theater på Bankplassen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "nationaltheatret",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-treschowgaarden",
+      "name": "Treschowgården (Fred. Olsens gate)",
+      "address": "Fred. Olsens gate ved Treschowgården, nær Paleet og Studenterlunden.",
+      "lat": 59.9137,
+      "lng": 10.7423,
+      "year_from": 1790,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Treschowgården i Fred. Olsens gate 2 ble oppført for trelasthandler Bernt Anker Treschow mot slutten av 1700-tallet. Gården er et av de best bevarte klassisistiske anleggene i sentrum og viser hvordan handel med trelast og kapital satte spor i byens eldste gatesystem.",
+      "verified": false,
+      "source_ref": {
+        "bind": 3,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "treschowgaarden",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-homansbyen",
+      "name": "Homansbyen",
+      "address": "Ved Hegdehaugsveien, mellom Pilestredet og Uranienborgveien.",
+      "lat": 59.9186,
+      "lng": 10.7276,
+      "year_from": 1858,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Homansbyen nord for Slottsparken ble bygd ut med villabebyggelse fra 1858 til 1886, i stilarter som nygotikk og nyrenessanse. Området viser hvordan velstående borgere flyttet vestover da Kristiania vokste utenfor Kvadraturen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "homansbyen",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-domkirken-oslo",
+      "name": "Oslo domkirke (Trefoldighetskirken)",
+      "address": "Oslo domkirke (Vor Frelsers). Pilegrimspunkt mellom slottskvartal og universitet.",
+      "lat": 59.9126,
+      "lng": 10.7469,
+      "year_from": 1850,
+      "year_to": 1900,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Oslo domkirke ble et sentralt kirkebygg da Christiania var unionshovedstad.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "domkirken-oslo",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-karl-johan-jubileet",
+      "name": "Karl Johans gate (jubileumsåret 1924)",
+      "address": "Midt på Karl Johans gate mot Slottet. Tenk parader og fest i 1924.",
+      "lat": 59.9133,
+      "lng": 10.7402,
+      "year_from": 1900,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Langs Karl Johans gate ble 300-årsjubileet for Christiania markert i 1924 med parade og fest. I det samme jubileumsåret lå en storby med bolignød og debatt om utvidelse av bygrensene, milepæl 31. desember 1924 skilte seg tydelig fra situasjonen i 1814.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "karl-johan-jubileet",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-stortorvet",
+      "name": "Stortorvet",
+      "address": "Midt på Stortorvet, mot domkirken og Glasmagasinet.",
+      "lat": 59.9131,
+      "lng": 10.7461,
+      "year_from": 1736,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Byens sentrale marked ble flyttet hit fra det gamle Christiania torvet i 1736. Torget ble et knutepunkt for handel og folkeliv i hovedstaden, og det holdt rollen lenge før byen vokste videre vestover.",
+      "verified": false,
+      "source_ref": {
+        "bind": 3,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "stortorvet",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-havn-ved-akershus",
+      "name": "Havna ved Akershus",
+      "address": "Ved Akershus og Rådhusplassen, mot Pipervika og festningen.",
+      "lat": 59.9078,
+      "lng": 10.7375,
+      "year_from": 1855,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Fra slutten av 1850-tallet ble det bygget kaianlegg i Pipervika. Rett før 1900 ble arbeidet med å knytte havneområdene på øst- og vestsiden sammen rundt foten av Akershus festning.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "havn-ved-akershus",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-sagene-kirke",
+      "name": "Sagene kirke",
+      "address": "Danmarks gate ved Sagene kirke, mot tårnet og elva.",
+      "lat": 59.9287,
+      "lng": 10.752,
+      "year_from": 1877,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Sagene kirke ble tatt i bruk i 1877 som sognekirke på østsiden av Akerselva. Den nygotiske bygningen ligger tett på fabrikkstrøket og viser hvordan industriområdet også fikk kirkebygg nær arbeidernes boliger.",
+      "verified": false,
+      "source_ref": {
+        "bind": 3,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "sagene-kirke",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-st-hanshaugen-haugen",
+      "name": "St. Hanshaugen",
+      "address": "På toppen av haugen, mot utsikten over indre by.",
+      "lat": 59.926,
+      "lng": 10.7385,
+      "year_from": 1817,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Navnet St. Hanshaugen stammer fra årene etter 1817, da Oslos borgere begynte å feire Sankthansaften med bål på fjellknausen. Utsikten fra haugen ble senere et folkefestet punkt da byen vokste vestover.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "st-hanshaugen-haugen",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-gassverket-storgata",
+      "name": "Gassverket (gaslys)",
+      "address": "Storgata ved Gassverket, nær Mangelsgården.",
+      "lat": 59.91497,
+      "lng": 10.75541,
+      "year_from": 1850,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Gassverket gjorde gatebelysning og energi til en del av moderne byliv i Christiania. Anlegget ved Ankerløkken og forsyningen fra Storgata viste hvordan teknologi fra midten av 1800-tallet endret hverdagen i sentrum.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "gassverket-storgata",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-bispegarden",
+      "name": "Oslo ladegård (bispegården)",
+      "address": "Oslo ladegård ved Bispeallmenningen (middelalderparken).",
+      "lat": 59.9058,
+      "lng": 10.7672,
+      "year_from": 1200,
+      "year_to": 1624,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Bispegaarden lå ved Hallvardskirken, med bispeborg og gang over gaten. Utgravninger i Ladegårdshaven i 1917 viste ringmur, kjellervalg og rom fra middelalderens geistlige festning.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "bispegarden",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-akershus",
+      "name": "Akershus festning",
+      "address": "Festningsplassen foran Akershus. Slottskvartalet og fjorden i ett blikk.",
+      "lat": 59.9075,
+      "lng": 10.7367,
+      "year_from": 1300,
+      "year_to": 1740,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Christian IV påla at den nye byen Christiania skulle oppføres ved Akershus. Slottet var festning og kongelig residens.",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "akershus",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-nonneseter-gronland",
+      "name": "Nonneseter kloster",
+      "address": "Grønlandsleiret ved Nonneseter, mot Brugata.",
+      "lat": 59.9146,
+      "lng": 10.7598,
+      "year_from": 1150,
+      "year_to": 1537,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Nonneseter kloster lå på Grønland og knyttet middelalderbyen til kirken og klosterlivet. Stedet minner om at Oslo vokste øst for Akerselva lenge før trehuskvarterene på 1800-tallet.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "nonneseter-gronland",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-norges-bank-bankplassen",
+      "name": "Norges Bank (Bankplassen)",
+      "address": "Bankplassen, der Christiania Theater lå til 1899.",
+      "lat": 59.9113,
+      "lng": 10.7406,
+      "year_from": 1816,
+      "year_to": 1986,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Norges Bank ble opprettet i 1816 med avdelingskontor i Christiania. I 1828 ble det reist en egen bygning på Bankplassen 3.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "norges-bank-bankplassen",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-var-frelsers-gravlund",
+      "name": "Vår Frelsers gravlund",
+      "address": "Ved inngangen til gravlunden, nær Gamle Aker og Damstredet.",
+      "lat": 59.9231,
+      "lng": 10.7452,
+      "year_from": 1808,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Gravlunden sør for Gamle Aker kirke ble innviet i 1808 og var Christianias eneste gravplass i årene 1811-1833. Den ble utvidet flere ganger utover 1800-tallet og fikk Æreslunden som parkmessig gravfelt for landets fremste.",
+      "verified": false,
+      "source_ref": {
+        "bind": 3,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "var-frelsers-gravlund",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-kontraskjerp",
+      "name": "Kontraskjerp",
+      "address": "Kontraskjerp på Akershus. Utsikt mot Pipervika og havnen.",
+      "lat": 59.9088,
+      "lng": 10.7389,
+      "year_from": 1624,
+      "year_to": 1700,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Kontraskjerp var et forsvarsanlegg på østsiden av Akershus mot sjøen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "kontraskjerp",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-mangelsgaarden",
+      "name": "Mangelsgården (Storgata)",
+      "address": "Storgata 36, foran Mangelsgården.",
+      "lat": 59.91497,
+      "lng": 10.75541,
+      "year_from": 1770,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Mangelsgården i Storgata var en markant handels- og embedsgård i unionshovedstaden. Gården sto i sentrum av flere store ombygginger og branner som satte spor i kvadraturen på 1800-tallet.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "mangelsgaarden",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-lo-bygget-storgata",
+      "name": "LOs hus (Storgata 20)",
+      "address": "Storgata ved inngangen til LOs hus, retning mot Youngstorget.",
+      "lat": 59.914,
+      "lng": 10.7523,
+      "year_from": 1900,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Landsorganisasjonen i Norge har hovedkontor i Storgata 20, et steinkast fra Youngstorget og Stortorvet. Her samles fagbevegelsens sentrale organer midt i unionshovedstadens administrative og pressemiljø.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "lo-bygget-storgata",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-gamle-aker-kirke",
+      "name": "Gamle Aker kirke",
+      "address": "Fra kirkegården ved Gamle Aker kirke.",
+      "lat": 59.9189,
+      "lng": 10.7443,
+      "year_from": 1100,
+      "year_to": 1624,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Gamle Aker kirke er antagelig bygget i perioden fra 1080 til midten av 1100-tallet. Den er Oslos eldste bygning som fortsatt står.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "gamle-aker-kirke",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-kommunegaarden-logen",
+      "name": "Kommunegården (Losjebygningen)",
+      "address": "Grev Wedels plass / Den gamle Logen i sentrum.",
+      "lat": 59.9136,
+      "lng": 10.7342,
+      "year_from": 1862,
+      "year_to": 1947,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Da Christiania trengte større rådhuslokaler etter 1814, overtok kommunen Losjebygningen i 1862. Den ble kalt Kommunegården og fungerte som byens rådhus inntil dagens rådhus sto klart.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "kommunegaarden-logen",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-skippergata",
+      "name": "Skippergata (havnegate)",
+      "address": "Skippergata mellom Rådhusgata og havna, mot Akershus og Pipervika.",
+      "lat": 59.9112,
+      "lng": 10.7385,
+      "year_from": 1624,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Skippergata ble lagt i plan for Christiania mellom Akershus og Pipervika. Gateløpet knyttet festning og havn til Kvadraturen, og navnet vitner om at sjøfolk og sjøfart hørte hit fra byens første år.",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "skippergata",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-pipervika",
+      "name": "Pipervika (havneområdet)",
+      "address": "Pipervika mot fjorden. Skipsfart og arbeid ved brygga.",
+      "lat": 59.9098,
+      "lng": 10.7345,
+      "year_from": 1624,
+      "year_to": 1740,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Sør for Kvadraturen lå Pipervika - Christianias kontaktflate mot sjøen. Handel, brygger og bebyggelse langs vika knyttet byen til sjøfart og innlandshandel.",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "pipervika",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-olympen-groenland",
+      "name": "Olympen (Grønlandsleiret)",
+      "address": "Grønlandsleiret ved inngangen til Olympen.",
+      "lat": 59.9143,
+      "lng": 10.7583,
+      "year_from": 1852,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Olympen i Grønlandsleiret har vært serveringssted siden 1852. Lokalet ligger i et strøk der trehus og arbeiderkvarter vokste fram øst for elva, med kort vei til Grønland og handelsgater som Brugata.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "olympen-groenland",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-vor-frelsers",
+      "name": "Vor Frelsers gravlund (tårnet)",
+      "address": "Vor Frelsers kirke (Oslo domkirke). Spir i bybildet fra 1600-tallet.",
+      "lat": 59.9126,
+      "lng": 10.7469,
+      "year_from": 1697,
+      "year_to": 1740,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Vor Frelsers kirke sto ferdig i 1697. Tårnet er fortsatt et landemerke i Kvadraturen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "vor-frelsers",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-ankerbrua",
+      "name": "Ankerbrua",
+      "address": "Midt på Ankerbrua over Akerselva, mot Grønland og Vaterland.",
+      "lat": 59.9158,
+      "lng": 10.7552,
+      "year_from": 1855,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Ankerbrua forbinder Grønland med Vaterland over Akerselva. Broen ligger i elvens industri- og arbeiderstrøk og binder øst og vest sammen der fabrikker og boliger vokste fram langs breddene.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "ankerbrua",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-bentsebru",
+      "name": "Bentsebrua",
+      "address": "Bentsebrua over Akerselva i Bentsebrugata.",
+      "lat": 59.9265,
+      "lng": 10.7575,
+      "year_from": 1700,
+      "year_to": 1900,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Bentsebrua er jernbro i to spenn, oppført 1898-1901, over Akerselva i Bentsebrugata. Navn etter Bentse Brug.",
+      "verified": false,
+      "source_ref": {
+        "bind": 3,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "bentsebru",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-universitetsplassen",
+      "name": "Universitetsplassen",
+      "address": "Universitetsplassen foran Gamle festsal. Embetskultur og vitenskap.",
+      "lat": 59.9198,
+      "lng": 10.7324,
+      "year_from": 1811,
+      "year_to": 1900,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Det kongelige Frederiks universitet åpnet i 1813 og fikk bygninger ved Universitetsløkka.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "universitetsplassen",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-damstredet-telthusbakken",
+      "name": "Damstredet og Telthusbakken",
+      "address": "Gå opp Telthusbakken fra Akersveien. Se de små husene som hang utenfor bymuren.",
+      "lat": 59.9228,
+      "lng": 10.7475,
+      "year_from": 1780,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Området som tidligere het Bergfjerdingen, oppsto som uformell forstad til Christiania på slutten av 1700-tallet. De små trehusene i Damstredet og Telthusbakken er senere vernet som et av få enhetlige forstadsmiljøer i indre by.",
+      "verified": false,
+      "source_ref": {
+        "bind": 3,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "damstredet-telthusbakken",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-bentse-brug",
+      "name": "Bentse Brug",
+      "address": "Ved Bentsefallet ovenfor Bentsebrua.",
+      "lat": 59.9269,
+      "lng": 10.7563,
+      "year_from": 1696,
+      "year_to": 1976,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Bentse Brug var et industrianlegg ved Bentsefallet på begge sider av Akerselva ovenfor Bentsebrua. Produksjonen startet i 1696 som Norges første papirfabrikk.",
+      "verified": false,
+      "source_ref": {
+        "bind": 3,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "bentse-brug",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-collettgaarden",
+      "name": "Collettgården (Kirkegata)",
+      "address": "Kirkegata 15, retning mot Kirkeristen og domkirken.",
+      "lat": 59.9128,
+      "lng": 10.7455,
+      "year_from": 1760,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Collettgården i Kirkegata var en markant bygning knyttet til embetsfamilien Collett og det administrative sentrum. Gården ligger i Kvadraturen, nær Vor Frelsers kirke og det gamle embedsveiset.",
+      "verified": false,
+      "source_ref": {
+        "bind": 3,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "collettgaarden",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-garmanngaarden-raadhus",
+      "name": "Garmanngården (Rådhusgata 7)",
+      "address": "Rådhusgata 7 i Kvadraturen.",
+      "lat": 59.9119,
+      "lng": 10.7409,
+      "year_from": 1733,
+      "year_to": 1843,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Garmanngården i Rådhusgata 7 ble skjenket til byen i 1733 og tjente som Christianias andre rådhus fra 1734 til 1843. Gården var byens rådhuslokale i over hundre år før hovedstadsrollen på 1800-tallet utløste nye planer.",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "garmanngaarden-raadhus",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-storebrand-kirkegaten",
+      "name": "Storebrands gaard (Kirkegaten)",
+      "address": "Hjørnet Kirkegaten og Prinsens gate, mot Christiania torv.",
+      "lat": 59.9119,
+      "lng": 10.7462,
+      "year_from": 1879,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Schreinergården på hjørnet av Kirkegaten og Prinsens gate måtte vike etter bybranner. I 1879 sto Storebrands nye gaard ferdig og ble en av de mest monumentale bygningene i Kvadraturen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "storebrand-kirkegaten",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-steen-strom-slottsgate",
+      "name": "Steen og Strøm (Nedre Slottsgate)",
+      "address": "Nedre Slottsgate ved Prinsens gate, mot torvet og handelsgårdene.",
+      "lat": 59.9114,
+      "lng": 10.7448,
+      "year_from": 1880,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "En gammel bygning med kvist og bratt trapp i hjørnet av Prinsens gate og Nedre Slottsgate måtte vike. I stedet reiste Steen og Strøm en ny fløy i sitt store handelskompleks som endret ansiktet i sentrum.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "steen-strom-slottsgate",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-schweigaards-bro",
+      "name": "Schweigaards bro",
+      "address": "Mot broen over havnebassenget, mellom Bjørvika og Akershuskaia.",
+      "lat": 59.9082,
+      "lng": 10.7588,
+      "year_from": 1880,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Anlegget av Schweigaards bro, besluttet i 1880, og arbeidet med Schweigaards gate la en viktig kommunikasjonslinje mellom Vålerengen, havnen og sentrum. Samtidig knyttet gjennombrudd og kaiarbeid Bjørvika tettere til Pipervika.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "schweigaards-bro",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-handelsstand-toldbodgaten",
+      "name": "Handelsstandsforeningen (Toldbodgaten)",
+      "address": "Toldbodgaten mot havnen og festningsområdet.",
+      "lat": 59.9084,
+      "lng": 10.7423,
+      "year_from": 1880,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Høsten 1880 sto Christiania Handelsstandsforenings bygning ferdig i Toldbodgaten. Den nye fasaden viste at kjøpmannsstanden tok mer plass i sentrum da kvadraturen skiftet fra gamle gårder til monumentale forretningsbygg.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "handelsstand-toldbodgaten",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-wessels-plass",
+      "name": "Wessels plass",
+      "address": "Wessels plass mellom Akersgata og Nedre Voldgate, mot Steen og Strøm.",
+      "lat": 59.912,
+      "lng": 10.7478,
+      "year_from": 1880,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "På Wessels plass reiste Steen og Strøm et stort handelskompleks med fasade mot plassen. Den landlige Brevikgården og småhusene rundt forsvant, og hele strøket fikk et nytt, moderne bybilde mot Akersgata.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "wessels-plass",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-victoria-terrasse",
+      "name": "Victoria terrasse (Ruseløkk)",
+      "address": "Ruseløkkkaia og Victoria terrasse, mot Pipervika.",
+      "lat": 59.9128,
+      "lng": 10.7272,
+      "year_from": 1880,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "På Ruseløkk tok et interessentskap fatt i langvarig byggearbeid som ga Victoria terrasse med sidegater og Ruseløkbazaarer. Kommunen fikk samtidig avløsning for de gamle gårdene Algier og Tunis ved kaia.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "victoria-terrasse",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-piperviksbakken",
+      "name": "Piperviksbakken (ny linje)",
+      "address": "Langs Rådhusgata/Piperviksbakken ned mot havnen og Tordenskjolds plass.",
+      "lat": 59.9096,
+      "lng": 10.7445,
+      "year_from": 1880,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Gjennombruddet av Piperviksbakken fra Rådhusgata ned mot Tordenskjolds plass i 1880-81 ble en nødvendig forbindelse mellom Bjørvika og Pipervika. Linjen bandt også de to jernbanestasjonene tettere til hverandre.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "piperviksbakken",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    },
+    {
+      "id": "blaaskilt-place-collett-oljemolle-bjolsen",
+      "name": "Peter Colletts oljemølle (Bjølsen)",
+      "address": "Ved Bjølsen bru, mot Akerselva og de gamle verkstedområdene.",
+      "lat": 59.9382,
+      "lng": 10.7645,
+      "year_from": 1788,
+      "year_to": 1924,
+      "tags": [
+        "blaa-skilt",
+        "kultur"
+      ],
+      "summary": "Ved Bjølsen på Akerselva lå Peter Colletts oljemølle, et tidlig industrianlegg i Aker. Strid om lossing og leveranser ved møllen i juni 1795 utløste opptøyer, militærvakt og arrestasjoner som viste hvor sårbart bylivet ved elva kunne bli.",
+      "verified": false,
+      "source_ref": {
+        "bind": 3,
+        "pages": "supplement",
+        "note": "Oslo Byes Vel: Blå skilt (koblet kartstopp)"
+      },
+      "place_id": "collett-oljemolle-bjolsen",
+      "supplementary_note": "sources/supplementary/blaaskilt/README.md"
+    }
+  ]
+}

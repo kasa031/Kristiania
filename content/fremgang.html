@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fremgang - Oslo-historie</title>
+    <link rel="stylesheet" href="fremgang.css" />
+  </head>
+  <body>
+    <p class="nav-top">
+      <a href="../index.html">Tilbake til appen</a>
+      ·
+      <a href="prosjektplan.html">Prosjektplan (internt)</a>
+      ·
+      <a href="prosjektrapport.html">Prosjektrapport (internt)</a>
+      ·
+      <a href="FREMGANG.md">Markdown-kilde</a>
+    </p>
+
+    <h1>Fremgang - Oslo-historie</h1>
+    <p class="lead">
+      Eneste operative sjekkliste for prosjektet. Avkryssing lagres lokalt i nettleseren
+      (localStorage). Dokumentasjon: prosjektplan (mål), prosjektrapport (APA 7). Sist oppdatert:
+      25.11.2025
+    </p>
+
+    <section class="now-box" aria-label="Nåværende steg">
+      <h2>NÅ (kun app)</h2>
+      <p>
+        <strong>35 steder, utforsk-modus.</strong> AI jobber bare med nettsiden til du sier noe annet
+        (regel <strong>A0</strong> i <code>FREMGANG.md</code>). Gjenstår <strong>F5</strong> når du vil,
+        og <strong>App-TODO</strong> under.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Gjør dette</th>
+            <th>Hvor</th>
+            <th class="check-cell">Ferdig</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>F1</td>
+            <td>TOC bind I-V</td>
+            <td><code>sources/toc/</code></td>
+            <td class="check-cell"><input type="checkbox" data-key="step-f1" checked aria-label="F1 ferdig" /></td>
+          </tr>
+          <tr>
+            <td>F2</td>
+            <td>Alle løyper med <code>place_order</code></td>
+            <td><code>data/episodes.json</code>, <code>data/walks/</code></td>
+            <td class="check-cell"><input type="checkbox" data-key="step-f2" checked aria-label="F2 ferdig" /></td>
+          </tr>
+          <tr>
+            <td>F3</td>
+            <td>Sidetall i JSON fra TOC (utkast)</td>
+            <td><code>data/*.json</code></td>
+            <td class="check-cell"><input type="checkbox" data-key="step-f3" checked aria-label="F3 ferdig" /></td>
+          </tr>
+          <tr>
+            <td>F4</td>
+            <td><strong>Desktop-test</strong> av løyper (ikke felt)</td>
+            <td><code>scripts/desktop-walk-test.py</code></td>
+            <td class="check-cell"><input type="checkbox" data-key="step-f4" checked aria-label="F4 ferdig" /></td>
+          </tr>
+          <tr>
+            <td>F5</td>
+            <td>Sluttkildekontroll (<code>verified: true</code>)</td>
+            <td>Ved ferdig rapport</td>
+            <td class="check-cell"><input type="checkbox" data-key="step-f5" aria-label="F5 ferdig" /></td>
+          </tr>
+          <tr>
+            <td>F6</td>
+            <td>Utdrag <code>sources/excerpts/</code> + tekst i JSON</td>
+            <td><code>scripts/extract-excerpt.py</code></td>
+            <td class="check-cell"><input type="checkbox" data-key="step-f6" checked aria-label="F6 delvis" /></td>
+          </tr>
+          <tr>
+            <td>F7</td>
+            <td><code>standpoint</code> + minikart i detaljpanelet</td>
+            <td><code>js/app.js</code></td>
+            <td class="check-cell"><input type="checkbox" data-key="step-f7" checked aria-label="F7 ferdig" /></td>
+          </tr>
+          <tr>
+            <td>F8</td>
+            <td>Koordinater sjekket på kart (desktop)</td>
+            <td><code>content/DESKTOP-TEST.md</code></td>
+            <td class="check-cell"><input type="checkbox" data-key="step-f8" checked aria-label="F8 utkast" /></td>
+          </tr>
+          <tr>
+            <td>F9</td>
+            <td><strong>Utforsk-modus</strong> - posisjon, nær deg, trykk kart</td>
+            <td><code>index.html</code>, <code>js/app.js</code></td>
+            <td class="check-cell"><input type="checkbox" data-key="step-f9" checked aria-label="F9 ferdig" /></td>
+          </tr>
+          <tr>
+            <td>F10</td>
+            <td>Autonom plan (AI beslutter uten å spørre)</td>
+            <td><code>FREMGANG.md</code></td>
+            <td class="check-cell"><input type="checkbox" data-key="step-f10" checked aria-label="F10 ferdig" /></td>
+          </tr>
+          <tr>
+            <td>F11</td>
+            <td>Publisering (GitHub Pages workflow)</td>
+            <td><code>.github/workflows/</code></td>
+            <td class="check-cell"><input type="checkbox" data-key="step-f11" checked aria-label="F11 ferdig" /></td>
+          </tr>
+          <tr>
+            <td>F12</td>
+            <td><code>verify-deliverable.py</code> + PWA-ikon</td>
+            <td><code>scripts/</code>, <code>icons/</code></td>
+            <td class="check-cell"><input type="checkbox" data-key="step-f12" checked aria-label="F12 ferdig" /></td>
+          </tr>
+          <tr>
+            <td>F13</td>
+            <td>3 nye steder bind II (utforsk)</td>
+            <td><code>data/places.json</code></td>
+            <td class="check-cell"><input type="checkbox" data-key="step-f13" checked aria-label="F13 ferdig" /></td>
+          </tr>
+          <tr>
+            <td>F14</td>
+            <td>Dokumentasjon synket (README, plan, rapport)</td>
+            <td><code>content/</code></td>
+            <td class="check-cell"><input type="checkbox" data-key="step-f14" checked aria-label="F14 ferdig" /></td>
+          </tr>
+          <tr>
+            <td>F15</td>
+            <td>Supplement-kilder + steder uten full Bull-side</td>
+            <td><code>sources/supplementary/</code></td>
+            <td class="check-cell"><input type="checkbox" data-key="step-f15" checked aria-label="F15 startet" /></td>
+          </tr>
+          <tr>
+            <td>F16</td>
+            <td>Historisk kvalitet (parafrase, dine <code>verified</code>)</td>
+            <td><code>data/*.json</code></td>
+            <td class="check-cell"><input type="checkbox" data-key="step-f16" aria-label="F16 løpende" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="now-box" aria-label="App-TODO">
+      <h2>App-TODO (aktiv)</h2>
+      <p>Kun nettsiden - se <code>FREMGANG.md</code> for detaljer.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Oppgave</th>
+            <th class="check-cell">Ferdig</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>T1</td>
+            <td>3-5 nye steder/hendelser per økt</td>
+            <td class="check-cell"><input type="checkbox" data-key="app-t1" aria-label="T1" checked /></td>
+          </tr>
+          <tr>
+            <td>T2</td>
+            <td>Tekstkvalitet alle <code>summary</code></td>
+            <td class="check-cell"><input type="checkbox" data-key="app-t2" aria-label="T2" /></td>
+          </tr>
+          <tr>
+            <td>T3</td>
+            <td>Casual UI - skjul bind/side, «Les mer»</td>
+            <td class="check-cell"><input type="checkbox" data-key="app-t3" aria-label="T3" checked /></td>
+          </tr>
+          <tr>
+            <td>T4</td>
+            <td>Kart og detalj (mobil, scroll, nær deg)</td>
+            <td class="check-cell"><input type="checkbox" data-key="app-t4" aria-label="T4" /></td>
+          </tr>
+          <tr>
+            <td>T5</td>
+            <td>Koble nye steder til episoder/filter</td>
+            <td class="check-cell"><input type="checkbox" data-key="app-t5" aria-label="T5" checked /></td>
+          </tr>
+          <tr>
+            <td>T6</td>
+            <td><code>verify-deliverable</code> etter innholdsøkt</td>
+            <td class="check-cell"><input type="checkbox" data-key="app-t6" aria-label="T6 rutine" checked /></td>
+          </tr>
+          <tr>
+            <td>T7</td>
+            <td>Dekning kart (kvadratur, elva, havn, 1800-/1900)</td>
+            <td class="check-cell"><input type="checkbox" data-key="app-t7" aria-label="T7" /></td>
+          </tr>
+          <tr>
+            <td>T8</td>
+            <td>Merkevare Kristiania (avis-tema, motion)</td>
+            <td class="check-cell"><input type="checkbox" data-key="app-t8" aria-label="T8" checked /></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>De 7 stegene (i rekkefølge)</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Steg</th>
+            <th>Navn</th>
+            <th>Du / AI</th>
+            <th class="check-cell">Ferdig</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Innholdsfortegnelse inn</td>
+            <td>AI uttrekk</td>
+            <td class="check-cell"><input type="checkbox" data-key="main-step-1" checked aria-label="steg 1 ferdig" /></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Løype 1624 + systematisering</td>
+            <td>AI</td>
+            <td class="check-cell"><input type="checkbox" data-key="main-step-2" checked aria-label="steg 2 ferdig" /></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Verifiser <strong>Middelalder-Oslo</strong> og <strong>Kvadraturen</strong></td>
+            <td>Deg + AI</td>
+            <td class="check-cell"><input type="checkbox" data-key="main-step-3" checked aria-label="steg 3 ferdig" /></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><strong>Gåtur validert</strong> (desktop-test)</td>
+            <td>AI</td>
+            <td class="check-cell"><input type="checkbox" data-key="main-step-4" checked aria-label="steg 4 ferdig" /></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Akerselva + 1814 (bind III-IV)</td>
+            <td>Deg + AI</td>
+            <td class="check-cell"><input type="checkbox" data-key="main-step-5" checked aria-label="steg 5 ferdig" /></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Løype <strong>Mot 1924</strong> + bind V</td>
+            <td>AI utkast, deg verifiserer</td>
+            <td class="check-cell"><input type="checkbox" data-key="main-step-6" checked aria-label="steg 6 ferdig" /></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Publisering / deling</td>
+            <td>AI (klar) + deg (push)</td>
+            <td class="check-cell"><input type="checkbox" data-key="main-step-7" checked aria-label="steg 7 klar" /></td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        <strong>Regel:</strong> Ikke hopp til steg 5 før steg 1-2 er gjort. Sidetall uten TOC blir
+        gjett.
+      </p>
+    </section>
+
+    <section>
+      <h2>Løyper på nettsiden (status)</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Løype</th>
+            <th>Stopp</th>
+            <th>Bind</th>
+            <th>Nettside</th>
+            <th>Kvalitet</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1624 - nye Kristiania</td>
+            <td>6</td>
+            <td>I-II</td>
+            <td>ja</td>
+            <td>TOC-sidetall</td>
+          </tr>
+          <tr>
+            <td>Middelalder-Oslo</td>
+            <td>7</td>
+            <td>I</td>
+            <td>ja</td>
+            <td>TOC-sidetall</td>
+          </tr>
+          <tr>
+            <td>Kvadraturen 1600-1700</td>
+            <td>6</td>
+            <td>II</td>
+            <td>ja</td>
+            <td>TOC-sidetall</td>
+          </tr>
+          <tr>
+            <td>Akerselva tidlig industri</td>
+            <td>6</td>
+            <td>II-III</td>
+            <td>ja</td>
+            <td>TOC-sidetall</td>
+          </tr>
+          <tr>
+            <td>1814-hovedstaden</td>
+            <td>4</td>
+            <td>III-IV</td>
+            <td>ja</td>
+            <td>TOC-sidetall</td>
+          </tr>
+          <tr>
+            <td>Mot 300-årsjubileet</td>
+            <td>5</td>
+            <td>IV-V</td>
+            <td>ja</td>
+            <td>TOC-sidetall</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        Test nettsiden: <code>python -m http.server 8080</code> i prosjektmappen, åpne
+        <code>http://localhost:8080/</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Milepæler per bind (oversikt)</h2>
+      <p>Detaljer i <code>data/events.json</code>. Verifisert = <code>verified: true</code> i JSON.</p>
+      <h3>Bind I</h3>
+      <ul class="bind-list">
+        <li>Tidlig by / Klemenskirken - på nettsiden, ikke verifisert</li>
+        <li>Middelalderby Oslo - på nettsiden, ikke verifisert</li>
+        <li>Brann 1624 - på nettsiden, ikke verifisert</li>
+      </ul>
+      <h3>Bind II</h3>
+      <ul class="bind-list">
+        <li>Ny Christiania 1624 - på nettsiden, ikke verifisert</li>
+        <li>Kvadraturen, Vor Frelsers, Pipervika - på nettsiden, ikke verifisert</li>
+      </ul>
+      <h3>Bind III-V</h3>
+      <ul class="bind-list">
+        <li>Oppgang 1740, Hovedstad 1814 - nettside (delvis), ikke verifisert</li>
+        <li>Jernbane, jubileum 1924 - på nettsiden (Mot 1924), ikke verifisert</li>
+      </ul>
+    </section>
+
+    <section class="rules">
+      <h2>Arbeidsregler (deg + AI)</h2>
+      <ol>
+        <li><strong>Én liste:</strong> Oppdater bare FREMGANG når «neste steg» endres.</li>
+        <li><strong>Før JSON:</strong> Avhuking her først, deretter <code>data/places.json</code> / <code>events.json</code>.</li>
+        <li>
+          <strong>Verifisering:</strong> <code>verified: true</code> når tekst skal stå som ferdig
+          (samlet kildegjennomgang ved rapport; underveis er utkast normalt).
+        </li>
+        <li><strong>Sitater:</strong> Ingen lange sitater uten at du har limt inn utdrag.</li>
+        <li>
+          <strong>PDF:</strong> Bind i <code>literature/</code> (gitignorert); TOC i
+          <code>sources/toc/</code>.
+        </li>
+        <li><strong>AI-forslag:</strong> AI foreslår, du godkjenner historisk innhold.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Logg (notat til deg selv)</h2>
+      <textarea
+        id="progress-log"
+        class="log-area"
+        rows="5"
+        placeholder="F.eks. 25.11 - godkjente TOC bind I"
+        aria-label="Fremdriftslogg"
+      ></textarea>
+      <p class="log-hint">Loggen lagres automatisk i nettleseren på denne maskinen.</p>
+    </section>
+
+    <script>
+      const PREFIX = "oslo-historie-fremgang-";
+
+      const TOC_MIGRATION = PREFIX + "toc-extract-2025-11";
+      if (!localStorage.getItem(TOC_MIGRATION)) {
+        ["step-1a", "step-1b", "step-1c", "main-step-1", "step-2a", "step-2c", "step-2d"].forEach((k) =>
+          localStorage.setItem(PREFIX + k, "1")
+        );
+        localStorage.setItem(TOC_MIGRATION, "1");
+      }
+
+      const PHASE1_MIGRATION = PREFIX + "phase1-content-2025-11";
+      if (!localStorage.getItem(PHASE1_MIGRATION)) {
+        [
+          "step-f1",
+          "step-f2",
+          "step-f3",
+          "main-step-2",
+          "main-step-3",
+          "main-step-5",
+          "main-step-6",
+        ].forEach((k) => localStorage.setItem(PREFIX + k, "1"));
+        localStorage.setItem(PHASE1_MIGRATION, "1");
+      }
+
+      const CONTENT_MIGRATION = PREFIX + "content-excerpt-2025-11";
+      if (!localStorage.getItem(CONTENT_MIGRATION)) {
+        ["step-f6", "step-f7"].forEach((k) => localStorage.setItem(PREFIX + k, "1"));
+        localStorage.setItem(CONTENT_MIGRATION, "1");
+      }
+
+      const APP_TODO_MIGRATION = PREFIX + "app-todo-sync-2025-11-25b";
+      if (!localStorage.getItem(APP_TODO_MIGRATION)) {
+        ["app-t1", "app-t3", "app-t5", "app-t6", "app-t8"].forEach((k) =>
+          localStorage.setItem(PREFIX + k, "1"),
+        );
+        localStorage.setItem(APP_TODO_MIGRATION, "1");
+      }
+
+      document.querySelectorAll('input[type="checkbox"][data-key]').forEach((cb) => {
+        const key = PREFIX + cb.dataset.key;
+        cb.checked = localStorage.getItem(key) === "1";
+        cb.addEventListener("change", () => {
+          localStorage.setItem(key, cb.checked ? "1" : "0");
+        });
+      });
+
+      const logEl = document.getElementById("progress-log");
+      const logKey = PREFIX + "log";
+      logEl.value = localStorage.getItem(logKey) || "";
+      logEl.addEventListener("input", () => {
+        localStorage.setItem(logKey, logEl.value);
+      });
+    </script>
+  </body>
+</html>

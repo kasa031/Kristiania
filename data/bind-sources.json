@@ -1,0 +1,84 @@
+{
+  "binds": [
+    {
+      "bind": 1,
+      "title": "Oslos historie",
+      "author": "Edvard Bull",
+      "year": 1922,
+      "links": [
+        {
+          "label": "Faksimile (Wikimedia)",
+          "url": "https://commons.wikimedia.org/wiki/File:Oslos_historie.pdf"
+        },
+        {
+          "label": "Oversikt (Lokalhistoriewiki)",
+          "url": "https://lokalhistoriewiki.no/wiki/Kristianias_historie"
+        }
+      ]
+    },
+    {
+      "bind": 2,
+      "title": "1624-1740",
+      "author": "Edvard Bull",
+      "year": 1927,
+      "links": [
+        {
+          "label": "Faksimile (Wikimedia)",
+          "url": "https://commons.wikimedia.org/wiki/File:Kristianias_historie._Bind_II._1624-1740.pdf"
+        },
+        {
+          "label": "Oversikt (Lokalhistoriewiki)",
+          "url": "https://lokalhistoriewiki.no/wiki/Kristianias_historie"
+        }
+      ]
+    },
+    {
+      "bind": 3,
+      "title": "1740-1814",
+      "author": "Bull / Valborg Sønstevold",
+      "year": 1936,
+      "links": [
+        {
+          "label": "Faksimile (Wikimedia)",
+          "url": "https://commons.wikimedia.org/wiki/File:Kristianias_historie._Bind_III._1740-1814.pdf"
+        },
+        {
+          "label": "Oversikt (Lokalhistoriewiki)",
+          "url": "https://lokalhistoriewiki.no/wiki/Kristianias_historie"
+        }
+      ]
+    },
+    {
+      "bind": 4,
+      "title": "1814-1877",
+      "author": "Simon Christian Hammer",
+      "year": 1923,
+      "links": [
+        {
+          "label": "Faksimile (Wikimedia)",
+          "url": "https://commons.wikimedia.org/wiki/File:Kristianias_historie._Bind_IV._1814-1877.pdf"
+        },
+        {
+          "label": "Oversikt (Lokalhistoriewiki)",
+          "url": "https://lokalhistoriewiki.no/wiki/Kristianias_historie"
+        }
+      ]
+    },
+    {
+      "bind": 5,
+      "title": "1878-1924",
+      "author": "Simon Christian Hammer",
+      "year": 1928,
+      "links": [
+        {
+          "label": "Faksimile (Wikimedia)",
+          "url": "https://commons.wikimedia.org/wiki/File:Kristianias_historie._Bind_V._1878-1924.pdf"
+        },
+        {
+          "label": "Oversikt (Lokalhistoriewiki)",
+          "url": "https://lokalhistoriewiki.no/wiki/Kristianias_historie"
+        }
+      ]
+    }
+  ]
+}

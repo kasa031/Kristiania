@@ -1,0 +1,131 @@
+{
+  "people": [
+    {
+      "id": "henrik-ibsen",
+      "name": "Henrik Ibsen",
+      "year_from": 1828,
+      "year_to": 1906,
+      "bind": 4,
+      "place_ids": [
+        "henrik-ibsen-hjem",
+        "nationaltheatret"
+      ],
+      "summary": "Henrik Ibsen var Norges mest kjente dramatiker. Han kom til Christiania som ung og ble knyttet til byens teater- og forlagsmiljø. Både stats symboler ved Nationaltheatret og hans leilighet i Arbins gate minner om livet i hovedstaden på slutten av 1800-tallet.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Henrik Ibsen + Ibsenmuseet"
+      },
+      "supplementary_note": "sources/supplementary/notater/henrik-ibsen.md",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Portrait_of_Henrik_Ibsen.jpg/440px-Portrait_of_Henrik_Ibsen.jpg",
+        "credit": "Wikimedia Commons (offentlig eiendom)"
+      }
+    },
+    {
+      "id": "biskop-nikolas",
+      "name": "Nikolaus Arnesson (biskop)",
+      "year_from": 1190,
+      "year_to": 1225,
+      "year_display": "baglertiden",
+      "bind": 1,
+      "place_ids": [
+        "bispegarden"
+      ],
+      "summary": "Nikolaus Arnesson var biskop i Oslo i baglerkrigens tid og reiste bispeborgen som ga kirken et fast holdepunkt i byen. Konflikten mellom bagler og birkebeiner preget politikken i Østlandet og satte spor i bispegården og omkringliggende områder.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "58-90",
+        "note": "Bind I: Bisp Nikolas og baglertiden"
+      },
+      "supplementary_note": "sources/excerpts/bind-I-s219-221-bispegaard.md"
+    },
+    {
+      "id": "bjornstjerne-bjornson",
+      "name": "Bjørnstjerne Bjørnson",
+      "year_from": 1832,
+      "year_to": 1910,
+      "bind": 4,
+      "place_ids": [
+        "nationaltheatret"
+      ],
+      "summary": "Bjørnstjerne Bjørnson var forfatter og en av de store i norsk litteratur på 1800-tallet. Ved Nationaltheatret står han i rekken av monumenter over forfattere som formet norsk scene og offentlig debatt i unionshovedstaden.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL; portrett i byens kulturhistorie"
+      },
+      "supplementary_note": "sources/supplementary/notater/bjornstjerne-bjornson.md",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Bj%C3%B8rnstjerne_Bj%C3%B8rnson_1909.jpg/440px-Bj%C3%B8rnstjerne_Bj%C3%B8rnson_1909.jpg",
+        "credit": "Wikimedia Commons (offentlig domene)"
+      }
+    },
+    {
+      "id": "henrik-wergeland",
+      "name": "Henrik Wergeland",
+      "year_from": 1808,
+      "year_to": 1845,
+      "bind": 3,
+      "place_ids": [
+        "eidsvolls-plass"
+      ],
+      "summary": "Henrik Wergeland var dikter, folkeopplysner og demokratisk forkjemper. Wergelandstatuen på Eidsvolls plass minner om hans betydning for 1814-ånd og offentlig liv i hovedstaden.",
+      "verified": false,
+      "source_ref": {
+        "bind": 3,
+        "pages": "supplement",
+        "note": "Supplement: SNL Henrik Wergeland"
+      },
+      "supplementary_note": "sources/supplementary/notater/henrik-wergeland.md",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Henrik_Wergeland.PNG/440px-Henrik_Wergeland.PNG",
+        "credit": "Wikimedia Commons (offentlig domene)"
+      }
+    },
+    {
+      "id": "jorgen-young",
+      "name": "Jørgen Young",
+      "year_from": 1793,
+      "year_to": 1862,
+      "bind": 3,
+      "place_ids": [
+        "youngstorget"
+      ],
+      "summary": "Jørgen Young var kjøpmann som eide Youngsløkken. Torget som senere ble Youngstorget, ble anlagt i 1846 og oppkalt etter ham.",
+      "verified": false,
+      "source_ref": {
+        "bind": 3,
+        "pages": "supplement",
+        "note": "Supplement: SNL Youngstorget"
+      },
+      "supplementary_note": "sources/supplementary/notater/jorgen-young.md"
+    },
+    {
+      "id": "olav-den-hellige",
+      "name": "Olav den hellige",
+      "year_from": 995,
+      "year_to": 1030,
+      "year_display": "ca. 1015",
+      "bind": 1,
+      "place_ids": [
+        "klemenskirken",
+        "domkirken-gamlebyen"
+      ],
+      "summary": "Olav den hellige knyttes til kristningen av Norge og til Hallvard og kirkelig tradisjon i Oslo-området. Hans minne lever i legendene og i kirkene som satte spor i middelalderbyen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "36-50",
+        "note": "Bind I: Olav og kristningen (utkast)"
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/St_Olav_of_Norway.jpg/440px-St_Olav_of_Norway.jpg",
+        "credit": "Wikimedia Commons (offentlig domene)"
+      }
+    }
+  ]
+}

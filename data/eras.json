@@ -1,0 +1,65 @@
+{
+  "_comment": "Grupperer løyper og tidslinje. Oppdater samtidig episodes.json era_id.",
+  "eras": [
+    {
+      "id": "middelalder",
+      "label": "Middelalder",
+      "short": "ca. 1000-1536",
+      "year_from": 1000,
+      "year_to": 1536,
+      "sort": 1
+    },
+    {
+      "id": "kristiania",
+      "label": "Ny Christiania",
+      "short": "1624-1699",
+      "year_from": 1624,
+      "year_to": 1699,
+      "sort": 2
+    },
+    {
+      "id": "kvadratur",
+      "label": "Kvadraturen",
+      "short": "1600- og 1700-tall",
+      "year_from": 1600,
+      "year_to": 1799,
+      "sort": 3
+    },
+    {
+      "id": "elva",
+      "label": "Akerselva og vekst",
+      "short": "1700-1850",
+      "year_from": 1700,
+      "year_to": 1850,
+      "sort": 4
+    },
+    {
+      "id": "hovedstad",
+      "label": "Hovedstad 1814",
+      "short": "1814-1860",
+      "year_from": 1814,
+      "year_to": 1860,
+      "sort": 5
+    },
+    {
+      "id": "storby",
+      "label": "Storby mot 1924",
+      "short": "1860-1930",
+      "year_from": 1860,
+      "year_to": 1930,
+      "sort": 6
+    }
+  ],
+  "centuries": [
+    { "id": "all", "label": "Alle tidsperioder" },
+    { "id": "stone", "label": "Steinalder (funn)", "from": -10000, "to": -1800 },
+    { "id": "bronze", "label": "Bronsealder", "from": -1800, "to": -500 },
+    { "id": "iron", "label": "Jernalder og vikingtid", "from": -500, "to": 999 },
+    { "id": "11", "label": "1000-tallet", "from": 1000, "to": 1099 },
+    { "id": "13", "label": "1200-1300-tall", "from": 1200, "to": 1399 },
+    { "id": "16", "label": "1500-1600-tall", "from": 1500, "to": 1699 },
+    { "id": "17", "label": "1700-tallet", "from": 1700, "to": 1799 },
+    { "id": "18", "label": "1800-tallet", "from": 1800, "to": 1899 },
+    { "id": "19", "label": "1900-tallet", "from": 1900, "to": 1999 }
+  ]
+}

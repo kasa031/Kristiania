@@ -1,0 +1,200 @@
+{
+  "episodes": [
+    {
+      "id": "middelalder-oslo",
+      "title": "Middelalder-Oslo",
+      "subtitle": "Fra Klemenskirken til Bispeallmenningen",
+      "bind_range": [
+        1
+      ],
+      "duration_minutes": 45,
+      "place_order": [
+        "vippetangen-hovedoya",
+        "klemenskirken",
+        "mariakirken-spor",
+        "middelalderparken",
+        "bispegarden",
+        "domkirken-gamlebyen",
+        "skjellebekk-gamlebyen"
+      ],
+      "description": "Gamlebyen og parken der middelalderbyens kjerne tok form: kirker, bispegaard og handelsliv mot fjorden.",
+      "era_id": "middelalder"
+    },
+    {
+      "id": "1624-ny-by",
+      "title": "1624 - nye Kristiania",
+      "subtitle": "Fra Oslo-brannen til festningsbyen ved Akershus",
+      "bind_range": [
+        1,
+        2
+      ],
+      "duration_minutes": 40,
+      "place_order": [
+        "middelalderparken",
+        "domkirken-gamlebyen",
+        "akershus",
+        "kontraskjerp",
+        "vaterland-bjorvika",
+        "christiania-torv",
+        "gamle-raadhus-torvet",
+        "pipervika"
+      ],
+      "description": "Gå fra restene av middelalder-Oslo i Gamlebyen til Kvadraturen, og se hvordan Christian IV la den nye byen i skyggen av Akershus.",
+      "era_id": "kristiania"
+    },
+    {
+      "id": "kvadraturen-1600",
+      "title": "Kvadraturen 1600-1700",
+      "subtitle": "Kirke, tukthus og handel",
+      "bind_range": [
+        2
+      ],
+      "duration_minutes": 40,
+      "place_order": [
+        "christiania-torv",
+        "radmannsgaarden",
+        "gamle-raadhus-torvet",
+        "garmanngaarden-raadhus",
+        "gammeltorvet",
+        "vor-frelsers",
+        "kirkeristen",
+        "tukthuset",
+        "tollbugata-havn",
+        "kontraskjerp",
+        "skippergata",
+        "pipervika"
+      ],
+      "description": "Gå i det planlagte gatemønsteret Christian IV forutså. Vor Frelsers, tukthus, festning og piper satte preg på livet i den nye byen.",
+      "era_id": "kvadratur"
+    },
+    {
+      "id": "akerselva-tidlig",
+      "title": "Akerselva tidlig industri",
+      "subtitle": "Fra Nydalen til manufaktur ved fjorden",
+      "bind_range": [
+        2,
+        3
+      ],
+      "duration_minutes": 45,
+      "place_order": [
+        "nydalens-compagnie",
+        "christiania-spigerverk",
+        "collett-oljemolle-bjolsen",
+        "sagene-loken",
+        "voyen-hjula",
+        "sagene-kirke",
+        "bentse-brug",
+        "bentsebru",
+        "honse-lovisas-hus",
+        "myrens-verk",
+        "hollaenderbrua",
+        "grunerbrua",
+        "vulkan-akerselva",
+        "hausmanns-bru",
+        "ankerbrua",
+        "havn-ved-akershus",
+        "akerselva-utløp"
+      ],
+      "map_place_order": [
+        "paulus-kirke",
+        "hammeren-kraftverk",
+        "nonneseter-gronland"
+      ],
+      "description": "Fra Sagene ned Akerselva til fjorden: vannkraft, verk og arbeidskvarterer i byens vekst.",
+      "era_id": "elva"
+    },
+    {
+      "id": "1814-hovedstaden",
+      "title": "1814-hovedstaden",
+      "subtitle": "Hovedstadsstatus og embeter",
+      "bind_range": [
+        3,
+        4
+      ],
+      "duration_minutes": 50,
+      "place_order": [
+        "slottsplassen",
+        "paleet-christiania",
+        "stortinget",
+        "stortorvet",
+        "youngstorget",
+        "eidsvolls-plass",
+        "norges-bank-bankplassen",
+        "collettgaarden",
+        "kommunegaarden-logen",
+        "tollbugata-havn",
+        "universitetsplassen",
+        "domkirken-oslo"
+      ],
+      "description": "1814 som vendepunkt: slottskvartalet, embetskultur og universitetsbyen.",
+      "era_id": "hovedstad"
+    },
+    {
+      "id": "mot-1924",
+      "title": "Mot 300-årsjubileet",
+      "subtitle": "Storby og jubileumsår 1924",
+      "bind_range": [
+        4,
+        5
+      ],
+      "duration_minutes": 170,
+      "place_order": [
+        "karl-johan-jubileet",
+        "stortinget",
+        "storebrand-kirkegaten",
+        "steen-strom-slottsgate",
+        "nationaltheatret",
+        "vaterland-bjorvika",
+        "schweigaards-bro",
+        "havn-ved-akershus",
+        "ankerbrua",
+        "nylands-verksted",
+        "oslo-sentralstasjon",
+        "youngstorget",
+        "brugata",
+        "gronland-ladested"
+      ],
+      "map_place_order": [
+        "karl-johan-jubileet",
+        "stortinget",
+        "storebrand-kirkegaten",
+        "steen-strom-slottsgate",
+        "wessels-plass",
+        "handelsstand-toldbodgaten",
+        "piperviksbakken",
+        "kommunegaarden-logen",
+        "paleet-christiania",
+        "treschowgaarden",
+        "nationaltheatret",
+        "henrik-ibsen-hjem",
+        "slottsplassen",
+        "aker-mek-pipervika",
+        "vaterland-bjorvika",
+        "schweigaards-bro",
+        "havn-ved-akershus",
+        "ankerbrua",
+        "klingenberg",
+        "nylands-verksted",
+        "oslo-sentralstasjon",
+        "victoria-terrasse",
+        "filipstad-havn",
+        "grunerlokka-folketeater",
+        "youngstorget",
+        "stortorvets-gjestgiveri",
+        "mollergata",
+        "lo-bygget-storgata",
+        "mangelsgaarden",
+        "gassverket-storgata",
+        "skippergata",
+        "brugata",
+        "gronland-ladested",
+        "olympen-groenland",
+        "damstredet-telthusbakken",
+        "var-frelsers-gravlund",
+        "st-hanshaugen-haugen"
+      ],
+      "description": "Fra unionshovedstad via jernbane og arbeiderkvarter til jubileumsåret 1924.",
+      "era_id": "storby"
+    }
+  ]
+}

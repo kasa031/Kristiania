@@ -1,0 +1,12 @@
+{
+  "id": "slug-for-loype",
+  "title": "Løypenavn",
+  "subtitle": "Bind og kort beskrivelse",
+  "bind_range": [2, 3],
+  "duration_minutes": 40,
+  "place_order": [
+    "forste-sted-id",
+    "andre-sted-id"
+  ],
+  "description": "Tekst på forsiden / ved start av gåtur."
+}

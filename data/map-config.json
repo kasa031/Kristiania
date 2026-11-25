@@ -1,0 +1,54 @@
+{
+  "_comment": "Standard: OpenStreetMap uten nøkkel. Valgfritt: carto_basemaps_api_key eller mapbox i map-config.local.json (gitignorert).",
+  "default_layer": "detailed",
+  "default_zoom": 15,
+  "focus_zoom": 18,
+  "max_zoom": 20,
+  "mapbox_access_token": "",
+  "layers": [
+    {
+      "id": "detailed",
+      "label": "Gater (OpenStreetMap)",
+      "provider": "raster",
+      "url": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+      "subdomains": "abc",
+      "max_zoom": 19,
+      "attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a>"
+    },
+    {
+      "id": "carto-voyager",
+      "label": "Lys kart",
+      "provider": "raster",
+      "url": "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png",
+      "subdomains": "abcd",
+      "max_zoom": 20,
+      "requires_carto_key": true,
+      "attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> &copy; <a href=\"https://carto.com/\">CARTO</a>"
+    },
+    {
+      "id": "mapbox-streets",
+      "label": "Gater HD",
+      "provider": "mapbox",
+      "style": "mapbox/streets-v12",
+      "max_zoom": 22,
+      "requires_token": true
+    },
+    {
+      "id": "mapbox-satellite",
+      "label": "Flyfoto",
+      "provider": "mapbox",
+      "style": "mapbox/satellite-streets-v12",
+      "max_zoom": 22,
+      "requires_token": true
+    },
+    {
+      "id": "osm",
+      "label": "Oversikt",
+      "provider": "raster",
+      "url": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+      "subdomains": "abc",
+      "max_zoom": 19,
+      "attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a>"
+    }
+  ]
+}

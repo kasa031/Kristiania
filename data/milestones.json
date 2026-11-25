@@ -1,0 +1,104 @@
+{
+  "_meta": {
+    "source_of_truth": "content/FREMGANG.md",
+    "instruction": "Oppdater fremdrift i FREMGANG.md. Header-statistikk på nettsiden."
+  },
+  "milestones": [
+    {
+      "id": "klemenskirken-grunnlag",
+      "bind": 1,
+      "year": 1015,
+      "title": "Tidlig kirke og bydannelse",
+      "status": "utkast",
+      "event_id": "klemenskirken-grunnlag"
+    },
+    {
+      "id": "oslo-middelalder",
+      "bind": 1,
+      "year": 1310,
+      "title": "Middelalderbyen Oslo som sentrum",
+      "status": "utkast",
+      "event_id": "oslo-middelalder"
+    },
+    {
+      "id": "brann-1624",
+      "bind": 1,
+      "year": 1624,
+      "title": "Den store brannen i Oslo",
+      "status": "utkast",
+      "event_id": "brann-1624"
+    },
+    {
+      "id": "ny-kristiania-1624",
+      "bind": 2,
+      "year": 1624,
+      "title": "Christiania grunnlegges",
+      "status": "utkast",
+      "event_id": "ny-kristiania-1624"
+    },
+    {
+      "id": "vor-frelsers-innvigd",
+      "bind": 2,
+      "year": 1697,
+      "title": "Vor Frelsers kirke innviet",
+      "status": "utkast",
+      "event_id": "vor-frelsers-innvigd"
+    },
+    {
+      "id": "brann-1686",
+      "bind": 2,
+      "year": 1686,
+      "title": "Brann i Christiania 1686",
+      "status": "utkast",
+      "event_id": "brann-1686"
+    },
+    {
+      "id": "kommunal-fornyelse-1730",
+      "bind": 2,
+      "year": 1730,
+      "title": "Mot kommunal fornyelse",
+      "status": "utkast",
+      "event_id": "kommunal-fornyelse-1730"
+    },
+    {
+      "id": "okonomisk-oppgang-1740",
+      "bind": 3,
+      "year": 1740,
+      "title": "Økonomisk oppgang fra 1740",
+      "status": "utkast",
+      "event_id": "okonomisk-oppgang-1740"
+    },
+    {
+      "id": "hovedstad-1814",
+      "bind": 3,
+      "year": 1814,
+      "title": "Hovedstadsstatus 1814",
+      "status": "utkast",
+      "event_id": "hovedstad-1814"
+    },
+    {
+      "id": "universitetet-1827",
+      "bind": 4,
+      "year": 1827,
+      "title": "Universitetet i Christiania",
+      "status": "utkast",
+      "event_id": "universitetet-1827"
+    },
+    {
+      "id": "jernbanen-1854",
+      "bind": 4,
+      "year": 1854,
+      "title": "Første jernbane",
+      "status": "utkast",
+      "event_id": "jernbanen-1854"
+    },
+    {
+      "id": "jubileum-1924",
+      "bind": 5,
+      "year": 1924,
+      "title": "300-årsjubileet for Christiania",
+      "status": "utkast",
+      "event_id": "jubileum-1924"
+    }
+  ]
+}

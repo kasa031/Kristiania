@@ -1,0 +1,33 @@
+{
+  "_comment": "Kartnøkkel: farge og form per innholdstype (ikke bind).",
+  "kinds": [
+    {
+      "id": "sted",
+      "label": "Historisk stopp",
+      "shape": "circle",
+      "color": "#b24a3a",
+      "color_active": "#9a3f32"
+    },
+    {
+      "id": "blaa-skilt",
+      "label": "Blå skilt",
+      "shape": "square",
+      "color": "#1e4f8a",
+      "color_active": "#163d6e"
+    },
+    {
+      "id": "funn",
+      "label": "Arkeologisk funn",
+      "shape": "diamond",
+      "color": "#8b6914",
+      "color_active": "#6e5410"
+    },
+    {
+      "id": "person",
+      "label": "Person",
+      "shape": "ring",
+      "color": "#5c4d6a",
+      "color_active": "#4a3e55"
+    }
+  ]
+}

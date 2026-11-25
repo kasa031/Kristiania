@@ -1,0 +1,17 @@
+{
+  "id": "unik-slug",
+  "title": "Hendelsestittel",
+  "year": 1700,
+  "year_display": "valgfri lesbar dato",
+  "bind": 2,
+  "tags": ["havn"],
+  "episode_id": "kvadraturen-1600",
+  "place_ids": ["sted-id"],
+  "summary": "To til fire setninger med kjerne fra Bull.",
+  "verified": false,
+  "source_ref": {
+    "bind": 2,
+    "pages": "00-00",
+    "note": ""
+  }
+}

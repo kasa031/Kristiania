@@ -1,0 +1,56 @@
+---
+description: Oslo-historie - én fremdriftsliste, Bull-innhold, ingen parallelle lister
+alwaysApply: true
+---
+
+# Oslo-historie (Oslo_Historie)
+
+## Kun app (standard til annen beskjed)
+
+- **A0:** Jobb bare med kart-appen: HTML/CSS/JS, `data/*.json`, PWA/sw, supplement-notater for nye stopp.
+- **Ikke** TOC-reindeksering, `literature-status`, MASTERLISTE, prosjektplan/rapport - med mindre brukeren ber eksplisitt.
+- Neste steg hentes fra **App-TODO** i `content/FREMGANG.md` (T1-T7).
+
+## Én liste
+
+- Source of truth for **oppgaver, rekkefølge og neste steg:** `content/FREMGANG.md`
+- Ikke opprett nye sjekklister i README, MASTERLISTE eller egne todo-filer uten å oppdatere FREMGANG.md samtidig
+- `MASTERLISTE.md` er kun peker; utvid FREMGANG, ikke MASTERLISTE
+- Pitch og visjon ligger i `PROSJEKTPLAN.md` / `prosjektplan.html`; rapport i `PROSJEKTRAPPORT.md`
+- `data/milestones.json` er for app-header; status-endringer dokumenteres i FREMGANG først
+
+## Innhold fra Bull
+
+- Korte parafraser i `data/*.json`; `source_ref` med bind + sidetall
+- **App-tekst:** direkte historiefortelling - ikke «Bull/Hammer beskriver». Kjør `normalize-reader-text.py` ved innholdsjobb
+- **A14 parafrase:** `summary` skal være trofast norsk gjengivelse av kilden (Bull-side eller supplement-URL), ikke fri fortolkning, ikke oppfunnet eller «fyll»-tekst
+- `verified: true` kun etter bruker har bekreftet mot fysiske bind
+- Ikke finne på lange sitater; bruk brukerens TOC/OCR i `sources/toc/` eller `sources/excerpts/`
+- Ikke commit full bok-OCR
+- **Før utvidelse av JSON:** les `sources/innsamling/status.json` for Bull-kjerne. **Supplement:** `sources/supplementary/README.md` - byleksikon/SNL/kulturminne, notat + `pages: supplement`.
+- **Fokus:** appen først; ingen full re-indeksering av TOC med mindre bruker ber eksplisitt om det.
+
+## HTML/JS i dette prosjektet
+
+- Ingen em dash (—) eller en dash (–) i brukertekst; bruk bindestrek (-)
+- Match eksisterende mappestruktur og JSON-skjema i `data/schema.json`
+
+## Brukervendt merkevare (A15)
+
+- Produktbetegnelse i header, footer, PWA og filtre: **Historisk vandringskart** (historisk kart skal være tydelig).
+- **Aldri** i lesbare UI-tekster (`summary` som vises, header, filtre, knapper): Bull, Hammer, bind, sidetall, «fem bind», bøker, forfatter som kildehinvisning i app-stemmen.
+- Unntak kun hvis bruker eksplisitt ber om det (f.eks. footer-kreditt til verk/forfatter).
+- Kilde spores i `source_ref`, `supplementary_note`, FREMGANG og notater - ikke i app-stemmen (sammen med A11).
+
+## Før hver oppgave (A16)
+
+- Les **workspace-regler** (cursor rules) og denne filen **før** du endrer filer - ikke bare når bruker sier «neste steg».
+- **Ingen intern UI i appen:** `index.html`, synlig footer/header og PWA skal **ikke** lenke til utvikler-/prosjektfiler (`theme-preview.html`, `content/fremgang.html`, prosjektplan, rapport, MASTERLISTE). Slike filer lever i repo; lesere skal ikke møte dem i appen.
+- Ved tvil: hvis en lenke ikke hjelper vandrer/utforsker på kartet, skal den ikke inn i app-UI.
+
+## Arbeidsflyt når brukeren ber om «neste steg» eller «ferdigstill»
+
+1. Les `content/FREMGANG.md` (inkl. **A0**, **A16** og **App-TODO**)
+2. Gjør standardvalgene uten å spørre bruker (unntak: F5 / `verified: true`)
+3. Kjør `python scripts/verify-deliverable.py` før du melder ferdig
+4. Oppdater FREMGANG (avhuking / logg) og datafiler ved behov

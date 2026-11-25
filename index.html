@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kristiania | Historisk vandringskart</title>
+    <meta name="theme-color" content="#2a221c" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="icons/mark.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="css/style.css?v=83" />
+    <link rel="stylesheet" href="css/motion.css?v=83" />
+    <link rel="stylesheet" href="css/theme-kristiania.css?v=83" />
+  </head>
+  <body class="theme-avis-1880 theme-dronningensgate1714 home-active">
+    <header class="app-header masthead" role="banner">
+      <div class="masthead-inner">
+        <p class="masthead-rubric" id="masthead-rubric">Historisk vandringskart</p>
+        <h1 class="masthead-title" id="masthead-title">Kristiania</h1>
+        <p class="masthead-pitch" id="masthead-pitch" hidden></p>
+        <p class="masthead-dek" id="masthead-tagline" data-static-lead="true">
+          Fra istiden frem til 1924.
+        </p>
+      </div>
+    </header>
+
+    <main class="app-main">
+      <section
+        id="home-screen"
+        class="home-screen"
+        aria-label="Forside"
+      >
+        <div class="home-screen-inner ui-reveal">
+          <p class="home-kicker" id="home-kicker" hidden></p>
+          <h2 class="home-headline" id="home-headline">Oppdag Oslos&nbsp;historie</h2>
+          <p class="home-lead" id="home-lead">Fra istiden frem til 1924.</p>
+          <p class="home-jubilee-note" id="home-jubilee-note" hidden></p>
+          <div class="home-actions" role="group" aria-label="Hovedvalg">
+            <button
+              type="button"
+              class="home-cta home-cta-search"
+              id="home-btn-search"
+              data-ui-action="home-search"
+            >
+              <span class="home-cta-label">Søk</span>
+              <span class="home-cta-hint" id="home-search-hint">Finn på kartet</span>
+            </button>
+            <button
+              type="button"
+              class="home-cta home-cta-routes"
+              id="home-btn-routes"
+              data-ui-action="home-routes"
+            >
+              <span class="home-cta-label">Gå rute</span>
+              <span class="home-cta-hint" id="home-routes-hint">Start gåtur</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    <div class="layout layout-explore">
+      <section class="panel panel-map" aria-label="Kart">
+        <div class="panel-header map-header">
+          <form class="map-search-form" id="map-search-form" role="search" action="">
+            <label class="visually-hidden" for="map-search">Søk sted eller adresse</label>
+            <input
+              type="search"
+              id="map-search"
+              name="q"
+              placeholder="Søk sted eller adresse..."
+              autocomplete="off"
+              enterkeyhint="search"
+            />
+            <button type="submit" class="map-search-btn" id="btn-map-search">Søk</button>
+          </form>
+          <ul id="map-search-suggest" class="map-search-suggest" role="listbox" hidden></ul>
+          <p class="map-search-status" id="map-search-status" aria-live="polite" hidden></p>
+          <div class="map-header-tools">
+            <button
+              type="button"
+              class="map-locate"
+              id="btn-map-locate"
+              aria-pressed="false"
+              title="Følg posisjonen din på kartet"
+            >
+              Min posisjon
+            </button>
+            <details class="map-layer-wrap">
+              <summary class="map-layer-summary">Bakgrunn</summary>
+              <select id="map-layer" aria-label="Kartbakgrunn"></select>
+            </details>
+          </div>
+          <p class="map-hint">Zoom ut for bydeler. Zoom inn for steder, funn og personer.</p>
+          <ul class="map-legend" id="map-legend" aria-label="Kartforklaring"></ul>
+          <p class="map-place-count" id="map-place-count" aria-live="polite"></p>
+          <details class="nearby-wrap" id="nearby-wrap">
+            <summary class="nearby-summary">Nær deg nå</summary>
+            <div id="nearby-panel" class="nearby-panel" aria-live="polite">
+              <p class="nearby-hint" id="nearby-status" data-nearby-idle="true">
+                Trykk Min posisjon over kartet for å se steder rundt deg.
+              </p>
+              <ol class="nearby-list" id="nearby-list"></ol>
+            </div>
+          </details>
+        </div>
+        <div id="map" role="application" aria-label="Historisk kart over Oslo" tabindex="-1"></div>
+      </section>
+
+      <section class="panel panel-side" aria-label="Historie">
+        <div class="history-stack">
+        <div class="panel-top-nav" id="panel-top-nav">
+          <button
+            type="button"
+            class="back-home-btn"
+            id="btn-back-home"
+            data-ui-action="home-back"
+          >
+            Tilbake
+          </button>
+        </div>
+        <div class="app-mode-bar" role="tablist" aria-label="Hovedvalg">
+          <button
+            type="button"
+            class="app-mode-tab active"
+            id="mode-tab-explore"
+            role="tab"
+            aria-selected="true"
+            aria-controls="panel-explore"
+            data-ui-action="explore"
+          >
+            Søk
+          </button>
+          <button
+            type="button"
+            class="app-mode-tab"
+            id="mode-tab-routes"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-routes"
+            data-ui-action="routes"
+          >
+            Gå rute
+          </button>
+        </div>
+        <div id="panel-explore" class="mode-panel" role="tabpanel" aria-labelledby="mode-tab-explore">
+        <div class="panel-header panel-header-compact">
+          <h2>Søk, kart og tidslinje</h2>
+          <details class="filters-wrap" id="filters-wrap" open>
+            <summary class="filters-summary"><span id="filters-summary-text">Filtre</span></summary>
+            <div class="filters" id="filters">
+              <label for="filter-destination">Destinasjon</label>
+              <select id="filter-destination" aria-label="Velg destinasjonstype">
+                <option value="all">Alle destinasjoner</option>
+                <option value="historie">Kuratert historie på kartet</option>
+                <option value="blaa-skilt">Blå skilt (Oslo Byes Vel)</option>
+              </select>
+              <label for="filter-episode">Løype</label>
+              <select id="filter-episode" aria-label="Filter løype">
+                <option value="all">Alle steder</option>
+              </select>
+              <label for="filter-district">Bydel</label>
+              <select id="filter-district" aria-label="Velg bydel">
+                <option value="all">Alle bydeler</option>
+              </select>
+              <label for="filter-century">Tidsperiode</label>
+              <select id="filter-century" aria-label="Filter tidsperiode">
+                <option value="all">Alle</option>
+              </select>
+              <label for="filter-tag">Tema</label>
+              <select id="filter-tag" aria-label="Filter tema">
+                <option value="all">Alle tema</option>
+              </select>
+              <details class="filters-advanced" id="filters-advanced">
+                <summary class="filters-advanced-summary">Flere filtre</summary>
+                <label for="filter-chronology">Tidsalder</label>
+                <select id="filter-chronology" aria-label="Velg tidsalder">
+                  <option value="all">Alle tidsaldre</option>
+                </select>
+                <div class="year-range-fields">
+                  <label for="year-min">År fra</label>
+                  <input type="number" id="year-min" step="1" aria-label="År fra" />
+                  <label for="year-max">År til</label>
+                  <input type="number" id="year-max" step="1" max="1924" value="1924" aria-label="År til" />
+                </div>
+                <p class="year-range-hint" id="year-range-hint">Funn fra steinalder og vikingtid ligger før år 1000. Velg Steinalder eller Jernalder over, eller bruk tidsalder her (maks år 1924).</p>
+              </details>
+              <button type="button" class="filter-reset-btn" id="btn-reset-filters" hidden>
+                Nullstill filtre
+              </button>
+            </div>
+          </details>
+        </div>
+        <div id="detail-panel" class="detail-drawer detail-drawer-top" aria-live="polite"></div>
+        <div class="timeline-scroll" aria-label="Tidslinje">
+          <ul class="timeline-list" id="timeline-list"></ul>
+        </div>
+        </div>
+        <div id="panel-routes" class="mode-panel" role="tabpanel" aria-labelledby="mode-tab-routes" hidden>
+          <p class="routes-panel-lead" id="routes-panel-lead">
+            1. Velg en rute nedenfor. 2. Trykk på ruten for å starte. 3. Gå til stopp 1 på kartet.
+          </p>
+          <nav class="episode-cards routes-list" id="episode-cards" aria-label="Gåturer"></nav>
+        </div>
+        <div id="walk-bar" class="walk-bar">
+          <div class="progress" id="walk-progress" aria-live="polite"></div>
+          <button type="button" id="walk-prev">Forrige stopp</button>
+          <button type="button" id="walk-next">Neste stopp</button>
+          <button type="button" id="walk-exit">Avslutt gåtur</button>
+        </div>
+        </div>
+      </section>
+    </div>
+    </main>
+
+    <footer class="site-footer">
+      <p id="site-footer-text">
+        Utviklet av Ms.Tery til Oslos 400-årsjubileum, som en digital forlengelse av Edvard Bulls verk «Historien om Kristiania» i fem bind.
+      </p>
+    </footer>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="js/motion.js?v=68" defer></script>
+    <script src="js/bydel.js?v=68"></script>
+    <script src="js/app.js?v=83"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        let base = "";
+        const appScript = document.querySelector('script[src*="app.js"]');
+        if (appScript?.src) {
+          try {
+            base = new URL(appScript.src).pathname.replace(/\/js\/app\.js.*$/i, "") || "";
+          } catch {
+            base = "";
+          }
+        }
+        navigator.serviceWorker.register(`${base}/sw.js`).catch(() => {});
+      }
+    </script>
+  </body>
+</html>

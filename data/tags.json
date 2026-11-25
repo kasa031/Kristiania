@@ -1,0 +1,51 @@
+{
+  "groups": [
+    {
+      "id": "sted",
+      "label": "Sted og byrom",
+      "tag_ids": ["bygrunn", "festning", "havn"]
+    },
+    {
+      "id": "samfunn",
+      "label": "Samfunn og liv",
+      "tag_ids": ["kultur", "kommune", "brann"]
+    },
+    {
+      "id": "vekst",
+      "label": "Vekst, industri og transport",
+      "tag_ids": ["industri", "transport", "arbeid", "utdanning"]
+    },
+    {
+      "id": "bakgrunn",
+      "label": "Bakgrunn (geografi, klima, samfunn)",
+      "tag_ids": ["geologi", "natur", "klima", "sosial"]
+    },
+    {
+      "id": "destinasjon",
+      "label": "Destinasjonstype",
+      "tag_ids": ["blaa-skilt"]
+    }
+  ],
+  "tags": [
+    { "id": "bygrunn", "label": "Byplan og gater", "color": "#bc6c25", "group": "sted" },
+    { "id": "festning", "label": "Festning og forsvar", "color": "#4a4e69", "group": "sted" },
+    { "id": "havn", "label": "Havn og handel", "color": "#2a6f97", "group": "sted" },
+    { "id": "kultur", "label": "Kultur og kirke", "color": "#6b705c", "group": "samfunn" },
+    { "id": "kommune", "label": "Styre og kommune", "color": "#5c4d7a", "group": "samfunn" },
+    { "id": "brann", "label": "Brann", "color": "#c44d2a", "group": "samfunn" },
+    { "id": "industri", "label": "Industri og verk", "color": "#8b5a2b", "group": "vekst" },
+    { "id": "transport", "label": "Transport og infrastruktur", "color": "#3d5a80", "group": "vekst" },
+    { "id": "arbeid", "label": "Arbeid og nabolag", "color": "#6d597a", "group": "vekst" },
+    { "id": "utdanning", "label": "Utdanning og vitenskap", "color": "#457b9d", "group": "vekst" },
+    { "id": "geologi", "label": "Geologi og landskap", "color": "#7a6c5d", "group": "bakgrunn" },
+    { "id": "natur", "label": "Naturhistorie", "color": "#5a7a5a", "group": "bakgrunn" },
+    { "id": "klima", "label": "Klima og miljø", "color": "#4a7a8a", "group": "bakgrunn" },
+    { "id": "sosial", "label": "Sosiale forhold", "color": "#6a5a7a", "group": "bakgrunn" },
+    {
+      "id": "blaa-skilt",
+      "label": "Blå skilt",
+      "color": "#1e4f8a",
+      "group": "destinasjon"
+    }
+  ]
+}

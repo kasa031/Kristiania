@@ -1,0 +1,79 @@
+{
+  "_comment": "Tidsaldre for bydel + tidslinje. year_to for visning kappes i app til 1924.",
+  "year_min": -10000,
+  "year_max": 1924,
+  "eras": [
+    {
+      "id": "steinalder",
+      "label": "Steinalder",
+      "short": "Nøstvet / steinalder",
+      "year_from": -7000,
+      "year_to": -1800,
+      "sort": 0
+    },
+    {
+      "id": "bronsealder",
+      "label": "Bronsealder",
+      "short": "ca. 1800-500 f.Kr.",
+      "year_from": -1800,
+      "year_to": -500,
+      "sort": 1
+    },
+    {
+      "id": "jernalder",
+      "label": "Jernalder",
+      "short": "ca. 500 f.Kr. - 1000",
+      "year_from": -500,
+      "year_to": 1050,
+      "sort": 2
+    },
+    {
+      "id": "middelalder",
+      "label": "Middelalder",
+      "short": "ca. 1000-1536",
+      "year_from": 1000,
+      "year_to": 1536,
+      "sort": 3
+    },
+    {
+      "id": "kristiania",
+      "label": "Ny Christiania",
+      "short": "1624-1699",
+      "year_from": 1624,
+      "year_to": 1699,
+      "sort": 4
+    },
+    {
+      "id": "kvadratur",
+      "label": "Kvadraturen",
+      "short": "1600- og 1700-tall",
+      "year_from": 1600,
+      "year_to": 1799,
+      "sort": 5
+    },
+    {
+      "id": "elva",
+      "label": "Akerselva og vekst",
+      "short": "1700-1850",
+      "year_from": 1700,
+      "year_to": 1850,
+      "sort": 6
+    },
+    {
+      "id": "hovedstad",
+      "label": "Hovedstad 1814",
+      "short": "1814-1860",
+      "year_from": 1814,
+      "year_to": 1860,
+      "sort": 7
+    },
+    {
+      "id": "storby",
+      "label": "Storby mot 1924",
+      "short": "1860-1924",
+      "year_from": 1860,
+      "year_to": 1924,
+      "sort": 8
+    }
+  ]
+}

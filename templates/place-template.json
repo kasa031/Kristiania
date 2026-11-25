@@ -1,0 +1,21 @@
+{
+  "id": "unik-slug",
+  "name": "Stedsnavn",
+  "lat": 59.91,
+  "lng": 10.75,
+  "bind": 2,
+  "year_from": 1624,
+  "year_to": 1740,
+  "tags": ["bygrunn"],
+  "episode_id": "kvadraturen-1600",
+  "related_events": ["event-id-her"],
+  "related_people": [],
+  "summary": "150-400 ord. Sammendrag i ditt språk, ikke kopiert fra Bull.",
+  "verified": false,
+  "source_ref": {
+    "bind": 2,
+    "pages": "00-00",
+    "note": "Kapittelnavn eller egen merknad"
+  },
+  "external_links": []
+}
