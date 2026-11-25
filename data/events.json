@@ -54,7 +54,8 @@
       ],
       "episode_id": "middelalder-oslo",
       "place_ids": [
-        "vippetangen-hovedoya"
+        "vippetangen-hovedoya",
+        "hovedoya-klosteroy"
       ],
       "summary": "Cisterciensernes kloster trakk lærdom, jordbruk og økonomisk aktivitet til fjorden. Klostertilhørighet bandt byen til et internasjonalt nettverk.",
       "verified": false,
@@ -1052,7 +1053,7 @@
       "place_ids": [
         "grefsen-forstad"
       ],
-      "summary": "Boliger og villastrøk på Grefsen trakk familier nordover. Trikk og utsikt mot byen gjorde området attraktivt før jubileumsåret.",
+      "summary": "Boliger og villastrøk på Grefsen trakk familier nordover på slutten av 1800-tallet. Småhus og utsikt mot byen gjorde området attraktivt før jernbane og trikk kom tidlig på 1900-tallet.",
       "verified": false,
       "source_ref": {
         "bind": 4,
@@ -3120,6 +3121,358 @@
       }
     },
     {
+      "id": "torshovbyen-1916",
+      "title": "Torshovbyen bygges",
+      "year": 1916,
+      "year_display": "1916-1925",
+      "bind": 4,
+      "tags": [
+        "bolig",
+        "bygrunn"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "torshov-bydel",
+        "schous-plass"
+      ],
+      "summary": "Kommunen kjøpte 270 dekar på Torshov i 1916 og satte opp store boligkomplekser i årene 1917 til 1925. Det var en del av planen om å gi arbeiderfamilier gode hjem ved siden av industristrøkene langs Akerselva.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Torshov"
+      }
+    },
+    {
+      "id": "holmenkollbane-besserud-1898",
+      "title": "Holmenkollbanen til Besserud",
+      "year": 1898,
+      "year_display": "1898",
+      "bind": 4,
+      "tags": [
+        "transport",
+        "bygrunn"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "vinderen-bolig",
+        "majorstuen-knutepunkt",
+        "holmenkollen-bakken"
+      ],
+      "summary": "Da Holmenkollbanen åpnet fra Majorstua til Besserud i 1898, fikk vestre forsteder en elektrisk bane mot sentrum. Vinderen og områdene langs banen vokste som småhusstrøk med kollektiv i hverdagen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Vinderen"
+      }
+    },
+    {
+      "id": "fagerborg-kirke-vigslet-1903",
+      "title": "Fagerborg kirke innviet",
+      "year": 1903,
+      "year_display": "1903",
+      "bind": 4,
+      "tags": [
+        "kultur"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "fagerborg-kirke",
+        "vaalerenga-kirke"
+      ],
+      "summary": "Fagerborg kirke ble vigslet i 1903 som en langkirke i granitt, tegnet av Hagbarth Martin Schytte-Berg. Den fulgte en rekke nye bydelskirker som ble bygget da den voksende hovedstaden trengte menighetshus mellom gamle og nye nabolag.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Fagerborg kirke"
+      }
+    },
+    {
+      "id": "sandaker-innlemmet-1878",
+      "title": "Sandaker inn i byen",
+      "year": 1878,
+      "year_display": "1878",
+      "bind": 4,
+      "tags": [
+        "bygrunn",
+        "industri"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "sandaker-akerselva",
+        "torshov-bydel"
+      ],
+      "summary": "Da den søndre delen av Sandaker ble innlemmet i byen i 1878, fulgte området mølle- og sagtradisjonene langs Akerselva inn i Kristianias utvidelse. Industri og boliger vokste videre mot Torshov og Grefsen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Sandaker"
+      }
+    },
+    {
+      "id": "sognsvann-drikkevann-1876",
+      "title": "Sognsvann som drikkevann",
+      "year": 1876,
+      "year_display": "1876",
+      "bind": 4,
+      "tags": [
+        "natur",
+        "bygrunn"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "sognsvann-marka"
+      ],
+      "summary": "Fra 1876 ble Sognsvann tatt i bruk som drikkevannskilde for den voksende hovedstaden. Vannet fra Nordmarka bandt byen tettere til marka og la grunnlag for bane og utflukter ved Sognsvann.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Sognsvann"
+      }
+    },
+    {
+      "id": "ostensjobanen-bryn-1923",
+      "title": "Østensjøbanen åpner til Bryn",
+      "year": 1923,
+      "year_display": "desember 1923",
+      "bind": 5,
+      "tags": [
+        "transport",
+        "bygrunn"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "etterstad-gard",
+        "bryn-jernbane",
+        "ostensjovannet-natur"
+      ],
+      "summary": "Da Østensjøbanen åpnet fra Etterstad til Bryn i desember 1923, fikk østkanten en egen forstadsbane inn i jubileumsåret. Strekningen bandt industri og boligstrøk østover før linjen senere ble forlenget mot Oppsal.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: SNL Østensjøbanen"
+      }
+    },
+    {
+      "id": "ullevaal-hageby-bygging-1918",
+      "title": "Ullevål hageby bygges",
+      "year": 1918,
+      "year_display": "1918-1926",
+      "bind": 5,
+      "tags": [
+        "bolig",
+        "bygrunn"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "ullevaal-hageby",
+        "ullevaa-sykehus",
+        "torshov-bydel"
+      ],
+      "summary": "Oslo Hagebyselskap reiste de første husene på Ullevål hageby i 1918. Da prosjektet var ferdig i 1926, sto over 120 lave bygg rundt Damplassen som eksempel på sosial boligdrift like før jubileumsåret.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: SNL Ullevål hageby"
+      }
+    },
+    {
+      "id": "ekebergbanen-aapnet-1917",
+      "title": "Ekebergbanen åpner",
+      "year": 1917,
+      "year_display": "1917",
+      "bind": 5,
+      "tags": [
+        "transport",
+        "bygrunn"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "ekebergbanen-linje",
+        "ekebergutsikten",
+        "domkirken-gamlebyen"
+      ],
+      "summary": "Da Ekebergbanen åpnet fra Gamlebyen til Sæter i 1917, fikk beboerne på åsen en elektrisk bane mot sentrum. Strekningen gjorde Ekeberg og utsikten over fjorden lettere å nå da byen rustet seg til jubileumsåret.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: SNL Ekebergbanen"
+      }
+    },
+    {
+      "id": "abildso-utparsellering-1915",
+      "title": "Bolig på Abildsø",
+      "year": 1915,
+      "year_display": "fra 1915",
+      "bind": 4,
+      "tags": [
+        "bolig",
+        "bygrunn"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "abildso-gard",
+        "ostensjovannet-natur",
+        "nordstrand-sjokant"
+      ],
+      "summary": "Da Abildsø gård ble utparsellert fra 1915, kom villaer og småhus på høyden sørvest for Østensjøvannet. Jordbruket på gården fortsatte mens forstaden vokste mot Ekeberg og sørkanten.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Abildsø"
+      }
+    },
+    {
+      "id": "bogstad-fredet-1924",
+      "title": "Bogstad gård fredes",
+      "year": 1924,
+      "year_display": "1924",
+      "bind": 5,
+      "tags": [
+        "kultur",
+        "bygrunn"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "bogstad-gard",
+        "norsk-folkemuseum",
+        "bygdoy-kongsgard"
+      ],
+      "summary": "I jubileumsåret 1924 ble hovedbygningen på Bogstad gård fredet. Lystgården og parken i Sørkedalen var et minnesmerke om hvordan velstående familier tok marka inn i byens historie.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: SNL Bogstad gård"
+      }
+    },
+    {
+      "id": "ensjo-teglverk-1852",
+      "title": "Ensjø Teglverk",
+      "year": 1852,
+      "year_display": "1852-1916",
+      "bind": 4,
+      "tags": [
+        "industri",
+        "arbeid"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "ensjo-teglverk"
+      ],
+      "summary": "Ensjø Teglverk åpnet i 1852 og ble en av landets største teglprodusenter. Verket brukte leira langs elva og ga arbeid i et strøk som senere ble kjent for industri og boliger mellom Kampen og Helsfyr.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Ensjø"
+      }
+    },
+    {
+      "id": "gjoevikbanen-grefsen-1900",
+      "title": "Gjøvikbanen til Grefsen",
+      "year": 1900,
+      "year_display": "1900",
+      "bind": 4,
+      "tags": [
+        "transport",
+        "bygrunn"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "grefsen-stasjon",
+        "grefsen-forstad"
+      ],
+      "summary": "Da Nordbanen åpnet fra Grefsen til Røykenvik i 1900, fikk Grefsen en stasjon med nygotisk bygning. Hels linje mot Christiania kom i 1902, to år etter at stasjonen sto klar.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Gjøvikbanen, Grefsen"
+      }
+    },
+    {
+      "id": "kampen-utbygging-1878",
+      "title": "Kampen inn i byen",
+      "year": 1878,
+      "year_display": "ca. 1860-1878",
+      "bind": 4,
+      "tags": [
+        "bolig",
+        "arbeid",
+        "bygrunn"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "kampen-trehus",
+        "kampen-kirke",
+        "ensjo-teglverk"
+      ],
+      "summary": "Kampen vokste fram som trehuskvarter fra 1860-årene og ble en del av Christiania da byen utvidet seg i 1878. Småhusbebyggelsen mellom Tøyen og Vålerenga viste hvordan arbeidere bygde utenfor murtvangen før jubileumsåret.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Kampen boligstrøk"
+      }
+    },
+    {
+      "id": "uranienborg-kirke-1886",
+      "title": "Uranienborg kirke innviet",
+      "year": 1886,
+      "year_display": "1886",
+      "bind": 4,
+      "tags": [
+        "kultur"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "uranienborg-kirke",
+        "homansbyen",
+        "briskeby-villa"
+      ],
+      "summary": "Uranienborg kirke ble innviet i 1886 da villaområdet vest for Slottet tok form. Kirken markerte at vestkanten fikk menighetsliv parallelt med utbyggingen av Frogner og Homansbyen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Uranienborg"
+      }
+    },
+    {
+      "id": "blaatrikken-1894",
+      "title": "Første elektriske trikk",
+      "year": 1894,
+      "year_display": "1894",
+      "bind": 4,
+      "tags": [
+        "transport",
+        "bygrunn"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "jernbanetorget",
+        "majorstuen-knutepunkt",
+        "briskeby-villa",
+        "uranienborg-kirke"
+      ],
+      "summary": "I 1894 åpnet Nordens første elektriske sporvogn fra Jernbanetorget over Drammensveien og Briskeby til Majorstua. Blåtrikken knyttet villa- og handelsstrøk vest i byen tettere til sentrum før 1924.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL sporvei, Briskeby boligstrøk"
+      }
+    },
+    {
       "id": "juni-opptoyer-1795",
       "title": "Opptøyer ved oljemøllen",
       "year": 1795,
@@ -3141,6 +3494,1431 @@
         "bind": 3,
         "pages": "453",
         "note": "Bind III: Junioptøiene"
+      }
+    },
+    {
+      "id": "oslo-ladegard-1725",
+      "title": "Ny bygning over bispeborgen",
+      "year": 1725,
+      "year_display": "1725",
+      "bind": 2,
+      "tags": [
+        "kultur",
+        "bygrunn"
+      ],
+      "episode_id": "middelalder-oslo",
+      "place_ids": [
+        "oslo-ladegard",
+        "domkirken-gamlebyen",
+        "bispegarden"
+      ],
+      "summary": "Karen Hausmann lot i 1725 reise dagens Oslo Ladegård på grunnmuren etter middelalderbispeborgen. Barokkbygningen skjuler kjellervelvingene som er det fysiske spor etter festningen biskopen hadde før reformasjonen.",
+      "supplementary_note": "sources/supplementary/notater/oslo-ladegard.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "supplement",
+        "note": "Supplement: SNL Oslo Ladegård"
+      }
+    },
+    {
+      "id": "historisk-museum-apnet-1904",
+      "title": "Historisk museum åpner",
+      "year": 1904,
+      "year_display": "1904",
+      "bind": 4,
+      "tags": [
+        "kultur"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "tullinlokka",
+        "universitetsplassen",
+        "domkirken-oslo"
+      ],
+      "summary": "Universitetets oldsaksamling, etnografiske samlinger og Myntkabinettet flyttet inn i museumsbygningen på Tullinløkka. Åpningen i 1904 gjorde jugendstilbygget til et av landets fremste kulturmonument før 1924.",
+      "supplementary_note": "sources/supplementary/notater/tullinlokka.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Historisk museum"
+      }
+    },
+    {
+      "id": "enerhaugen-inn-i-byen-1859",
+      "title": "Gamle Oslo inn i byen",
+      "year": 1859,
+      "year_display": "1859",
+      "bind": 4,
+      "tags": [
+        "bolig",
+        "bygrunn"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "enerhaugen-gamle-oslo",
+        "gronland-kirke",
+        "gronland-ladested"
+      ],
+      "summary": "Da Gamle Oslo med Enerhaugen ble en del av Christiania i 1859, fulgte de tette trehusstrøkene øst for Akerselva byens ekspansjon. Leiegårdsbebyggelsen her viste hvordan forstedene ble innlemmet i unionshovedstaden.",
+      "supplementary_note": "sources/supplementary/notater/enerhaugen-gamle-oslo.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Enerhaugen, Gamlebyen"
+      }
+    },
+    {
+      "id": "samfundet-pa-enerhaugen-1850",
+      "title": "Første arbeidersamfunn",
+      "year": 1850,
+      "year_display": "1850",
+      "bind": 4,
+      "tags": [
+        "arbeid",
+        "kultur"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "enerhaugen-gamle-oslo"
+      ],
+      "summary": "Samfundet på Enerhaugen ble stiftet av pastor Honoratus Halling med fokus på opplysning blant arbeidere. Det regnes som det eldste arbeidersamfunnet i Norge og hang sammen med strøkets dårlige boligstandard før saneringen på 1960-tallet.",
+      "supplementary_note": "sources/supplementary/notater/enerhaugen-gamle-oslo.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL arbeidersamfunn, Enerhaugen"
+      }
+    },
+    {
+      "id": "kristiania-arbeidersamfunn-1864",
+      "title": "Arbeidersamfund stiftes",
+      "year": 1864,
+      "year_display": "1864",
+      "bind": 4,
+      "tags": [
+        "arbeid",
+        "kultur"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "arbeidersamfunnets-plass",
+        "youngstorget",
+        "torggata-handel"
+      ],
+      "summary": "Eilert Sundt grunnla Christiania Arbeidersamfund med foredrag, lesesal og sykekasse. Foreningen skulle ikke være politisk, men ble senere et sentralt forum for arbeiderbevegelsen før partiet tok over i 1890-årene.",
+      "supplementary_note": "sources/supplementary/notater/arbeidersamfunnets-plass.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Oslo Arbeidersamfunn"
+      }
+    },
+    {
+      "id": "kongsgarden-branner-1223",
+      "title": "Bybrann rammer kongsgården",
+      "year": 1223,
+      "year_display": "1223",
+      "bind": 1,
+      "tags": [
+        "kultur",
+        "bygrunn"
+      ],
+      "episode_id": "middelalder-oslo",
+      "place_ids": [
+        "kongsgarden-oslo",
+        "mariakirken-spor",
+        "klemenskirken"
+      ],
+      "summary": "En stor bybrann i 1223 la kongsgården i aske. Brannene i middelalder-Oslo rammet ofte både kirker og kongelige bygg ved Alnas utløp.",
+      "supplementary_note": "sources/supplementary/notater/kongsgarden-oslo.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "supplement",
+        "note": "Supplement: SNL Oslo historie (tidslinje)"
+      }
+    },
+    {
+      "id": "sorengkaia-utfylling-1914",
+      "title": "Sørengkaia utbygges",
+      "year": 1914,
+      "year_display": "1906-1916",
+      "bind": 5,
+      "tags": [
+        "havn",
+        "transport"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "sorenga-havn",
+        "havn-ved-akershus",
+        "akershuskaia"
+      ],
+      "summary": "Kristiania utfylte og bygde kaianlegg på Sørenga for å gi havnen mer kaiplass. Utbyggingen bandt Pipervika, Bjørvika og jernbanen tettere sammen før første verdenskrig.",
+      "supplementary_note": "sources/supplementary/notater/sorenga-havn.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: SNL Sørenga, Oslo havn"
+      }
+    },
+    {
+      "id": "alna-tunnel-1923",
+      "title": "Alna i tunnel",
+      "year": 1923,
+      "year_display": "1922-1923",
+      "bind": 5,
+      "tags": [
+        "havn",
+        "transport"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "kongshavn-munning",
+        "alna-munning",
+        "sorenga-havn",
+        "gronland-ladested"
+      ],
+      "summary": "Alna ble ført i tunnel fra Kværner til Kongshavn for å gi jernbanen plass gjennom Gamlebyen. Elveløpet mellom Grønland og Sørenga forsvant over bakken, og munningen flyttet sørover.",
+      "supplementary_note": "sources/supplementary/notater/kongshavn-munning.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: SNL Alna, Gamlebyen"
+      }
+    },
+    {
+      "id": "fransiskanerkloster-oslo-1290",
+      "title": "Fransiskanerkloster opprettes",
+      "year": 1290,
+      "year_display": "1290",
+      "bind": 1,
+      "tags": [
+        "kultur"
+      ],
+      "episode_id": "middelalder-oslo",
+      "place_ids": [
+        "gamlebyen-kirke",
+        "gronland-ladested"
+      ],
+      "summary": "Barfotbrødrene begynte å reise kloster øst for Alna med støtte fra hertug Håkon. Etter pavelig medhold ble anlegget et viktig kloster før det ble hospital ved reformasjonen.",
+      "supplementary_note": "sources/supplementary/notater/gamlebyen-kirke.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "supplement",
+        "note": "Supplement: SNL Fransiskanerklosteret i Oslo"
+      }
+    },
+    {
+      "id": "gamlebyen-kirke-1794",
+      "title": "Ny kirke etter brann",
+      "year": 1794,
+      "year_display": "1794",
+      "bind": 3,
+      "tags": [
+        "kultur"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "gamlebyen-kirke",
+        "oslo-ladegard"
+      ],
+      "summary": "Etter brann ble den nåværende kirken i Gamlebyen oppført i Louis-seize-stil med tårn mot øst. Kirken ble senere menighetskirke for det gamle Oslo-strøket inntil unionstiden.",
+      "supplementary_note": "sources/supplementary/notater/gamlebyen-kirke.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 3,
+        "pages": "supplement",
+        "note": "Supplement: SNL Gamlebyen boligstrøk"
+      }
+    },
+    {
+      "id": "christiania-brygger-1624",
+      "title": "Første brygger i Christiania",
+      "year": 1624,
+      "year_display": "etter 1624",
+      "bind": 2,
+      "tags": [
+        "havn",
+        "handel"
+      ],
+      "episode_id": "kvadraturen-1600",
+      "place_ids": [
+        "nordre-brygge-tollbugata",
+        "sondre-brygge-raadhusgata",
+        "tollbugata-havn",
+        "raadhusgata-kvadratur",
+        "pipervika"
+      ],
+      "summary": "Christian IVs nye by fikk to brygger som forlengelser av Tollbugata og Rådhusgata ut i Bjørvika. De lange bryggene måtte strekke seg langt ut fordi vika var grunn.",
+      "supplementary_note": "sources/supplementary/notater/nordre-brygge-tollbugata.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "supplement",
+        "note": "Supplement: SNL Oslo havn"
+      }
+    },
+    {
+      "id": "bordtomtene-trelast-1700",
+      "title": "Trelast på bordtomtene",
+      "year": 1700,
+      "year_display": "ca. 1700-tall",
+      "bind": 4,
+      "tags": [
+        "handel",
+        "havn"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "bordtomtene-bjorvika",
+        "vaterland-bjorvika",
+        "akerselva-utløp"
+      ],
+      "summary": "Trelasthandelen lagret tømmer på bordtomtene innerst i Bjørvika og langs elva. Det var byens viktigste næring da Christiania ble Østlandets største importhavn.",
+      "supplementary_note": "sources/supplementary/notater/bordtomtene-bjorvika.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Oslo havn"
+      }
+    },
+    {
+      "id": "akersmek-grunnlagt-1841",
+      "title": "Akers mek. ved fossen",
+      "year": 1841,
+      "year_display": "1841",
+      "bind": 3,
+      "tags": [
+        "industri",
+        "arbeid"
+      ],
+      "episode_id": "akerselva-tidlig",
+      "place_ids": [
+        "ovre-foss-akersmek",
+        "aker-mek-pipervika",
+        "hausmanns-bru"
+      ],
+      "summary": "Akers mekaniske verksted ble grunnlagt ved Øvre Foss i 1841 med dampmaskiner, pumper og smijern. Verkstedet var startpunktet for verftet som senere flyttet til Pipervika.",
+      "supplementary_note": "sources/supplementary/notater/ovre-foss-akersmek.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 3,
+        "pages": "supplement",
+        "note": "Supplement: SNL Akers mekaniske Verksted"
+      }
+    },
+    {
+      "id": "havnebanen-apnet-1907",
+      "title": "Havnebanen åpner",
+      "year": 1907,
+      "year_display": "november 1907",
+      "bind": 5,
+      "tags": [
+        "transport"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "havnebanen-radhusplassen",
+        "oslo-sentralstasjon",
+        "vestbanestasjon-ruselokk",
+        "vippetangen-hovedoya"
+      ],
+      "summary": "Jernbaneforbindelsen mellom Øst- og Vestbanen ble tatt i bruk i 1907 og gikk over Rådhusplassen forbi Vippetangen. Banen løste behovet for sporvidde og gods mellom stasjonene før tunnelen kom.",
+      "supplementary_note": "sources/supplementary/notater/havnebanen-radhusplassen.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: SNL Havnebanen"
+      }
+    },
+    {
+      "id": "langkaia-anlagt-1909",
+      "title": "Langkaia ferdig",
+      "year": 1909,
+      "year_display": "1906-1909",
+      "bind": 5,
+      "tags": [
+        "havn"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "langkaia-bjorvika",
+        "tollbugata-havn",
+        "havnelageret-pipervika"
+      ],
+      "summary": "Det nye Langkaia-anlegget sto ferdig i 1909 og fornyet bryggene i Bjørvika. Samtidig vokste havneanleggene rundt Akershus da byen trengte mer kai for dampskip og gods.",
+      "supplementary_note": "sources/supplementary/notater/langkaia-bjorvika.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: SNL Oslo havn"
+      }
+    },
+    {
+      "id": "lilleborg-kildal-1863",
+      "title": "Kildal overtar Lilleborg",
+      "year": 1863,
+      "year_display": "1863",
+      "bind": 4,
+      "tags": [
+        "industri",
+        "arbeid"
+      ],
+      "episode_id": "akerselva-tidlig",
+      "place_ids": [
+        "lilleborg-fabrikker",
+        "sandaker-akerselva",
+        "myrens-verk"
+      ],
+      "summary": "Forretningsmannen overtok eiendommen Lilleborg og utvidet såpe- og lampeoljeproduksjonen ved Akerselva. Fabrikkene ble et knutepunkt for engroshandel og næringsmiddelindustri i hovedstaden.",
+      "supplementary_note": "sources/supplementary/notater/lilleborg-fabrikker.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Peter Wessel Wind Kildal"
+      }
+    },
+    {
+      "id": "bjolsen-valsemolle-1884",
+      "title": "Bjølsen Valsemølle grunnlegges",
+      "year": 1884,
+      "year_display": "1884",
+      "bind": 4,
+      "tags": [
+        "industri",
+        "arbeid"
+      ],
+      "episode_id": "akerselva-tidlig",
+      "place_ids": [
+        "bjolsen-valsemolle",
+        "sagene-loken",
+        "collett-oljemolle-bjolsen"
+      ],
+      "summary": "Den nye møllen tok i bruk valsestoler og utnyttet vannfallene langs Akerselva. Bedriften vokste raskt og kjøpte senere flere møller i elveløpet.",
+      "supplementary_note": "sources/supplementary/notater/bjolsen-valsemolle.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Bjølsen Valsemølle"
+      }
+    },
+    {
+      "id": "bjorvika-iskamp-1161",
+      "title": "Slag på isen i Bjørvika",
+      "year": 1161,
+      "year_display": "vinter 1161",
+      "bind": 1,
+      "tags": [
+        "kultur",
+        "bygrunn"
+      ],
+      "episode_id": "middelalder-oslo",
+      "place_ids": [
+        "bispevika-havn",
+        "kongsgarden-oslo",
+        "klemenskirken"
+      ],
+      "summary": "Vinteren 1161 sto det slag på isen mellom Håkon Herdebrei og Inge Krokrygg ved Alnas utløp. Kong Inge falt, og hendelsen markerte borgerkrigstiden i middelalder-Oslo.",
+      "supplementary_note": "sources/supplementary/notater/bispevika-havn.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "supplement",
+        "note": "Supplement: SNL Sørenga, Bjørvika"
+      }
+    },
+    {
+      "id": "minneparken-anlagt-1926",
+      "title": "Minneparken anlegges",
+      "year": 1926,
+      "year_display": "1926-1932",
+      "bind": 1,
+      "tags": [
+        "kultur"
+      ],
+      "episode_id": "middelalder-oslo",
+      "place_ids": [
+        "minneparken-gamlebyen",
+        "domkirken-gamlebyen",
+        "middelalderparken"
+      ],
+      "summary": "Arkitekt Gerhard Fischer ledet arbeidet med å frilagge og vise ruinene av Hallvardskirken, Olavsklosteret og Korskirken. Parken gjorde middelalderrestene i Gamlebyen lesbare for byen før 1924-jubileet.",
+      "supplementary_note": "sources/supplementary/notater/minneparken-gamlebyen.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "supplement",
+        "note": "Supplement: SNL Gerhard Fischer, Gamlebyen"
+      }
+    },
+    {
+      "id": "bispegard-nygotikk-1884",
+      "title": "Ny bispegård i Gamlebyen",
+      "year": 1884,
+      "year_display": "1883-1884",
+      "bind": 1,
+      "tags": [
+        "kultur"
+      ],
+      "episode_id": "middelalder-oslo",
+      "place_ids": [
+        "oslo-nye-bispegard",
+        "gamlebyen-kirke",
+        "oslo-ladegard"
+      ],
+      "summary": "Den nygotiske bispegården på St. Hallvards plass ble reist over klosterkjelleren fra Olavsklosteret. Bygningen bandt dominikanertradisjonen i Gamlebyen til biskopens embete i unionshovedstaden.",
+      "supplementary_note": "sources/supplementary/notater/oslo-nye-bispegard.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "supplement",
+        "note": "Supplement: SNL Oslo nye bispegård"
+      }
+    },
+    {
+      "id": "tollbodbryggen-dampskip-1851",
+      "title": "Dampskip til kai",
+      "year": 1851,
+      "year_display": "1851",
+      "bind": 4,
+      "tags": [
+        "havn",
+        "transport"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "tollbodbryggen",
+        "tollpakkehuset-strandgata",
+        "tollboden-tollbugata",
+        "nordre-brygge-tollbugata",
+        "vaterland-bjorvika"
+      ],
+      "summary": "Fra 1851 fikk dampfartøy legge til ved Tollbodbryggen i stedet for å ligge på ankring i Bjørvika. Det markerte overgangen til dampdrevet post- og passasjertrafikk i havnen.",
+      "supplementary_note": "sources/supplementary/notater/tollbodbryggen.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Oslo havn"
+      }
+    },
+    {
+      "id": "katedralskole-grunnlagt-1153",
+      "title": "Katedralskole ved domkirken",
+      "year": 1153,
+      "year_display": "ca. 1153",
+      "bind": 1,
+      "tags": [
+        "kultur"
+      ],
+      "episode_id": "middelalder-oslo",
+      "place_ids": [
+        "katedralskolen-hallvard",
+        "domkirken-gamlebyen",
+        "bispegarden"
+      ],
+      "summary": "Katedralskolen ble knyttet til Hallvardskatedralen da Norge fikk kirkelig skoletradisjon på 1100-tallet. Den latinske skolen utdannet prester og bar byens skriftkultur.",
+      "supplementary_note": "sources/supplementary/notater/katedralskolen-hallvard.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "supplement",
+        "note": "Supplement: SNL Oslo katedralskole"
+      }
+    },
+    {
+      "id": "pest-gravplass-hammersborg-1654",
+      "title": "Gravplass ved Hammersborg",
+      "year": 1654,
+      "year_display": "1654",
+      "bind": 2,
+      "tags": [
+        "bygrunn"
+      ],
+      "episode_id": "kvadraturen-1600",
+      "place_ids": [
+        "hammersborg-lokken",
+        "kirkeristen",
+        "vor-frelsers"
+      ],
+      "summary": "Da pesten rammet byen i 1654 holdt kirkegårdene ikke for alle dødsfall. En ny gravplass ved Hammersborg ble tatt i bruk bak dagens rådhusområde.",
+      "supplementary_note": "sources/supplementary/notater/hammersborg-lokken.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "supplement",
+        "note": "Supplement: SNL Hammersborg, pest Christiania"
+      }
+    },
+    {
+      "id": "munkedam-basseng-1624",
+      "title": "Munkedammen skaffer vann",
+      "year": 1624,
+      "year_display": "1624",
+      "bind": 2,
+      "tags": [
+        "bygrunn"
+      ],
+      "episode_id": "kvadraturen-1600",
+      "place_ids": [
+        "munkedamsveien-kvadratur",
+        "akershus",
+        "kontraskjerp"
+      ],
+      "summary": "Ved Christianias grunnlegging ble Munkedammen ved Akershus tatt i bruk som vannreservoir for den nye byen. Det gjorde festningsområdet til både forsvar og vannforsyning for innbyggerne.",
+      "supplementary_note": "sources/supplementary/notater/munkedamsveien-kvadratur.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "supplement",
+        "note": "Supplement: SNL Munkedammen"
+      }
+    },
+    {
+      "id": "basarhallene-apnet-1889",
+      "title": "Basarhallene ved Stortorvet",
+      "year": 1889,
+      "year_display": "1889",
+      "bind": 4,
+      "tags": [
+        "handel"
+      ],
+      "episode_id": "1814-hovedstaden",
+      "place_ids": [
+        "basarhallene-stortorvet",
+        "stortorvet",
+        "torggata-handel"
+      ],
+      "summary": "De nye basarhallene ved Stortorvet ble innviet som moderne ramme rundt torghandel og småutsalg. Bygget markerte at hovedstaden tok markedsplassen mer på alvor på slutten av 1800-tallet.",
+      "supplementary_note": "sources/supplementary/notater/basarhallene-stortorvet.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Basarhallene Oslo"
+      }
+    },
+    {
+      "id": "volden-gatemot-akershus-1624",
+      "title": "Volden langs festningen",
+      "year": 1624,
+      "year_display": "1624",
+      "bind": 2,
+      "tags": [
+        "bygrunn"
+      ],
+      "episode_id": "kvadraturen-1600",
+      "place_ids": [
+        "volden-akershus",
+        "kongens-gate-kvadratur",
+        "akershus",
+        "kontraskjerp"
+      ],
+      "summary": "Den nye byen ble lagt med gater som fulgte den vestre festningsvollen. Volden bandt Kongens gate og tomtene i Kvadraturen til Akershus som militært og administrativt sentrum.",
+      "supplementary_note": "sources/supplementary/notater/volden-akershus.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "supplement",
+        "note": "Supplement: Volden, Christiania 1624"
+      }
+    },
+    {
+      "id": "frysja-verksteder-1890",
+      "title": "Verksteder ved Frysja",
+      "year": 1890,
+      "year_display": "ca. 1890",
+      "bind": 4,
+      "tags": [
+        "industri"
+      ],
+      "episode_id": "akerselva-tidlig",
+      "place_ids": [
+        "frysja-akerselva",
+        "vulkan-akerselva",
+        "maridalskroken"
+      ],
+      "summary": "Langs elven ved Frysja økte småverksteder og industribygg da Akerselva fortsatt var motor for produksjon i byen. Området bandt Nydalen og de øvre fossene til det tette fabrikklandskapet nær sentrum.",
+      "supplementary_note": "sources/supplementary/notater/frysja-akerselva.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Frysja"
+      }
+    },
+    {
+      "id": "sansemolle-drift-1794",
+      "title": "Sansemøllen i Rustad",
+      "year": 1794,
+      "year_display": "1794",
+      "bind": 3,
+      "tags": [
+        "industri"
+      ],
+      "episode_id": "akerselva-tidlig",
+      "place_ids": [
+        "sansemolle-rustad",
+        "maridalskroken",
+        "hammeren-kraftverk"
+      ],
+      "summary": "Sansemøllen ved Rustad ble drevet som større mølle- og saganlegg i Maridalen. Kraften fra Akerselvas øvre løp bidro til trelast og maling nedover mot Christiania.",
+      "supplementary_note": "sources/supplementary/notater/sansemolle-rustad.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 3,
+        "pages": "supplement",
+        "note": "Supplement: SNL Sansemøllen"
+      }
+    },
+    {
+      "id": "sagbrugsforeningen-hus-1898",
+      "title": "Sagbrugsforeningens hus",
+      "year": 1898,
+      "year_display": "1898",
+      "bind": 5,
+      "tags": [
+        "industri"
+      ],
+      "episode_id": "akerselva-tidlig",
+      "place_ids": [
+        "sagbrugsforeningen-sandaker",
+        "myrens-verk",
+        "sandaker-akerselva"
+      ],
+      "summary": "Sagbrukene langs Akerselva sto samlet i forening og fikk felles møte- og kontorbygning ved Myrens. Organiseringen viste hvordan tømmernæringen ble en moderne næring på elva.",
+      "supplementary_note": "sources/supplementary/notater/sagbrugsforeningen-sandaker.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: Sagbrugsforeningen"
+      }
+    },
+    {
+      "id": "loiten-brug-grunnlagt-1779",
+      "title": "Løiten Brug ved elva",
+      "year": 1779,
+      "year_display": "1779",
+      "bind": 3,
+      "tags": [
+        "industri"
+      ],
+      "episode_id": "akerselva-tidlig",
+      "place_ids": [
+        "loiten-brug-akerselva",
+        "hausmanns-bru",
+        "myrens-verk"
+      ],
+      "summary": "Løiten Brug ble etablert som brennevinsfabrikk ved Akerselva og ble ett av de tidligste store industrielle anleggene på elva. Produksjonen bandt landbruk og handel i Christiania.",
+      "supplementary_note": "sources/supplementary/notater/loiten-brug-akerselva.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 3,
+        "pages": "supplement",
+        "note": "Supplement: SNL Løiten Brug"
+      }
+    },
+    {
+      "id": "ormsund-havn-utvidet-1894",
+      "title": "Havnen utvidet mot Ormsund",
+      "year": 1894,
+      "year_display": "ca. 1894",
+      "bind": 5,
+      "tags": [
+        "havn"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "ormsund-havn",
+        "filipstad-havn",
+        "kongshavn-munning"
+      ],
+      "summary": "Havnevesenet utvidet kai og lagringsplass mot Ormsund for å losse mer gods utenfor Bjørvika. Søndre havnebassenger bandt Filipstad, Akers Mek og den nye jernbanen til fjorden.",
+      "supplementary_note": "sources/supplementary/notater/ormsund-havn.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: SNL Oslo havn"
+      }
+    },
+    {
+      "id": "hjortnes-promenade-1905",
+      "title": "Strandpromenade ved Hjortnes",
+      "year": 1905,
+      "year_display": "ca. 1905",
+      "bind": 4,
+      "tags": [
+        "havn",
+        "kultur"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "hjortnes-promenaden",
+        "filipstad-havn",
+        "akershuskaia"
+      ],
+      "summary": "Promenaden ved Hjortnes ga innbyggere et rekreasjonsområde langs fjorden med utsikt mot innseilingen. Vestkanten av havnen fikk en offentlig strandpromenade da storbymiljøet bredte seg.",
+      "supplementary_note": "sources/supplementary/notater/hjortnes-promenaden.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Hjortnes"
+      }
+    },
+    {
+      "id": "raadhusbrygga-promenert-1900",
+      "title": "Rådhusbrygga og fergetrafikk",
+      "year": 1900,
+      "year_display": "ca. 1900",
+      "bind": 4,
+      "tags": [
+        "havn",
+        "transport"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "raadhusbrygga",
+        "nordre-brygge-tollbugata",
+        "tollbodbryggen"
+      ],
+      "summary": "Rådhusbrygga var knutepunkt for småfartøy og ferger mellom Pipervika og omkringliggende kaier. Den sentrale kaisnora forbandt handelsbryggene i kvadraturen med dampskip og dampbåter.",
+      "supplementary_note": "sources/supplementary/notater/raadhusbrygga.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Oslo havn"
+      }
+    },
+    {
+      "id": "vippetangkaia-anlagt-1908",
+      "title": "Vippetangkaia moderniseres",
+      "year": 1908,
+      "year_display": "ca. 1908",
+      "bind": 5,
+      "tags": [
+        "havn",
+        "transport"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "vippetangkaia",
+        "vippetangen-hovedoya",
+        "havnebanen-radhusplassen"
+      ],
+      "summary": "Vippetangkaia ble utvidet og klargjort for større gods da havnen skulle romme mer jernbanetrafikk og lossevirksomhet. Kaien lå ved siden av Havnebanen og knyttet Østbanen til havneanleggene.",
+      "supplementary_note": "sources/supplementary/notater/vippetangkaia.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: SNL Vippetangen"
+      }
+    },
+    {
+      "id": "telegrafbygning-ferdig-1872",
+      "title": "Ny telegrafbygning",
+      "year": 1872,
+      "year_display": "1872",
+      "bind": 4,
+      "tags": [
+        "transport",
+        "bygrunn"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "telegrafbygningen-stortorvet",
+        "stortorvet",
+        "oslo-sentralstasjon"
+      ],
+      "summary": "Staten reiste en egen telegrafbygning ved Stortorvet for å samle avsending og fordeling av telegrammer. Den nye bygningen bandt Christiania tettere til det nasjonale kommunikasjonsnettet.",
+      "supplementary_note": "sources/supplementary/notater/telegrafbygningen-stortorvet.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Telegrafbygningen"
+      }
+    },
+    {
+      "id": "elektrisitetsverk-kraft-1892",
+      "title": "Elektrisk lys i gatene",
+      "year": 1892,
+      "year_display": "1892",
+      "bind": 5,
+      "tags": [
+        "industri",
+        "bygrunn"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "christiania-elektrisitetsverk",
+        "karl-johan-jubileet",
+        "hammeren-kraftverk"
+      ],
+      "summary": "Christiania Elektrisitetsværk tok i bruk kraft til gatebelysning og industribedrifter. Lysmastene langs hovedgatene viste at hovedstaden gikk inn i elektrifiseringens tidsalder.",
+      "supplementary_note": "sources/supplementary/notater/christiania-elektrisitetsverk.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: Christiania Elektrisitetsværk"
+      }
+    },
+    {
+      "id": "bislett-stadion-apnet-1908",
+      "title": "Bislett stadion åpnes",
+      "year": 1908,
+      "year_display": "1908",
+      "bind": 5,
+      "tags": [
+        "kultur",
+        "sport"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "bislett-stadion",
+        "majorstuen-knutepunkt",
+        "slottsparken"
+      ],
+      "summary": "Bislett stadion ble tatt i bruk som idrettsanlegg med skøytebane og løpebane. Folkefestene på Bislett ble et symbol på frivillig idrett i den voksende hovedstaden.",
+      "supplementary_note": "sources/supplementary/notater/bislett-stadion.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: SNL Bislett stadion"
+      }
+    },
+    {
+      "id": "maridalsvannet-drikkevann-1879",
+      "title": "Maridalsvannet til byen",
+      "year": 1879,
+      "year_display": "1879",
+      "bind": 4,
+      "tags": [
+        "bygrunn"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "maridalsvannet-vannforsyning",
+        "maridalskroken",
+        "hammeren-kraftverk"
+      ],
+      "summary": "Vannledning fra Maridalsvannet ga Christiania mer pålitelig drikkevann. Forsyningen fra marka hang sammen med folketallet og helseutfordringene i en stadig tettere by.",
+      "supplementary_note": "sources/supplementary/notater/maridalsvannet-vannforsyning.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Maridalsvannet"
+      }
+    },
+    {
+      "id": "korskirken-oslo-1200",
+      "title": "Korskirken i byen",
+      "year": 1200,
+      "year_display": "1200-tallet",
+      "bind": 1,
+      "tags": [
+        "kultur"
+      ],
+      "episode_id": "middelalder-oslo",
+      "place_ids": [
+        "korskirken-gamlebyen",
+        "minneparken-gamlebyen",
+        "domkirken-gamlebyen"
+      ],
+      "summary": "Korskirken var ett av flere kirkesentra i det tette middelalder-Oslo. Den lå nær Hallvardskatedralen og viste at byen bar flere menigheter på det begrensede arealet.",
+      "supplementary_note": "sources/supplementary/notater/korskirken-gamlebyen.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "supplement",
+        "note": "Supplement: SNL Korskirken i Oslo"
+      }
+    },
+    {
+      "id": "olavskloster-dominikanere-1239",
+      "title": "Olavsklosteret grunnlegges",
+      "year": 1239,
+      "year_display": "1239",
+      "bind": 1,
+      "tags": [
+        "kultur"
+      ],
+      "episode_id": "middelalder-oslo",
+      "place_ids": [
+        "olavskloster-gamlebyen",
+        "oslo-nye-bispegard",
+        "bispegarden"
+      ],
+      "summary": "Dominikanerne etablerte Olavsklosteret ved bispesetet og tok del i kirkelig undervisning i byen. Klosterlivet styrket bispens makt i unionshovedstaden.",
+      "supplementary_note": "sources/supplementary/notater/olavskloster-gamlebyen.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "supplement",
+        "note": "Supplement: SNL Olavsklosteret i Oslo"
+      }
+    },
+    {
+      "id": "byporten-apnet-1624",
+      "title": "Byporten til Christiania",
+      "year": 1624,
+      "year_display": "1624",
+      "bind": 2,
+      "tags": [
+        "bygrunn"
+      ],
+      "episode_id": "1624-ny-by",
+      "place_ids": [
+        "byporten-akershus",
+        "akershus",
+        "christiania-torv"
+      ],
+      "summary": "Den nye byen Christiania fikk sin hovedadgang gjennom festningens port ved Akershus. Fra porten ledet gatene rett inn i det planlagte kvadratet vest for Gamlebyen.",
+      "supplementary_note": "sources/supplementary/notater/byporten-akershus.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "supplement",
+        "note": "Supplement: Christiania 1624"
+      }
+    },
+    {
+      "id": "festningskirken-innvigd-1737",
+      "title": "Festningskirken innviet",
+      "year": 1737,
+      "year_display": "1737",
+      "bind": 2,
+      "tags": [
+        "kultur",
+        "festning"
+      ],
+      "episode_id": "kvadraturen-1600",
+      "place_ids": [
+        "festningskirken-akershus",
+        "akershus",
+        "kontraskjerp"
+      ],
+      "summary": "Den nye kirken inne på Akershus ble tatt i bruk som garnisonkirke. Den ga soldater og festningsarbeidere eget gudstjenestested inne i borgen.",
+      "supplementary_note": "sources/supplementary/notater/festningskirken-akershus.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "supplement",
+        "note": "Supplement: Festningskirken"
+      }
+    },
+    {
+      "id": "vandkunsten-reservoar-1740",
+      "title": "Vann på Akershus",
+      "year": 1740,
+      "year_display": "ca. 1740",
+      "bind": 2,
+      "tags": [
+        "festning",
+        "bygrunn"
+      ],
+      "episode_id": "kvadraturen-1600",
+      "place_ids": [
+        "vandkunsten-akershus",
+        "akershus",
+        "bymarken-kongens"
+      ],
+      "summary": "Vandkunsten ble etablert som vannlager for garnisonen. Reservoaret gjorde det lettere å utstå beleiring uten å være avhengig av brønner ute i byen.",
+      "supplementary_note": "sources/supplementary/notater/vandkunsten-akershus.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "supplement",
+        "note": "Supplement: Vandkunsten"
+      }
+    },
+    {
+      "id": "sjogata-planlagt-1624",
+      "title": "Gater langs festningsvollen",
+      "year": 1624,
+      "year_display": "1624",
+      "bind": 2,
+      "tags": [
+        "bygrunn",
+        "festning"
+      ],
+      "episode_id": "1624-ny-by",
+      "place_ids": [
+        "sjogata-kvadratur",
+        "bymarken-kongens",
+        "kontraskjerp"
+      ],
+      "summary": "Sjøgata fulgte festningsskråningen mot fjorden og knyttet det nye gatemønsteret til Akershus. Planen holdt havn, bymark og forsvar i ett system.",
+      "supplementary_note": "sources/supplementary/notater/sjogata-kvadratur.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "129-134",
+        "note": "Bind II: bymark"
+      }
+    },
+    {
+      "id": "krigskollegiet-flyttet-1814",
+      "title": "Krigskollegiet til hovedstaden",
+      "year": 1814,
+      "year_display": "1814",
+      "bind": 3,
+      "tags": [
+        "kommune"
+      ],
+      "episode_id": "1814-hovedstaden",
+      "place_ids": [
+        "krigskollegiet-christiania",
+        "stortinget",
+        "slottsplassen"
+      ],
+      "summary": "Det nye riket samlet militære embeder i Christiania, og Krigskollegiet fikk fast plass i byens kvartal for kongelige institusjoner.",
+      "supplementary_note": "sources/supplementary/notater/krigskollegiet-christiania.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "27-46",
+        "note": "Bind IV: 1814 i hovedstaden"
+      }
+    },
+    {
+      "id": "myntverket-til-christiania-1814",
+      "title": "Myntverket i embetsbyen",
+      "year": 1814,
+      "year_display": "ca. 1814",
+      "bind": 3,
+      "tags": [
+        "handel"
+      ],
+      "episode_id": "1814-hovedstaden",
+      "place_ids": [
+        "myntverket-kongens-gate",
+        "myntgata",
+        "norges-bank-bankplassen"
+      ],
+      "summary": "Myntverket i Kongens gate hang sammen med finans og handel i unionshovedstaden. Mynt og pengepolitikk fulgte embetsfolkene til sentrum.",
+      "supplementary_note": "sources/supplementary/notater/myntverket-kongens-gate.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 3,
+        "pages": "supplement",
+        "note": "Supplement: Myntverket i Christiania"
+      }
+    },
+    {
+      "id": "overhoffrett-opprettert-1828",
+      "title": "Overhoffretten opprettes",
+      "year": 1828,
+      "year_display": "1828",
+      "bind": 4,
+      "tags": [
+        "kommune"
+      ],
+      "episode_id": "1814-hovedstaden",
+      "place_ids": [
+        "overhoffretten-christiania",
+        "tollbugata-havn",
+        "stortinget"
+      ],
+      "summary": "Overhoffretten ble etablert som øverste domstol i Christiania. Rettsmakt og politikk møttes i gatene mellom Tollbugata og Stortinget.",
+      "supplementary_note": "sources/supplementary/notater/overhoffretten-christiania.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: Overhoffretten"
+      }
+    },
+    {
+      "id": "stormakt-ultimatum-1814",
+      "title": "Ultimatum i Collettgården",
+      "year": 1814,
+      "year_display": "juli 1814",
+      "bind": 4,
+      "tags": [
+        "kultur"
+      ],
+      "episode_id": "1814-hovedstaden",
+      "place_ids": [
+        "collettgaarden",
+        "eidsvolls-plass",
+        "overhoffretten-christiania"
+      ],
+      "summary": "Stormaktenes sendebud bodde i Collettgården sommeren 1814, og ultimatumsdagen 7. juli satte hele hovedstaden under politisk press. Gatene fyltes av rykter og aviser mens spørsmålet om union avgjørtes.",
+      "supplementary_note": "sources/excerpts/bind-IV-s27-46-forhold-ide-forste-selvs.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "27-46",
+        "note": "Bind IV: 1814 i hovedstaden"
+      }
+    },
+    {
+      "id": "loddefabrikken-start-1825",
+      "title": "Loddefabrikken ved Nydalen",
+      "year": 1825,
+      "year_display": "ca. 1825",
+      "bind": 4,
+      "tags": [
+        "industri"
+      ],
+      "episode_id": "akerselva-tidlig",
+      "place_ids": [
+        "loddefabrikken-nydalen",
+        "lilleborg-fabrikker",
+        "nydalens-compagnie"
+      ],
+      "summary": "Produksjon av lysstoffer ved Akerselva tok til ved Nydalen. Loddefabrikken knyttet vannkraft til forbrukerindustri i byen.",
+      "supplementary_note": "sources/supplementary/notater/loddefabrikken-nydalen.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: Lilleborg"
+      }
+    },
+    {
+      "id": "fossveien-verksteder-1850",
+      "title": "Verksteder på Fossveien",
+      "year": 1850,
+      "year_display": "ca. 1850",
+      "bind": 4,
+      "tags": [
+        "industri"
+      ],
+      "episode_id": "akerselva-tidlig",
+      "place_ids": [
+        "fossveien-grunerlokka",
+        "vulkan-akerselva",
+        "honse-lovisas-hus"
+      ],
+      "summary": "Fossveien fikk små verksteder og trehuskvarter da industri vokste ved elva på Grünerløkka. Gatene langs fossen bar folk til arbeid ved Vulkan og nedenfor.",
+      "supplementary_note": "sources/supplementary/notater/fossveien-grunerlokka.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: Fossveien"
+      }
+    },
+    {
+      "id": "dalsveien-sagbruk-1860",
+      "title": "Sagbruk langs Dalsveien",
+      "year": 1860,
+      "year_display": "ca. 1860",
+      "bind": 4,
+      "tags": [
+        "industri"
+      ],
+      "episode_id": "akerselva-tidlig",
+      "place_ids": [
+        "dalsveien-akerselva",
+        "myrens-verk",
+        "sagbrugsforeningen-sandaker"
+      ],
+      "summary": "Dalsveien bandt sagbruk og verk på Sandaker til elvekraften. Veien ble et transportspor for tømmer ned mot fjorden.",
+      "supplementary_note": "sources/supplementary/notater/dalsveien-akerselva.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: Dalsveien"
+      }
+    },
+    {
+      "id": "trondheimsveien-industri-1870",
+      "title": "Veien langs elva",
+      "year": 1870,
+      "year_display": "ca. 1870",
+      "bind": 4,
+      "tags": [
+        "industri",
+        "transport"
+      ],
+      "episode_id": "akerselva-tidlig",
+      "place_ids": [
+        "trondheimsveien-elva",
+        "sagene-loken",
+        "torshov-bydel"
+      ],
+      "summary": "Trondheimsveien langs Akerselva bar reisende og arbeidere til verkene på Sagene og Torshov. Veinettet fulgte befolkningsveksten på østsiden.",
+      "supplementary_note": "sources/supplementary/notater/trondheimsveien-elva.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: Trondheimsveien"
+      }
+    },
+    {
+      "id": "lanegangen-pakkhus-1855",
+      "title": "Pakkhus ved Lånegangen",
+      "year": 1855,
+      "year_display": "ca. 1855",
+      "bind": 4,
+      "tags": [
+        "havn",
+        "handel"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "lanegangen-pakkhus",
+        "langkaia-bjorvika",
+        "oslo-sentralstasjon"
+      ],
+      "summary": "Pakkhusene ved Lånegangen tok imot varer fra dampbåter og jernbane. Lagringen hang sammen med den nye kaifronten mot Bjørvika.",
+      "supplementary_note": "sources/supplementary/notater/lanegangen-pakkhus.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: Oslo havn"
+      }
+    },
+    {
+      "id": "holmen-verft-1815",
+      "title": "Holmen skipsverft",
+      "year": 1815,
+      "year_display": "ca. 1815",
+      "bind": 4,
+      "tags": [
+        "havn",
+        "industri"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "holmen-verft",
+        "filipstad-havn",
+        "nylands-verksted"
+      ],
+      "summary": "Holmen verft ved Filipstad bygde og reparerte skip for den voksende damphavnen. Verftet la grunnlag for den mekaniske industrien i søndre havn.",
+      "supplementary_note": "sources/supplementary/notater/holmen-verft.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: Holmen verft"
+      }
+    },
+    {
+      "id": "gronlandsleiret-verksted-1860",
+      "title": "Verksteder på Grønlandsleiret",
+      "year": 1860,
+      "year_display": "1860",
+      "bind": 4,
+      "tags": [
+        "havn",
+        "industri"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "gronlandsleiret-havn",
+        "nylands-verksted",
+        "gronland-ladested"
+      ],
+      "summary": "Da Nylands Verksted flyttet til Nyland, ble Grønlandsleiret arbeidervei mellom østkanten og verftene. Dampbåtene og kaiene knyttet strøket til hele havnen.",
+      "supplementary_note": "sources/supplementary/notater/gronlandsleiret-havn.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: Nylands Verksted"
+      }
+    },
+    {
+      "id": "tollboden-oppfort-1896",
+      "title": "Ny Tollboden på Tollbugata",
+      "year": 1896,
+      "year_display": "1896",
+      "bind": 4,
+      "tags": [
+        "havn",
+        "handel"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "tollboden-tollbugata",
+        "tollbodbryggen",
+        "handelsstand-toldbodgaten"
+      ],
+      "summary": "Den nåværende Tollboden ble reist ved Tollbugata etter at den foregående tollbygningen var revet. Den nye fasaden markerte at tollvesenet og damphavnen hadde fått fast arkitektur ved inngangen til Rådhusplassen.",
+      "supplementary_note": "sources/supplementary/notater/tollboden-tollbugata.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: Oslo byleksikon Tollboden"
+      }
+    },
+    {
+      "id": "tollpakkehuset-ferdig-1850",
+      "title": "Tollpakkehuset ferdig",
+      "year": 1850,
+      "year_display": "1846-50",
+      "bind": 4,
+      "tags": [
+        "havn",
+        "handel"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "tollpakkehuset-strandgata",
+        "tollbodbryggen",
+        "nordre-brygge-tollbugata"
+      ],
+      "summary": "Tollpakkehuset sto ferdig som lager for tollgods ved kaikanten. Bygningen ble den eldste bevarte delen av havneanlegget da dampskiptrafikken tok fart mot midten av århundret.",
+      "supplementary_note": "sources/supplementary/notater/tollpakkehuset.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: Oslo byleksikon Tollpakkehuset"
+      }
+    },
+    {
+      "id": "holmen-aker-verft-1856",
+      "title": "Akers mek. kjøper Holmen",
+      "year": 1856,
+      "year_display": "1856",
+      "bind": 4,
+      "tags": [
+        "havn",
+        "industri"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "holmen-lokke-pipervika",
+        "aker-mek-pipervika",
+        "vestbanestasjon-ruselokk"
+      ],
+      "summary": "Akers mekaniske verksted overtok Holmen på Pipervikas vestside og konsoliderte skipsbyggingen ved fjorden. Det satte fart på flyttingen av verkstedsdriften fra fossen til dampdrevne verft i Pipervika.",
+      "supplementary_note": "sources/supplementary/notater/holmen-lokke-pipervika.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: Oslo byleksikon Holmen"
       }
     }
   ]

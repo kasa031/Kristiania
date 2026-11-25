@@ -929,10 +929,13 @@ function initPlaceMiniMap(place) {
 
 function mediaFigureHtml(item) {
   if (!item?.image?.url) return "";
+  const sec = window.KristianiaCommunitySecurity;
+  const imgUrl = sec?.safeImageUrl?.(item.image.url) || null;
+  if (!imgUrl) return "";
   const credit = item.image.credit
-    ? `<figcaption class="detail-figure-credit">${item.image.credit}</figcaption>`
+    ? `<figcaption class="detail-figure-credit">${escapeHtml(item.image.credit)}</figcaption>`
     : "";
-  return `<figure class="detail-figure"><img src="${item.image.url}" alt="" loading="lazy" width="640" height="auto" />${credit}</figure>`;
+  return `<figure class="detail-figure"><img src="${escapeHtml(imgUrl)}" alt="" loading="lazy" width="640" decoding="async" onerror="this.closest('figure')?.remove()" />${credit}</figure>`;
 }
 
 function personByRef(ref) {
@@ -1078,6 +1081,9 @@ function homeHistoryState(view, mode = "explore") {
 }
 
 function getAppBase() {
+  if (typeof window.__KRISTIANIA_BASE__ === "string") {
+    return window.__KRISTIANIA_BASE__;
+  }
   const script = document.querySelector('script[src*="app.js"]');
   if (!script?.src) return "";
   try {
@@ -1631,9 +1637,9 @@ function osmWalkDirectionsUrl(place) {
   return `https://www.openstreetmap.org/directions?engine=fossgis_osrm_foot&route=${encodeURIComponent(`${from};${to}`)}`;
 }
 
-function travelHintHtml(place) {
+function distanceToPlaceMeters(place) {
   const user = userLatLng();
-  if (!user || !place) return "";
+  if (!user || !place) return null;
   let meters = haversineMeters(user, { lat: place.lat, lng: place.lng });
   if (
     state.userRouteTargetId === place.id &&
@@ -1641,17 +1647,42 @@ function travelHintHtml(place) {
   ) {
     meters = state.userRouteDistanceM;
   }
-  if (meters < routeTravelThresholdM()) return "";
+  return meters;
+}
+
+function updateTravelWalkLinkLabels(distanceM, targetPlaceId) {
+  if (distanceM == null || !targetPlaceId) return;
+  if (distanceM < routeTravelThresholdM()) return;
+  const walkMin = formatWalkMinutes(walkMinutesForMeters(distanceM));
+  const label = `Gåvei · ${walkMin} (${formatDistanceM(distanceM)})`;
+  document.querySelectorAll(".ep-travel-links").forEach((wrap) => {
+    const walkLink = wrap.querySelector(".ep-travel-link:not(.ep-travel-osm):not(.ep-travel-entur)");
+    if (!walkLink) return;
+    walkLink.textContent = label;
+  });
+  if (state.walkMode) {
+    renderWalkProgress(distanceToNextStopText());
+  }
+}
+
+function travelHintHtml(place) {
+  const meters = distanceToPlaceMeters(place);
+  if (meters == null) return "";
+  const minM = state.walkMode ? 40 : routeTravelThresholdM();
+  if (meters < minM) return "";
   const walkUrl = travelDirectionsUrl(place);
   const walkMin = formatWalkMinutes(walkMinutesForMeters(meters));
+  const osrmOnMap = state.siteConfig?.travel_draw_osrm_in_map !== false;
   const links = [
     `<a class="ep-travel-link" href="${walkUrl}" target="_blank" rel="noopener noreferrer">Gåvei · ${walkMin} (${formatDistanceM(meters)})</a>`,
   ];
-  const osmUrl = osmWalkDirectionsUrl(place);
-  if (osmUrl) {
-    links.push(
-      `<a class="ep-travel-link ep-travel-osm" href="${osmUrl}" target="_blank" rel="noopener noreferrer">Fotrute (kart)</a>`,
-    );
+  if (!osrmOnMap) {
+    const osmUrl = osmWalkDirectionsUrl(place);
+    if (osmUrl) {
+      links.push(
+        `<a class="ep-travel-link ep-travel-osm" href="${osmUrl}" target="_blank" rel="noopener noreferrer">Fotrute (kart)</a>`,
+      );
+    }
   }
   if (state.siteConfig.travel_show_entur !== false) {
     const enturUrl = enturJourneyUrl(place);
@@ -1661,7 +1692,11 @@ function travelHintHtml(place) {
       );
     }
   }
-  return `<span class="ep-travel-links">${links.join("")}</span>`;
+  const note =
+    osrmOnMap && state.userRouteTargetId === place.id && state.userRouteDistanceM != null
+      ? '<span class="detail-muted ep-travel-route-note">Fotrute tegnet på kartet.</span>'
+      : "";
+  return `<span class="ep-travel-links">${links.join("")}${note}</span>`;
 }
 
 function clearUserTravelRoute() {
@@ -1706,22 +1741,16 @@ async function refreshUserTravelRoute() {
       weight: state.walkMode ? 5 : 5,
       opacity: 0.82,
     }).addTo(state.userRouteLayer);
-    if (state.walkMode) {
-      renderWalkProgress(distanceToNextStopText());
-    }
-    if (!document.querySelector(".ep-travel-route-note")) {
-      const wrap = document.querySelector(".ep-travel-links");
-      if (wrap) {
-        wrap.insertAdjacentHTML(
-          "beforeend",
-          '<span class="detail-muted ep-travel-route-note">Fotrute tegnet på kartet.</span>',
-        );
+    updateTravelWalkLinkLabels(route.distance, target.id);
+    const targetPlace = state.places.find((p) => p.id === target.id);
+    if (targetPlace && state.activePlaceId === target.id) {
+      const travelEl = document.querySelector(".detail-travel.walk-travel-hint");
+      if (travelEl) {
+        travelEl.innerHTML = travelHintHtml(targetPlace);
+        travelEl.querySelectorAll(".ep-travel-link").forEach((link) => {
+          link.addEventListener("click", (ev) => ev.stopPropagation());
+        });
       }
-    }
-    const walkLink = document.querySelector(".detail-travel .ep-travel-link");
-    if (walkLink && route.distance >= routeTravelThresholdM()) {
-      const walkMin = formatWalkMinutes(walkMinutesForMeters(route.distance));
-      walkLink.textContent = `Gåvei · ${walkMin} (${formatDistanceM(route.distance)})`;
     }
   } catch (err) {
     if (err?.name === "AbortError") return;
@@ -1740,6 +1769,14 @@ async function exportAllCommunityPins() {
   const list = loadCommunityPins();
   if (!list.length) return;
   const text = JSON.stringify(list, null, 2);
+  const sec = window.KristianiaCommunitySecurity;
+  if (sec?.assertExportSizeOk && !sec.assertExportSizeOk(text)) {
+    const geo = document.getElementById("community-tag-geo");
+    if (geo) {
+      geo.textContent = "Eksporten er for stor. Slett gamle bidrag før du eksporterer.";
+    }
+    return;
+  }
   try {
     if (navigator.clipboard?.writeText) {
       await navigator.clipboard.writeText(text);
@@ -2440,9 +2477,11 @@ function renderMapLegend() {
 }
 
 function safeHttpUrl(url) {
+  const sec = window.KristianiaCommunitySecurity;
+  if (sec?.safeHttpUrl) return sec.safeHttpUrl(url);
   if (!url || typeof url !== "string") return null;
   try {
-    const u = new URL(url, window.location.href);
+    const u = new URL(url.trim(), window.location.href);
     if (u.protocol === "https:" || u.protocol === "http:") return u.href;
   } catch {
     return null;
@@ -2458,9 +2497,53 @@ function escapeHtml(text) {
     .replace(/"/g, "&quot;");
 }
 
+const TEXT_FOLD_MIN_CHARS = 220;
+const TIMELINE_FOLD_MIN_CHARS = 140;
+
+function collapsibleTextHtml(text, className) {
+  const t = String(text ?? "");
+  if (t.length <= TEXT_FOLD_MIN_CHARS) {
+    return `<p class="${className}">${escapeHtml(t)}</p>`;
+  }
+  return `<div class="text-fold" data-text-fold>
+    <p class="${className} text-fold-body is-collapsed">${escapeHtml(t)}</p>
+    <button type="button" class="text-fold-toggle" data-action="text-fold-toggle" aria-expanded="false" aria-label="Vis hele teksten" title="Vis hele teksten">+</button>
+  </div>`;
+}
+
+function collapsibleBodyHtml(text) {
+  return collapsibleTextHtml(text, "detail-body");
+}
+
+function eventTeaserHtml(summary) {
+  const t = String(summary ?? "");
+  if (t.length <= TIMELINE_FOLD_MIN_CHARS) {
+    return `<p class="event-teaser">${escapeHtml(t)}</p>`;
+  }
+  return `<div class="text-fold text-fold--timeline" data-text-fold>
+    <p class="event-teaser text-fold-body is-collapsed">${escapeHtml(t)}</p>
+    <button type="button" class="text-fold-toggle" data-action="text-fold-toggle" aria-expanded="false" aria-label="Vis hele teksten" title="Vis hele teksten">+</button>
+  </div>`;
+}
+
+function handleTextFoldToggle(event) {
+  const btn = event.target.closest("[data-action='text-fold-toggle']");
+  if (!btn) return;
+  event.stopPropagation();
+  const body = btn.closest("[data-text-fold]")?.querySelector(".text-fold-body");
+  if (!body) return;
+  const collapsed = body.classList.toggle("is-collapsed");
+  btn.textContent = collapsed ? "+" : "-";
+  btn.setAttribute("aria-expanded", collapsed ? "false" : "true");
+  btn.setAttribute("aria-label", collapsed ? "Vis hele teksten" : "Skjul teksten");
+  btn.title = collapsed ? "Vis hele teksten" : "Skjul teksten";
+}
+
 const COMMUNITY_PINS_KEY = "kristiania-community-pins";
 
 function parseHashtagField(raw) {
+  const sec = window.KristianiaCommunitySecurity;
+  if (sec?.sanitizeHashtagList) return sec.sanitizeHashtagList(raw);
   const tags = new Set();
   for (const part of String(raw || "").split(/[\s,]+/)) {
     const t = part.trim().replace(/^#+/, "");
@@ -2472,17 +2555,26 @@ function parseHashtagField(raw) {
 function loadCommunityPins() {
   try {
     const raw = localStorage.getItem(COMMUNITY_PINS_KEY);
-    const list = raw ? JSON.parse(raw) : [];
     const sec = window.KristianiaCommunitySecurity;
+    const list = sec?.parseCommunityPinsJson
+      ? sec.parseCommunityPinsJson(raw)
+      : raw
+        ? JSON.parse(raw)
+        : [];
+    if (list === null) {
+      localStorage.removeItem(COMMUNITY_PINS_KEY);
+      return [];
+    }
     if (sec?.sanitizePinList) {
       const cleaned = sec.sanitizePinList(list);
-      if (Array.isArray(list) && cleaned.length !== list.length) {
+      if (cleaned.length !== list.length || JSON.stringify(cleaned) !== JSON.stringify(list)) {
         saveCommunityPins(cleaned);
       }
       return cleaned;
     }
     return Array.isArray(list) ? list : [];
   } catch {
+    localStorage.removeItem(COMMUNITY_PINS_KEY);
     return [];
   }
 }
@@ -2661,6 +2753,7 @@ function initCommunityTagUi() {
       return;
     }
 
+    let cleanedAlias = (sec?.stripDangerousMarkup(aliasRaw) || aliasRaw).slice(0, 40) || "";
     if (sec?.validateCommunityFields) {
       const valid = sec.validateCommunityFields({
         title,
@@ -2680,19 +2773,18 @@ function initCommunityTagUi() {
       title = valid.cleaned.title;
       story = valid.cleaned.story;
       address = valid.cleaned.address;
+      cleanedAlias = valid.cleaned.alias || cleanedAlias;
     }
 
     const pin = {
-      id: `community-${Date.now()}`,
+      id: sec?.createCommunityPinId?.() || `community-${Date.now()}`,
       title,
       story,
       address,
       lat,
       lng,
-      hashtags: parseHashtagField(document.getElementById("community-tag-hashtags").value).filter(
-        (tag) => !sec?.containsBlockedContent?.(tag),
-      ),
-      authorAlias: (sec?.stripDangerousMarkup(aliasRaw) || aliasRaw).slice(0, 40) || undefined,
+      hashtags: parseHashtagField(document.getElementById("community-tag-hashtags").value),
+      authorAlias: cleanedAlias || undefined,
       createdAt: new Date().toISOString(),
     };
     const list = loadCommunityPins();
@@ -2814,7 +2906,7 @@ function renderDistrictPanel(districtId) {
   el.innerHTML = `
     <h3>${escapeHtml(district.name)}</h3>
     ${era ? `<p class="chip chronology">${escapeHtml(era.label)} <span class="era-short">${escapeHtml(era.short || "")}</span></p>` : ""}
-    ${eraNote ? `<p class="detail-body">${escapeHtml(eraNote)}</p>` : ""}
+    ${eraNote ? collapsibleBodyHtml(eraNote) : ""}
     <h4 class="district-section">Funn og arkeologi</h4>
     <ul class="district-list">${findList}</ul>
     <h4 class="district-section">Steder (${places.length})</h4>
@@ -2879,7 +2971,7 @@ function selectContext(contextId) {
     ${sourceBadgeHtml(ctx)}
     ${sourceBlockHtml(ctx)}
     ${mediaFigureHtml(ctx)}
-    <p class="detail-body">${escapeHtml(ctx.summary)}</p>
+    ${collapsibleBodyHtml(ctx.summary)}
     ${placeLinks}
     <p class="detail-actions"><button type="button" class="detail-back linkish" data-action="clear-selection">Lukk</button></p>
   `;
@@ -2945,7 +3037,7 @@ function selectPerson(personId) {
     ${sourceBadgeHtml(person)}
     ${sourceBlockHtml(person)}
     ${mediaFigureHtml(person)}
-    <p class="detail-body">${escapeHtml(person.summary)}</p>
+    ${collapsibleBodyHtml(person.summary)}
     ${placeLinks ? `<p class="detail-places"><span class="links-label">Steder:</span> ${placeLinks}</p>` : ""}
     <p class="detail-actions"><button type="button" class="detail-back linkish" data-action="clear-selection">Lukk</button></p>
   `;
@@ -3006,7 +3098,7 @@ function selectFind(findId) {
       <span class="chip chronology">${escapeHtml(find.year_display || formatYearLabel(window.OsloHistorieBydel.findYear(find)))}</span>
     </div>
     ${mediaFigureHtml(find)}
-    <p class="detail-body">${escapeHtml(find.summary)}</p>
+    ${collapsibleBodyHtml(find.summary)}
     ${nearHtml}
     <p class="detail-actions"><button type="button" class="detail-back linkish" data-action="clear-selection">Lukk</button></p>
   `;
@@ -3084,7 +3176,7 @@ function renderTimeline() {
     card.innerHTML = `
       <div class="year">${escapeHtml(ev.year_display || ev.year)}</div>
       <h3>${escapeHtml(ev.title)}</h3>
-      <p class="event-teaser">${escapeHtml(ev.summary)}</p>
+      ${eventTeaserHtml(ev.summary)}
       <div class="meta-row">
         ${bindChipHtml(ev.bind)}
         ${tagChipsHtml(ev.tags)}
@@ -3111,7 +3203,7 @@ function renderTimeline() {
     card.innerHTML = `
       <div class="year">${escapeHtml(find.year_display || formatYearLabel(row.year))}</div>
       <h3>${escapeHtml(find.title)}</h3>
-      <p class="event-teaser">${escapeHtml(find.summary)}</p>
+      ${eventTeaserHtml(find.summary)}
       <div class="meta-row"><span class="chip">Funn</span></div>
     `;
     card.addEventListener("click", () => selectFind(find.id));
@@ -3136,7 +3228,7 @@ function renderTimeline() {
     card.innerHTML = `
       <div class="year">${escapeHtml(ctx.year_display || formatYearLabel(row.year))}</div>
       <h3>${escapeHtml(ctx.title)}</h3>
-      <p class="event-teaser">${escapeHtml(ctx.summary)}</p>
+      ${eventTeaserHtml(ctx.summary)}
       <div class="meta-row">
         <span class="chip">Bakgrunn</span>
         ${bindChipHtml(ctx.bind)}
@@ -3184,7 +3276,7 @@ function renderDetail() {
         ${tagChipsHtml(blueSign.tags)}
       </div>
       ${blueSign.address ? `<p class="detail-muted">${escapeHtml(blueSign.address)}</p>` : ""}
-      <p class="detail-body">${escapeHtml(blueSign.summary)}</p>
+      ${collapsibleBodyHtml(blueSign.summary)}
       <p class="detail-muted">Kulturhistorisk skilt.</p>
       ${detailActions}
     `;
@@ -3203,7 +3295,7 @@ function renderDetail() {
         ${tags ? `<span class="chip">${escapeHtml(tags)}</span>` : ""}
       </div>
       ${communityPin.address ? `<p class="detail-muted">${escapeHtml(communityPin.address)}</p>` : ""}
-      <p class="detail-body">${escapeHtml(communityPin.story)}</p>
+      ${collapsibleBodyHtml(communityPin.story)}
       <p class="detail-muted">Lagret lokalt på denne enheten.</p>
       <p class="detail-muted community-copy-hint" hidden aria-live="polite"></p>
       ${detailActions}
@@ -3255,7 +3347,7 @@ function renderDetail() {
       ${sourceBlockHtml(place)}
       ${bindSourceLinksHtml(place.bind)}
       ${placeVisualHtml(place)}
-      <p class="detail-body">${escapeHtml(place.summary)}</p>
+      ${collapsibleBodyHtml(place.summary)}
       ${peopleLinksHtml(place)}
       ${links ? `<p class="popup-links"><span class="links-label">Les mer:</span> ${links}</p>` : ""}
       ${detailActions}
@@ -3302,7 +3394,7 @@ function renderDetail() {
     ${sourceBadgeHtml(event)}
     ${sourceBlockHtml(event)}
     ${bindSourceLinksHtml(event.bind)}
-    <p class="detail-body">${escapeHtml(event.summary)}</p>
+    ${collapsibleBodyHtml(event.summary)}
     ${placeLinks}
     ${detailActions}
   `;
@@ -3806,9 +3898,17 @@ function bindUi() {
 
   document.getElementById("btn-reset-filters")?.addEventListener("click", resetFilters);
 
+  const timelineList = document.getElementById("timeline-list");
+  if (timelineList) {
+    timelineList.addEventListener("click", (e) => {
+      if (e.target.closest("[data-action='text-fold-toggle']")) handleTextFoldToggle(e);
+    });
+  }
+
   const detailPanel = document.getElementById("detail-panel");
   if (detailPanel) {
     detailPanel.addEventListener("click", (e) => {
+      if (e.target.closest("[data-action='text-fold-toggle']")) handleTextFoldToggle(e);
       if (e.target.closest("[data-action='clear-selection']")) clearSelection();
       if (e.target.closest("[data-action='delete-community-pin']")) {
         const pinId = state.activeCommunityPinId;
@@ -3917,10 +4017,10 @@ init().catch((err) => {
   console.error(err);
   document.body.classList.remove("app-loading");
   const boot = document.getElementById("detail-panel");
-  const msg = `Kunne ikke laste data. Kjør .\\scripts\\serve.ps1 og åpne http://localhost:8080/ (${err?.message || err})`;
+  const msg = `Kunne ikke laste data. Bruk ikke fil:// - kjør .\\scripts\\open-local-app.ps1 (http://127.0.0.1:8808/home). Feil: ${err?.message || err}`;
   if (boot) boot.innerHTML = `<p class="detail-muted">${escapeHtml(msg)}</p>`;
   document.body.insertAdjacentHTML(
     "beforeend",
-    `<p style="color:${BIND_COLORS[1]};padding:1rem">${msg}</p>`,
+    `<p style="color:${escapeHtml(BIND_COLORS[1])};padding:1rem">${escapeHtml(msg)}</p>`,
   );
 });

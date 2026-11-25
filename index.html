@@ -2,9 +2,23 @@
 <html lang="nb">
   <head>
     <meta charset="UTF-8" />
+    <base id="app-base" href="/" />
+    <script>
+      (function () {
+        var path = window.location.pathname || "/";
+        path = path.replace(/\/index\.html$/i, "");
+        var base = path.replace(/\/(home|kart|tur)(?:\/.*)?$/i, "") || "";
+        if (base && !base.endsWith("/")) base += "/";
+        if (!base) base = "/";
+        var el = document.getElementById("app-base");
+        if (el) el.setAttribute("href", base);
+        window.__KRISTIANIA_BASE__ = base.replace(/\/$/, "");
+      })();
+    </script>
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' https://unpkg.com https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https:; connect-src 'self' https://nominatim.openstreetmap.org https://router.project-osrm.org https://api.mapbox.com https://*.tile.openstreetmap.org https://*.basemaps.cartocdn.com; worker-src 'self' blob:; base-uri 'self'; form-action 'self'"
+      content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' https://unpkg.com https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https://upload.wikimedia.org https://*.tile.openstreetmap.org https://*.basemaps.cartocdn.com; connect-src 'self' https://nominatim.openstreetmap.org https://router.project-osrm.org https://api.mapbox.com https://*.tile.openstreetmap.org https://*.basemaps.cartocdn.com; worker-src 'self' blob:; object-src 'none'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Kristiania | Historisk vandringskart</title>
@@ -24,9 +38,9 @@
       integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
       crossorigin=""
     />
-    <link rel="stylesheet" href="css/style.css?v=115" />
-    <link rel="stylesheet" href="css/motion.css?v=115" />
-    <link rel="stylesheet" href="css/theme-kristiania.css?v=115" />
+    <link rel="stylesheet" href="css/style.css?v=141" />
+    <link rel="stylesheet" href="css/motion.css?v=141" />
+    <link rel="stylesheet" href="css/theme-kristiania.css?v=141" />
   </head>
   <body class="theme-avis-1880 theme-dronningensgate1714 home-active">
     <header class="app-header masthead" role="banner">
@@ -52,6 +66,7 @@
             alt=""
             width="320"
             height="320"
+            onerror="this.hidden=true"
             decoding="async"
             fetchpriority="high"
           />
@@ -265,7 +280,7 @@
     </footer>
 
     <dialog class="community-tag-dialog" id="community-tag-dialog" aria-labelledby="community-tag-title">
-      <form id="community-tag-form" method="dialog" class="community-tag-form">
+      <form id="community-tag-form" method="dialog" class="community-tag-form" autocomplete="off">
         <header class="community-tag-header">
           <h2 id="community-tag-title">Del et sted</h2>
           <p class="community-tag-lead" id="community-tag-lead"></p>
@@ -310,10 +325,10 @@
       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
       crossorigin=""
     ></script>
-    <script src="js/motion.js?v=68" defer></script>
-    <script src="js/bydel.js?v=68"></script>
-    <script src="js/community-security.js?v=115"></script>
-    <script src="js/app.js?v=115"></script>
+    <script src="js/motion.js?v=141" defer></script>
+    <script src="js/bydel.js?v=141"></script>
+    <script src="js/community-security.js?v=141"></script>
+    <script src="js/app.js?v=141"></script>
     <script>
       if ("serviceWorker" in navigator) {
         let base = "";

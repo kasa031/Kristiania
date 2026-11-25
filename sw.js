@@ -1,4 +1,4 @@
-const CACHE = "oslo-historie-v115";
+const CACHE = "oslo-historie-v141";
 const PRECACHE = [
   "/",
   "/index.html",
@@ -53,6 +53,7 @@ const NETWORK_FIRST_PATHS = new Set([
   "/",
   "/index.html",
   "/js/app.js",
+  "/js/community-security.js",
   "/js/motion.js",
   "/js/bydel.js",
   "/css/style.css",
