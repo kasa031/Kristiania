@@ -19,6 +19,8 @@
   "home_jubilee_note": "",
   "home_search_hint": "Finn på kartet",
   "home_routes_hint": "Start gåtur",
+  "home_share_hint": "Tag lokalhistorie",
+  "community_tags_enabled": true,
   "home_back_label": "Tilbake",
   "show_home_on_load": true,
   "masthead_edition": "",

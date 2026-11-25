@@ -1192,6 +1192,9 @@ function dismissHome(nextMode = "explore", options = {}) {
   if (!isHomeActive()) return;
   leaveHomeScreenDom(nextMode);
   if (!options.skipHistory) writeAppRoute(nextMode);
+  if (options.openCommunityTag) {
+    window.setTimeout(() => openCommunityTagDialog(), 250);
+  }
 }
 
 function showHomeScreen(options = {}) {
@@ -1299,6 +1302,10 @@ function applyBranding() {
   if (homeSearchHint && cfg.home_search_hint) homeSearchHint.textContent = cfg.home_search_hint;
   const homeRoutesHint = document.getElementById("home-routes-hint");
   if (homeRoutesHint && cfg.home_routes_hint) homeRoutesHint.textContent = cfg.home_routes_hint;
+  const homeShareHint = document.getElementById("home-share-hint");
+  if (homeShareHint && cfg.home_share_hint) homeShareHint.textContent = cfg.home_share_hint;
+  const shareBtn = document.getElementById("home-btn-share");
+  if (shareBtn) shareBtn.hidden = cfg.community_tags_enabled === false;
   const homeJubilee = document.getElementById("home-jubilee-note");
   if (homeJubilee) {
     if (cfg.home_jubilee_note) {
@@ -2176,6 +2183,170 @@ function renderMapLegend() {
     .join("");
 }
 
+function escapeHtml(text) {
+  return String(text ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+const COMMUNITY_PINS_KEY = "kristiania-community-pins";
+
+function parseHashtagField(raw) {
+  const tags = new Set();
+  for (const part of String(raw || "").split(/[\s,]+/)) {
+    const t = part.trim().replace(/^#+/, "");
+    if (t) tags.add(`#${t.toLowerCase()}`);
+  }
+  return [...tags];
+}
+
+function loadCommunityPins() {
+  try {
+    const raw = localStorage.getItem(COMMUNITY_PINS_KEY);
+    const list = raw ? JSON.parse(raw) : [];
+    return Array.isArray(list) ? list : [];
+  } catch {
+    return [];
+  }
+}
+
+function saveCommunityPins(list) {
+  localStorage.setItem(COMMUNITY_PINS_KEY, JSON.stringify(list));
+}
+
+function communityPinHtml() {
+  return `<div class="pin-community" aria-hidden="true">#</div>`;
+}
+
+function refreshCommunityMarkers() {
+  Object.values(state.communityMarkers || {}).forEach((m) => m.remove());
+  state.communityMarkers = {};
+  if (!state.siteConfig?.community_tags_enabled || !state.map) return;
+
+  const mobilePins = window.matchMedia("(max-width: 900px)").matches;
+  const pinBox = mobilePins ? 32 : 26;
+  const pinAnchor = pinBox / 2;
+  loadCommunityPins().forEach((pin) => {
+    if (typeof pin.lat !== "number" || typeof pin.lng !== "number") return;
+    const icon = L.divIcon({
+      className: "custom-pin custom-pin-community",
+      html: communityPinHtml(),
+      iconSize: [pinBox, pinBox],
+      iconAnchor: [pinAnchor, pinAnchor],
+    });
+    const tags = (pin.hashtags || []).join(" ");
+    const marker = L.marker([pin.lat, pin.lng], { icon, zIndexOffset: 60 }).addTo(state.map);
+    marker.bindPopup(
+      `<strong>${escapeHtml(pin.title)}</strong><p>${escapeHtml((pin.story || "").slice(0, 160))}${(pin.story || "").length > 160 ? "..." : ""}</p><p class="popup-blaa">${escapeHtml(tags)}</p><p class="popup-cta">Brukerbidrag · lagret lokalt</p>`,
+    );
+    state.communityMarkers[pin.id] = marker;
+  });
+}
+
+function openCommunityTagDialog() {
+  const dlg = document.getElementById("community-tag-dialog");
+  if (!dlg || !state.siteConfig?.community_tags_enabled) return;
+  const err = document.getElementById("community-tag-error");
+  if (err) err.hidden = true;
+  const geo = document.getElementById("community-tag-geo");
+  if (geo) geo.textContent = "";
+  document.getElementById("community-tag-lat").value = "";
+  document.getElementById("community-tag-lng").value = "";
+  if (typeof dlg.showModal === "function") dlg.showModal();
+}
+
+function initCommunityTagUi() {
+  const dlg = document.getElementById("community-tag-dialog");
+  const form = document.getElementById("community-tag-form");
+  if (!dlg || !form || !state.siteConfig?.community_tags_enabled) return;
+
+  dlg.querySelector('[data-action="community-tag-cancel"]')?.addEventListener("click", () => dlg.close());
+
+  document.getElementById("community-tag-locate")?.addEventListener("click", () => {
+    if (!navigator.geolocation) return;
+    navigator.geolocation.getCurrentPosition(
+      async (pos) => {
+        const lat = pos.coords.latitude;
+        const lng = pos.coords.longitude;
+        document.getElementById("community-tag-lat").value = String(lat);
+        document.getElementById("community-tag-lng").value = String(lng);
+        const label = await reverseGeocodeLabel(lat, lng);
+        const geo = document.getElementById("community-tag-geo");
+        if (geo) geo.textContent = label ? `Koordinat satt: ${label}` : "Koordinat satt fra posisjonen din.";
+        if (label && !document.getElementById("community-tag-address").value) {
+          document.getElementById("community-tag-address").value = label;
+        }
+      },
+      () => {
+        const err = document.getElementById("community-tag-error");
+        if (err) {
+          err.textContent = "Kunne ikke hente posisjon. Prøv adressesøk i kartet.";
+          err.hidden = false;
+        }
+      },
+      { enableHighAccuracy: true, timeout: 12000 },
+    );
+  });
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const err = document.getElementById("community-tag-error");
+    if (err) err.hidden = true;
+
+    const title = document.getElementById("community-tag-title-input").value.trim();
+    const story = document.getElementById("community-tag-story").value.trim();
+    const address = document.getElementById("community-tag-address").value.trim();
+    let lat = parseFloat(document.getElementById("community-tag-lat").value);
+    let lng = parseFloat(document.getElementById("community-tag-lng").value);
+
+    if (!title || !story) {
+      if (err) {
+        err.textContent = "Fyll inn tittel og historie.";
+        err.hidden = false;
+      }
+      return;
+    }
+
+    if (!Number.isFinite(lat) || !Number.isFinite(lng)) {
+      const q = address || title;
+      const rows = await nominatimForwardSearch(q);
+      if (rows?.[0]) {
+        lat = parseFloat(rows[0].lat);
+        lng = parseFloat(rows[0].lon);
+      }
+    }
+
+    if (!Number.isFinite(lat) || !Number.isFinite(lng)) {
+      if (err) {
+        err.textContent = "Fant ikke stedet. Bruk «Bruk min posisjon» eller mer presis adresse.";
+        err.hidden = false;
+      }
+      return;
+    }
+
+    const pin = {
+      id: `community-${Date.now()}`,
+      title,
+      story,
+      address,
+      lat,
+      lng,
+      hashtags: parseHashtagField(document.getElementById("community-tag-hashtags").value),
+      authorAlias: document.getElementById("community-tag-alias").value.trim() || undefined,
+      createdAt: new Date().toISOString(),
+    };
+    const list = loadCommunityPins();
+    list.push(pin);
+    saveCommunityPins(list);
+    dlg.close();
+    form.reset();
+    refreshCommunityMarkers();
+    state.map?.panTo([lat, lng], { animate: true });
+  });
+}
+
 function refreshMarkers() {
   Object.values(state.markers).forEach((m) => m.remove());
   state.markers = {};
@@ -2220,6 +2391,7 @@ function refreshMarkers() {
   refreshWalkRoute();
   refreshFindMarkers();
   refreshPeopleMarkers();
+  refreshCommunityMarkers();
   state.districtMapUi?.restyle?.();
 }
 
@@ -2995,6 +3167,9 @@ function bindUi() {
 
   document.getElementById("home-btn-search")?.addEventListener("click", () => dismissHome("explore"));
   document.getElementById("home-btn-routes")?.addEventListener("click", () => dismissHome("routes"));
+  document.getElementById("home-btn-share")?.addEventListener("click", () =>
+    dismissHome("explore", { openCommunityTag: true }),
+  );
   document.getElementById("btn-back-home")?.addEventListener("click", (e) => {
     e.preventDefault();
     showHomeScreen();
@@ -3149,6 +3324,7 @@ async function init() {
   populateFilters();
   initMap();
   bindUi();
+  initCommunityTagUi();
   applyRouteFromUrl();
   renderEpisodeCards();
   if (state.siteConfig.primary_mode === "explore") {
