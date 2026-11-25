@@ -2995,7 +2995,8 @@
       ],
       "episode_id": "mot-1924",
       "related_events": [
-        "schweigaards-bro-besluttet-1880"
+        "schweigaards-bro-besluttet-1880",
+        "victoria-terrasse-anlegg-1883"
       ],
       "related_people": [],
       "summary": "På Ruseløkk tok et interessentskap fatt i langvarig byggearbeid som ga Victoria terrasse med sidegater og Ruseløkbazaarer. Kommunen fikk samtidig avløsning for de gamle gårdene Algier og Tunis ved kaia.",
@@ -3078,6 +3079,110 @@
       "image": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Akerselva_Sagene.jpg/640px-Akerselva_Sagene.jpg",
         "credit": "Wikimedia Commons (Akerselva)"
+      }
+    },
+    {
+      "id": "stiftsgaarden",
+      "name": "Stiftsgården",
+      "lat": 59.9149,
+      "lng": 10.7284,
+      "bind": 5,
+      "year_from": 1770,
+      "year_to": 1924,
+      "tags": [
+        "kultur",
+        "bygrunn"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "storebrand-gaard-1879",
+        "victoria-terrasse-anlegg-1883"
+      ],
+      "related_people": [],
+      "summary": "Stiftsgården er Christianias representasjonsresidens fra slutten av 1700-tallet. Da nybygging og gategjennombrudd på 1880-tallet endret Kvadraturen og havnestrøket, sto gården igjen som et av de gamle monumentene midt i den moderne storbyen.",
+      "supplementary_note": "sources/supplementary/notater/stiftsgaarden.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "85-86",
+        "note": "Bind V: gamle bygg i ny sentrumsbygging"
+      },
+      "standpoint": "Slottsplassen 1, mot Karl Johans gate og Slottet.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Stiftsg%C3%A5rden_Oslo.jpg/640px-Stiftsg%C3%A5rden_Oslo.jpg",
+        "credit": "Wikimedia Commons (Stiftsgården)"
+      }
+    },
+    {
+      "id": "tordenskjolds-plass",
+      "name": "Tordenskjolds plass",
+      "lat": 59.9075,
+      "lng": 10.7388,
+      "bind": 5,
+      "year_from": 1880,
+      "year_to": 1924,
+      "tags": [
+        "havn",
+        "transport",
+        "blaa-skilt"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "piperviksbakken-gjennombrudd-1881",
+        "jernbanen-1854"
+      ],
+      "related_people": [],
+      "summary": "Tordenskjolds plass ligger nederst i Piperviksbakken, der den nye linjen fra Rådhusgata møtte havnen. Fra 1880-81 bandt plassen Bjørvika og Pipervika og gjorde fotgang mellom byens jernbanestasjoner enklere.",
+      "supplementary_note": "sources/supplementary/notater/tordenskjolds-plass.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "85-86",
+        "note": "Bind V: Piperviksbakken mot havnen"
+      },
+      "standpoint": "Ved kaia og Piperviksbakken, mot Rådhusgata og Akershus.",
+      "blaa_skilt": true,
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Oslo_havn.jpg/640px-Oslo_havn.jpg",
+        "credit": "Wikimedia Commons (havnen)"
+      }
+    },
+    {
+      "id": "vestbanestasjon-ruselokk",
+      "name": "Christiania vestbanestasjon (Ruseløkk)",
+      "lat": 59.9095,
+      "lng": 10.7348,
+      "bind": 4,
+      "year_from": 1872,
+      "year_to": 1924,
+      "tags": [
+        "transport",
+        "havn"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "jernbanen-1854",
+        "piperviksbakken-gjennombrudd-1881"
+      ],
+      "related_people": [],
+      "summary": "Vestbanen åpnet i 1872 med stasjon ved Ruseløkk ved Pipervika. Her kom passasjerer fra vestlandet inn i hovedstaden, i samme havnestrøk som senere ble knyttet sammen med østbanen og sentrale gategjennombrudd.",
+      "supplementary_note": "sources/supplementary/notater/vestbanestasjon-ruselokk.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "349-380",
+        "note": "Bind IV: jernbane; supplement SNL Vestbanestasjon"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Oslo_Vestbanestasjon"
+        }
+      ],
+      "standpoint": "Mot Ruseløkkkaia og Victoria-området, der vestbanen lå ved fjorden.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Oslo_Vestbanestasjon_1900.jpg/640px-Oslo_Vestbanestasjon_1900.jpg",
+        "credit": "Wikimedia Commons (Vestbanestasjon)"
       }
     }
   ]

@@ -1,11 +1,11 @@
 {
-  "_generated": "2026-11-25T19:10:20Z",
+  "_generated": "2026-11-25T19:15:40Z",
   "summary": {
     "pdfs_on_disk": 5,
     "pdfs_expected": 5,
     "toc_ready": 5,
     "toc_reviewed": 0,
-    "json_items_total": 175,
+    "json_items_total": 179,
     "draft_refs_total": 0,
     "verified_total": 0,
     "priority_bind_for_page_work": null
@@ -146,8 +146,8 @@
         "karina_spot_check": false
       },
       "counts": {
-        "json_items": 43,
-        "json_places": 22,
+        "json_items": 44,
+        "json_places": 23,
         "json_events": 21,
         "draft_refs": 0,
         "verified": 0,
@@ -183,9 +183,9 @@
         "karina_spot_check": false
       },
       "counts": {
-        "json_items": 28,
-        "json_places": 15,
-        "json_events": 13,
+        "json_items": 31,
+        "json_places": 17,
+        "json_events": 14,
         "draft_refs": 0,
         "verified": 0,
         "excerpts": 29,

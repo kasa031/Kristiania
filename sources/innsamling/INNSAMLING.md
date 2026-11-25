@@ -1,6 +1,6 @@
 # Innsamling - bind I-V
 
-*Autogenerert 2026-11-25T19:10:20Z. Kjør på nytt: `python scripts/literature-status.py`.*
+*Autogenerert 2026-11-25T19:15:40Z. Kjør på nytt: `python scripts/literature-status.py`.*
 
 Dette er **kilde-/boksporing** (supplement til [FREMGANG.md](../../content/FREMGANG.md)), ikke en parallel oppgaveliste.
 

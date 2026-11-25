@@ -72,7 +72,7 @@ Disse reglene gjelder når du sier «ferdigstill» eller «neste steg». AI skal
 | F15 | `sources/supplementary/` + app-steder uten full Bull-side | [x] start |
 | F16 | Historisk kvalitet (parafrase, notat, `verified` når du sjekker) | [ ] løpende |
 
-**Tall:** 85 steder, 90 hendelser, 22 funn (med illustrasjon), 6 personer, 97 bakgrunn, 50 blå skilt (alle i seed koblet).
+**Tall:** 88 steder, 91 hendelser, 22 funn (med illustrasjon), 6 personer, 97 bakgrunn, 58 blå skilt (seed koblet).
 
 **Test:** `.\scripts\serve.ps1` · app først, rapport (F5) senere.
 
@@ -92,7 +92,7 @@ Gjelder til du sier at noe annet skal prioriteres. Kryss av i [fremgang.html](fr
 | T4 | **Kart og detalj** - mobil høyde, scroll, marker/klikk, nær deg | `css/style.css`, `js/app.js` | [x] masthead ren tekst, filtre grid, markør 36px mobil |
 | T5 | **Koble nye steder** - `related_*`, episoder/filter der det gir mening | `data/episodes.json`, `site-config.json` | [x] rådhus-løype |
 | T6 | **Leveransesjekk** etter hver innholdsøkt | `python scripts/verify-deliverable.py` | [x] rutine |
-| T7 | **Dekning kart** - pri: Kvadraturen, Akerselva, havn, 1800-/1900-tall | supplement + eksisterende bind | [ ] løpende (+Collett oljemølle Bjølsen, Akerselva map-stopp 25.11) |
+| T7 | **Dekning kart** - pri: Kvadraturen, Akerselva, havn, 1800-/1900-tall | supplement + eksisterende bind | [ ] løpende (+Stiftsgården, Tordenskjolds plass, vestbanestasjon Ruseløkk 25.11) |
 | T8 | **Merkevare og bevegelse** - navn Kristiania, typografi, animasjon, avis+slotts tema | `css/theme-kristiania.css`, `site-config.json`, `data/KONFIGURASJON.md` | [x] |
 | T11 | **Blå skilt** - destinasjonsfilter, `blue-signs.json`, import fra OBV-liste | `data/`, `scripts/import-blaaskilt.py`, `js/app.js` | [~] 58 i app, seed 58/58 koblet |
 | T12 | **Gåtur-UX** - tydelig start/slutt, fane Gå rute, reiseforbindelse ved posisjon | `js/app.js`, `index.html`, `site-config.json` | [x] Gåvei + Entur-lenke over 600 m |
@@ -113,7 +113,7 @@ Gjelder til du sier at noe annet skal prioriteres. Kryss av i [fremgang.html](fr
 | B8 | Alle kapittel i tidslinje (`context.json` fra TOC) | [x] 97 bakgrunn |
 | B9 | Parafrase A14 kapittel for kapittel (erstatt titel-led) | [~] titel-led fjernet 25.11; enkeltkap. kan poleres ved F5 |
 | B10 | Sted/person/bilde per kapittel + illustrasjonslister | [ ] |
-| B11 | **Blå skilt** (Oslo Byes Vel) – alle ~500, filter + kart | [~] 85 i app, seed utvides |
+| B11 | **Blå skilt** (Oslo Byes Vel) – alle ~500, filter + kart | [~] 58 i app, seed utvides |
 
 **Kjørsel:** `python scripts/bull-chapter-ingest.py --all --write` · deretter `python scripts/improve-context-summaries.py` · sporing i `sources/innsamling/bull-toc-backlog.json`.
 
@@ -144,7 +144,7 @@ Gjelder til du sier at noe annet skal prioriteres. Kryss av i [fremgang.html](fr
 | Kvadraturen 1600-1700 | 12 | II | ja | TOC + supplement (+Kontraskjerp) |
 | Akerselva tidlig industri | 15 | II-III | ja | TOC + supplement (+havn ved Akershus) |
 | 1814-hovedstaden | 8 | III-IV | ja | TOC + supplement |
-| Mot 300-årsjubileet | 14 gå / 37 kart | IV-V | ja | `map_place_order` for Filipstad m.m.; gåtur ca. 8 km |
+| Mot 300-årsjubileet | 14 gå / 40 kart | IV-V | ja | `map_place_order` havn/sentrum (Tordenskjold, Stiftsgården, Vestbanen); gåtur ca. 8 km |
 
 ---
 
@@ -272,3 +272,4 @@ Layout-regel: **én skjermhøyde** - kart og historie scroller hver for seg (`ap
 - 25.11 - T7/B11: +4 steder havn/kvadratur 1880 (Handelsstand, Wessels, Victoria, Piperviksbakken), 2 hendelser; SW v81
 - 25.11 - QA: mot-1924 gåtur 14 stopp / map_place_order; T13 OSM fotrute; verify + smoke http OK; SW v82
 - 25.11 - T7/T2/B11: Collett oljemølle Bjølsen, juni 1795; Akerselva map_place_order; Paulus-bilde; SW v83
+- 25.11 - T1/T7: Stiftsgården, Tordenskjolds plass, vestbanestasjon Ruseløkk + Victoria-hendelse; mot-1924 kart; SW v84

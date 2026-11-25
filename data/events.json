@@ -830,6 +830,7 @@
       "episode_id": "mot-1924",
       "place_ids": [
         "oslo-sentralstasjon",
+        "vestbanestasjon-ruselokk",
         "akerselva-utløp",
         "nylands-verksted"
       ],
@@ -2033,9 +2034,11 @@
       "episode_id": "mot-1924",
       "place_ids": [
         "piperviksbakken",
+        "tordenskjolds-plass",
         "tollbugata-havn",
         "schweigaards-bro",
-        "oslo-sentralstasjon"
+        "oslo-sentralstasjon",
+        "vestbanestasjon-ruselokk"
       ],
       "summary": "Gjennombruddet fra Rådhusgata ned mot Tordenskjolds plass gjorde det lettere å bevege seg mellom Bjørvika og Pipervika og mellom byens jernbanestasjoner.",
       "verified": false,
@@ -2043,6 +2046,30 @@
         "bind": 5,
         "pages": "85-86",
         "note": "Bind V: Piperviksbakken"
+      }
+    },
+    {
+      "id": "victoria-terrasse-anlegg-1883",
+      "title": "Bebyggelse ved Ruseløkk",
+      "year": 1883,
+      "year_display": "ca. 1882-1887",
+      "bind": 5,
+      "tags": [
+        "havn",
+        "bygrunn"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "victoria-terrasse",
+        "vestbanestasjon-ruselokk",
+        "stiftsgaarden"
+      ],
+      "summary": "Et årelangt arbeid ved Ruseløkk skapte Victoria terrasse med tilhørende gater og basarer. Eldre bebyggelse ved «røverstatene» Algier og Tunis måtte vike, og hele vestre havnelinje fikk et nytt bybilde.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "85-86",
+        "note": "Bind V: Ruseløkk og Victoria terrasse"
       }
     },
     {

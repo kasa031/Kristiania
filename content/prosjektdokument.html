@@ -2,10 +2,118 @@
 <html lang="nb">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="refresh" content="0; url=prosjektrapport.html" />
-    <title>Redirect - prosjektrapport</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Prosjektdokumentasjon - Oslo-historie</title>
+    <link rel="stylesheet" href="prosjektdokument.css" />
   </head>
   <body>
-    <p>Omdirigerer til <a href="prosjektrapport.html">prosjektrapport</a>.</p>
+    <p class="nav-top no-indent">
+      <a href="../index.html">Tilbake til kart-appen</a>
+      ·
+      <a href="fremgang.html">Oppgaveliste</a>
+      ·
+      <a href="prosjektplan.html">Prosjektplan</a>
+      ·
+      <a href="prosjektrapport.html">Prosjektrapport</a>
+    </p>
+
+    <header class="title-page">
+      <h1>Oslo-historie</h1>
+      <p class="subtitle no-indent">Prosjektdokumentasjon (internt)</p>
+      <p class="doc-type no-indent">Oversikt over plan, rapport og fremdrift</p>
+      <p class="meta no-indent">Sist synket: 25. november 2025</p>
+    </header>
+
+    <main>
+      <h2 class="section">Dokumenter</h2>
+      <p class="no-indent">
+        Én operativ liste: <strong><a href="fremgang.html">fremgang.html</a></strong> (avkryssing i
+        nettleser). Plan og rapport er faset inn i prosjektperioden; tall i tabell under er
+        app-status nå.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Dokument</th>
+            <th>HTML</th>
+            <th>Markdown</th>
+            <th>PDF</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Oppgaveliste / fremdrift</td>
+            <td><a href="fremgang.html">fremgang.html</a></td>
+            <td><a href="FREMGANG.md">FREMGANG.md</a></td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Prosjektplan</td>
+            <td><a href="prosjektplan.html">prosjektplan.html</a></td>
+            <td><a href="PROSJEKTPLAN.md">PROSJEKTPLAN.md</a></td>
+            <td><a href="prosjektplan.pdf">prosjektplan.pdf</a></td>
+          </tr>
+          <tr>
+            <td>Prosjektrapport</td>
+            <td><a href="prosjektrapport.html">prosjektrapport.html</a></td>
+            <td><a href="PROSJEKTRAPPORT.md">PROSJEKTRAPPORT.md</a></td>
+            <td><a href="prosjektrapport.pdf">prosjektrapport.pdf</a></td>
+          </tr>
+          <tr>
+            <td>Masterliste / Bull-dekning</td>
+            <td>-</td>
+            <td><a href="MASTERLISTE.md">MASTERLISTE.md</a>, <a href="BULL-DEKNING.md">BULL-DEKNING.md</a></td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 class="section">App og publisering</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Tema</th>
+            <th>Detalj</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Produkt</td>
+            <td><strong>Historisk vandringskart</strong> (Kristiania) - utforsk kart først, gåtur valgfritt</td>
+          </tr>
+          <tr>
+            <td>Innhold (ca.)</td>
+            <td>88 steder, 91 hendelser, 22 funn, 97 bakgrunn, 58 blå skilt, 6 løyper</td>
+          </tr>
+          <tr>
+            <td>Kilde i app</td>
+            <td>Skjult i JSON (<code>source_ref</code>); <code>verified: true</code> kun etter F5</td>
+          </tr>
+          <tr>
+            <td>Lokal test</td>
+            <td><code>.\scripts\serve.ps1</code> - <code>http://localhost:8080/home</code></td>
+          </tr>
+          <tr>
+            <td>Git-repo</td>
+            <td><a href="https://github.com/kasa031/Kristiania" rel="noopener noreferrer">github.com/kasa031/Kristiania</a></td>
+          </tr>
+          <tr>
+            <td>GitHub Pages</td>
+            <td><a href="https://kasa031.github.io/Kristiania/home" rel="noopener noreferrer">kasa031.github.io/Kristiania/home</a> (etter Actions-deploy)</td>
+          </tr>
+          <tr>
+            <td>Ikke i git</td>
+            <td><code>literature/</code> (Bull-PDF), <code>data/map-config.local.json</code> (Mapbox-token)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 class="section">Merk</h2>
+      <p class="no-indent">
+        Tall i <strong>prosjektrapport.html</strong> kapittel 8 er fra et tidligere utkast (nov.).
+        Bruk tabellen over og <a href="fremgang.html">fremgang.html</a> som fersk status for appen.
+        Rapport og plan oppdateres ved sluttleveranse.
+      </p>
+    </main>
   </body>
 </html>

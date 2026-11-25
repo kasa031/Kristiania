@@ -100,6 +100,9 @@ Kjør på nytt: `python scripts/desktop-walk-test.py`
 - **Victoria terrasse (Ruseløkk)** (`victoria-terrasse`): standpoint ja, koordinat ja
 - **Piperviksbakken (ny linje)** (`piperviksbakken`): standpoint ja, koordinat ja
 - **Peter Colletts oljemølle (Bjølsen)** (`collett-oljemolle-bjolsen`): standpoint ja, koordinat ja
+- **Stiftsgården** (`stiftsgaarden`): standpoint ja, koordinat ja
+- **Tordenskjolds plass** (`tordenskjolds-plass`): standpoint ja, koordinat ja
+- **Christiania vestbanestasjon (Ruseløkk)** (`vestbanestasjon-ruselokk`): standpoint ja, koordinat ja
 
 Ingen avvik funnet.
 

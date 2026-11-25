@@ -27,9 +27,10 @@
     <section class="now-box" aria-label="Nåværende steg">
       <h2>NÅ (kun app)</h2>
       <p>
-        <strong>35 steder, utforsk-modus.</strong> AI jobber bare med nettsiden til du sier noe annet
-        (regel <strong>A0</strong> i <code>FREMGANG.md</code>). Gjenstår <strong>F5</strong> når du vil,
-        og <strong>App-TODO</strong> under.
+        <strong>88 steder, 91 hendelser, 22 funn, 58 blå skilt</strong> - utforsk-modus og gåturer.
+        Repo: <a href="https://github.com/kasa031/Kristiania" rel="noopener noreferrer">kasa031/Kristiania</a>
+        (GitHub Pages etter workflow). AI jobber bare med nettsiden til du sier noe annet (regel
+        <strong>A0</strong>). Gjenstår <strong>F5</strong> og <strong>App-TODO</strong> under.
       </p>
       <table>
         <thead>
@@ -143,7 +144,7 @@
 
     <section class="now-box" aria-label="App-TODO">
       <h2>App-TODO (aktiv)</h2>
-      <p>Kun nettsiden - se <code>FREMGANG.md</code> for detaljer.</p>
+      <p>Kun nettsiden - se <code>FREMGANG.md</code> for detaljer. Standardavkryssing følger FREMGANG; din nettleser kan overstyre.</p>
       <table>
         <thead>
           <tr>
@@ -160,8 +161,8 @@
           </tr>
           <tr>
             <td>T2</td>
-            <td>Tekstkvalitet alle <code>summary</code></td>
-            <td class="check-cell"><input type="checkbox" data-key="app-t2" aria-label="T2" /></td>
+            <td>Tekstkvalitet (A14), trofast parafrase</td>
+            <td class="check-cell"><input type="checkbox" data-key="app-t2" aria-label="T2 løpende" /></td>
           </tr>
           <tr>
             <td>T3</td>
@@ -170,8 +171,8 @@
           </tr>
           <tr>
             <td>T4</td>
-            <td>Kart og detalj (mobil, scroll, nær deg)</td>
-            <td class="check-cell"><input type="checkbox" data-key="app-t4" aria-label="T4" /></td>
+            <td>Kart og detalj (mobil, filtre, tidsperiode inkl. forhistorie)</td>
+            <td class="check-cell"><input type="checkbox" data-key="app-t4" aria-label="T4" checked /></td>
           </tr>
           <tr>
             <td>T5</td>
@@ -186,12 +187,68 @@
           <tr>
             <td>T7</td>
             <td>Dekning kart (kvadratur, elva, havn, 1800-/1900)</td>
-            <td class="check-cell"><input type="checkbox" data-key="app-t7" aria-label="T7" /></td>
+            <td class="check-cell"><input type="checkbox" data-key="app-t7" aria-label="T7 løpende" /></td>
           </tr>
           <tr>
             <td>T8</td>
             <td>Merkevare Kristiania (avis-tema, motion)</td>
             <td class="check-cell"><input type="checkbox" data-key="app-t8" aria-label="T8" checked /></td>
+          </tr>
+          <tr>
+            <td>T11</td>
+            <td>Blå skilt (filter, OBV-seed, 58 koblet)</td>
+            <td class="check-cell"><input type="checkbox" data-key="app-t11" aria-label="T11 delvis" /></td>
+          </tr>
+          <tr>
+            <td>T12</td>
+            <td>Gåtur-UX (start/slutt, reiselenker)</td>
+            <td class="check-cell"><input type="checkbox" data-key="app-t12" aria-label="T12" checked /></td>
+          </tr>
+          <tr>
+            <td>T13</td>
+            <td>Reiseforbindelse v2 (Entur + OSM fotrute; innebygd senere)</td>
+            <td class="check-cell"><input type="checkbox" data-key="app-t13" aria-label="T13 delvis" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="now-box" aria-label="Bull-full">
+      <h2>Bull-full (bind I-V)</h2>
+      <p>Oversikt - detaljer i <code>FREMGANG.md</code> og <code>BULL-DEKNING.md</code>.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Mål</th>
+            <th class="check-cell">Ferdig</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>B0</td>
+            <td>Plan sted / hendelse / person / bakgrunn</td>
+            <td class="check-cell"><input type="checkbox" data-key="bull-b0" checked aria-label="B0" /></td>
+          </tr>
+          <tr>
+            <td>B3</td>
+            <td>Bilder på steder</td>
+            <td class="check-cell"><input type="checkbox" data-key="bull-b3" checked aria-label="B3" /></td>
+          </tr>
+          <tr>
+            <td>B7-B8</td>
+            <td>TOC backlog + context tidslinje</td>
+            <td class="check-cell"><input type="checkbox" data-key="bull-b8" checked aria-label="B8" /></td>
+          </tr>
+          <tr>
+            <td>B9</td>
+            <td>Parafrase kapittel for kapittel</td>
+            <td class="check-cell"><input type="checkbox" data-key="bull-b9" aria-label="B9 delvis" /></td>
+          </tr>
+          <tr>
+            <td>B11</td>
+            <td>Blå skilt på kart (~500, 58 i app)</td>
+            <td class="check-cell"><input type="checkbox" data-key="bull-b11" aria-label="B11 delvis" /></td>
           </tr>
         </tbody>
       </table>
@@ -274,7 +331,7 @@
         <tbody>
           <tr>
             <td>1624 - nye Kristiania</td>
-            <td>6</td>
+            <td>8</td>
             <td>I-II</td>
             <td>ja</td>
             <td>TOC-sidetall</td>
@@ -288,37 +345,38 @@
           </tr>
           <tr>
             <td>Kvadraturen 1600-1700</td>
-            <td>6</td>
+            <td>12</td>
             <td>II</td>
             <td>ja</td>
-            <td>TOC-sidetall</td>
+            <td>TOC + supplement</td>
           </tr>
           <tr>
             <td>Akerselva tidlig industri</td>
-            <td>6</td>
+            <td>17 gå / +kart</td>
             <td>II-III</td>
             <td>ja</td>
-            <td>TOC-sidetall</td>
+            <td>elva + havn, map_place_order</td>
           </tr>
           <tr>
             <td>1814-hovedstaden</td>
-            <td>4</td>
+            <td>12</td>
             <td>III-IV</td>
             <td>ja</td>
-            <td>TOC-sidetall</td>
+            <td>TOC + supplement</td>
           </tr>
           <tr>
             <td>Mot 300-årsjubileet</td>
-            <td>5</td>
+            <td>14 gå / 40 kart</td>
             <td>IV-V</td>
             <td>ja</td>
-            <td>TOC-sidetall</td>
+            <td>gåtur ca. 8 km; desktop-test OK</td>
           </tr>
         </tbody>
       </table>
       <p>
-        Test nettsiden: <code>python -m http.server 8080</code> i prosjektmappen, åpne
-        <code>http://localhost:8080/</code>.
+        Lokal test: <code>.\scripts\serve.ps1</code> ·
+        <code>http://localhost:8080/home</code> · Live:
+        <a href="https://kasa031.github.io/Kristiania/home">GitHub Pages</a>
       </p>
     </section>
 
@@ -347,6 +405,7 @@
       <h2>Arbeidsregler (deg + AI)</h2>
       <ol>
         <li><strong>Én liste:</strong> Oppdater bare FREMGANG når «neste steg» endres.</li>
+        <li><strong>A16:</strong> Ingen interne verktøylenker i app-UI (fremgang/plan kun her).</li>
         <li><strong>Før JSON:</strong> Avhuking her først, deretter <code>data/places.json</code> / <code>events.json</code>.</li>
         <li>
           <strong>Verifisering:</strong> <code>verified: true</code> når tekst skal stå som ferdig
@@ -410,6 +469,17 @@
           localStorage.setItem(PREFIX + k, "1"),
         );
         localStorage.setItem(APP_TODO_MIGRATION, "1");
+      }
+
+      const APP_TODO_MIGRATION_C = PREFIX + "app-todo-sync-2025-11-25c";
+      if (!localStorage.getItem(APP_TODO_MIGRATION_C)) {
+        ["app-t4", "app-t12", "bull-b0", "bull-b3", "bull-b8"].forEach((k) =>
+          localStorage.setItem(PREFIX + k, "1"),
+        );
+        ["app-t2", "app-t7", "app-t11", "app-t13", "bull-b9", "bull-b11"].forEach((k) =>
+          localStorage.setItem(PREFIX + k, "0"),
+        );
+        localStorage.setItem(APP_TODO_MIGRATION_C, "1");
       }
 
       document.querySelectorAll('input[type="checkbox"][data-key]').forEach((cb) => {
