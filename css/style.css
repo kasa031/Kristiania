@@ -470,10 +470,24 @@ header p {
   margin-bottom: 0.25rem;
 }
 
-.map-header-tools .map-locate {
+.map-header-tools .map-locate,
+.map-header-tools .map-share {
   flex: 1 1 auto;
   min-width: 7.5rem;
   margin-left: 0;
+}
+
+.map-share {
+  font-size: 0.8rem;
+  padding: 0.35rem 0.55rem;
+  border: 1px solid #c5cad3;
+  border-radius: 8px;
+  background: #fff8f0;
+  cursor: pointer;
+}
+
+.map-share:hover {
+  border-color: var(--accent);
 }
 
 .map-layer-wrap {
@@ -989,10 +1003,30 @@ button:disabled {
   height: 12px;
 }
 
+.map-legend-swatch--community {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #007ea3;
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  line-height: 1;
+}
+
 .chip.funn-chip {
   background: #f3e8c8;
   color: #5c4810;
   border: 1px solid #d4bc82;
+}
+
+.chip.community-chip {
+  background: #d6f0f7;
+  color: #0a5c72;
+  border: 1px solid #66bdd4;
 }
 
 .panel-map {
@@ -1824,8 +1858,31 @@ body.home-active .masthead-dek {
   justify-content: flex-end;
 }
 
-.community-tag-actions .btn.secondary {
+.community-tag-actions .btn.secondary[data-action="community-tag-cancel"] {
   margin-right: auto;
+}
+
+.map-pick-banner {
+  margin: 0;
+  padding: 0.45rem 0.65rem;
+  font-size: 0.88rem;
+  background: #fff1d1;
+  border-bottom: 1px solid #c9b89a;
+  color: #2a221c;
+}
+
+.detail-travel {
+  margin: 0.35rem 0 0.65rem;
+  font-size: 0.82rem;
+}
+
+.detail-related-places {
+  margin: 0.65rem 0 0;
+  font-size: 0.85rem;
+}
+
+.detail-place-jump {
+  font-size: inherit;
 }
 
 .custom-pin-community .pin-community {

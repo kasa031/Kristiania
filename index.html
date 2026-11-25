@@ -7,6 +7,7 @@
     <meta name="theme-color" content="#2a221c" />
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="icon" href="icons/mark.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icons/oslo-vaapen.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,9 +20,9 @@
       integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
       crossorigin=""
     />
-    <link rel="stylesheet" href="css/style.css?v=85" />
-    <link rel="stylesheet" href="css/motion.css?v=85" />
-    <link rel="stylesheet" href="css/theme-kristiania.css?v=85" />
+    <link rel="stylesheet" href="css/style.css?v=106" />
+    <link rel="stylesheet" href="css/motion.css?v=106" />
+    <link rel="stylesheet" href="css/theme-kristiania.css?v=106" />
   </head>
   <body class="theme-avis-1880 theme-dronningensgate1714 home-active">
     <header class="app-header masthead" role="banner">
@@ -114,6 +115,14 @@
             >
               Min posisjon
             </button>
+            <button
+              type="button"
+              class="map-share"
+              id="btn-map-share"
+              title="Del et sted på kartet"
+            >
+              Del sted
+            </button>
             <details class="map-layer-wrap">
               <summary class="map-layer-summary">Bakgrunn</summary>
               <select id="map-layer" aria-label="Kartbakgrunn"></select>
@@ -132,6 +141,9 @@
             </div>
           </details>
         </div>
+        <p class="map-pick-banner" id="map-pick-banner" role="status" hidden>
+          Trykk på kartet der historien skjedde. Avbryt med Escape.
+        </p>
         <div id="map" role="application" aria-label="Historisk kart over Oslo" tabindex="-1"></div>
       </section>
 
@@ -182,6 +194,7 @@
                 <option value="all">Alle destinasjoner</option>
                 <option value="historie">Kuratert historie på kartet</option>
                 <option value="blaa-skilt">Blå skilt (Oslo Byes Vel)</option>
+                <option value="community" id="filter-destination-community">Brukerbidrag (lokalt)</option>
               </select>
               <label for="filter-episode">Løype</label>
               <select id="filter-episode" aria-label="Filter løype">
@@ -281,6 +294,7 @@
         <p class="community-tag-geo" id="community-tag-geo" aria-live="polite"></p>
         <p class="community-tag-error" id="community-tag-error" hidden></p>
         <footer class="community-tag-actions">
+          <button type="button" class="btn secondary" id="community-tag-map-pick">Velg på kartet</button>
           <button type="button" class="btn secondary" id="community-tag-locate">Bruk min posisjon</button>
           <button type="button" class="btn secondary" data-action="community-tag-cancel">Avbryt</button>
           <button type="submit" class="btn primary" id="community-tag-submit">Lagre på kartet</button>
@@ -295,7 +309,7 @@
     ></script>
     <script src="js/motion.js?v=68" defer></script>
     <script src="js/bydel.js?v=68"></script>
-    <script src="js/app.js?v=85"></script>
+    <script src="js/app.js?v=106"></script>
     <script>
       if ("serviceWorker" in navigator) {
         let base = "";

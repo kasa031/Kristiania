@@ -1,4 +1,4 @@
-const CACHE = "oslo-historie-v86";
+const CACHE = "oslo-historie-v106";
 const PRECACHE = [
   "/",
   "/index.html",
@@ -29,6 +29,7 @@ const PRECACHE = [
   "/data/bydeler.geojson",
   "/js/bydel.js",
   "/icons/mark.svg",
+  "/icons/oslo-vaapen.png",
 ];
 
 self.addEventListener("install", (event) => {

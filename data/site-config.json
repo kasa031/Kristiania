@@ -10,6 +10,7 @@
   "masthead_rubric": "Historisk vandringskart",
   "routes_panel_lead": "1. Velg en rute nedenfor. 2. Trykk på ruten for å starte gåturen. 3. Gå til stopp 1 på kartet. Underveis bruker du Forrige og Neste. Med Min posisjon på får du lenker til gåvei og kollektiv (Entur) når du er langt fra start.",
   "route_travel_threshold_m": 600,
+  "travel_draw_osrm_in_map": true,
   "travel_show_entur": true,
   "masthead_pitch": "",
   "masthead_dek": "Fra istiden frem til 1924.",

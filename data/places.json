@@ -3091,7 +3091,8 @@
       "year_to": 1924,
       "tags": [
         "kultur",
-        "bygrunn"
+        "bygrunn",
+        "blaa-skilt"
       ],
       "episode_id": "mot-1924",
       "related_events": [
@@ -3111,7 +3112,8 @@
       "image": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Stiftsg%C3%A5rden_Oslo.jpg/640px-Stiftsg%C3%A5rden_Oslo.jpg",
         "credit": "Wikimedia Commons (Stiftsgården)"
-      }
+      },
+      "blaa_skilt": true
     },
     {
       "id": "tordenskjolds-plass",
@@ -3148,6 +3150,304 @@
       }
     },
     {
+      "id": "schous-plass",
+      "name": "Schous plass",
+      "lat": 59.9238,
+      "lng": 10.7589,
+      "bind": 4,
+      "year_from": 1873,
+      "year_to": 1924,
+      "tags": [
+        "industri",
+        "arbeid"
+      ],
+      "episode_id": "akerselva-tidlig",
+      "related_events": [
+        "schous-bryggeri-1873"
+      ],
+      "related_people": [],
+      "summary": "Schous plass på Sagene knyttet Akerselva til Schous bryggeri, som åpnet i 1873 og ble et av byens store industrianlegg. Bryggeriet vokste ved elven i samme periode som sagbruk og spinneri ga fart i arbeiderstrøkene.",
+      "supplementary_note": "sources/supplementary/notater/schous-plass.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Schous bryggeri"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Schous_bryggeri"
+        }
+      ],
+      "standpoint": "Schous plass ved Akerselva, mellom Sagene og elvebredden.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Akerselva_Sagene.jpg/640px-Akerselva_Sagene.jpg",
+        "credit": "Wikimedia Commons (Akerselva)"
+      }
+    },
+    {
+      "id": "torggata-handel",
+      "name": "Torggata",
+      "lat": 59.9134,
+      "lng": 10.7515,
+      "bind": 4,
+      "year_from": 1810,
+      "year_to": 1924,
+      "tags": [
+        "handel",
+        "arbeid"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "brugata-handel-1860",
+        "arbeideren-mollergata-1909"
+      ],
+      "related_people": [],
+      "summary": "Torggata bandt Youngstorget og Grønland og ble en hovedåre for handel og folkeliv i unionshovedstaden. Fra torvet og Møllergata strakte køen seg mot øst, der trehuskvarter og basarer langs Brugata møtte sjøgammarkedet.",
+      "supplementary_note": "sources/supplementary/notater/torggata-handel.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Torggata / Youngstorget"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Torggata_-_gate_i_Oslo"
+        }
+      ],
+      "standpoint": "Torggata mellom Youngstorget og Grønland, mot Møllergata og Brugata.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "id": "dronningens-gate",
+      "name": "Dronningens gate",
+      "lat": 59.9141,
+      "lng": 10.7455,
+      "bind": 5,
+      "year_from": 1714,
+      "year_to": 1924,
+      "tags": [
+        "kultur",
+        "handel"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "karl-johan-jubileet"
+      ],
+      "related_people": [],
+      "summary": "Dronningens gate var den midterste av Christianias tre hovedgater fra kong Christian IVs plan i 1624. Gaten ble senere en del av Karl Johans gate og bar handel, hotell og offentlig liv gjennom hele unionstiden.",
+      "supplementary_note": "sources/supplementary/notater/dronningens-gate.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: SNL Dronningens gate / Karl Johans gate"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Karl_Johans_gate"
+        }
+      ],
+      "standpoint": "Dronningens gate mellom Rådhusgata og Akersgata, i Karl Johans gates forløp.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "id": "gronland-kirke",
+      "name": "Grønland kirke",
+      "lat": 59.9146,
+      "lng": 10.7632,
+      "bind": 4,
+      "year_from": 1866,
+      "year_to": 1924,
+      "tags": [
+        "kultur",
+        "religion",
+        "blaa-skilt"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "gronland-kirke-innviet-1869"
+      ],
+      "related_people": [],
+      "summary": "Grønland kirke ble innviet i 1869 i nygotisk stil på Grønlandsleiret. Kirken markerer hvordan arbeider- og trehuskvarteret øst for elva fikk egen menighet og synliggjøring i byen som vokste mot unionshovedstad og jubileumsår.",
+      "supplementary_note": "sources/supplementary/notater/gronland-kirke.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Grønland kirke"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Gr%C3%B8nland_kirke"
+        }
+      ],
+      "standpoint": "Grønlandsleiret ved Grønland kirke, retning mot Brugata og sentrum.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Gr%C3%B8nland_kirke_Oslo.jpg/640px-Gr%C3%B8nland_kirke_Oslo.jpg",
+        "credit": "Wikimedia Commons (Grønland kirke)"
+      },
+      "blaa_skilt": true
+    },
+    {
+      "id": "jernbanetorget",
+      "name": "Jernbanetorget",
+      "lat": 59.911,
+      "lng": 10.7526,
+      "bind": 5,
+      "year_from": 1854,
+      "year_to": 1924,
+      "tags": [
+        "transport",
+        "bygrunn",
+        "blaa-skilt"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "jernbanen-1854",
+        "vestbanen-1872"
+      ],
+      "related_people": [],
+      "summary": "Jernbanetorget ligger mellom Østbanen og handelskvartalene i sentrum. Her møttes jernbanens linjer til øst og vest da Christiania ble rikets jernbaneknutepunkt, med folkestrømm til og fra Pipervika og vestbanen.",
+      "supplementary_note": "sources/supplementary/notater/jernbanetorget.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: SNL Jernbanetorget / Østbanen"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Jernbanetorget_i_Oslo"
+        }
+      ],
+      "standpoint": "På Jernbanetorget mellom Østbanen og Storgata, mot Youngstorget.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      },
+      "blaa_skilt": true
+    },
+    {
+      "id": "egertorget",
+      "name": "Egertorget",
+      "lat": 59.9129,
+      "lng": 10.7394,
+      "bind": 5,
+      "year_from": 1830,
+      "year_to": 1924,
+      "tags": [
+        "kultur",
+        "handel"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "egertorget-handel-1840"
+      ],
+      "related_people": [],
+      "summary": "Egertorget mellom Karl Johans gate og Akersgata var et av sentrums travleste torv. Her møttes handel, folkeliv og forestillinger fra Christiania Theater inntil det moderne byrommet rundt Spikersuppa tok form i 1920-årene.",
+      "supplementary_note": "sources/supplementary/notater/egertorget.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: SNL Egertorget"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Egertorget"
+        }
+      ],
+      "standpoint": "Egertorget ved Nasjonalgalleriet, mellom Karl Johan og Akersgata.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "id": "myntgata",
+      "name": "Myntgata",
+      "lat": 59.9109,
+      "lng": 10.7418,
+      "bind": 2,
+      "year_from": 1624,
+      "year_to": 1890,
+      "tags": [
+        "bygrunn",
+        "kultur"
+      ],
+      "episode_id": "kvadraturen-1600",
+      "related_events": [
+        "myntgata-mynter-1628"
+      ],
+      "related_people": [],
+      "summary": "Myntgata i Kvadraturen tok navn etter Kongelig mynt som produserte mynter her fra 1628. Gaten lå tett på festning og rådhus og viser hvordan stat og bydelte plass i Christian IVs nye by.",
+      "supplementary_note": "sources/supplementary/notater/myntgata.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "supplement",
+        "note": "Supplement: SNL Myntgata"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Myntgata"
+        }
+      ],
+      "standpoint": "Myntgata ved Akershus og Kontraskjepet, mot Bankplassen.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Oslo_havn.jpg/640px-Oslo_havn.jpg",
+        "credit": "Wikimedia Commons (Kvadraturen)"
+      }
+    },
+    {
+      "id": "toeyen-hovedgard",
+      "name": "Tøyen hovedgård (Lakkegata)",
+      "lat": 59.9178,
+      "lng": 10.7624,
+      "bind": 4,
+      "year_from": 1700,
+      "year_to": 1924,
+      "tags": [
+        "kultur",
+        "arbeid",
+        "blaa-skilt"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "gronland-husnaring-1770"
+      ],
+      "related_people": [],
+      "summary": "Tøyen hovedgård langs Lakkegata bandt bondegårder og senere trehuskvarter på østsiden. Gården minner om at Grønland og Tøyen vokste fram utenfor de gamle byprivilegiene, før industri og boligstrøk møtte sentrum ved Brugata.",
+      "supplementary_note": "sources/supplementary/notater/toeyen-hovedgard.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: blått skilt Lakkegata 79; OBV Tøyen hovedgård"
+      },
+      "standpoint": "Lakkegata ved Tøyen hovedgård, mot Tøyenparken og Grønland.",
+      "blaa_skilt": true,
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      }
+    },
+    {
       "id": "vestbanestasjon-ruselokk",
       "name": "Christiania vestbanestasjon (Ruseløkk)",
       "lat": 59.9095,
@@ -3157,7 +3457,8 @@
       "year_to": 1924,
       "tags": [
         "transport",
-        "havn"
+        "havn",
+        "blaa-skilt"
       ],
       "episode_id": "mot-1924",
       "related_events": [
@@ -3184,6 +3485,1805 @@
       "image": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Oslo_Vestbanestasjon_1900.jpg/640px-Oslo_Vestbanestasjon_1900.jpg",
         "credit": "Wikimedia Commons (Vestbanestasjon)"
+      },
+      "blaa_skilt": true
+    },
+    {
+      "id": "bispeallmenningen",
+      "name": "Bispeallmenningen",
+      "lat": 59.9048,
+      "lng": 10.7682,
+      "bind": 1,
+      "year_from": 1100,
+      "year_to": 1624,
+      "tags": [
+        "kultur",
+        "bygrunn"
+      ],
+      "episode_id": "middelalder-oslo",
+      "related_events": [
+        "oslo-middelalder",
+        "bagler-konflikt"
+      ],
+      "related_people": [
+        "biskop-nikolas"
+      ],
+      "summary": "Bispeallmenningen var det sentrale torgområdet i middelalder-Oslo, mellom Hallvardskirken og bispesetet. Her samlet handel, gilder og byens politiske liv seg før Christian IV flyttet byen vest til Akershus.",
+      "supplementary_note": "sources/supplementary/notater/bispeallmenningen.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "198-221",
+        "note": "Bind I: Bispeallmenningen og middelalderkjernen"
+      },
+      "standpoint": "Middelalderparken ved Bispeallmenningen, mot ruinene og Oslo ladegård.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Akershus_Festning_Oslo.jpg/640px-Akershus_Festning_Oslo.jpg",
+        "credit": "Wikimedia Commons (Gamlebyen)"
+      }
+    },
+    {
+      "id": "ekebergutsikten",
+      "name": "Ekeberg (utsikt over byen)",
+      "lat": 59.8982,
+      "lng": 10.7705,
+      "bind": 5,
+      "year_from": 1880,
+      "year_to": 1924,
+      "tags": [
+        "natur",
+        "kultur"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "karl-johan-jubileet"
+      ],
+      "related_people": [],
+      "summary": "Fra Ekebergåsen så man ut over Oslo, Akerselva og havnen - et klassisk utsiktspunkt da byen vokste til storby. Utsikten bandt gamlebyen, industristrøk og fjorden i ett panoramablikk mot jubileumsåret 1924.",
+      "supplementary_note": "sources/supplementary/notater/ekebergutsikten.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: SNL Ekeberg"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Ekeberg"
+        }
+      ],
+      "standpoint": "Ekebergåsen med utsikt mot byen og fjorden.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Oslo_havn.jpg/640px-Oslo_havn.jpg",
+        "credit": "Wikimedia Commons (utsikt mot havnen)"
+      }
+    },
+    {
+      "id": "vaalerenga-kirke",
+      "name": "Vålerenga kirke",
+      "lat": 59.8965,
+      "lng": 10.781,
+      "bind": 4,
+      "year_from": 1854,
+      "year_to": 1924,
+      "tags": [
+        "kultur",
+        "religion",
+        "arbeid"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "gronland-kirke-innviet-1869"
+      ],
+      "related_people": [],
+      "summary": "Vålerenga kirke ble reist som arbeidsmenskirke i et strøk der trehus og industri vokste raskt øst for Akerselva. Sammen med Grønland kirke markerer den hvordan østkanten fikk egne menigheter i unionshovedstaden.",
+      "supplementary_note": "sources/supplementary/notater/vaalerenga-kirke.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Vålerenga kirke"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/V%C3%A5lerenga_kirke"
+        }
+      ],
+      "standpoint": "Vålerenggata ved Vålerenga kirke, mot Jordal og Grønland.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "id": "kampen-kirke",
+      "name": "Kampen kirke",
+      "lat": 59.9155,
+      "lng": 10.7875,
+      "bind": 4,
+      "year_from": 1880,
+      "year_to": 1924,
+      "tags": [
+        "kultur",
+        "religion",
+        "arbeid",
+        "blaa-skilt"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "kampen-kirke-vigsel-1882"
+      ],
+      "related_people": [],
+      "summary": "Kampen kirke ble innviet i 1882 i et arbeiderkvarter med trehus og små industrier øst for sentrum. Kirken fulgte samme bølge som Grønland og Vålerenga, der menigheter vokste fram tett på fabrikker og bosteder.",
+      "supplementary_note": "sources/supplementary/notater/kampen-kirke.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Kampen kirke"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Kampen_kirke"
+        }
+      ],
+      "standpoint": "Bøgata ved Kampen kirke, mot Tøyen og Grønland.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      },
+      "blaa_skilt": true
+    },
+    {
+      "id": "raadhusgata-kvadratur",
+      "name": "Rådhusgata",
+      "lat": 59.911,
+      "lng": 10.742,
+      "bind": 2,
+      "year_from": 1624,
+      "year_to": 1924,
+      "tags": [
+        "bygrunn",
+        "kommune"
+      ],
+      "episode_id": "kvadraturen-1600",
+      "related_events": [
+        "gamle-raadhus-ferdig-1641",
+        "garmanngaarden-raadhus-1734"
+      ],
+      "related_people": [],
+      "summary": "Rådhusgata bind Kvadraturen til Akershus og var hjem til Christianias rådhus- og embedsgårder. Gaten fulgte byplanen fra 1624 og bar preg av makt og handel helt inn i unionshovedstadstiden.",
+      "supplementary_note": "sources/supplementary/notater/raadhusgata-kvadratur.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "supplement",
+        "note": "Supplement: SNL Rådhusgata"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/R%C3%A5dhusgata"
+        }
+      ],
+      "standpoint": "Rådhusgata mellom Christiania torv og Akershus, mot Gamle rådhus og Rådmannsgården.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Oslo_havn.jpg/640px-Oslo_havn.jpg",
+        "credit": "Wikimedia Commons (Kvadraturen)"
+      }
+    },
+    {
+      "id": "kongens-gate-kvadratur",
+      "name": "Kongens gate",
+      "lat": 59.9105,
+      "lng": 10.746,
+      "bind": 2,
+      "year_from": 1624,
+      "year_to": 1924,
+      "tags": [
+        "bygrunn",
+        "festning"
+      ],
+      "episode_id": "1624-ny-by",
+      "related_events": [
+        "gamle-raadhus-ferdig-1641"
+      ],
+      "related_people": [],
+      "summary": "Kongens gate fulgte Akershus festnings nordre linje og ble en av hovedgatene i Christian IVs byplan. Gaten knyttet festning, rådhusgårder og havn i det tidlige gatesystemet.",
+      "supplementary_note": "sources/supplementary/notater/kongens-gate-kvadratur.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "supplement",
+        "note": "Supplement: SNL Kongens gate i Oslo"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Kongens_gate_-_gate_i_Oslo"
+        }
+      ],
+      "standpoint": "Kongens gate langs festningsmuren, mot Kontraskjepet og Rådhusgata.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Akershus_Festning_Oslo.jpg/640px-Akershus_Festning_Oslo.jpg",
+        "credit": "Wikimedia Commons (Akershus)"
+      }
+    },
+    {
+      "id": "akershuskaia",
+      "name": "Akershuskaia",
+      "lat": 59.9075,
+      "lng": 10.7358,
+      "bind": 5,
+      "year_from": 1880,
+      "year_to": 1924,
+      "tags": [
+        "havn",
+        "transport"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "schweigaards-bro-besluttet-1880",
+        "piperviksbakken-gjennombrudd-1881"
+      ],
+      "related_people": [],
+      "summary": "Akershuskaia bandt festningen til havnelivet i Pipervika og Bjørvika. Langs kaianleggene gikk fartøyfolk, last og passasjerer mens byen bygget broer og gater som knyttet havn og sentrum sammen.",
+      "supplementary_note": "sources/supplementary/notater/akershuskaia.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: SNL Oslo havn / kaianlegg"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Oslo_havn"
+        }
+      ],
+      "standpoint": "Langs Akershuskaia mellom festning og havnebassenget.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Oslo_havn.jpg/640px-Oslo_havn.jpg",
+        "credit": "Wikimedia Commons (havnen)"
+      }
+    },
+    {
+      "id": "slottsparken",
+      "name": "Slottsparken",
+      "lat": 59.917,
+      "lng": 10.727,
+      "bind": 5,
+      "year_from": 1840,
+      "year_to": 1924,
+      "tags": [
+        "kultur",
+        "natur"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "karl-johan-jubileet",
+        "paleet-christiania"
+      ],
+      "related_people": [],
+      "summary": "Slottsparken ble anlagt på 1840-tallet som grønt rom rundt Det kongelige slott og Stiftsgården. Parken bandt slottskvartalet til paradegangen i Karl Johans gate og ble et fast element i unionshovedstadens bybilde.",
+      "supplementary_note": "sources/supplementary/notater/slottsparken.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: SNL Slottsparken"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Slottsparken"
+        }
+      ],
+      "standpoint": "Slottsparken ved Karl Johans gate, mot Det kongelige slott.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Stiftsg%C3%A5rden_Oslo.jpg/640px-Stiftsg%C3%A5rden_Oslo.jpg",
+        "credit": "Wikimedia Commons (slottskvartalet)"
+      }
+    },
+    {
+      "id": "havnelageret-pipervika",
+      "name": "Havnelageret (Pipervika)",
+      "lat": 59.9088,
+      "lng": 10.7375,
+      "bind": 5,
+      "year_from": 1891,
+      "year_to": 1924,
+      "tags": [
+        "havn",
+        "handel"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "havnelageret-oppfort-1891"
+      ],
+      "related_people": [],
+      "summary": "Havnelageret i Pipervika fra 1891 ble et kjent silhuettmotiv ved kaia. Lagerbygningen viste hvordan havneaktivitet og godsjeflig flyttet fra trebrygger til større lager- og ekspedisjonsbygg i Christianias havnestrøk.",
+      "supplementary_note": "sources/supplementary/notater/havnelageret-pipervika.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: SNL Havnelageret"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Havnelageret"
+        }
+      ],
+      "standpoint": "Mot Pipervika og Havnelageret, med utsikt mot Akershuskaia.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Oslo_havn.jpg/640px-Oslo_havn.jpg",
+        "credit": "Wikimedia Commons (Pipervika)"
+      }
+    },
+    {
+      "id": "sofienberg-park",
+      "name": "Sofienbergparken",
+      "lat": 59.923,
+      "lng": 10.759,
+      "bind": 4,
+      "year_from": 1900,
+      "year_to": 1924,
+      "tags": [
+        "natur",
+        "arbeid",
+        "blaa-skilt"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "byutvidelse-1878"
+      ],
+      "related_people": [],
+      "summary": "Sofienbergparken ligger midt i det tette trehuskvarteret på Grünerløkka. Friområdet ga luft og samvær i et strøk der industri langs Akerselva og bolig i trehus blandet seg tett.",
+      "supplementary_note": "sources/supplementary/notater/sofienberg-park.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Sofienbergparken"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Sofienbergparken"
+        }
+      ],
+      "standpoint": "Sofienbergparken ved Markveien, mot Akerselva og Grünerløkka.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Akerselva_Sagene.jpg/640px-Akerselva_Sagene.jpg",
+        "credit": "Wikimedia Commons"
+      },
+      "blaa_skilt": true
+    },
+    {
+      "id": "ullevaa-sykehus",
+      "name": "Ullevål sykehus",
+      "lat": 59.935,
+      "lng": 10.735,
+      "bind": 5,
+      "year_from": 1897,
+      "year_to": 1924,
+      "tags": [
+        "kultur",
+        "kommune",
+        "blaa-skilt"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "ullevaa-sykehus-1897"
+      ],
+      "related_people": [],
+      "summary": "Ullevål sykehus åpnet i 1897 nord for sentrum. Sykehuset viste hvordan helsesystemet vokste med storbyen, med kapasitet utover St. Olavs hospital i det sentrale embetskvartalet.",
+      "supplementary_note": "sources/supplementary/notater/ullevaa-sykehus.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: SNL Ullevål sykehus"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Ullev%C3%A5l_sykehus"
+        }
+      ],
+      "standpoint": "Ullevål sykehus ved alle Kirkeveien, mot St. Hanshaugen.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      },
+      "blaa_skilt": true
+    },
+    {
+      "id": "majorstuen-knutepunkt",
+      "name": "Majorstuen",
+      "lat": 59.93,
+      "lng": 10.715,
+      "bind": 4,
+      "year_from": 1875,
+      "year_to": 1924,
+      "tags": [
+        "transport",
+        "bygrunn"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "sporvogn-majorstuen-1875"
+      ],
+      "related_people": [],
+      "summary": "Majorstuen ble knutepunkt da den første hestesporvognen fra sentrum åpnet dit i 1875. Vogna dro vestover langs Karl Johans gate og bandt villaområdet på Homansbyen og Frogner tettere til handelsbyen.",
+      "supplementary_note": "sources/supplementary/notater/majorstuen-knutepunkt.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Christiania Sporvei"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Christiania_Sporvei"
+        }
+      ],
+      "standpoint": "Ved Majorstuen langs Kirkeveien, mot Bogstadveien og Homansbyen.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "id": "holmenkollen-bakken",
+      "name": "Holmenkollbakken",
+      "lat": 59.964,
+      "lng": 10.668,
+      "bind": 5,
+      "year_from": 1892,
+      "year_to": 1924,
+      "tags": [
+        "kultur",
+        "natur"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "holmenkollen-1892"
+      ],
+      "related_people": [],
+      "summary": "Holmenkollbakken ble tatt i bruk som hoppbakke i 1892 og ble et nasjonalt samlingssted for ski og friluft. Anlegget viste hvordan storbyen strekte seg oppover byfjellene på vei mot jubileumsåret.",
+      "supplementary_note": "sources/supplementary/notater/holmenkollen-bakken.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: SNL Holmenkollbakken"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Holmenkollbakken"
+        }
+      ],
+      "standpoint": "Ved Holmenkollbakken, utsikt over byen og marka.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Holmenkollen_ski_jump_Oslo_2015.jpg/640px-Holmenkollen_ski_jump_Oslo_2015.jpg",
+        "credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "id": "sinsen-akersrike",
+      "name": "Sinsen",
+      "lat": 59.919,
+      "lng": 10.788,
+      "bind": 1,
+      "year_from": 1850,
+      "year_to": 1924,
+      "tags": [
+        "bygrunn",
+        "blaa-skilt"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [],
+      "related_people": [],
+      "summary": "Sinsen i Østre Aker var jordbruksland før byen vokste østover. Et gravfunn fra vikingtiden viser vanlig gårdsbebyggelse i området lenge før Kristiania ble by.",
+      "supplementary_note": "sources/supplementary/notater/sinsen-akersrike.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "23",
+        "note": "Bull bind I: gravfunn i bydelene; supplement Sinsen/Alna"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Sinsen"
+        }
+      ],
+      "standpoint": "Ved Trondheimsveien og Sinsen, mot Løren og Alna.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Oval_brooch_-_Viking.jpg/640px-Oval_brooch_-_Viking.jpg",
+        "credit": "Wikimedia Commons"
+      },
+      "blaa_skilt": true
+    },
+    {
+      "id": "ulven-akersrike",
+      "name": "Ulven",
+      "lat": 59.908,
+      "lng": 10.768,
+      "bind": 1,
+      "year_from": 1850,
+      "year_to": 1924,
+      "tags": [
+        "bygrunn",
+        "blaa-skilt"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [],
+      "related_people": [],
+      "summary": "Ulven i Østre Aker var jordbruksmark før byen vokste. To gravfunn fra vikingtiden viser gårdsbebyggelse i strøket lenge før Kristiania ble planlagt.",
+      "supplementary_note": "sources/supplementary/notater/ulven-akersrike.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 1,
+        "pages": "23",
+        "note": "Bull bind I: gravfunn Østre Aker"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Ulven_-_Oslo"
+        }
+      ],
+      "standpoint": "Ved Ulven og Økernkrysset, mot Alna.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Oval_brooch_-_Viking.jpg/640px-Oval_brooch_-_Viking.jpg",
+        "credit": "Wikimedia Commons"
+      },
+      "blaa_skilt": true
+    },
+    {
+      "id": "roedelokka-kvarter",
+      "name": "Rodeløkka",
+      "lat": 59.914,
+      "lng": 10.792,
+      "bind": 4,
+      "year_from": 1870,
+      "year_to": 1924,
+      "tags": [
+        "arbeid",
+        "bygrunn",
+        "blaa-skilt"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "roedelokka-1878"
+      ],
+      "related_people": [],
+      "summary": "Rodeløkka øst for sentrum fikk trehus og arbeiderboliger da Kristiania vokste på 1800-tallet. Kvartalene mellom Carl Berner og Vålerenga viser hvordan industri og jernbane trakk nye innbyggere østover.",
+      "supplementary_note": "sources/supplementary/notater/roedelokka-kvarter.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Rodeløkka"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Rodel%C3%B8kka"
+        }
+      ],
+      "standpoint": "Rodeløkkafeltet ved Helgesens gate, mot Vålerenga.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      },
+      "blaa_skilt": true
+    },
+    {
+      "id": "lilleaker-verksted",
+      "name": "Lilleaker",
+      "lat": 59.948,
+      "lng": 10.637,
+      "bind": 4,
+      "year_from": 1870,
+      "year_to": 1924,
+      "tags": [
+        "arbeid",
+        "transport"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "lilleaker-verk-1872"
+      ],
+      "related_people": [],
+      "summary": "Lilleaker ved Lysakerelva ble et industristed med verksteder og boliger da byen bredte seg vestover. Strøket knyttet Akersrike til arbeidsplasser ved fjorden og jernbane mot byen.",
+      "supplementary_note": "sources/supplementary/notater/lilleaker-verksted.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Lilleaker"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Lilleaker"
+        }
+      ],
+      "standpoint": "Ved Lilleaker stasjon og Lysakerelva, vest for bykjernen.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "id": "bekkelaget-kirke",
+      "name": "Bekkelaget",
+      "lat": 59.874,
+      "lng": 10.769,
+      "bind": 4,
+      "year_from": 1860,
+      "year_to": 1924,
+      "tags": [
+        "kultur",
+        "natur"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "bekkelaget-kirke-1865"
+      ],
+      "related_people": [],
+      "summary": "Bekkelaget sør for fjorden var eget bygd før Kristiania vokste over grensene. Kirken og bebyggelsen langs vannet viser hvordan sydstrøket levde som forstad med fjordforbindelse inn mot sentrum.",
+      "supplementary_note": "sources/supplementary/notater/bekkelaget-kirke.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Bekkelaget"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Bekkelaget"
+        }
+      ],
+      "standpoint": "Ved Bekkelaget kirke, utsikt mot fjorden og Østfold.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "id": "skoyen-gard",
+      "name": "Skøyen",
+      "lat": 59.923,
+      "lng": 10.678,
+      "bind": 4,
+      "year_from": 1820,
+      "year_to": 1924,
+      "tags": [
+        "kultur",
+        "natur"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "skoyen-landsted-1840"
+      ],
+      "related_people": [],
+      "summary": "Skøyen vest for sentrum var opprinnelig landeiendom som senere ble villa- og rekkehusområde. Stedet viser hvordan byen bredte seg langs Drammensveien mot fjorden før jernbane og industri kom til Lilleaker.",
+      "supplementary_note": "sources/supplementary/notater/skoyen-gard.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Skøyen"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Sk%C3%B8yen"
+        }
+      ],
+      "standpoint": "Ved Skøyen og Drammensveien, mot fjorden.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "id": "okern-industri",
+      "name": "Økern",
+      "lat": 59.928,
+      "lng": 10.807,
+      "bind": 5,
+      "year_from": 1900,
+      "year_to": 1924,
+      "tags": [
+        "arbeid",
+        "transport",
+        "blaa-skilt"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "okern-verk-1910"
+      ],
+      "related_people": [],
+      "summary": "Økern mellom Ulven og Løren ble et industrielt knutepunkt med verksteder og boliger da hovedstaden vokste på begge sider av Akerselva. Strøket binder Østre Aker til fabrikker og jernbane østover.",
+      "supplementary_note": "sources/supplementary/notater/okern-industri.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: SNL Økern"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/%C3%98kern"
+        }
+      ],
+      "standpoint": "Ved Økern, mot Ulven og Alna-elva.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      },
+      "blaa_skilt": true
+    },
+    {
+      "id": "hasle-industri",
+      "name": "Hasle",
+      "lat": 59.927,
+      "lng": 10.797,
+      "bind": 4,
+      "year_from": 1890,
+      "year_to": 1924,
+      "tags": [
+        "arbeid",
+        "transport",
+        "blaa-skilt"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "hasle-verk-1902"
+      ],
+      "related_people": [],
+      "summary": "Hasle i Østre Aker ble et industri- og boligstrøk mellom Økern og Løren da byen vokste østover. Verksted og jernbane trakk arbeidere til nye kvartaler langs Alna.",
+      "supplementary_note": "sources/supplementary/notater/hasle-industri.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Hasle"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Hasle_-_Oslo"
+        }
+      ],
+      "standpoint": "Ved Hasle, mellom Økern og Løren.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      },
+      "blaa_skilt": true
+    },
+    {
+      "id": "blindern-universitet",
+      "name": "Blindern",
+      "lat": 59.939,
+      "lng": 10.72,
+      "bind": 5,
+      "year_from": 1911,
+      "year_to": 1924,
+      "tags": [
+        "kultur",
+        "kommune",
+        "blaa-skilt"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "blindern-universitet-1911"
+      ],
+      "related_people": [],
+      "summary": "Universitetet flyttet til Blindern i 1911 og samlet undervisning nord for sentrum. Campusområdet markerte at hovedstaden også var kunnskapsby da jubileumsåret nærmet seg.",
+      "supplementary_note": "sources/supplementary/notater/blindern-universitet.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: SNL Universitetet i Oslo Blindern"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Universitetet_i_Oslo"
+        }
+      ],
+      "standpoint": "Universitetsområdet Blindern, mot Problemveien og Majorstuen.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      },
+      "blaa_skilt": true
+    },
+    {
+      "id": "kjelsas-landbruk",
+      "name": "Kjelsås",
+      "lat": 59.949,
+      "lng": 10.789,
+      "bind": 4,
+      "year_from": 1850,
+      "year_to": 1924,
+      "tags": [
+        "bygrunn",
+        "natur"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "kjelsas-jernbane-1900"
+      ],
+      "related_people": [],
+      "summary": "Kjelsås i nordøst var jordbruksmark og skog før sporvogn og boliger trakk byen hit. Stedet viser overgangen fra Aker-landsbygd til tett by øst for Mjøsa-linjen.",
+      "supplementary_note": "sources/supplementary/notater/kjelsas-landbruk.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Kjelsås"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Kjels%C3%A5s"
+        }
+      ],
+      "standpoint": "Ved Kjelsås stasjon, retning mot Nydalen.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Akerselva_Sagene.jpg/640px-Akerselva_Sagene.jpg",
+        "credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "id": "ringnes-bryggeri",
+      "name": "Ringnes bryggeri",
+      "lat": 59.915,
+      "lng": 10.754,
+      "bind": 4,
+      "year_from": 1877,
+      "year_to": 1924,
+      "tags": [
+        "arbeid",
+        "kultur",
+        "blaa-skilt"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "ringnes-bryggeri-1877"
+      ],
+      "related_people": [],
+      "summary": "Ringnesbryggeriet ble startet i 1877 og vokste til et av landets største. Fabrikken på Storgata viste hvordan industri og merkevarer ble en del av hovedstadens hverdag før jubileumsåret.",
+      "supplementary_note": "sources/supplementary/notater/ringnes-bryggeri.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Ringnes"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Ringnes"
+        }
+      ],
+      "standpoint": "Storgata nær Ringnesgården, mellom Youngstorget og Grünerløkka.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      },
+      "blaa_skilt": true
+    },
+    {
+      "id": "bygdoy-kongsgard",
+      "name": "Bygdøy kongsgård",
+      "lat": 59.905,
+      "lng": 10.686,
+      "bind": 4,
+      "year_from": 1820,
+      "year_to": 1924,
+      "tags": [
+        "kultur",
+        "natur"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "bygdoy-kongsgard-1840"
+      ],
+      "related_people": [],
+      "summary": "Bygdøy kongsgård lå vest for sentrum som kongelig landeiendom med hage og skog. Stedet markerte forbindelsen mellom hoff og fjorden lenge før halvøya ble museums- og parkområde.",
+      "supplementary_note": "sources/supplementary/notater/bygdoy-kongsgard.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Bygdøy kongsgård"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Bygd%C3%B8y_kongsg%C3%A5rd"
+        }
+      ],
+      "standpoint": "Bygdøy ved kongsgården, mot fjorden og Oscarshall.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "id": "briskeby-villa",
+      "name": "Briskeby",
+      "lat": 59.918,
+      "lng": 10.727,
+      "bind": 4,
+      "year_from": 1870,
+      "year_to": 1924,
+      "tags": [
+        "kultur",
+        "bygrunn"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "briskeby-villa-1885"
+      ],
+      "related_people": [],
+      "summary": "Briskeby ble et villaområde langs Drammensveien da velstående familier slo seg ned vest for kvadraturen. Trekkerhus og fristående boliger skilte seg fra det tette sentrum.",
+      "supplementary_note": "sources/supplementary/notater/briskeby-villa.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Briskeby"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Briskeby"
+        }
+      ],
+      "standpoint": "Briskeby ved Drammensveien, mot Skillebekk og Bygdøy.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "id": "oscarshall-slott",
+      "name": "Oscarshall",
+      "lat": 59.898,
+      "lng": 10.699,
+      "bind": 4,
+      "year_from": 1848,
+      "year_to": 1924,
+      "tags": [
+        "kultur",
+        "natur",
+        "blaa-skilt"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "oscarshall-1852"
+      ],
+      "related_people": [],
+      "summary": "Oscarshall på Bygdøy ble bygget som sommerresidens for kong Oscar I og sto ferdig i 1852. Slottet og parken viser hvordan hoffet brukte halvøya ved fjorden lenge før museumssamlingene kom.",
+      "supplementary_note": "sources/supplementary/notater/oscarshall-slott.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Oscarshall"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Oscarshall"
+        }
+      ],
+      "standpoint": "Oscarshall på Bygdøy, mot kongeparken og fjorden.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      },
+      "blaa_skilt": true
+    },
+    {
+      "id": "carl-berners-plass",
+      "name": "Carl Berners plass",
+      "lat": 59.921,
+      "lng": 10.778,
+      "bind": 5,
+      "year_from": 1917,
+      "year_to": 1924,
+      "tags": [
+        "transport",
+        "bygrunn"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "carl-berners-plass-1924"
+      ],
+      "related_people": [],
+      "summary": "Carl Berners plass ble et tungt trafikk-kryss mellom øst og vest da trikk og gateforbindelser bandt Grünerløkka, Tøyen og sentrum. Navnet ble brukt allerede i jubileumsåret.",
+      "supplementary_note": "sources/supplementary/notater/carl-berners-plass.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: SNL Carl Berners plass"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Carl_Berners_plass"
+        }
+      ],
+      "standpoint": "Carl Berners plass ved trikk-knutepunktet, mot Tøyen og Grünerløkka.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "id": "nordstrand-sjokant",
+      "name": "Nordstrand",
+      "lat": 59.865,
+      "lng": 10.796,
+      "bind": 4,
+      "year_from": 1860,
+      "year_to": 1924,
+      "tags": [
+        "natur",
+        "kultur",
+        "blaa-skilt"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "nordstrand-bebyggelse-1880"
+      ],
+      "related_people": [],
+      "summary": "Nordstrand sør for byen var villa- og rekkehusstrøk med utsikt mot fjorden. Paulus kirke og bolig langs kysten viser hvordan hovedstaden vokste nedover mot Malmøya og Lysaker.",
+      "supplementary_note": "sources/supplementary/notater/nordstrand-sjokant.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Nordstrand"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Nordstrand_-_Oslo"
+        }
+      ],
+      "standpoint": "Nordstrandveien med utsikt mot fjorden og Paulus kirke.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      },
+      "blaa_skilt": true
+    },
+    {
+      "id": "lysaker-handel",
+      "name": "Lysaker",
+      "lat": 59.913,
+      "lng": 10.635,
+      "bind": 4,
+      "year_from": 1870,
+      "year_to": 1924,
+      "tags": [
+        "handel",
+        "transport"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "lysaker-jernbane-1872"
+      ],
+      "related_people": [],
+      "summary": "Lysaker ved Drammensveien og fjorden var handels- og industristed vest for Christiania. Jernbane og fabrikker knyttet Akersrike til hovedstaden langs Lysakerelva.",
+      "supplementary_note": "sources/supplementary/notater/lysaker-handel.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Lysaker"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Lysaker"
+        }
+      ],
+      "standpoint": "Lysaker langs Drammensveien, mot fjorden og Lilleaker.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "id": "grefsen-forstad",
+      "name": "Grefsen",
+      "lat": 59.942,
+      "lng": 10.775,
+      "bind": 4,
+      "year_from": 1890,
+      "year_to": 1924,
+      "tags": [
+        "bygrunn",
+        "natur"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "grefsen-bebyggelse-1895"
+      ],
+      "related_people": [],
+      "summary": "Grefsen nord for sentrum fikk villa- og rekkehusbebyggelse da trikk og jernbane trakk byen oppover langs Akerselva. Strøket kombinerte utsikt, skog og pendlerliv.",
+      "supplementary_note": "sources/supplementary/notater/grefsen-forstad.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Grefsen"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Grefsen"
+        }
+      ],
+      "standpoint": "Grefsen ved trikk og jernbane, mot Nydalen og Maridalsvannet.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Akerselva_Sagene.jpg/640px-Akerselva_Sagene.jpg",
+        "credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "id": "etterstad-gard",
+      "name": "Etterstad",
+      "lat": 59.915,
+      "lng": 10.802,
+      "bind": 4,
+      "year_from": 1870,
+      "year_to": 1924,
+      "tags": [
+        "arbeid",
+        "bygrunn"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "etterstad-industri-1905"
+      ],
+      "related_people": [],
+      "summary": "Etterstad øst for sentrum var jordbruk og senere industri- og boligområde. Vækerøbanen og ny bebyggelse bandt strøket til Økern og Rodeløkka.",
+      "supplementary_note": "sources/supplementary/notater/etterstad-gard.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Etterstad"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Etterstad"
+        }
+      ],
+      "standpoint": "Etterstad ved jernbane og Alna, mot Økern.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "id": "botanisk-hage-toeyen",
+      "name": "Botanisk hage (Tøyen)",
+      "lat": 59.9172,
+      "lng": 10.769,
+      "bind": 4,
+      "year_from": 1814,
+      "year_to": 1924,
+      "tags": [
+        "natur",
+        "kultur"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "botanisk-hage-1814"
+      ],
+      "related_people": [],
+      "summary": "Botanisk hage på Tøyen ble et vitenskapelig og rekreasjonssted da hovedstaden vokste. Hagene lå ved siden av museum og park og ga grønt rom i østkanten.",
+      "supplementary_note": "sources/supplementary/notater/botanisk-hage-toeyen.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Botanisk hage Oslo"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Botanisk_hage%2C_Oslo"
+        }
+      ],
+      "standpoint": "Botanisk hage på Tøyen, ved Universitetsmuseet.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "id": "universitetsmuseet-toeyen",
+      "name": "Universitetsmuseet (Tøyen)",
+      "lat": 59.9168,
+      "lng": 10.771,
+      "bind": 4,
+      "year_from": 1850,
+      "year_to": 1924,
+      "tags": [
+        "kultur"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "universitetsmuseet-toeyen-1880"
+      ],
+      "related_people": [],
+      "summary": "Universitetsmuseet på Tøyen samlet naturvitenskap og samlinger for hele landet. Bygningene ved siden av botanisk hage gjorde Tøyen til et lærings- og friluftsområde.",
+      "supplementary_note": "sources/supplementary/notater/universitetsmuseet-toeyen.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Universitetsmuseet i Oslo"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Universitetsmuseet_i_Oslo"
+        }
+      ],
+      "standpoint": "Universitetsmuseet på Tøyen, mot Tøyenparken.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "id": "linderud-gard",
+      "name": "Linderud gård",
+      "lat": 59.929,
+      "lng": 10.822,
+      "bind": 4,
+      "year_from": 1700,
+      "year_to": 1924,
+      "tags": [
+        "kultur",
+        "natur"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "linderud-gard-1700"
+      ],
+      "related_people": [],
+      "summary": "Linderud gård i Østre Aker var herregård og landbruk lenge før byen nådde fram. Gården markerte overgangen fra flat bygd til villa- og industristrøk mot Økern.",
+      "supplementary_note": "sources/supplementary/notater/linderud-gard.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Linderud gård"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Linderud_g%C3%A5rd"
+        }
+      ],
+      "standpoint": "Linderud gård ved Trikkeriksterminalen, mot Økern.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Akerselva_Sagene.jpg/640px-Akerselva_Sagene.jpg",
+        "credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "id": "norsk-folkemuseum",
+      "name": "Norsk Folkemuseum",
+      "lat": 59.907,
+      "lng": 10.684,
+      "bind": 4,
+      "year_from": 1894,
+      "year_to": 1924,
+      "tags": [
+        "kultur",
+        "natur",
+        "blaa-skilt"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "folkemuseum-1894"
+      ],
+      "related_people": [],
+      "summary": "Norsk Folkemuseum ble grunnlagt på Bygdøy i 1894 for å bevare bygninger og gjenstander fra hele landet. Friluftsmuseet knyttet kulturarv til halvøya ved kongsgården og Oscarshall.",
+      "supplementary_note": "sources/supplementary/notater/norsk-folkemuseum.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Norsk Folkemuseum"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Norsk_Folkemuseum"
+        }
+      ],
+      "standpoint": "Norsk Folkemuseum på Bygdøy, ved Kongsgården.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      },
+      "blaa_skilt": true
+    },
+    {
+      "id": "skillebekk-strøk",
+      "name": "Skillebekk",
+      "lat": 59.915,
+      "lng": 10.702,
+      "bind": 4,
+      "year_from": 1870,
+      "year_to": 1924,
+      "tags": [
+        "kultur",
+        "natur"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "skillebekk-villa-1875"
+      ],
+      "related_people": [],
+      "summary": "Skillebekk ved Drammensveien fikk villaer og rekkehus da velstående familier flyttet vestover. Strøket lå mellom Briskeby og fjorden med utsikt mot Bygdøy.",
+      "supplementary_note": "sources/supplementary/notater/skillebekk-strøk.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Skillebekk"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Skillebekk"
+        }
+      ],
+      "standpoint": "Skillebekk ved Drammensveien, mot Bygdøy og fjorden.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "id": "malmoya-utflykt",
+      "name": "Malmøya",
+      "lat": 59.855,
+      "lng": 10.765,
+      "bind": 4,
+      "year_from": 1880,
+      "year_to": 1924,
+      "tags": [
+        "natur"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "malmoya-sommer-1890"
+      ],
+      "related_people": [],
+      "summary": "Malmøya i Oslofjorden ble sommer- og friluftssted for byfolk med båt og bad. Øya bandt sydkysten til fjordlivet som preget hovedstaden før jubileumsåret.",
+      "supplementary_note": "sources/supplementary/notater/malmoya-utflykt.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Malmøya"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Malm%C3%B8ya"
+        }
+      ],
+      "standpoint": "Malmøya sett fra Nordstrand eller båt i fjorden.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "id": "toeyen-park",
+      "name": "Tøyenparken",
+      "lat": 59.9175,
+      "lng": 10.7718,
+      "bind": 4,
+      "year_from": 1884,
+      "year_to": 1924,
+      "tags": [
+        "natur",
+        "arbeid"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "toeyen-park-1884"
+      ],
+      "related_people": [],
+      "summary": "Tøyenparken ble et friområde i et strøk der industri og bolig vekslet tett. Parken ga arbeiderkvarterene omkring Tøyen og Grønland grøn flukt, like ved botanisk hage og museum som vokste fram på 1800-tallet.",
+      "supplementary_note": "sources/supplementary/notater/toeyen-park.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Tøyenparken"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/T%C3%B8yenparken"
+        }
+      ],
+      "standpoint": "Tøyenparken mellom Tøyen og Kampen, mot Munchmuseet og botanisk hage.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "id": "teatergaten",
+      "name": "Teatergaten",
+      "lat": 59.9139,
+      "lng": 10.7342,
+      "bind": 5,
+      "year_from": 1870,
+      "year_to": 1924,
+      "tags": [
+        "kultur"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "nationaltheatret-apner-1899",
+        "egertorget-handel-1840"
+      ],
+      "related_people": [],
+      "summary": "Teatergaten langs Nationaltheatret området bar byens sceneliv inn i unionshovedstaden. Gaten forbandt Bankplassen og Christiania Theater-tiden med ny scene ved Nationaltheatret og livet rundt Egertorget.",
+      "supplementary_note": "sources/supplementary/notater/teatergaten.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: SNL Teatergaten"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Teatergaten"
+        }
+      ],
+      "standpoint": "Teatergaten ved Nationaltheatret, mot Egertorget og Bankplassen.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "id": "st-olavs-plass",
+      "name": "St. Olavs plass",
+      "lat": 59.9136,
+      "lng": 10.7398,
+      "bind": 4,
+      "year_from": 1809,
+      "year_to": 1924,
+      "tags": [
+        "kultur",
+        "kommune"
+      ],
+      "episode_id": "1814-hovedstaden",
+      "related_events": [
+        "st-olavs-hospital-1809"
+      ],
+      "related_people": [],
+      "summary": "St. Olavs plass utviklet seg rundt St. Olavs hospital, som åpnet i 1809 som byens moderne sykehus. Plassen knyttet helsevesen, gatelys og embetsliv i sentrum sammen med universitet og Stortinget.",
+      "supplementary_note": "sources/supplementary/notater/st-olavs-plass.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL St. Olavs hospital"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/St._Olavs_hospital"
+        }
+      ],
+      "standpoint": "St. Olavs plass ved Akersgata, mot universitetet og Stortinget.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "id": "frogner-kirke",
+      "name": "Frogner kirke",
+      "lat": 59.9225,
+      "lng": 10.7018,
+      "bind": 5,
+      "year_from": 1903,
+      "year_to": 1924,
+      "tags": [
+        "kultur",
+        "religion"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "frogner-kirke-vigsel-1903",
+        "karl-johan-jubileet"
+      ],
+      "related_people": [],
+      "summary": "Frogner kirke ble innviet i 1903 i det borgerlige strøket vest for sentrum. Kirken fulgte veksten mot Homansbyen og de nyere villa- og blokkbebyggelsene som skjøt fart før jubileumsåret 1924.",
+      "supplementary_note": "sources/supplementary/notater/frogner-kirke.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: SNL Frogner kirke"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Frogner_kirke"
+        }
+      ],
+      "standpoint": "Frogner kirke ved Frogner vei, mot Slottsparken og Bygdøy.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "id": "gronland-torg",
+      "name": "Grønland torg",
+      "lat": 59.9133,
+      "lng": 10.7562,
+      "bind": 4,
+      "year_from": 1770,
+      "year_to": 1924,
+      "tags": [
+        "handel",
+        "arbeid",
+        "blaa-skilt"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "gronland-husnaring-1770",
+        "brugata-handel-1860"
+      ],
+      "related_people": [],
+      "summary": "Grønland torg har vært markedsplass og møtepunkt i det tette trehuskvarteret øst for elva. Sjøgamarkedet og handelen her bandt byens privilegium-handel til forstadsliv og arbeidskvarterer på vei mot Brugata.",
+      "supplementary_note": "sources/supplementary/notater/gronland-torg.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Grønland / sjøgamarked"
+      },
+      "standpoint": "Midt på Grønland torg, mot Brugata og Torggata.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      },
+      "blaa_skilt": true
+    },
+    {
+      "id": "urtegata-handel",
+      "name": "Urtegata",
+      "lat": 59.9138,
+      "lng": 10.7502,
+      "bind": 4,
+      "year_from": 1800,
+      "year_to": 1924,
+      "tags": [
+        "handel",
+        "arbeid",
+        "blaa-skilt"
+      ],
+      "episode_id": "mot-1924",
+      "related_events": [
+        "arbeideren-mollergata-1909",
+        "brugata-handel-1860"
+      ],
+      "related_people": [],
+      "summary": "Urtegata mellom Youngstorget og Grønland ble et pulserende handels- og arbeidermiljø på 1800-tallet. Gaten var nær basarer og råstoffhandel, med kort vei til Møllergata og avisredaksjonene.",
+      "supplementary_note": "sources/supplementary/notater/urtegata-handel.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Urtegata"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Urtegata"
+        }
+      ],
+      "standpoint": "Urtegata ved Youngstorget, mot Grønland og Torggata.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      },
+      "blaa_skilt": true
+    },
+    {
+      "id": "prinsens-gate",
+      "name": "Prinsens gate",
+      "lat": 59.9128,
+      "lng": 10.7435,
+      "bind": 2,
+      "year_from": 1624,
+      "year_to": 1924,
+      "tags": [
+        "bygrunn",
+        "handel"
+      ],
+      "episode_id": "kvadraturen-1600",
+      "related_events": [
+        "gamle-raadhus-ferdig-1641"
+      ],
+      "related_people": [],
+      "summary": "Prinsens gate var den vestligste av Christian IVs tre parallelle hovedgater i Kvadraturen. Her vokste handelsgårder og butikker tett mot Akershus og mot torv som Christiania torv og Gammeltorvet.",
+      "supplementary_note": "sources/supplementary/notater/prinsens-gate.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "supplement",
+        "note": "Supplement: SNL Prinsens gate"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Prinsens_gate"
+        }
+      ],
+      "standpoint": "Prinsens gate mellom Akersgata og Christiania torv.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Oslo_havn.jpg/640px-Oslo_havn.jpg",
+        "credit": "Wikimedia Commons (Kvadraturen)"
+      }
+    },
+    {
+      "id": "maridalskroken",
+      "name": "Maridalskroken (Akerselvas kilder)",
+      "lat": 59.9628,
+      "lng": 10.7943,
+      "bind": 2,
+      "year_from": 1859,
+      "year_to": 1924,
+      "tags": [
+        "natur",
+        "industri"
+      ],
+      "episode_id": "akerselva-tidlig",
+      "related_events": [
+        "maridalsvannet-vannforsyning-1859"
+      ],
+      "related_people": [],
+      "summary": "Ved Maridalskroken renner Akerselva ut fra Maridalsvannet. Elva bar vannkraft og drikkevann til byen, og trinnene ved kilden ble et naturlig startpunkt for fortellingen om industri og boligstrøk nedover elven.",
+      "supplementary_note": "sources/supplementary/notater/maridalskroken.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "supplement",
+        "note": "Supplement: SNL Akerselva / Maridalsvannet"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Akerselva"
+        }
+      ],
+      "standpoint": "Ved Maridalskroken og Akerselvas trinn, mellom Maridalsvannet og Nydalen.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Akerselva_Sagene.jpg/640px-Akerselva_Sagene.jpg",
+        "credit": "Wikimedia Commons (Akerselva)"
+      }
+    },
+    {
+      "id": "akersgata-embetskvartal",
+      "name": "Akersgata (embetskvartalet)",
+      "lat": 59.9132,
+      "lng": 10.7378,
+      "bind": 5,
+      "year_from": 1814,
+      "year_to": 1924,
+      "tags": [
+        "kommune",
+        "handel"
+      ],
+      "episode_id": "1814-hovedstaden",
+      "related_events": [
+        "stortinget-eget-hus",
+        "egertorget-handel-1840"
+      ],
+      "related_people": [],
+      "summary": "Akersgata bar preg av embeter og forretninger da Christiania ble unionshovedstad. Her lå blant annet departements- og finansmiljø, med kort vei til Stortinget og Wessels plass.",
+      "supplementary_note": "sources/supplementary/notater/akersgata-embetskvartal.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: SNL Akersgata"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Akersgata"
+        }
+      ],
+      "standpoint": "Akersgata mellom Stortinget og Wessels plass, mot regjeringskvartalet.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karl_Johans_gate_Oslo.jpg/640px-Karl_Johans_gate_Oslo.jpg",
+        "credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "id": "nedre-slottsgate",
+      "name": "Nedre Slottsgate",
+      "lat": 59.9118,
+      "lng": 10.7275,
+      "bind": 2,
+      "year_from": 1624,
+      "year_to": 1924,
+      "tags": [
+        "bygrunn",
+        "kultur"
+      ],
+      "episode_id": "kvadraturen-1600",
+      "related_events": [
+        "gamle-raadhus-ferdig-1641"
+      ],
+      "related_people": [],
+      "summary": "Nedre Slottsgate knytter Kvadraturen til Slottsplassen og Akershus. Gaten ble et av de fornemme strøkene vest i byplanen, der handelshus og representasjon møtte festning og kongemakt.",
+      "supplementary_note": "sources/supplementary/notater/nedre-slottsgate.md",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "supplement",
+        "note": "Supplement: SNL Nedre Slottsgate"
+      },
+      "external_links": [
+        {
+          "label": "Store norske leksikon",
+          "url": "https://snl.no/Nedre_Slottsgate"
+        }
+      ],
+      "standpoint": "Nedre Slottsgate mellom Rådhusgata og Slottsplassen, mot Akershus.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Stiftsg%C3%A5rden_Oslo.jpg/640px-Stiftsg%C3%A5rden_Oslo.jpg",
+        "credit": "Wikimedia Commons (slottskvartalet)"
       }
     }
   ]

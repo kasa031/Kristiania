@@ -61,6 +61,7 @@ function placeMarkerKind(place) {
 
 function shouldShowPeopleMarkers() {
   const d = getFilters().destination;
+  if (d === "community" || d === "blaa-skilt") return false;
   return d === "all" || d === "historie";
 }
 
@@ -82,6 +83,11 @@ const state = {
   activeMapLayerId: "detailed",
   placeMiniMap: null,
   routeLayer: null,
+  userRouteLayer: null,
+  userRouteFetchAbort: null,
+  userRouteDistanceM: null,
+  userRouteTargetId: null,
+  userRouteRefreshTimer: null,
   userMarker: null,
   userAccuracy: null,
   markers: {},
@@ -99,6 +105,7 @@ const state = {
   activePersonId: null,
   activeContextId: null,
   activeBlueSignId: null,
+  activeCommunityPinId: null,
   bydelerGeo: null,
   districtMapUi: null,
   activeEventId: null,
@@ -115,6 +122,9 @@ const state = {
   searchMarker: null,
   searchSuggestTimer: null,
   lastMapFitKey: "",
+  communityMapPick: false,
+  communityPickMarker: null,
+  communityMarkers: {},
   siteConfig: {
     phase: 1,
     primary_mode: "explore",
@@ -949,7 +959,8 @@ function peopleLinksHtml(place) {
 }
 
 function filterContextEntries() {
-  const { bind, century, tag, episode, chronology, yearMin, yearMax } = getFilters();
+  const { destination, bind, century, tag, episode, chronology, yearMin, yearMax } = getFilters();
+  if (destination === "community") return [];
   return state.contextEntries.filter((ctx) => {
     if (!itemMatchesYearRange(ctx, yearMin, yearMax)) return false;
     if (!itemMatchesChronology(ctx, chronology)) return false;
@@ -1019,6 +1030,11 @@ function runUiAction(action) {
   }
   if (action === "home-back") {
     showHomeScreen();
+    return;
+  }
+  if (action === "home-share" || action === "community-tag") {
+    if (isHomeActive()) dismissHome("explore", { openCommunityTag: true });
+    else openCommunityTagDialog();
     return;
   }
   if (action === "reset-filters") {
@@ -1306,6 +1322,10 @@ function applyBranding() {
   if (homeShareHint && cfg.home_share_hint) homeShareHint.textContent = cfg.home_share_hint;
   const shareBtn = document.getElementById("home-btn-share");
   if (shareBtn) shareBtn.hidden = cfg.community_tags_enabled === false;
+  const mapShareBtn = document.getElementById("btn-map-share");
+  if (mapShareBtn) mapShareBtn.hidden = cfg.community_tags_enabled === false;
+  const communityDestOpt = document.getElementById("filter-destination-community");
+  if (communityDestOpt) communityDestOpt.hidden = cfg.community_tags_enabled === false;
   const homeJubilee = document.getElementById("home-jubilee-note");
   if (homeJubilee) {
     if (cfg.home_jubilee_note) {
@@ -1344,6 +1364,7 @@ function applyBranding() {
       cfg.theme_palette === "dronningensgate1714" ? "#2a221c" : "#2c3230",
     );
   }
+  renderMapLegend();
 }
 
 function applySiteUi() {
@@ -1473,8 +1494,41 @@ function distanceToNextStopText() {
   const target = places[state.walkIndex];
   if (!target) return "";
   const user = state.userMarker.getLatLng();
-  const m = haversineMeters({ lat: user.lat, lng: user.lng }, { lat: target.lat, lng: target.lng });
+  let m = haversineMeters({ lat: user.lat, lng: user.lng }, { lat: target.lat, lng: target.lng });
+  if (
+    state.userRouteTargetId === target.id &&
+    state.userRouteDistanceM != null
+  ) {
+    m = state.userRouteDistanceM;
+  }
   return `${formatWalkLeg(m)} til dette stoppet`;
+}
+
+function getTravelRouteTarget() {
+  if (state.walkMode) {
+    const places = getWalkPlaces();
+    return places[state.walkIndex] || null;
+  }
+  const place =
+    state.activePlaceId &&
+    state.places.find((p) => p.id === state.activePlaceId);
+  if (place) return place;
+  const ev =
+    state.activeEventId &&
+    state.events.find((e) => e.id === state.activeEventId);
+  const pid = ev?.place_ids?.[0];
+  if (pid) return state.places.find((p) => p.id === pid);
+  if (state.activePersonId) {
+    const person = state.people.find((p) => p.id === state.activePersonId);
+    const ppid = person?.place_ids?.[0];
+    return ppid ? state.places.find((p) => p.id === ppid) : null;
+  }
+  if (state.activeContextId) {
+    const ctx = state.contextEntries.find((c) => c.id === state.activeContextId);
+    const cpid = ctx?.place_ids?.[0];
+    return cpid ? state.places.find((p) => p.id === cpid) : null;
+  }
+  return null;
 }
 
 function renderWalkProgress(userLegText) {
@@ -1499,8 +1553,9 @@ function renderWalkProgress(userLegText) {
     metaParts.push("Første stopp - følg kartet til merket 1");
   }
   let travelBlock = "";
-  if (state.walkIndex === 0 && places[0]) {
-    const hint = travelHintHtml(places[0]);
+  const currentStop = places[state.walkIndex];
+  if (currentStop) {
+    const hint = travelHintHtml(currentStop);
     if (hint) travelBlock = `<span class="walk-travel-hint">${hint}</span>`;
   }
   prog.innerHTML = `<span class="walk-progress-title">${title}</span><span class="walk-progress-meta">${metaParts.join(" · ")}</span>${travelBlock}`;
@@ -1567,11 +1622,18 @@ function osmWalkDirectionsUrl(place) {
 function travelHintHtml(place) {
   const user = userLatLng();
   if (!user || !place) return "";
-  const meters = haversineMeters(user, { lat: place.lat, lng: place.lng });
+  let meters = haversineMeters(user, { lat: place.lat, lng: place.lng });
+  if (
+    state.userRouteTargetId === place.id &&
+    state.userRouteDistanceM != null
+  ) {
+    meters = state.userRouteDistanceM;
+  }
   if (meters < routeTravelThresholdM()) return "";
   const walkUrl = travelDirectionsUrl(place);
+  const walkMin = formatWalkMinutes(walkMinutesForMeters(meters));
   const links = [
-    `<a class="ep-travel-link" href="${walkUrl}" target="_blank" rel="noopener noreferrer">Gåvei (${formatDistanceM(meters)})</a>`,
+    `<a class="ep-travel-link" href="${walkUrl}" target="_blank" rel="noopener noreferrer">Gåvei · ${walkMin} (${formatDistanceM(meters)})</a>`,
   ];
   const osmUrl = osmWalkDirectionsUrl(place);
   if (osmUrl) {
@@ -1588,6 +1650,103 @@ function travelHintHtml(place) {
     }
   }
   return `<span class="ep-travel-links">${links.join("")}</span>`;
+}
+
+function clearUserTravelRoute() {
+  if (state.userRouteFetchAbort) {
+    state.userRouteFetchAbort.abort();
+    state.userRouteFetchAbort = null;
+  }
+  state.userRouteDistanceM = null;
+  state.userRouteTargetId = null;
+  state.userRouteLayer?.clearLayers();
+}
+
+function scheduleUserTravelRouteRefresh() {
+  clearTimeout(state.userRouteRefreshTimer);
+  state.userRouteRefreshTimer = setTimeout(() => refreshUserTravelRoute(), 450);
+}
+
+async function refreshUserTravelRoute() {
+  clearUserTravelRoute();
+  if (state.siteConfig?.travel_draw_osrm_in_map === false) return;
+  if (!state.map) return;
+  const target = getTravelRouteTarget();
+  const user = userLatLng();
+  if (!target || !user) return;
+  const meters = haversineMeters(user, { lat: target.lat, lng: target.lng });
+  const minM = state.walkMode ? 40 : routeTravelThresholdM();
+  if (meters < minM) return;
+  const url = `https://router.project-osrm.org/route/v1/foot/${user.lng},${user.lat};${target.lng},${target.lat}?overview=full&geometries=geojson`;
+  state.userRouteFetchAbort = new AbortController();
+  try {
+    const res = await fetch(url, { signal: state.userRouteFetchAbort.signal });
+    if (!res.ok) return;
+    const data = await res.json();
+    const route = data.routes?.[0];
+    const coords = route?.geometry?.coordinates;
+    if (!coords?.length || !state.userRouteLayer) return;
+    const latlngs = coords.map(([lng, lat]) => [lat, lng]);
+    state.userRouteDistanceM = route.distance;
+    state.userRouteTargetId = target.id;
+    L.polyline(latlngs, {
+      color: state.walkMode ? markerColor("sted") : "#2a6f97",
+      weight: state.walkMode ? 5 : 5,
+      opacity: 0.82,
+    }).addTo(state.userRouteLayer);
+    if (state.walkMode) {
+      renderWalkProgress(distanceToNextStopText());
+    }
+    if (!document.querySelector(".ep-travel-route-note")) {
+      const wrap = document.querySelector(".ep-travel-links");
+      if (wrap) {
+        wrap.insertAdjacentHTML(
+          "beforeend",
+          '<span class="detail-muted ep-travel-route-note">Fotrute tegnet på kartet.</span>',
+        );
+      }
+    }
+    const walkLink = document.querySelector(".detail-travel .ep-travel-link");
+    if (walkLink && route.distance >= routeTravelThresholdM()) {
+      const walkMin = formatWalkMinutes(walkMinutesForMeters(route.distance));
+      walkLink.textContent = `Gåvei · ${walkMin} (${formatDistanceM(route.distance)})`;
+    }
+  } catch (err) {
+    if (err?.name === "AbortError") return;
+  } finally {
+    state.userRouteFetchAbort = null;
+  }
+}
+
+async function copyCommunityPinJson(pinId) {
+  const pin = findCommunityPin(pinId);
+  if (!pin) return;
+  const text = JSON.stringify(pin, null, 2);
+  try {
+    if (navigator.clipboard?.writeText) {
+      await navigator.clipboard.writeText(text);
+    } else {
+      window.prompt("Kopier bidraget:", text);
+      return;
+    }
+    const hint = document.querySelector(".community-copy-hint");
+    if (hint) {
+      hint.textContent = "JSON kopiert til utklippstavlen.";
+      hint.hidden = false;
+    }
+  } catch {
+    window.prompt("Kopier bidraget:", text);
+  }
+}
+
+function deleteCommunityPin(pinId) {
+  const list = loadCommunityPins().filter((p) => p.id !== pinId);
+  saveCommunityPins(list);
+  state.activeCommunityPinId = null;
+  refreshCommunityMarkers();
+  updateFilterChrome();
+  renderDetail();
+  refreshMarkers();
 }
 
 function exploreSnapRadiusM() {
@@ -1697,6 +1856,10 @@ function onUserPosition(lat, lng, accuracy) {
   updateNearbyPanel();
   if (state.walkMode) {
     renderWalkProgress(distanceToNextStopText());
+    scheduleUserTravelRouteRefresh();
+  } else if (state.activePlaceId || state.activeEventId) {
+    renderDetail();
+    scheduleUserTravelRouteRefresh();
   } else if (state.followUser) {
     state.map.setView([lat, lng], Math.max(state.map.getZoom(), 17), { animate: true });
   }
@@ -1804,10 +1967,56 @@ function renderExploreFallback(lat, lng, streetLabel, snapRadius) {
   });
 }
 
+function setCommunityMapPickBanner(show) {
+  const el = document.getElementById("map-pick-banner");
+  if (el) el.hidden = !show;
+}
+
+function clearCommunityPickMarker() {
+  if (state.communityPickMarker) {
+    state.communityPickMarker.remove();
+    state.communityPickMarker = null;
+  }
+}
+
+function exitCommunityMapPick() {
+  state.communityMapPick = false;
+  setCommunityMapPickBanner(false);
+  clearCommunityPickMarker();
+}
+
+async function applyCommunityPickAt(lat, lng) {
+  document.getElementById("community-tag-lat").value = String(lat);
+  document.getElementById("community-tag-lng").value = String(lng);
+  const label = await reverseGeocodeLabel(lat, lng);
+  const geo = document.getElementById("community-tag-geo");
+  if (geo) geo.textContent = label ? `Koordinat satt: ${label}` : "Koordinat satt fra kartet.";
+  if (label && !document.getElementById("community-tag-address").value) {
+    document.getElementById("community-tag-address").value = label;
+  }
+  clearCommunityPickMarker();
+  if (state.map) {
+    const icon = L.divIcon({
+      className: "custom-pin custom-pin-community-pick",
+      html: communityPinHtml(),
+      iconSize: [28, 28],
+      iconAnchor: [14, 14],
+    });
+    state.communityPickMarker = L.marker([lat, lng], { icon, zIndexOffset: 80 }).addTo(state.map);
+  }
+}
+
 async function onMapExplore(latlng) {
   if (!state.map) return;
   const lat = latlng.lat;
   const lng = latlng.lng;
+  if (state.communityMapPick) {
+    exitCommunityMapPick();
+    await applyCommunityPickAt(lat, lng);
+    const dlg = document.getElementById("community-tag-dialog");
+    if (dlg && typeof dlg.showModal === "function") dlg.showModal();
+    return;
+  }
   setExploreMarker(lat, lng);
   const snap = exploreSnapRadiusM();
   const hit = placesByDistance(lat, lng, snap, 1)[0];
@@ -1978,6 +2187,7 @@ function eventInDistrict(event, districtId) {
 
 function getFilteredFinds() {
   const f = getFilters();
+  if (f.destination === "community" || f.destination === "blaa-skilt") return [];
   const base =
     window.OsloHistorieBydel?.filterFinds(state.finds, {
       district: f.district,
@@ -1990,7 +2200,8 @@ function getFilteredFinds() {
 }
 
 function filterEvents() {
-  const { bind, century, tag, episode, district, chronology, yearMin, yearMax } = getFilters();
+  const { destination, bind, century, tag, episode, district, chronology, yearMin, yearMax } = getFilters();
+  if (destination === "community") return [];
   return state.events
     .filter((e) => {
       if (e.year > state.chronologyYearMax) return false;
@@ -2012,7 +2223,7 @@ function placeHasBlaaSkilt(place) {
 
 function filterStandaloneBlueSigns() {
   const { destination, tag, district, chronology, yearMin, yearMax } = getFilters();
-  if (destination === "historie") return [];
+  if (destination === "historie" || destination === "community") return [];
   return (state.blueSigns || []).filter((s) => {
     if (s.place_id) return false;
     if (destination === "blaa-skilt" || destination === "all") {
@@ -2031,6 +2242,7 @@ function filterStandaloneBlueSigns() {
 
 function filterPlaces() {
   const { destination, bind, century, tag, episode, district, chronology, yearMin, yearMax } = getFilters();
+  if (destination === "community") return [];
   return state.places.filter((p) => {
     if (destination === "blaa-skilt" && !placeHasBlaaSkilt(p)) return false;
     if (district !== "all" && placeDistrictId(p) !== district) return false;
@@ -2054,6 +2266,7 @@ function initMap() {
   }).setView([59.908, 10.748], startZoom);
   populateMapLayers();
   state.routeLayer = L.layerGroup().addTo(state.map);
+  state.userRouteLayer = L.layerGroup().addTo(state.map);
   state.map.on("click", (e) => onMapExplore(e.latlng));
   if (state.bydelerGeo && window.OsloHistorieBydel) {
     state.districtMapUi = window.OsloHistorieBydel.createDistrictLayers(state.map, state.bydelerGeo, {
@@ -2175,12 +2388,16 @@ function renderMapLegend() {
   const el = document.getElementById("map-legend");
   if (!el) return;
   const kinds = ["sted", "blaa-skilt", "funn", "person"];
-  el.innerHTML = kinds
+  let html = kinds
     .map((id) => {
       const spec = markerKindSpec(id);
       return `<li class="map-legend-item"><span class="map-legend-swatch map-legend-swatch--${id}" aria-hidden="true"></span>${spec.label}</li>`;
     })
     .join("");
+  if (state.siteConfig?.community_tags_enabled) {
+    html += `<li class="map-legend-item"><span class="map-legend-swatch map-legend-swatch--community" aria-hidden="true">#</span>Brukerbidrag</li>`;
+  }
+  el.innerHTML = html;
 }
 
 function escapeHtml(text) {
@@ -2224,6 +2441,8 @@ function refreshCommunityMarkers() {
   Object.values(state.communityMarkers || {}).forEach((m) => m.remove());
   state.communityMarkers = {};
   if (!state.siteConfig?.community_tags_enabled || !state.map) return;
+  const dest = getFilters().destination;
+  if (dest !== "all" && dest !== "community") return;
 
   const mobilePins = window.matchMedia("(max-width: 900px)").matches;
   const pinBox = mobilePins ? 32 : 26;
@@ -2239,21 +2458,42 @@ function refreshCommunityMarkers() {
     const tags = (pin.hashtags || []).join(" ");
     const marker = L.marker([pin.lat, pin.lng], { icon, zIndexOffset: 60 }).addTo(state.map);
     marker.bindPopup(
-      `<strong>${escapeHtml(pin.title)}</strong><p>${escapeHtml((pin.story || "").slice(0, 160))}${(pin.story || "").length > 160 ? "..." : ""}</p><p class="popup-blaa">${escapeHtml(tags)}</p><p class="popup-cta">Brukerbidrag · lagret lokalt</p>`,
+      `<strong>${escapeHtml(pin.title)}</strong><p>${escapeHtml((pin.story || "").slice(0, 160))}${(pin.story || "").length > 160 ? "..." : ""}</p><p class="popup-blaa">${escapeHtml(tags)}</p><p class="popup-cta">Trykk igjen for full tekst</p>`,
     );
+    marker.on("click", () => selectCommunityPin(pin.id, { pan: false }));
     state.communityMarkers[pin.id] = marker;
   });
+}
+
+function findCommunityPin(pinId) {
+  return loadCommunityPins().find((p) => p.id === pinId) || null;
+}
+
+function selectCommunityPin(pinId, options = { pan: true }) {
+  const pin = findCommunityPin(pinId);
+  if (!pin) return;
+  state.activePlaceId = null;
+  state.activeEventId = null;
+  state.activePersonId = null;
+  state.activeContextId = null;
+  state.activeBlueSignId = null;
+  state.activeFindId = null;
+  state.activeCommunityPinId = pinId;
+  renderTimeline();
+  renderDetail();
+  if (options.pan !== false && state.map) {
+    state.map.panTo([pin.lat, pin.lng], { animate: true });
+  }
 }
 
 function openCommunityTagDialog() {
   const dlg = document.getElementById("community-tag-dialog");
   if (!dlg || !state.siteConfig?.community_tags_enabled) return;
+  exitCommunityMapPick();
   const err = document.getElementById("community-tag-error");
   if (err) err.hidden = true;
   const geo = document.getElementById("community-tag-geo");
-  if (geo) geo.textContent = "";
-  document.getElementById("community-tag-lat").value = "";
-  document.getElementById("community-tag-lng").value = "";
+  if (geo && !document.getElementById("community-tag-lat").value) geo.textContent = "";
   if (typeof dlg.showModal === "function") dlg.showModal();
 }
 
@@ -2262,7 +2502,24 @@ function initCommunityTagUi() {
   const form = document.getElementById("community-tag-form");
   if (!dlg || !form || !state.siteConfig?.community_tags_enabled) return;
 
-  dlg.querySelector('[data-action="community-tag-cancel"]')?.addEventListener("click", () => dlg.close());
+  dlg.querySelector('[data-action="community-tag-cancel"]')?.addEventListener("click", () => {
+    exitCommunityMapPick();
+    dlg.close();
+  });
+
+  document.getElementById("community-tag-map-pick")?.addEventListener("click", () => {
+    exitCommunityMapPick();
+    state.communityMapPick = true;
+    setCommunityMapPickBanner(true);
+    dlg.close();
+    if (isHomeActive()) dismissHome("explore");
+    else writeAppRoute("explore", { replace: true });
+    window.setTimeout(() => state.map?.invalidateSize(), 120);
+  });
+
+  dlg.addEventListener("close", () => {
+    if (!state.communityMapPick) exitCommunityMapPick();
+  });
 
   document.getElementById("community-tag-locate")?.addEventListener("click", () => {
     if (!navigator.geolocation) return;
@@ -2340,9 +2597,12 @@ function initCommunityTagUi() {
     const list = loadCommunityPins();
     list.push(pin);
     saveCommunityPins(list);
+    exitCommunityMapPick();
     dlg.close();
     form.reset();
+    clearCommunityPickMarker();
     refreshCommunityMarkers();
+    updateFilterChrome();
     state.map?.panTo([lat, lng], { animate: true });
   });
 }
@@ -2456,10 +2716,31 @@ function selectContext(contextId) {
   state.activeEventId = null;
   state.activePlaceId = null;
   state.activePersonId = null;
+  state.activeFindId = null;
+  state.activeBlueSignId = null;
+  state.activeCommunityPinId = null;
+  clearUserTravelRoute();
   const el = document.getElementById("detail-panel");
   if (!el) return;
   destroyPlaceMiniMap();
   const yearLabel = ctx.year_display || formatYearLabel(ctx.year_from);
+  const ctxPlaces = (ctx.place_ids || [])
+    .map((id) => state.places.find((p) => p.id === id))
+    .filter(Boolean);
+  const travelPlace = ctxPlaces[0];
+  const travelDetail =
+    travelPlace && !state.walkMode ? travelHintHtml(travelPlace) : "";
+  const travelRow = travelDetail
+    ? `<p class="detail-travel walk-travel-hint" aria-label="Reisevei til stedet">${travelDetail}</p>`
+    : "";
+  const placeLinks = ctxPlaces.length
+    ? `<p class="detail-related-places">Steder: ${ctxPlaces
+        .map(
+          (p) =>
+            `<button type="button" class="linkish detail-place-jump" data-place-id="${escapeHtml(p.id)}">${escapeHtml(p.name)}</button>`,
+        )
+        .join(" · ")}</p>`
+    : "";
   el.innerHTML = `
     <h3>${ctx.title}</h3>
     <div class="meta-row">
@@ -2468,18 +2749,24 @@ function selectContext(contextId) {
       <span class="chip">${yearLabel}</span>
       ${tagChipsHtml(ctx.tags)}
     </div>
+    ${travelRow}
     ${sourceBadgeHtml(ctx)}
     ${sourceBlockHtml(ctx)}
     ${mediaFigureHtml(ctx)}
     <p class="detail-body">${ctx.summary}</p>
+    ${placeLinks}
     <p class="detail-actions"><button type="button" class="detail-back linkish" data-action="clear-selection">Lukk</button></p>
   `;
+  el.querySelectorAll(".ep-travel-link").forEach((link) => {
+    link.addEventListener("click", (ev) => ev.stopPropagation());
+  });
+  el.querySelectorAll(".detail-place-jump").forEach((btn) => {
+    btn.addEventListener("click", () => selectPlace(btn.dataset.placeId));
+  });
   focusDetailPanel();
-  const firstPlace = (ctx.place_ids || [])
-    .map((id) => state.places.find((p) => p.id === id))
-    .filter(Boolean)[0];
-  if (firstPlace) state.map.setView([firstPlace.lat, firstPlace.lng], mapFocusZoom());
+  if (travelPlace) state.map.setView([travelPlace.lat, travelPlace.lng], mapFocusZoom());
   renderTimeline();
+  scheduleUserTravelRouteRefresh();
 }
 
 function selectPerson(personId) {
@@ -2489,6 +2776,9 @@ function selectPerson(personId) {
   state.activeContextId = null;
   state.activeEventId = null;
   state.activeFindId = null;
+  state.activeCommunityPinId = null;
+  state.activeBlueSignId = null;
+  clearUserTravelRoute();
   const primary = (person.place_ids || [])[0];
   if (primary) {
     const place = state.places.find((p) => p.id === primary);
@@ -2512,6 +2802,12 @@ function selectPerson(personId) {
         `<button type="button" class="linkish" data-place-id="${p.id}">${p.name}</button>`,
     )
     .join(" · ");
+  const travelPlace = primary ? state.places.find((p) => p.id === primary) : null;
+  const travelDetail =
+    travelPlace && !state.walkMode ? travelHintHtml(travelPlace) : "";
+  const travelRow = travelDetail
+    ? `<p class="detail-travel walk-travel-hint" aria-label="Reisevei til stedet">${travelDetail}</p>`
+    : "";
   el.innerHTML = `
     <h3>${person.name}</h3>
     <div class="meta-row">
@@ -2519,6 +2815,7 @@ function selectPerson(personId) {
       ${bindChipHtml(person.bind)}
       <span class="chip">${person.year_from}-${person.year_to}</span>
     </div>
+    ${travelRow}
     ${sourceBadgeHtml(person)}
     ${sourceBlockHtml(person)}
     ${mediaFigureHtml(person)}
@@ -2526,6 +2823,9 @@ function selectPerson(personId) {
     ${placeLinks ? `<p class="detail-places"><span class="links-label">Steder:</span> ${placeLinks}</p>` : ""}
     <p class="detail-actions"><button type="button" class="detail-back linkish" data-action="clear-selection">Lukk</button></p>
   `;
+  el.querySelectorAll(".ep-travel-link").forEach((link) => {
+    link.addEventListener("click", (ev) => ev.stopPropagation());
+  });
   el.querySelectorAll("[data-place-id]").forEach((btn) => {
     btn.addEventListener("click", () => selectPlace(btn.dataset.placeId));
   });
@@ -2533,6 +2833,18 @@ function selectPerson(personId) {
   refreshMarkers();
   refreshPeopleMarkers();
   renderTimeline();
+  scheduleUserTravelRouteRefresh();
+}
+
+function placesNearPoint(lat, lng, maxM = 450, limit = 4) {
+  if (lat == null || lng == null) return [];
+  const origin = { lat, lng };
+  return state.places
+    .map((p) => ({ place: p, meters: haversineMeters(origin, p) }))
+    .filter((row) => row.meters <= maxM)
+    .sort((a, b) => a.meters - b.meters)
+    .slice(0, limit)
+    .map((row) => row.place);
 }
 
 function selectFind(findId) {
@@ -2542,10 +2854,24 @@ function selectFind(findId) {
   state.activeEventId = null;
   state.activePersonId = null;
   state.activeBlueSignId = null;
+  state.activeCommunityPinId = null;
   state.activeFindId = findId;
+  clearUserTravelRoute();
   const el = document.getElementById("detail-panel");
   if (!el) return;
   destroyPlaceMiniMap();
+  const nearPlaces =
+    find.lat != null && find.lng != null
+      ? placesNearPoint(find.lat, find.lng)
+      : [];
+  const nearHtml = nearPlaces.length
+    ? `<p class="detail-related-places">Nære stopp: ${nearPlaces
+        .map(
+          (p) =>
+            `<button type="button" class="linkish detail-place-jump" data-place-id="${escapeHtml(p.id)}">${escapeHtml(p.name)}</button>`,
+        )
+        .join(" · ")}</p>`
+    : "";
   el.innerHTML = `
     <h3>${find.title}</h3>
     <div class="meta-row">
@@ -2554,8 +2880,12 @@ function selectFind(findId) {
     </div>
     ${mediaFigureHtml(find)}
     <p class="detail-body">${find.summary}</p>
+    ${nearHtml}
     <p class="detail-actions"><button type="button" class="detail-back linkish" data-action="clear-selection">Lukk</button></p>
   `;
+  el.querySelectorAll(".detail-place-jump").forEach((btn) => {
+    btn.addEventListener("click", () => selectPlace(btn.dataset.placeId));
+  });
   refreshFindMarkers();
   refreshPeopleMarkers();
   if (find.lat != null && find.lng != null) {
@@ -2704,11 +3034,14 @@ function renderDetail() {
   const place = state.places.find((p) => p.id === state.activePlaceId);
   const event = state.events.find((e) => e.id === state.activeEventId);
   const blueSign = state.blueSigns.find((s) => s.id === state.activeBlueSignId);
+  const communityPin = state.activeCommunityPinId
+    ? findCommunityPin(state.activeCommunityPinId)
+  : null;
 
   destroyPlaceMiniMap();
 
   const { district } = getFilters();
-  if (!place && !event && !blueSign && district !== "all") {
+  if (!place && !event && !blueSign && !communityPin && district !== "all") {
     renderDistrictPanel(district);
     return;
   }
@@ -2725,9 +3058,30 @@ function renderDetail() {
       </div>
       ${blueSign.address ? `<p class="detail-muted">${blueSign.address}</p>` : ""}
       <p class="detail-body">${blueSign.summary}</p>
-      <p class="detail-muted">Kilde: Oslo Byes Vel (kulturhistoriske skilt).</p>
+      <p class="detail-muted">Kulturhistorisk skilt.</p>
       ${detailActions}
     `;
+    return;
+  }
+
+  if (communityPin && !place && !event && !blueSign) {
+    const tags = (communityPin.hashtags || []).join(" ");
+    const detailActions = state.walkMode
+      ? ""
+      : `<p class="detail-actions"><button type="button" class="detail-back linkish" data-action="clear-selection">Lukk og utforsk videre</button> <button type="button" class="detail-back linkish" data-action="copy-community-pin">Kopier JSON</button> <button type="button" class="detail-back linkish" data-action="delete-community-pin">Slett dette bidraget</button></p>`;
+    el.innerHTML = `
+      <h3>${escapeHtml(communityPin.title)}</h3>
+      <div class="meta-row">
+        <span class="chip community-chip">Brukerbidrag</span>
+        ${tags ? `<span class="chip">${escapeHtml(tags)}</span>` : ""}
+      </div>
+      ${communityPin.address ? `<p class="detail-muted">${escapeHtml(communityPin.address)}</p>` : ""}
+      <p class="detail-body">${escapeHtml(communityPin.story)}</p>
+      <p class="detail-muted">Lagret lokalt på denne enheten.</p>
+      <p class="detail-muted community-copy-hint" hidden aria-live="polite"></p>
+      ${detailActions}
+    `;
+    focusDetailPanel();
     return;
   }
 
@@ -2750,6 +3104,10 @@ function renderDetail() {
       place.year_from != null
         ? `<span class="chip">${place.year_from}${place.year_to && place.year_to !== place.year_from ? `-${place.year_to}` : ""}</span>`
         : "";
+    const travelDetail = !state.walkMode ? travelHintHtml(place) : "";
+    const travelRow = travelDetail
+      ? `<p class="detail-travel walk-travel-hint" aria-label="Reisevei fra posisjonen din">${travelDetail}</p>`
+      : "";
     el.innerHTML = `
       <h3>${place.name}</h3>
       ${walkRouteBannerHtml()}
@@ -2760,6 +3118,7 @@ function renderDetail() {
         ${tagChipsHtml(place.tags)}
         ${placeHasBlaaSkilt(place) ? `<span class="chip blaa-skilt-chip">Blå skilt</span>` : ""}
       </div>
+      ${travelRow}
       ${sourceBadgeHtml(place)}
       ${sourceBlockHtml(place)}
       ${bindSourceLinksHtml(place.bind)}
@@ -2769,14 +3128,36 @@ function renderDetail() {
       ${links ? `<p class="popup-links"><span class="links-label">Les mer:</span> ${links}</p>` : ""}
       ${detailActions}
     `;
+    el.querySelectorAll(".ep-travel-link").forEach((link) => {
+      link.addEventListener("click", (ev) => ev.stopPropagation());
+    });
     requestAnimationFrame(() => {
       initPlaceMiniMap(place);
       focusDetailPanel();
     });
+    scheduleUserTravelRouteRefresh();
     return;
   }
 
   const evEp = state.episodes.find((e) => e.id === event.episode_id);
+  const travelPlace = event.place_ids?.length
+    ? state.places.find((p) => p.id === event.place_ids[0])
+    : null;
+  const travelDetail = travelPlace && !state.walkMode ? travelHintHtml(travelPlace) : "";
+  const travelRow = travelDetail
+    ? `<p class="detail-travel walk-travel-hint" aria-label="Reisevei til stedet">${travelDetail}</p>`
+    : "";
+  const eventPlaces = (event.place_ids || [])
+    .map((id) => state.places.find((p) => p.id === id))
+    .filter(Boolean);
+  const placeLinks = eventPlaces.length
+    ? `<p class="detail-related-places">Steder: ${eventPlaces
+        .map(
+          (p) =>
+            `<button type="button" class="linkish detail-place-jump" data-place-id="${escapeHtml(p.id)}">${escapeHtml(p.name)}</button>`,
+        )
+        .join(" · ")}</p>`
+    : "";
   el.innerHTML = `
     <h3>${event.title}</h3>
     <div class="meta-row">
@@ -2785,13 +3166,22 @@ function renderDetail() {
       ${evEp ? `<span class="chip lope">${evEp.title}</span>` : ""}
       ${tagChipsHtml(event.tags)}
     </div>
+    ${travelRow}
     ${sourceBadgeHtml(event)}
     ${sourceBlockHtml(event)}
     ${bindSourceLinksHtml(event.bind)}
     <p class="detail-body">${event.summary}</p>
+    ${placeLinks}
     ${detailActions}
   `;
+  el.querySelectorAll(".ep-travel-link").forEach((link) => {
+    link.addEventListener("click", (ev) => ev.stopPropagation());
+  });
+  el.querySelectorAll(".detail-place-jump").forEach((btn) => {
+    btn.addEventListener("click", () => selectPlace(btn.dataset.placeId));
+  });
   focusDetailPanel();
+  scheduleUserTravelRouteRefresh();
 }
 
 function clearSelection() {
@@ -2802,6 +3192,8 @@ function clearSelection() {
   state.activeContextId = null;
   state.activeBlueSignId = null;
   state.activeFindId = null;
+  state.activeCommunityPinId = null;
+  clearUserTravelRoute();
   if (state.exploreMarker) {
     state.exploreMarker.remove();
     state.exploreMarker = null;
@@ -2854,11 +3246,29 @@ function resetFilters() {
 }
 
 function updateFilterChrome() {
-  const count = filterPlaces().length + filterStandaloneBlueSigns().length;
   const placeCountEl = document.getElementById("map-place-count");
-  if (placeCountEl) {
-    if (count) {
-      placeCountEl.textContent = `${count} destinasjoner vises på kartet nå`;
+  const f = getFilters();
+  if (placeCountEl && f.destination === "community") {
+    const n = loadCommunityPins().length;
+    placeCountEl.textContent = n
+      ? `${n} lokalt bidrag på kartet`
+      : "Ingen lokale bidrag ennå - bruk Del sted.";
+  }
+  const count = filterPlaces().length + filterStandaloneBlueSigns().length;
+  if (placeCountEl && f.destination !== "community") {
+  const communityN =
+    state.siteConfig?.community_tags_enabled &&
+    f.destination === "all" &&
+    f.episode === "all"
+      ? loadCommunityPins().length
+      : 0;
+    if (count || communityN) {
+      const base = count
+        ? `${count} destinasjon${count === 1 ? "" : "er"} på kartet`
+        : "Ingen kuraterte steder med valgte filtre";
+      placeCountEl.textContent = communityN
+        ? `${base} · ${communityN} lokalt bidrag`
+        : `${base}${count ? " nå" : ""}`;
     } else {
       placeCountEl.textContent = "Ingen steder med valgte filtre - bruk Nullstill filtre.";
     }
@@ -2880,6 +3290,7 @@ function selectEvent(eventId) {
   state.activePersonId = null;
   state.activeContextId = null;
   state.activeBlueSignId = null;
+  state.activeCommunityPinId = null;
   renderTimeline();
   renderDetail();
   scrollTimelineToActive();
@@ -2900,6 +3311,7 @@ function selectBlueSign(signId, options = { pan: true }) {
   }
   state.activeBlueSignId = signId;
   state.activePlaceId = null;
+  state.activeCommunityPinId = null;
   state.activePersonId = null;
   state.activeContextId = null;
   state.activeEventId = null;
@@ -2919,6 +3331,7 @@ function selectPlace(placeId, options = { pan: true }) {
   if (!place) return;
   state.activePlaceId = placeId;
   state.activeBlueSignId = null;
+  state.activeCommunityPinId = null;
   state.activePersonId = null;
   state.activeContextId = null;
   const linked = state.events.find((e) => (e.place_ids || []).includes(placeId));
@@ -3060,10 +3473,15 @@ function onFilterChange() {
     return;
   }
   if (f.episode !== "all") {
-    const bounds = filterPlaces();
+    const ep = state.episodes.find((e) => e.id === f.episode);
+    const mapIds = ep?.map_place_order;
+    const bounds =
+      mapIds?.length
+        ? mapIds.map((id) => state.places.find((p) => p.id === id)).filter(Boolean)
+        : filterPlaces();
     if (bounds.length) {
       const latlngs = bounds.map((p) => [p.lat, p.lng]);
-      state.map.fitBounds(latlngs, { padding: [48, 48], maxZoom: 17 });
+      state.map.fitBounds(latlngs, { padding: [48, 48], maxZoom: mapIds?.length ? 15 : 17 });
     }
   }
 }
@@ -3086,6 +3504,7 @@ function updateWalkBar() {
   }
   bar.classList.add("visible");
   renderWalkProgress(state.userMarker ? distanceToNextStopText() : "");
+  if (state.userMarker) scheduleUserTravelRouteRefresh();
   document.getElementById("walk-prev").disabled = state.walkIndex === 0;
   document.getElementById("walk-next").disabled = state.walkIndex >= places.length - 1;
 }
@@ -3168,8 +3587,9 @@ function bindUi() {
   document.getElementById("home-btn-search")?.addEventListener("click", () => dismissHome("explore"));
   document.getElementById("home-btn-routes")?.addEventListener("click", () => dismissHome("routes"));
   document.getElementById("home-btn-share")?.addEventListener("click", () =>
-    dismissHome("explore", { openCommunityTag: true }),
+    runUiAction("home-share"),
   );
+  document.getElementById("btn-map-share")?.addEventListener("click", () => runUiAction("community-tag"));
   document.getElementById("btn-back-home")?.addEventListener("click", (e) => {
     e.preventDefault();
     showHomeScreen();
@@ -3200,6 +3620,12 @@ function bindUi() {
 
   document.addEventListener("keydown", (e) => {
     if (e.key !== "Escape") return;
+    if (state.communityMapPick) {
+      exitCommunityMapPick();
+      const dlg = document.getElementById("community-tag-dialog");
+      if (dlg && typeof dlg.showModal === "function") dlg.showModal();
+      return;
+    }
     if (state.walkMode) {
       exitWalkMode({ returnMode: state.sidePanelMode === "explore" ? "explore" : "routes" });
       return;
@@ -3252,6 +3678,14 @@ function bindUi() {
   if (detailPanel) {
     detailPanel.addEventListener("click", (e) => {
       if (e.target.closest("[data-action='clear-selection']")) clearSelection();
+      if (e.target.closest("[data-action='delete-community-pin']")) {
+        const pinId = state.activeCommunityPinId;
+        if (pinId) deleteCommunityPin(pinId);
+      }
+      if (e.target.closest("[data-action='copy-community-pin']")) {
+        const pinId = state.activeCommunityPinId;
+        if (pinId) copyCommunityPinJson(pinId);
+      }
       const personBtn = e.target.closest("[data-person-id]");
       if (personBtn?.dataset.personId) selectPerson(personBtn.dataset.personId);
     });

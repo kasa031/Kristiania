@@ -830,6 +830,7 @@
       "episode_id": "mot-1924",
       "place_ids": [
         "oslo-sentralstasjon",
+        "jernbanetorget",
         "akerselva-utløp",
         "nylands-verksted"
       ],
@@ -839,6 +840,826 @@
         "bind": 4,
         "pages": "349-380",
         "note": "Bind IV kap. jernbane"
+      }
+    },
+    {
+      "id": "folkemuseum-1894",
+      "title": "Folkemuseum grunnlagt",
+      "year": 1894,
+      "year_display": "1894",
+      "bind": 4,
+      "tags": [
+        "kultur",
+        "natur"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "norsk-folkemuseum"
+      ],
+      "summary": "Norsk Folkemuseum ble etablert for å frelse tradisjonsbygninger og kulturhistorie. Bygdøy ble nasjonalt museumslandskap.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Norsk Folkemuseum"
+      }
+    },
+    {
+      "id": "skillebekk-villa-1875",
+      "title": "Villaer på Skillebekk",
+      "year": 1875,
+      "year_display": "ca. 1875",
+      "bind": 4,
+      "tags": [
+        "kultur",
+        "natur"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "skillebekk-strøk"
+      ],
+      "summary": "Ny villa- og trehusbebyggelse på Skillebekk trakk familier vestover mot fjorden. Området lå mellom byen og Bygdøy.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Skillebekk"
+      }
+    },
+    {
+      "id": "malmoya-sommer-1890",
+      "title": "Sommerliv på Malmøya",
+      "year": 1890,
+      "year_display": "ca. 1890",
+      "bind": 4,
+      "tags": [
+        "natur"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "malmoya-utflykt"
+      ],
+      "summary": "Malmøya ble brukt til sommeropphold og fritid i fjorden. Stedet viste byens kontakt med skjærgården sør for hovedstaden.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Malmøya"
+      }
+    },
+    {
+      "id": "botanisk-hage-1814",
+      "title": "Botanisk hage etablert",
+      "year": 1814,
+      "year_display": "1814",
+      "bind": 4,
+      "tags": [
+        "natur",
+        "kultur"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "botanisk-hage-toeyen"
+      ],
+      "summary": "Botanisk hage ble grunnlagt som vitenskapelig anlegg. På Tøyen kombinerte den forskning, undervisning og offentlig rekreasjon.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Botanisk hage Oslo"
+      }
+    },
+    {
+      "id": "universitetsmuseet-toeyen-1880",
+      "title": "Museum på Tøyen",
+      "year": 1880,
+      "year_display": "ca. 1880",
+      "bind": 4,
+      "tags": [
+        "kultur"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "universitetsmuseet-toeyen"
+      ],
+      "summary": "Universitetsmuseet vokste som nasjonalt samlingssted på Tøyen. Samlingene bandt naturvitenskap til byens musemiljø.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Universitetsmuseet i Oslo"
+      }
+    },
+    {
+      "id": "linderud-gard-1700",
+      "title": "Linderud som herregård",
+      "year": 1700,
+      "year_display": "1700-tallet",
+      "bind": 4,
+      "tags": [
+        "kultur",
+        "natur"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "linderud-gard"
+      ],
+      "summary": "Linderud gård var herregård i Aker lenge før urbanisering. Eiendommen viser jordbruksbakgrunnen øst for den voksende hovedstaden.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Linderud gård"
+      }
+    },
+    {
+      "id": "lysaker-jernbane-1872",
+      "title": "Jernbane til Lysaker",
+      "year": 1872,
+      "year_display": "1872",
+      "bind": 4,
+      "tags": [
+        "transport",
+        "handel"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "lysaker-handel"
+      ],
+      "summary": "Banelinjen vestover gjorde Lysaker til et viktig knutepunkt for varer og pendlere. Stedet vokste som blandet handels- og industriforstad.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Lysaker"
+      }
+    },
+    {
+      "id": "grefsen-bebyggelse-1895",
+      "title": "Ny bebyggelse på Grefsen",
+      "year": 1895,
+      "year_display": "ca. 1895",
+      "bind": 4,
+      "tags": [
+        "bygrunn",
+        "natur"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "grefsen-forstad"
+      ],
+      "summary": "Boliger og villastrøk på Grefsen trakk familier nordover. Trikk og utsikt mot byen gjorde området attraktivt før jubileumsåret.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Grefsen"
+      }
+    },
+    {
+      "id": "etterstad-industri-1905",
+      "title": "Industri på Etterstad",
+      "year": 1905,
+      "year_display": "ca. 1905",
+      "bind": 4,
+      "tags": [
+        "arbeid",
+        "bygrunn"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "etterstad-gard"
+      ],
+      "summary": "Verksteder og boliger på Etterstad knyttet østkanten til jernbane og havn. Området vokste sammen med Økern og vestover mot sentrum.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Etterstad"
+      }
+    },
+    {
+      "id": "oscarshall-1852",
+      "title": "Oscarshall ferdigstilt",
+      "year": 1852,
+      "year_display": "1852",
+      "bind": 4,
+      "tags": [
+        "kultur",
+        "natur"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "oscarshall-slott"
+      ],
+      "summary": "Oscarshall ble tatt i bruk som sommerresidens. Bygningen og parken på Bygdøy knyttet kongehuset til sjøveien vest for Christiania.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Oscarshall"
+      }
+    },
+    {
+      "id": "carl-berners-plass-1924",
+      "title": "Carl Berners plass som knutepunkt",
+      "year": 1924,
+      "year_display": "1924",
+      "bind": 5,
+      "tags": [
+        "transport",
+        "bygrunn"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "carl-berners-plass"
+      ],
+      "summary": "I jubileumsåret var plassen et sentralt kryss for trikk og busstrafikk mellom øst og sentrum. Navnet hedrer borgermester Carl Berners minne.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: SNL Carl Berners plass"
+      }
+    },
+    {
+      "id": "nordstrand-bebyggelse-1880",
+      "title": "Nordstrand fylles med boliger",
+      "year": 1880,
+      "year_display": "ca. 1880",
+      "bind": 4,
+      "tags": [
+        "natur",
+        "kultur"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "nordstrand-sjokant"
+      ],
+      "summary": "Ny boligbebyggelse langs sjøkanten ga familier utsikt og fjordliv sør for sentrum. Strøket vokste sammen med Paulus menighet og villastrøk.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Nordstrand"
+      }
+    },
+    {
+      "id": "ringnes-bryggeri-1877",
+      "title": "Ringnesbryggeriet etablert",
+      "year": 1877,
+      "year_display": "1877",
+      "bind": 4,
+      "tags": [
+        "arbeid",
+        "kultur"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "ringnes-bryggeri"
+      ],
+      "summary": "Nye fabrikkbygg og produksjon av øl ga arbeidsplasser ved Storgata. Bryggeriet ble et kjent navn i Christiania og senere hovedstaden.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Ringnes"
+      }
+    },
+    {
+      "id": "bygdoy-kongsgard-1840",
+      "title": "Bygdøy som kongsgård",
+      "year": 1840,
+      "year_display": "ca. 1840-erne",
+      "bind": 4,
+      "tags": [
+        "kultur",
+        "natur"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "bygdoy-kongsgard"
+      ],
+      "summary": "Kongsgården på Bygdøy ble brukt som residens og representasjonssted. Halvøya knyttet hoffet til sjøveien og landeiendommer vest for byen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Bygdøy kongsgård"
+      }
+    },
+    {
+      "id": "briskeby-villa-1885",
+      "title": "Villaområde på Briskeby",
+      "year": 1885,
+      "year_display": "ca. 1885",
+      "bind": 4,
+      "tags": [
+        "kultur",
+        "bygrunn"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "briskeby-villa"
+      ],
+      "summary": "Nye villaer og rekkehus på Briskeby trakk velstående familier vestover langs Drammensveien. Området ble motstykke til arbeidertettstedene øst i byen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Briskeby"
+      }
+    },
+    {
+      "id": "hasle-verk-1902",
+      "title": "Verksteder på Hasle",
+      "year": 1902,
+      "year_display": "ca. 1902",
+      "bind": 4,
+      "tags": [
+        "arbeid",
+        "transport"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "hasle-industri"
+      ],
+      "summary": "Nye verksteder og boliger på Hasle ga arbeidsplasser i Østre Aker. Strøket vokste sammen med Økern og jernbanen mot Løren.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Hasle"
+      }
+    },
+    {
+      "id": "blindern-universitet-1911",
+      "title": "Universitetet til Blindern",
+      "year": 1911,
+      "year_display": "1911",
+      "bind": 5,
+      "tags": [
+        "kultur",
+        "kommune"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "blindern-universitet"
+      ],
+      "summary": "Undervisning og forskning samlet seg på Blindern da universitetet flyttet fra sentrum. De nye bygningene står som et varig spor av unions- og hovedstadstiden.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: SNL Universitetet i Oslo"
+      }
+    },
+    {
+      "id": "kjelsas-jernbane-1900",
+      "title": "Jernbane til Kjelsås",
+      "year": 1900,
+      "year_display": "ca. 1900",
+      "bind": 4,
+      "tags": [
+        "transport",
+        "bygrunn"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "kjelsas-landbruk"
+      ],
+      "summary": "Jernbane og sporvogn mot Kjelsås bandt nordøstlig Aker til byen. Turist- og pendlertrafikk gjorde stasjonsmiljøet til et knutepunkt.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Kjelsås"
+      }
+    },
+    {
+      "id": "bekkelaget-kirke-1865",
+      "title": "Bekkelaget kirke innviet",
+      "year": 1865,
+      "year_display": "1865",
+      "bind": 4,
+      "tags": [
+        "kultur",
+        "natur"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "bekkelaget-kirke"
+      ],
+      "summary": "Bekkelaget kirke ble tatt i bruk som sognekirke sør for fjorden. Menigheten markerte at bebyggelsen på sydstranden ble en fast del av byfellesskapet.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Bekkelaget kirke"
+      }
+    },
+    {
+      "id": "skoyen-landsted-1840",
+      "title": "Skøyen som landsted",
+      "year": 1840,
+      "year_display": "ca. 1840-erne",
+      "bind": 4,
+      "tags": [
+        "kultur",
+        "natur"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "skoyen-gard"
+      ],
+      "summary": "Skøyen utviklet seg fra gård til villa- og rekkehusstrøk langs veien vestover. Landstedene viste hvordan velstående familier slo seg ned utenfor den tette kvadraturen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Skøyen"
+      }
+    },
+    {
+      "id": "okern-verk-1910",
+      "title": "Industri på Økern",
+      "year": 1910,
+      "year_display": "ca. 1910",
+      "bind": 5,
+      "tags": [
+        "arbeid",
+        "transport"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "okern-industri"
+      ],
+      "summary": "Verksteder og fabrikker på Økern ga arbeidsplasser i Østre Aker. Kombinasjonen av jernbane, elv og boliger gjorde området til et typisk østlig industriforstad.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: SNL Økern"
+      }
+    },
+    {
+      "id": "roedelokka-1878",
+      "title": "Rodeløkka fylles med trehus",
+      "year": 1878,
+      "year_display": "ca. 1878",
+      "bind": 4,
+      "tags": [
+        "arbeid",
+        "bygrunn"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "roedelokka-kvarter"
+      ],
+      "summary": "Ny bebyggelse på Rodeløkka ga boliger til arbeidere som tok jobb i fabrikker og på jernbane øst i byen. Trehuskvartalene ble karakteristiske for østkanten.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Rodeløkka"
+      }
+    },
+    {
+      "id": "lilleaker-verk-1872",
+      "title": "Industri ved Lilleaker",
+      "year": 1872,
+      "year_display": "ca. 1872",
+      "bind": 4,
+      "tags": [
+        "arbeid",
+        "transport"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "lilleaker-verksted"
+      ],
+      "summary": "Verksteder og fabrikker ved Lilleaker knyttet vestre Akersrike til arbeidslivet i hovedstaden. Elva og jernbanen gjorde strøket til et viktig industrielt forsted.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Lilleaker"
+      }
+    },
+    {
+      "id": "sporvogn-majorstuen-1875",
+      "title": "Første sporvogn til Majorstuen",
+      "year": 1875,
+      "year_display": "1875",
+      "bind": 4,
+      "tags": [
+        "transport",
+        "bygrunn"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "majorstuen-knutepunkt"
+      ],
+      "summary": "Christiania Sporvei åpnet hestesporvogn fra sentrum til Majorstuen. Linjen knyttet villa- og handelsstrøk vest i byen tettere til sentrum før trikk og bil tok over.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Christiania Sporvei"
+      }
+    },
+    {
+      "id": "holmenkollen-1892",
+      "title": "Holmenkollbakken i bruk",
+      "year": 1892,
+      "year_display": "1892",
+      "bind": 5,
+      "tags": [
+        "kultur",
+        "natur"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "holmenkollen-bakken"
+      ],
+      "summary": "Den nye hoppbakken på Holmenkollen ble brukt til konkurranser og folkefest. Ski og friluft ble en tydelig del av byens identitet da hovedstaden nærmet seg jubileumsåret.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: SNL Holmenkollbakken"
+      }
+    },
+    {
+      "id": "ullevaa-sykehus-1897",
+      "title": "Ullevål sykehus åpnet",
+      "year": 1897,
+      "year_display": "1897",
+      "bind": 5,
+      "tags": [
+        "kultur",
+        "kommune"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "ullevaa-sykehus"
+      ],
+      "summary": "Ullevål sykehus ble tatt i bruk som nytt hovedsykehus nord i byen. Anlegget kom i tillegg til eldre sykehusløsninger i sentrum og markerte presset fra en voksende befolkning.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: SNL Ullevål sykehus"
+      }
+    },
+    {
+      "id": "toeyen-park-1884",
+      "title": "Tøyenparken tatt i bruk",
+      "year": 1884,
+      "year_display": "1884",
+      "bind": 4,
+      "tags": [
+        "natur",
+        "arbeid"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "toeyen-park",
+        "toeyen-hovedgard"
+      ],
+      "summary": "Tøyenparken ble et offentlig grønt rom i østkanten. Parken kom midt i et strøk med museum, botanisk hage og tett bolig- og arbeiderbebyggelse.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Tøyenparken"
+      }
+    },
+    {
+      "id": "st-olavs-hospital-1809",
+      "title": "St. Olavs hospital åpnet",
+      "year": 1809,
+      "year_display": "1809",
+      "bind": 4,
+      "tags": [
+        "kultur",
+        "kommune"
+      ],
+      "episode_id": "1814-hovedstaden",
+      "place_ids": [
+        "st-olavs-plass"
+      ],
+      "summary": "St. Olavs hospital åpnet som moderne sykehus for byen. Anlegget skapte et nytt sentrum for helse og forskning nær embetskvartalet og universitetet.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL St. Olavs hospital"
+      }
+    },
+    {
+      "id": "frogner-kirke-vigsel-1903",
+      "title": "Frogner kirke innviet",
+      "year": 1903,
+      "year_display": "1903",
+      "bind": 5,
+      "tags": [
+        "kultur",
+        "religion"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "frogner-kirke",
+        "homansbyen"
+      ],
+      "summary": "Frogner kirke sto ferdig som menighetskirke i vestkanten. Den markerte at byen vokste langs nye villastrekninger før unionshovedstadens jubileumsår.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: SNL Frogner kirke"
+      }
+    },
+    {
+      "id": "havnelageret-oppfort-1891",
+      "title": "Havnelageret ved Pipervika",
+      "year": 1891,
+      "year_display": "1891",
+      "bind": 5,
+      "tags": [
+        "havn",
+        "handel"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "havnelageret-pipervika",
+        "akershuskaia",
+        "klingenberg"
+      ],
+      "summary": "Havnelageret ved Pipervika sto ferdig som stort lagermotiv mot havnen. Bygningen markerte en mer moderne havnedrift i det strøket som senere skulle knyttes sammen med Bjørvika og vestbanen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: SNL Havnelageret"
+      }
+    },
+    {
+      "id": "kampen-kirke-vigsel-1882",
+      "title": "Kampen kirke innviet",
+      "year": 1882,
+      "year_display": "1882",
+      "bind": 4,
+      "tags": [
+        "kultur",
+        "religion",
+        "arbeid"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "kampen-kirke"
+      ],
+      "summary": "Kampen kirke ble innviet som arbeidermenighet i østkanten. Kirken fulgte veksten i trehuskvarter og fabrikkstrøk mellom Tøyen og Grønland.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Kampen kirke"
+      }
+    },
+    {
+      "id": "vaalerenga-kirke-1860",
+      "title": "Vålerenga kirke tatt i bruk",
+      "year": 1860,
+      "year_display": "1860",
+      "bind": 4,
+      "tags": [
+        "kultur",
+        "religion"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "vaalerenga-kirke"
+      ],
+      "summary": "Vålerenga kirke sto ferdig som kirke for arbeiderstrøkene øst for elva. Den fulgte befolkningsveksten i Vålerenga og nærliggende trehuskvarter.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Vålerenga kirke"
+      }
+    },
+    {
+      "id": "maridalsvannet-vannforsyning-1859",
+      "title": "Maridalsvannet sikrer byens vann",
+      "year": 1859,
+      "year_display": "1859",
+      "bind": 2,
+      "tags": [
+        "natur",
+        "bygrunn"
+      ],
+      "episode_id": "akerselva-tidlig",
+      "place_ids": [
+        "maridalskroken",
+        "nydalens-compagnie"
+      ],
+      "summary": "Maridalsvannet ble viktig kilde til drikkevann for den voksende byen. Elva fra vannet samlet industri og bolig nedover Akerselva, fra kilden ved Maridalskroken til utløpet ved fjorden.",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "supplement",
+        "note": "Supplement: SNL Maridalsvannet"
+      }
+    },
+    {
+      "id": "myntgata-mynter-1628",
+      "title": "Kongelig mynt i Kvadraturen",
+      "year": 1628,
+      "year_display": "1628",
+      "bind": 2,
+      "tags": [
+        "bygrunn",
+        "kultur"
+      ],
+      "episode_id": "kvadraturen-1600",
+      "place_ids": [
+        "myntgata",
+        "kontraskjerp"
+      ],
+      "summary": "Den nye byen fikk egen mynt langs Myntgata ved festningsområdet. Mynteriet understreket at Christiania ikke bare var handelsplass, men også knyttet til kongemakt og embetsvesen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 2,
+        "pages": "supplement",
+        "note": "Supplement: SNL Myntgata"
+      }
+    },
+    {
+      "id": "egertorget-handel-1840",
+      "title": "Torv og teaterliv ved Egertorget",
+      "year": 1840,
+      "year_display": "1840-årene",
+      "bind": 5,
+      "tags": [
+        "kultur",
+        "handel"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "egertorget",
+        "bankplassen-teater"
+      ],
+      "summary": "Egertorget var blandingspunkt for handel og kultur, med gangavstand til Christiania Theater ved Bankplassen. Torvet bar hverdagsliv mot sentrum før Karl Johan fikk sitt fulle korsnings- og paradepreg.",
+      "verified": false,
+      "source_ref": {
+        "bind": 5,
+        "pages": "supplement",
+        "note": "Supplement: SNL Egertorget"
+      }
+    },
+    {
+      "id": "schous-bryggeri-1873",
+      "title": "Schous bryggeri på Sagene",
+      "year": 1873,
+      "year_display": "1873",
+      "bind": 4,
+      "tags": [
+        "industri",
+        "arbeid"
+      ],
+      "episode_id": "akerselva-tidlig",
+      "place_ids": [
+        "schous-plass"
+      ],
+      "summary": "Schous bryggeri startet ved Akerselva på Sagene og ble et av Christianias store industriarbeidsplasser. Bryggeriet lå tett på den samme elvekraften som drev sag og tekstil lenger oppstrøms.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Schous bryggeri"
+      }
+    },
+    {
+      "id": "gronland-kirke-innviet-1869",
+      "title": "Grønland kirke innviet",
+      "year": 1869,
+      "year_display": "1869",
+      "bind": 4,
+      "tags": [
+        "kultur",
+        "religion"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "gronland-kirke"
+      ],
+      "summary": "Grønland kirke sto ferdig ved Grønlandsleiret og ga østkanten en egen menighetskirke. Den fulgte i kjølvannet av tett trehusbebyggelse og handel mot Grønland og Brugata.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Grønland kirke"
       }
     },
     {
@@ -942,6 +1763,7 @@
       "episode_id": "kvadraturen-1600",
       "place_ids": [
         "gronland-ladested",
+        "gronland-torg",
         "vaterland-bjorvika",
         "brugata"
       ],
@@ -1171,7 +1993,10 @@
       ],
       "episode_id": "kvadraturen-1600",
       "place_ids": [
-        "gamle-raadhus-torvet"
+        "gamle-raadhus-torvet",
+        "raadhusgata-kvadratur",
+        "nedre-slottsgate",
+        "kongens-gate-kvadratur"
       ],
       "summary": "Rådhuset på hjørnet av Nedre Slottsgate og Rådhusgata sto ferdig i 1641. Det ble byens politiske og sosiale sentrum med rådsmøter, teater og arrest i kjelleren.",
       "supplementary_note": "sources/supplementary/notater/gamle-raadhus-torvet.md",
@@ -1834,6 +2659,7 @@
       "place_ids": [
         "brugata",
         "youngstorget",
+        "gronland-torg",
         "gronland-ladested"
       ],
       "summary": "Brugata bandt Youngstorget og Torggata til Grønland og sjøgammarkedet. Her gikk handel og trafikk mellom sentrum og de tett bebygde trehusmiljøene østover.",
