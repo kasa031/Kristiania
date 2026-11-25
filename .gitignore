@@ -1,3 +1,15 @@
+# === Offentlig GitHub: kun app. Internt (FREMGANG, PDF, kilder, scripts) holdes lokalt. ===
+/content/
+/sources/
+/scripts/
+/templates/
+/theme-preview.html
+/data/KONFIGURASJON.md
+/data/walks/
+/data/field-notes.json
+/data/README.md
+/.cursor/
+
 sources/pdf/
 sources/ocr/
 literature/
