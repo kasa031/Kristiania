@@ -1,4 +1,4 @@
-const CACHE = "oslo-historie-v143";
+const CACHE = "oslo-historie-v144";
 const PRECACHE = [
   "/",
   "/index.html",

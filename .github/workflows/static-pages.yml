@@ -46,4 +46,14 @@ jobs:
           path: _site
       - name: Deploy
         id: deployment
+        continue-on-error: true
         uses: actions/deploy-pages@v4
+      - name: Deploy (retry)
+        id: deployment_retry
+        if: steps.deployment.outcome == 'failure'
+        uses: actions/deploy-pages@v4
+      - name: Deploy status
+        if: steps.deployment.outcome == 'failure' && steps.deployment_retry.outcome == 'failure'
+        run: |
+          echo "GitHub Pages deploy feilet to ganger (kjent flakiness). Re-run workflow om nodvendig."
+          exit 1
