@@ -199,10 +199,10 @@ async function loadData() {
   state.centuries = erasDoc.centuries || [];
   state.milestones = milestones.milestones || [];
   state.chronologyEras = (chronologyDoc.eras || []).slice().sort((a, b) => (a.sort || 0) - (b.sort || 0));
-  state.chronologyYearMin = chronologyDoc.year_min ?? siteConfig.timeline_year_min ?? -5000;
+  state.chronologyYearMin = chronologyDoc.year_min ?? siteConfig?.timeline_year_min ?? -5000;
   state.chronologyYearMax = Math.min(
     chronologyDoc.year_max ?? 1924,
-    siteConfig.timeline_year_max ?? 1924,
+    siteConfig?.timeline_year_max ?? 1924,
   );
   state.districts = districtsDoc.districts || [];
   state.finds = findsDoc.finds || [];
@@ -218,7 +218,7 @@ async function loadData() {
   window.__KRISTIANIA_SITE__ = state.siteConfig;
   state.mapConfig = { ...mapConfig, ...(mapLocal || {}) };
   state.mapToken =
-    mapLocal.mapbox_access_token || mapConfig.mapbox_access_token || "";
+    mapLocal?.mapbox_access_token || mapConfig?.mapbox_access_token || "";
   if (state.siteConfig.show_source_in_ui) {
     const bindSources = await fetch("data/bind-sources.json").then((r) => r.json());
     state.bindSources = bindSources.binds || [];
