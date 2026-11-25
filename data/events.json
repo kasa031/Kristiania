@@ -995,6 +995,50 @@
       }
     },
     {
+      "id": "huk-bad-1898",
+      "title": "Badeliv ved Huk",
+      "year": 1898,
+      "year_display": "slutten av 1800-tallet",
+      "bind": 4,
+      "tags": [
+        "natur",
+        "kultur"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "huk-strand"
+      ],
+      "summary": "Badegjester tok båt og trikk til Huk da stranden på Bygdøy ble et sommersted. Rekreasjon ved fjorden markerte veksten i folkefriluft før jubileumsåret.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Huk"
+      }
+    },
+    {
+      "id": "bestum-villa-1895",
+      "title": "Villaer på Bestum",
+      "year": 1895,
+      "year_display": "slutten av 1800-tallet",
+      "bind": 4,
+      "tags": [
+        "bygrunn",
+        "natur"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "bestum-forstad"
+      ],
+      "summary": "Nye villaer langs Drammensveien på Bestum trakk familier vest fra sentrum. Området ble et av forpostene mot Lysaker og Skøyen før jubileumsåret.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Bestum"
+      }
+    },
+    {
       "id": "grefsen-bebyggelse-1895",
       "title": "Ny bebyggelse på Grefsen",
       "year": 1895,
@@ -1014,6 +1058,162 @@
         "bind": 4,
         "pages": "supplement",
         "note": "Supplement: SNL Grefsen"
+      }
+    },
+    {
+      "id": "hovin-verk-1910",
+      "title": "Industri på Hovin",
+      "year": 1910,
+      "year_display": "ca. 1910",
+      "bind": 4,
+      "tags": [
+        "arbeid",
+        "bygrunn"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "hovin-industri"
+      ],
+      "summary": "Verksteder på Hovin ga arbeidsplasser i nordøstlige byen. Området vokste sammen med Grefsen og Løren langs jernbanen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Hovin"
+      }
+    },
+    {
+      "id": "alna-munning-1900",
+      "title": "Alna som transportkorridor",
+      "year": 1900,
+      "year_display": "ca. 1900",
+      "bind": 4,
+      "tags": [
+        "natur",
+        "transport"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "alna-munning"
+      ],
+      "summary": "Alna bandt dalsidemiljøene til havn og by. Industri og bane fulgte elva ned mot munningen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Alna"
+      }
+    },
+    {
+      "id": "loren-verk-1910",
+      "title": "Industri på Løren",
+      "year": 1910,
+      "year_display": "ca. 1910",
+      "bind": 4,
+      "tags": [
+        "arbeid",
+        "transport"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "loren-industri"
+      ],
+      "summary": "Nye verksteder og boliger på Løren bandt Alna-dalen til østkanten. Området vokste som blandet industriforstad før jubileumsåret.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Løren"
+      }
+    },
+    {
+      "id": "grorud-jernbane-kirke",
+      "title": "Jernbane og kirke på Grorud",
+      "year": 1902,
+      "year_display": "1854-1902",
+      "bind": 4,
+      "tags": [
+        "arbeid",
+        "transport",
+        "kultur"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "grorud-dal"
+      ],
+      "summary": "Hovedbanen bandt Groruddalen til Christiania fra 1854. Kirken fra 1902 og skolen fra 1900 markerte at dalen vokste som arbeider- og forstadsstrøk før jubileumsåret.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Grorud"
+      }
+    },
+    {
+      "id": "alnabru-gods-1890",
+      "title": "Gods og sidespor ved Alnabru",
+      "year": 1890,
+      "year_display": "siste del av 1800-tallet",
+      "bind": 4,
+      "tags": [
+        "arbeid",
+        "transport"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "alnabru-jernbane"
+      ],
+      "summary": "Ved Alnabru ble gods og sidespor til Grefsen et sentralt ledd mellom havn, verksteder og Østkanten. Området vokste som industri- og baneknutepunkt før 1924.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Alnabru"
+      }
+    },
+    {
+      "id": "bryn-skole-1900",
+      "title": "Skole og industri ved Bryn",
+      "year": 1900,
+      "year_display": "1900",
+      "bind": 4,
+      "tags": [
+        "arbeid",
+        "kultur",
+        "transport"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "bryn-jernbane"
+      ],
+      "summary": "Industri ved Brynsfossen og jernbanestasjonen fra 1854 trakk boliger og tjenester til Alna-dalen. Bryn skole åpnet i 1900 som tegn på at strøket vokste som arbeiderforstad.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Bryn i Oslo"
+      }
+    },
+    {
+      "id": "helsfyr-stromsveien-1910",
+      "title": "Strømsveien mot øst",
+      "year": 1910,
+      "year_display": "ca. 1910",
+      "bind": 4,
+      "tags": [
+        "transport",
+        "bygrunn"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "helsfyr-stromsveien"
+      ],
+      "summary": "Ferdsel langs Strømsveien knyttet Helsfyr og Gamlebyen til østlige jordgårder og nyere industriområder. Veien forberedte veksten mot Bryn og Alna før jubileumsåret.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "supplement",
+        "note": "Supplement: SNL Helsfyr"
       }
     },
     {

@@ -1816,6 +1816,13 @@ body.home-active .masthead-dek {
   font-size: 1.25rem;
 }
 
+.community-tag-privacy {
+  margin: 0.35rem 0 0.85rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: var(--color-ink-muted, #5c4a3a);
+}
+
 .community-tag-lead {
   margin: 0.45rem 0 0.85rem;
   font-size: 0.88rem;

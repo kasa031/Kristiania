@@ -492,11 +492,11 @@ function renderDetailForSearchPoint(lat, lng, label) {
   if (nearest.length) {
     body += `<p>Nærmeste kuraterte stopp:</p><ul class="explore-near-list">`;
     nearest.forEach(({ place, meters }) => {
-      body += `<li><button type="button" class="linkish nearby-pick" data-place-id="${place.id}">${place.name} (${formatDistanceM(meters)})</button></li>`;
+      body += `<li><button type="button" class="linkish nearby-pick" data-place-id="${escapeHtml(place.id)}">${escapeHtml(place.name)} (${formatDistanceM(meters)})</button></li>`;
     });
     body += `</ul>`;
   }
-  el.innerHTML = `<h3>${label}</h3>${body}<p class="detail-actions"><button type="button" class="detail-back linkish" data-action="clear-selection">Lukk</button></p>`;
+  el.innerHTML = `<h3>${escapeHtml(label)}</h3>${body}<p class="detail-actions"><button type="button" class="detail-back linkish" data-action="clear-selection">Lukk</button></p>`;
   el.querySelectorAll(".nearby-pick").forEach((btn) => {
     btn.addEventListener("click", () => selectPlace(btn.dataset.placeId));
   });
@@ -735,8 +735,8 @@ function searchSuggestOptionHtml(item, index) {
   else if (item.kind === "street") prefix = "";
   else if (item.kind === "address" && item.label.match(/\d/)) prefix = "Gatenr.";
   const title = item.kind === "street" ? item.label : `${prefix ? `${prefix}: ` : ""}${item.label}`;
-  const hint = item.hint ? `<span class="map-search-option-hint">${item.hint}</span>` : "";
-  return `<li><button type="button" role="option" class="map-search-option${streetCls}" data-suggest-index="${index}">${title}${hint}</button></li>`;
+  const hint = item.hint ? `<span class="map-search-option-hint">${escapeHtml(item.hint)}</span>` : "";
+  return `<li><button type="button" role="option" class="map-search-option${streetCls}" data-suggest-index="${index}">${escapeHtml(title)}${hint}</button></li>`;
 }
 
 function showSearchSuggest(items) {
@@ -1326,6 +1326,18 @@ function applyBranding() {
   if (mapShareBtn) mapShareBtn.hidden = cfg.community_tags_enabled === false;
   const communityDestOpt = document.getElementById("filter-destination-community");
   if (communityDestOpt) communityDestOpt.hidden = cfg.community_tags_enabled === false;
+  const communityLead = document.getElementById("community-tag-lead");
+  if (communityLead) {
+    const lead = cfg.community_form_lead || "";
+    communityLead.textContent = lead;
+    communityLead.hidden = !lead;
+  }
+  const communityPrivacy = document.getElementById("community-tag-privacy");
+  if (communityPrivacy) {
+    const note = cfg.community_privacy_notice || "";
+    communityPrivacy.textContent = note;
+    communityPrivacy.hidden = !note;
+  }
   const homeJubilee = document.getElementById("home-jubilee-note");
   if (homeJubilee) {
     if (cfg.home_jubilee_note) {
@@ -1541,7 +1553,7 @@ function renderWalkProgress(userLegText) {
   }
   const p = places[state.walkIndex];
   const stats = walkRouteStats(places);
-  const title = `Stopp ${state.walkIndex + 1} av ${places.length}: ${p?.name || ""}`;
+  const title = `Stopp ${state.walkIndex + 1} av ${places.length}: ${escapeHtml(p?.name || "")}`;
   const metaParts = [`Hele ruten ${stats.summary} (${stats.detail})`];
   const legM = legLengthMeters(places, state.walkIndex);
   if (state.walkIndex > 0 && legM > 0) {
@@ -1558,7 +1570,7 @@ function renderWalkProgress(userLegText) {
     const hint = travelHintHtml(currentStop);
     if (hint) travelBlock = `<span class="walk-travel-hint">${hint}</span>`;
   }
-  prog.innerHTML = `<span class="walk-progress-title">${title}</span><span class="walk-progress-meta">${metaParts.join(" · ")}</span>${travelBlock}`;
+  prog.innerHTML = `<span class="walk-progress-title">${title}</span><span class="walk-progress-meta">${metaParts.map(escapeHtml).join(" · ")}</span>${travelBlock}`;
   prog.querySelectorAll(".ep-travel-link").forEach((link) => {
     link.addEventListener("click", (ev) => ev.stopPropagation());
   });
@@ -1718,6 +1730,32 @@ async function refreshUserTravelRoute() {
   }
 }
 
+function syncCommunityExportButton() {
+  const btn = document.getElementById("community-tag-export-all");
+  if (!btn) return;
+  btn.hidden = loadCommunityPins().length === 0;
+}
+
+async function exportAllCommunityPins() {
+  const list = loadCommunityPins();
+  if (!list.length) return;
+  const text = JSON.stringify(list, null, 2);
+  try {
+    if (navigator.clipboard?.writeText) {
+      await navigator.clipboard.writeText(text);
+    } else {
+      window.prompt("Kopier alle bidrag:", text);
+      return;
+    }
+    const geo = document.getElementById("community-tag-geo");
+    if (geo) {
+      geo.textContent = `${list.length} bidrag kopiert til utklippstavlen.`;
+    }
+  } catch {
+    window.prompt("Kopier alle bidrag:", text);
+  }
+}
+
 async function copyCommunityPinJson(pinId) {
   const pin = findCommunityPin(pinId);
   if (!pin) return;
@@ -1745,6 +1783,7 @@ function deleteCommunityPin(pinId) {
   state.activeCommunityPinId = null;
   refreshCommunityMarkers();
   updateFilterChrome();
+  syncCommunityExportButton();
   renderDetail();
   refreshMarkers();
 }
@@ -1821,7 +1860,7 @@ function updateNearbyPanel() {
   listEl.innerHTML = ranked
     .map(
       ({ place, meters }) =>
-        `<li><button type="button" class="nearby-btn" data-place-id="${place.id}">${place.name} · ${formatDistanceM(meters)}</button></li>`,
+        `<li><button type="button" class="nearby-btn" data-place-id="${escapeHtml(place.id)}">${escapeHtml(place.name)} · ${formatDistanceM(meters)}</button></li>`,
     )
     .join("");
   listEl.querySelectorAll(".nearby-btn").forEach((btn) => {
@@ -1955,13 +1994,13 @@ function renderExploreFallback(lat, lng, streetLabel, snapRadius) {
   if (nearest.length) {
     body += `<p>Nærmeste kuraterte stopp:</p><ul class="explore-near-list">`;
     nearest.forEach(({ place, meters }) => {
-      body += `<li><button type="button" class="linkish nearby-pick" data-place-id="${place.id}">${place.name} (${formatDistanceM(meters)})</button></li>`;
+      body += `<li><button type="button" class="linkish nearby-pick" data-place-id="${escapeHtml(place.id)}">${escapeHtml(place.name)} (${formatDistanceM(meters)})</button></li>`;
     });
     body += `</ul>`;
   } else {
     body += `<p>Prøv et annet hjørne i Oslo sentrum, Gamlebyen eller langs Akerselva.</p>`;
   }
-  el.innerHTML = `<h3>${title}</h3>${body}`;
+  el.innerHTML = `<h3>${escapeHtml(title)}</h3>${body}`;
   el.querySelectorAll(".nearby-pick").forEach((btn) => {
     btn.addEventListener("click", () => selectPlace(btn.dataset.placeId));
   });
@@ -2050,7 +2089,7 @@ function renderEpisodeCards() {
     const section = document.createElement("section");
     section.className = "episode-era";
     section.setAttribute("aria-label", era.label);
-    section.innerHTML = `<h2 class="episode-era-title"><span>${era.label}</span><span class="era-short">${era.short || ""}</span></h2>`;
+    section.innerHTML = `<h2 class="episode-era-title"><span>${escapeHtml(era.label)}</span><span class="era-short">${escapeHtml(era.short || "")}</span></h2>`;
 
     const row = document.createElement("div");
     row.className = "episode-era-row";
@@ -2075,18 +2114,18 @@ function renderEpisodeCards() {
       const last = ordered[ordered.length - 1];
       const endpoints =
         first && last
-          ? `<span class="ep-route-endpoints">Start: ${first.name} · Slutt: ${last.name}</span>`
+          ? `<span class="ep-route-endpoints">Start: ${escapeHtml(first.name)} · Slutt: ${escapeHtml(last.name)}</span>`
           : "";
-      const timeDetail = ready ? `<span class="ep-route-detail">${routeStats.detail}</span>` : "";
+      const timeDetail = ready ? `<span class="ep-route-detail">${escapeHtml(routeStats.detail)}</span>` : "";
       const travel = ready ? travelHintHtml(first) : "";
       const cta = ready
         ? `<span class="ep-route-cta">${state.walkMode && activeRoute ? "Pågår - trykk for å fortsette" : "Trykk her for å starte gåtur"}</span>`
         : "";
       btn.innerHTML = `
-        <span class="ep-title">${ep.title}</span>
-        <span class="ep-meta">${ep.subtitle || ""}</span>
+        <span class="ep-title">${escapeHtml(ep.title)}</span>
+        <span class="ep-meta">${escapeHtml(ep.subtitle || "")}</span>
         ${endpoints}
-        <span class="ep-badge ${ready ? "ready" : ""}">${badge}</span>
+        <span class="ep-badge ${ready ? "ready" : ""}">${escapeHtml(badge)}</span>
         ${timeDetail}
         ${travel}
         ${cta}
@@ -2400,6 +2439,17 @@ function renderMapLegend() {
   el.innerHTML = html;
 }
 
+function safeHttpUrl(url) {
+  if (!url || typeof url !== "string") return null;
+  try {
+    const u = new URL(url, window.location.href);
+    if (u.protocol === "https:" || u.protocol === "http:") return u.href;
+  } catch {
+    return null;
+  }
+  return null;
+}
+
 function escapeHtml(text) {
   return String(text ?? "")
     .replace(/&/g, "&amp;")
@@ -2423,6 +2473,14 @@ function loadCommunityPins() {
   try {
     const raw = localStorage.getItem(COMMUNITY_PINS_KEY);
     const list = raw ? JSON.parse(raw) : [];
+    const sec = window.KristianiaCommunitySecurity;
+    if (sec?.sanitizePinList) {
+      const cleaned = sec.sanitizePinList(list);
+      if (Array.isArray(list) && cleaned.length !== list.length) {
+        saveCommunityPins(cleaned);
+      }
+      return cleaned;
+    }
     return Array.isArray(list) ? list : [];
   } catch {
     return [];
@@ -2494,6 +2552,7 @@ function openCommunityTagDialog() {
   if (err) err.hidden = true;
   const geo = document.getElementById("community-tag-geo");
   if (geo && !document.getElementById("community-tag-lat").value) geo.textContent = "";
+  syncCommunityExportButton();
   if (typeof dlg.showModal === "function") dlg.showModal();
 }
 
@@ -2520,6 +2579,12 @@ function initCommunityTagUi() {
   dlg.addEventListener("close", () => {
     if (!state.communityMapPick) exitCommunityMapPick();
   });
+
+  document.getElementById("community-tag-export-all")?.addEventListener("click", () => {
+    exportAllCommunityPins();
+  });
+
+  syncCommunityExportButton();
 
   document.getElementById("community-tag-locate")?.addEventListener("click", () => {
     if (!navigator.geolocation) return;
@@ -2552,9 +2617,22 @@ function initCommunityTagUi() {
     const err = document.getElementById("community-tag-error");
     if (err) err.hidden = true;
 
-    const title = document.getElementById("community-tag-title-input").value.trim();
-    const story = document.getElementById("community-tag-story").value.trim();
-    const address = document.getElementById("community-tag-address").value.trim();
+    const sec = window.KristianiaCommunitySecurity;
+    if (sec?.checkSubmitRateLimit) {
+      const rate = sec.checkSubmitRateLimit();
+      if (!rate.ok) {
+        if (err) {
+          err.textContent = rate.message;
+          err.hidden = false;
+        }
+        return;
+      }
+    }
+
+    let title = document.getElementById("community-tag-title-input").value.trim();
+    let story = document.getElementById("community-tag-story").value.trim();
+    let address = document.getElementById("community-tag-address").value.trim();
+    const aliasRaw = document.getElementById("community-tag-alias").value.trim();
     let lat = parseFloat(document.getElementById("community-tag-lat").value);
     let lng = parseFloat(document.getElementById("community-tag-lng").value);
 
@@ -2583,6 +2661,27 @@ function initCommunityTagUi() {
       return;
     }
 
+    if (sec?.validateCommunityFields) {
+      const valid = sec.validateCommunityFields({
+        title,
+        story,
+        address,
+        alias: aliasRaw,
+        lat,
+        lng,
+      });
+      if (!valid.ok) {
+        if (err) {
+          err.textContent = valid.message;
+          err.hidden = false;
+        }
+        return;
+      }
+      title = valid.cleaned.title;
+      story = valid.cleaned.story;
+      address = valid.cleaned.address;
+    }
+
     const pin = {
       id: `community-${Date.now()}`,
       title,
@@ -2590,19 +2689,30 @@ function initCommunityTagUi() {
       address,
       lat,
       lng,
-      hashtags: parseHashtagField(document.getElementById("community-tag-hashtags").value),
-      authorAlias: document.getElementById("community-tag-alias").value.trim() || undefined,
+      hashtags: parseHashtagField(document.getElementById("community-tag-hashtags").value).filter(
+        (tag) => !sec?.containsBlockedContent?.(tag),
+      ),
+      authorAlias: (sec?.stripDangerousMarkup(aliasRaw) || aliasRaw).slice(0, 40) || undefined,
       createdAt: new Date().toISOString(),
     };
     const list = loadCommunityPins();
+    if (list.length >= (sec?.MAX_PINS_STORED || 500)) {
+      if (err) {
+        err.textContent = "Grensen for lagrede bidrag i nettleseren er nådd. Eksporter og slett gamle før du legger til flere.";
+        err.hidden = false;
+      }
+      return;
+    }
     list.push(pin);
     saveCommunityPins(list);
+    sec?.recordSubmit?.();
     exitCommunityMapPick();
     dlg.close();
     form.reset();
     clearCommunityPickMarker();
     refreshCommunityMarkers();
     updateFilterChrome();
+    syncCommunityExportButton();
     state.map?.panTo([lat, lng], { animate: true });
   });
 }
@@ -2629,7 +2739,7 @@ function refreshMarkers() {
 
     const marker = L.marker([place.lat, place.lng], { icon }).addTo(state.map);
     marker.bindPopup(
-      `<strong>${place.name}</strong><p>${place.summary.slice(0, 120)}${place.summary.length > 120 ? "..." : ""}</p><p class="popup-cta">Trykk merket igjen for full tekst.</p>`,
+      `<strong>${escapeHtml(place.name)}</strong><p>${escapeHtml(place.summary.slice(0, 120))}${place.summary.length > 120 ? "..." : ""}</p><p class="popup-cta">Trykk merket igjen for full tekst.</p>`,
     );
     marker.on("click", () => selectPlace(place.id, { pan: false }));
     state.markers[place.id] = marker;
@@ -2643,7 +2753,7 @@ function refreshMarkers() {
     });
     const marker = L.marker([sign.lat, sign.lng], { icon, zIndexOffset: 80 }).addTo(state.map);
     marker.bindPopup(
-      `<strong>${sign.name}</strong><p class="popup-blaa">Blå skilt · ${sign.address || ""}</p><p>${sign.summary.slice(0, 100)}${sign.summary.length > 100 ? "..." : ""}</p>`,
+      `<strong>${escapeHtml(sign.name)}</strong><p class="popup-blaa">Blå skilt · ${escapeHtml(sign.address || "")}</p><p>${escapeHtml(sign.summary.slice(0, 100))}${sign.summary.length > 100 ? "..." : ""}</p>`,
     );
     marker.on("click", () => selectBlueSign(sign.id, { pan: false }));
     state.blueSignMarkers[sign.id] = marker;
@@ -2674,21 +2784,37 @@ function renderDistrictPanel(districtId) {
   const finds = getFilteredFinds();
 
   const findList = finds.length
-    ? finds.map((f) => `<li><button type="button" class="linkish" data-find-id="${f.id}"><strong>${f.title}</strong> (${f.year_display || formatYearLabel(window.OsloHistorieBydel.findYear(f))})</button><p>${f.summary}</p></li>`).join("")
+  ? finds
+    .map(
+      (f) =>
+        `<li><button type="button" class="linkish" data-find-id="${escapeHtml(f.id)}"><strong>${escapeHtml(f.title)}</strong> (${escapeHtml(f.year_display || formatYearLabel(window.OsloHistorieBydel.findYear(f)))})</button><p>${escapeHtml(f.summary)}</p></li>`,
+    )
+    .join("")
     : "<li>Ingen registrerte funn for valgt bydel og tidsalder.</li>";
 
   const placeList = places.length
-    ? places.map((p) => `<li><button type="button" class="linkish" data-place-id="${p.id}">${p.name}</button></li>`).join("")
+    ? places
+      .map(
+        (p) =>
+          `<li><button type="button" class="linkish" data-place-id="${escapeHtml(p.id)}">${escapeHtml(p.name)}</button></li>`,
+      )
+      .join("")
     : "<li>Ingen steder i utvalget.</li>";
 
   const eventList = events.length
-    ? events.slice(0, 8).map((e) => `<li><button type="button" class="linkish" data-event-id="${e.id}">${e.year_display || e.year}: ${e.title}</button></li>`).join("")
+    ? events
+      .slice(0, 8)
+      .map(
+        (e) =>
+          `<li><button type="button" class="linkish" data-event-id="${escapeHtml(e.id)}">${escapeHtml(e.year_display || e.year)}: ${escapeHtml(e.title)}</button></li>`,
+      )
+      .join("")
     : "<li>Ingen hendelser i utvalget.</li>";
 
   el.innerHTML = `
-    <h3>${district.name}</h3>
-    ${era ? `<p class="chip chronology">${era.label} <span class="era-short">${era.short || ""}</span></p>` : ""}
-    ${eraNote ? `<p class="detail-body">${eraNote}</p>` : ""}
+    <h3>${escapeHtml(district.name)}</h3>
+    ${era ? `<p class="chip chronology">${escapeHtml(era.label)} <span class="era-short">${escapeHtml(era.short || "")}</span></p>` : ""}
+    ${eraNote ? `<p class="detail-body">${escapeHtml(eraNote)}</p>` : ""}
     <h4 class="district-section">Funn og arkeologi</h4>
     <ul class="district-list">${findList}</ul>
     <h4 class="district-section">Steder (${places.length})</h4>
@@ -2742,7 +2868,7 @@ function selectContext(contextId) {
         .join(" · ")}</p>`
     : "";
   el.innerHTML = `
-    <h3>${ctx.title}</h3>
+    <h3>${escapeHtml(ctx.title)}</h3>
     <div class="meta-row">
       <span class="chip">Bakgrunn</span>
       ${bindChipHtml(ctx.bind)}
@@ -2753,7 +2879,7 @@ function selectContext(contextId) {
     ${sourceBadgeHtml(ctx)}
     ${sourceBlockHtml(ctx)}
     ${mediaFigureHtml(ctx)}
-    <p class="detail-body">${ctx.summary}</p>
+    <p class="detail-body">${escapeHtml(ctx.summary)}</p>
     ${placeLinks}
     <p class="detail-actions"><button type="button" class="detail-back linkish" data-action="clear-selection">Lukk</button></p>
   `;
@@ -2799,7 +2925,7 @@ function selectPerson(personId) {
   const placeLinks = places
     .map(
       (p) =>
-        `<button type="button" class="linkish" data-place-id="${p.id}">${p.name}</button>`,
+        `<button type="button" class="linkish" data-place-id="${escapeHtml(p.id)}">${escapeHtml(p.name)}</button>`,
     )
     .join(" · ");
   const travelPlace = primary ? state.places.find((p) => p.id === primary) : null;
@@ -2809,17 +2935,17 @@ function selectPerson(personId) {
     ? `<p class="detail-travel walk-travel-hint" aria-label="Reisevei til stedet">${travelDetail}</p>`
     : "";
   el.innerHTML = `
-    <h3>${person.name}</h3>
+    <h3>${escapeHtml(person.name)}</h3>
     <div class="meta-row">
       <span class="chip">Person</span>
       ${bindChipHtml(person.bind)}
-      <span class="chip">${person.year_from}-${person.year_to}</span>
+      <span class="chip">${escapeHtml(person.year_from)}-${escapeHtml(person.year_to)}</span>
     </div>
     ${travelRow}
     ${sourceBadgeHtml(person)}
     ${sourceBlockHtml(person)}
     ${mediaFigureHtml(person)}
-    <p class="detail-body">${person.summary}</p>
+    <p class="detail-body">${escapeHtml(person.summary)}</p>
     ${placeLinks ? `<p class="detail-places"><span class="links-label">Steder:</span> ${placeLinks}</p>` : ""}
     <p class="detail-actions"><button type="button" class="detail-back linkish" data-action="clear-selection">Lukk</button></p>
   `;
@@ -2860,9 +2986,10 @@ function selectFind(findId) {
   const el = document.getElementById("detail-panel");
   if (!el) return;
   destroyPlaceMiniMap();
+  const findRadius = state.siteConfig.find_nearby_radius_m ?? state.siteConfig.explore_nearby_radius_m ?? 600;
   const nearPlaces =
     find.lat != null && find.lng != null
-      ? placesNearPoint(find.lat, find.lng)
+      ? placesNearPoint(find.lat, find.lng, findRadius)
       : [];
   const nearHtml = nearPlaces.length
     ? `<p class="detail-related-places">Nære stopp: ${nearPlaces
@@ -2873,13 +3000,13 @@ function selectFind(findId) {
         .join(" · ")}</p>`
     : "";
   el.innerHTML = `
-    <h3>${find.title}</h3>
+    <h3>${escapeHtml(find.title)}</h3>
     <div class="meta-row">
       <span class="chip funn-chip">Arkeologisk funn</span>
-      <span class="chip chronology">${find.year_display || formatYearLabel(window.OsloHistorieBydel.findYear(find))}</span>
+      <span class="chip chronology">${escapeHtml(find.year_display || formatYearLabel(window.OsloHistorieBydel.findYear(find)))}</span>
     </div>
     ${mediaFigureHtml(find)}
-    <p class="detail-body">${find.summary}</p>
+    <p class="detail-body">${escapeHtml(find.summary)}</p>
     ${nearHtml}
     <p class="detail-actions"><button type="button" class="detail-back linkish" data-action="clear-selection">Lukk</button></p>
   `;
@@ -2945,7 +3072,7 @@ function renderTimeline() {
       lastHeading = heading;
       const head = document.createElement("li");
       head.className = "timeline-century";
-      head.innerHTML = `<span>${heading}</span>`;
+      head.innerHTML = `<span>${escapeHtml(heading)}</span>`;
       list.appendChild(head);
     }
 
@@ -2955,9 +3082,9 @@ function renderTimeline() {
     card.dataset.eventId = ev.id;
 
     card.innerHTML = `
-      <div class="year">${ev.year_display || ev.year}</div>
-      <h3>${ev.title}</h3>
-      <p class="event-teaser">${ev.summary}</p>
+      <div class="year">${escapeHtml(ev.year_display || ev.year)}</div>
+      <h3>${escapeHtml(ev.title)}</h3>
+      <p class="event-teaser">${escapeHtml(ev.summary)}</p>
       <div class="meta-row">
         ${bindChipHtml(ev.bind)}
         ${tagChipsHtml(ev.tags)}
@@ -2975,16 +3102,16 @@ function renderTimeline() {
       lastHeading = heading;
       const head = document.createElement("li");
       head.className = "timeline-century";
-      head.innerHTML = `<span>${heading}</span>`;
+      head.innerHTML = `<span>${escapeHtml(heading)}</span>`;
       list.appendChild(head);
     }
     const li = document.createElement("li");
     const card = document.createElement("article");
     card.className = "event-card event-card-find";
     card.innerHTML = `
-      <div class="year">${find.year_display || formatYearLabel(row.year)}</div>
-      <h3>${find.title}</h3>
-      <p class="event-teaser">${find.summary}</p>
+      <div class="year">${escapeHtml(find.year_display || formatYearLabel(row.year))}</div>
+      <h3>${escapeHtml(find.title)}</h3>
+      <p class="event-teaser">${escapeHtml(find.summary)}</p>
       <div class="meta-row"><span class="chip">Funn</span></div>
     `;
     card.addEventListener("click", () => selectFind(find.id));
@@ -2999,7 +3126,7 @@ function renderTimeline() {
       lastHeading = heading;
       const head = document.createElement("li");
       head.className = "timeline-century";
-      head.innerHTML = `<span>${heading}</span>`;
+      head.innerHTML = `<span>${escapeHtml(heading)}</span>`;
       list.appendChild(head);
     }
     const li = document.createElement("li");
@@ -3007,9 +3134,9 @@ function renderTimeline() {
     card.className =
       "event-card event-card-context" + (state.activeContextId === ctx.id ? " active" : "");
     card.innerHTML = `
-      <div class="year">${ctx.year_display || formatYearLabel(row.year)}</div>
-      <h3>${ctx.title}</h3>
-      <p class="event-teaser">${ctx.summary}</p>
+      <div class="year">${escapeHtml(ctx.year_display || formatYearLabel(row.year))}</div>
+      <h3>${escapeHtml(ctx.title)}</h3>
+      <p class="event-teaser">${escapeHtml(ctx.summary)}</p>
       <div class="meta-row">
         <span class="chip">Bakgrunn</span>
         ${bindChipHtml(ctx.bind)}
@@ -3051,13 +3178,13 @@ function renderDetail() {
       ? ""
       : '<p class="detail-actions"><button type="button" class="detail-back linkish" data-action="clear-selection">Lukk og utforsk videre</button></p>';
     el.innerHTML = `
-      <h3>${blueSign.name}</h3>
+      <h3>${escapeHtml(blueSign.name)}</h3>
       <div class="meta-row">
         <span class="chip blaa-skilt-chip">Blå skilt</span>
         ${tagChipsHtml(blueSign.tags)}
       </div>
-      ${blueSign.address ? `<p class="detail-muted">${blueSign.address}</p>` : ""}
-      <p class="detail-body">${blueSign.summary}</p>
+      ${blueSign.address ? `<p class="detail-muted">${escapeHtml(blueSign.address)}</p>` : ""}
+      <p class="detail-body">${escapeHtml(blueSign.summary)}</p>
       <p class="detail-muted">Kulturhistorisk skilt.</p>
       ${detailActions}
     `;
@@ -3097,7 +3224,12 @@ function renderDetail() {
 
   if (place) {
     const links = (place.external_links || [])
-      .map((l) => `<a href="${l.url}" target="_blank" rel="noopener">${l.label}</a>`)
+      .map((l) => {
+        const href = safeHttpUrl(l.url);
+        if (!href) return "";
+        return `<a href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(l.label || "Les mer")}</a>`;
+      })
+      .filter(Boolean)
       .join(" · ");
     const ep = state.episodes.find((e) => e.id === place.episode_id);
     const yearSpan =
@@ -3109,12 +3241,12 @@ function renderDetail() {
       ? `<p class="detail-travel walk-travel-hint" aria-label="Reisevei fra posisjonen din">${travelDetail}</p>`
       : "";
     el.innerHTML = `
-      <h3>${place.name}</h3>
+      <h3>${escapeHtml(place.name)}</h3>
       ${walkRouteBannerHtml()}
       <div class="meta-row">
         ${bindChipHtml(place.bind)}
         ${yearSpan}
-        ${ep ? `<span class="chip lope">${ep.title}</span>` : ""}
+        ${ep ? `<span class="chip lope">${escapeHtml(ep.title)}</span>` : ""}
         ${tagChipsHtml(place.tags)}
         ${placeHasBlaaSkilt(place) ? `<span class="chip blaa-skilt-chip">Blå skilt</span>` : ""}
       </div>
@@ -3123,7 +3255,7 @@ function renderDetail() {
       ${sourceBlockHtml(place)}
       ${bindSourceLinksHtml(place.bind)}
       ${placeVisualHtml(place)}
-      <p class="detail-body">${place.summary}</p>
+      <p class="detail-body">${escapeHtml(place.summary)}</p>
       ${peopleLinksHtml(place)}
       ${links ? `<p class="popup-links"><span class="links-label">Les mer:</span> ${links}</p>` : ""}
       ${detailActions}
@@ -3159,18 +3291,18 @@ function renderDetail() {
         .join(" · ")}</p>`
     : "";
   el.innerHTML = `
-    <h3>${event.title}</h3>
+    <h3>${escapeHtml(event.title)}</h3>
     <div class="meta-row">
       ${bindChipHtml(event.bind)}
-      <span class="chip">${event.year_display || event.year}</span>
-      ${evEp ? `<span class="chip lope">${evEp.title}</span>` : ""}
+      <span class="chip">${escapeHtml(event.year_display || event.year)}</span>
+      ${evEp ? `<span class="chip lope">${escapeHtml(evEp.title)}</span>` : ""}
       ${tagChipsHtml(event.tags)}
     </div>
     ${travelRow}
     ${sourceBadgeHtml(event)}
     ${sourceBlockHtml(event)}
     ${bindSourceLinksHtml(event.bind)}
-    <p class="detail-body">${event.summary}</p>
+    <p class="detail-body">${escapeHtml(event.summary)}</p>
     ${placeLinks}
     ${detailActions}
   `;
@@ -3786,7 +3918,7 @@ init().catch((err) => {
   document.body.classList.remove("app-loading");
   const boot = document.getElementById("detail-panel");
   const msg = `Kunne ikke laste data. Kjør .\\scripts\\serve.ps1 og åpne http://localhost:8080/ (${err?.message || err})`;
-  if (boot) boot.innerHTML = `<p class="detail-muted">${msg}</p>`;
+  if (boot) boot.innerHTML = `<p class="detail-muted">${escapeHtml(msg)}</p>`;
   document.body.insertAdjacentHTML(
     "beforeend",
     `<p style="color:${BIND_COLORS[1]};padding:1rem">${msg}</p>`,

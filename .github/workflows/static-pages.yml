@@ -28,7 +28,7 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p _site
-          for path in index.html 404.html sw.js manifest.webmanifest CNAME css js data icons; do
+          for path in index.html 404.html sw.js manifest.webmanifest CNAME css js data icons home kart tur; do
             test -e "$path"
             cp -a "$path" _site/
           done

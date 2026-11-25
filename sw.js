@@ -1,4 +1,4 @@
-const CACHE = "oslo-historie-v106";
+const CACHE = "oslo-historie-v115";
 const PRECACHE = [
   "/",
   "/index.html",
@@ -10,6 +10,8 @@ const PRECACHE = [
   "/css/motion.css",
   "/css/theme-kristiania.css",
   "/js/motion.js",
+  "/js/bydel.js",
+  "/js/community-security.js",
   "/js/app.js",
   "/manifest.webmanifest",
   "/data/places.json",
@@ -27,7 +29,6 @@ const PRECACHE = [
   "/data/blue-signs.json",
   "/data/map-markers.json",
   "/data/bydeler.geojson",
-  "/js/bydel.js",
   "/icons/mark.svg",
   "/icons/oslo-vaapen.png",
 ];
