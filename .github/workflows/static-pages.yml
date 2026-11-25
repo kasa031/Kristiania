@@ -30,10 +30,15 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p _site
-          for path in index.html 404.html sw.js manifest.webmanifest CNAME css js data icons home kart tur; do
+          for path in index.html sw.js manifest.webmanifest CNAME css js data icons; do
             test -e "$path"
             cp -a "$path" _site/
           done
+          cp index.html _site/404.html
+          mkdir -p _site/home _site/kart _site/tur
+          cp index.html _site/home/index.html
+          cp index.html _site/kart/index.html
+          cp index.html _site/tur/index.html
           rm -f _site/data/map-config.local.json
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

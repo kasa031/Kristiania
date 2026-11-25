@@ -3,7 +3,7 @@
 set -euo pipefail
 root="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$root"
-for path in index.html 404.html sw.js manifest.webmanifest CNAME css js data icons home kart tur; do
+for path in index.html sw.js manifest.webmanifest CNAME css js data icons; do
   if [[ ! -e "$path" ]]; then
     echo "FEIL: mangler $path (kreves av GitHub Pages-workflow)"
     exit 1
