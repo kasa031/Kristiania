@@ -26,9 +26,11 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Prepare app bundle (kun offentlig app)
         run: |
+          set -euo pipefail
           mkdir -p _site
           for path in index.html 404.html sw.js manifest.webmanifest CNAME css js data icons; do
-            cp -a "$path" _site/"
+            test -e "$path"
+            cp -a "$path" _site/
           done
           rm -f _site/data/map-config.local.json
       - name: Upload artifact
