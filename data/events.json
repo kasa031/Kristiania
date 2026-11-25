@@ -830,7 +830,6 @@
       "episode_id": "mot-1924",
       "place_ids": [
         "oslo-sentralstasjon",
-        "vestbanestasjon-ruselokk",
         "akerselva-utløp",
         "nylands-verksted"
       ],
@@ -840,6 +839,28 @@
         "bind": 4,
         "pages": "349-380",
         "note": "Bind IV kap. jernbane"
+      }
+    },
+    {
+      "id": "vestbanen-1872",
+      "title": "Vestbanen åpnet",
+      "year": 1872,
+      "year_display": "1872",
+      "bind": 4,
+      "tags": [
+        "transport",
+        "bygrunn"
+      ],
+      "episode_id": "mot-1924",
+      "place_ids": [
+        "vestbanestasjon-ruselokk"
+      ],
+      "summary": "Vestbanen bandt Christiania til vestlandet. Stasjonen ved Ruseløkk ved Pipervika ble inngangsport for passasjerer som ikke kom inn over Østbanen.",
+      "verified": false,
+      "source_ref": {
+        "bind": 4,
+        "pages": "349-380",
+        "note": "Bind IV: jernbane; supplement SNL Vestbanestasjon"
       }
     },
     {
