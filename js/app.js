@@ -906,13 +906,16 @@ function initPlaceMiniMap(place) {
   if (!tile) return;
   const zoom = Math.min(mapFocusZoom(), layerDef.max_zoom || 20);
   state.placeMiniMap = L.map(el, {
-    zoomControl: false,
+    zoomControl: true,
     attributionControl: true,
     dragging: true,
+    touchZoom: true,
     scrollWheelZoom: false,
-    doubleClickZoom: false,
+    doubleClickZoom: true,
     boxZoom: false,
     keyboard: false,
+    minZoom: 10,
+    maxZoom: Math.min(19, layerDef.max_zoom || 20),
   }).setView([place.lat, place.lng], zoom);
   tile.addTo(state.placeMiniMap);
   L.circleMarker([place.lat, place.lng], {
@@ -1560,23 +1563,26 @@ function renderWalkProgress(userLegText) {
   const p = places[state.walkIndex];
   const stats = walkRouteStats(places);
   const title = `Stopp ${state.walkIndex + 1} av ${places.length}: ${escapeHtml(p?.name || "")}`;
-  const metaParts = [`Hele ruten ${stats.summary} (${stats.detail})`];
   const legM = legLengthMeters(places, state.walkIndex);
-  if (state.walkIndex > 0 && legM > 0) {
-    metaParts.push(`Fra forrige stopp: ${formatWalkLeg(legM)}`);
-  }
+  let legLine = "";
   if (userLegText) {
-    metaParts.push(`Fra deg nå: ${userLegText}`);
+    legLine = userLegText.replace(/ til dette stoppet$/i, "");
+  } else if (state.walkIndex > 0 && legM > 0) {
+    legLine = `Fra forrige stopp: ${formatWalkLeg(legM)}`;
   } else if (state.walkIndex === 0 && !state.userMarker) {
-    metaParts.push("Første stopp - følg kartet til merket 1");
+    legLine = "Gå til merket 1 på kartet";
   }
+  const routeLine = `Hele ruten ${stats.summary}`;
   let travelBlock = "";
   const currentStop = places[state.walkIndex];
   if (currentStop) {
     const hint = travelHintHtml(currentStop);
     if (hint) travelBlock = `<span class="walk-travel-hint">${hint}</span>`;
   }
-  prog.innerHTML = `<span class="walk-progress-title">${title}</span><span class="walk-progress-meta">${metaParts.map(escapeHtml).join(" · ")}</span>${travelBlock}`;
+  const legHtml = legLine
+    ? `<span class="walk-progress-meta">${escapeHtml(legLine)}</span>`
+    : "";
+  prog.innerHTML = `<span class="walk-progress-title">${title}</span>${legHtml}<span class="walk-progress-route-quiet">${escapeHtml(routeLine)}</span>${travelBlock}`;
   prog.querySelectorAll(".ep-travel-link").forEach((link) => {
     link.addEventListener("click", (ev) => ev.stopPropagation());
   });
@@ -1621,11 +1627,16 @@ function travelDirectionsUrl(place) {
 
 function enturJourneyUrl(place) {
   if (!place) return "";
+  const params = new URLSearchParams();
+  params.set("stopLat", String(place.lat));
+  params.set("stopLon", String(place.lng));
+  if (place.name) params.set("stopLabel", place.name);
   const user = userLatLng();
-  if (!user) return "";
-  const from = `${user.lat},${user.lng}`;
-  const to = `${place.lat},${place.lng}`;
-  return `https://entur.no/ruteplanlegger?from=${encodeURIComponent(from)}&to=${encodeURIComponent(to)}`;
+  if (user) {
+    params.set("startLat", String(user.lat));
+    params.set("startLon", String(user.lng));
+  }
+  return `https://entur.no/travel-result?${params.toString()}`;
 }
 
 function osmWalkDirectionsUrl(place) {
@@ -1688,15 +1699,11 @@ function travelHintHtml(place) {
     const enturUrl = enturJourneyUrl(place);
     if (enturUrl) {
       links.push(
-        `<a class="ep-travel-link ep-travel-entur" href="${enturUrl}" target="_blank" rel="noopener noreferrer">Kollektiv (Entur)</a>`,
+        `<a class="ep-travel-link ep-travel-entur" href="${enturUrl}" target="_blank" rel="noopener noreferrer">Reise i Entur</a>`,
       );
     }
   }
-  const note =
-    osrmOnMap && state.userRouteTargetId === place.id && state.userRouteDistanceM != null
-      ? '<span class="detail-muted ep-travel-route-note">Fotrute tegnet på kartet.</span>'
-      : "";
-  return `<span class="ep-travel-links">${links.join("")}${note}</span>`;
+  return `<span class="ep-travel-links">${links.join("")}</span>`;
 }
 
 function clearUserTravelRoute() {

@@ -1226,11 +1226,23 @@ button:disabled {
 
 .place-mini-map {
   width: 100%;
-  height: clamp(120px, 18vh, 168px);
-  margin: 0.5rem 0;
+  height: clamp(200px, 34vh, 280px);
+  margin: 0.65rem 0;
   border-radius: 8px;
   border: 1px solid #e4ddd1;
   overflow: hidden;
+}
+
+.place-mini-map .leaflet-control-zoom {
+  border: none;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.place-mini-map .leaflet-control-zoom a {
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 1.1rem;
 }
 
 .place-mini-map .leaflet-control-attribution {
@@ -1322,8 +1334,25 @@ button:disabled {
 }
 
 .walk-progress-meta {
+  font-size: 0.85rem;
+  color: var(--ink);
+}
+
+.walk-progress-route-quiet {
   font-size: 0.78rem;
   color: var(--muted);
+}
+
+.walk-travel-hint {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.65rem;
+  margin-top: 0.35rem;
+  font-size: 0.82rem;
+}
+
+.walk-travel-hint .ep-travel-link {
+  white-space: nowrap;
 }
 
 .walk-route-estimate {
@@ -1856,17 +1885,18 @@ body.home-active .masthead-dek {
 }
 
 .community-tag-privacy {
-  margin: 0.35rem 0 0.85rem;
-  font-size: 0.9rem;
-  line-height: 1.45;
-  color: var(--color-ink-muted, #5c4a3a);
+  margin: 0.25rem 0 0.65rem;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  color: var(--muted);
 }
 
 .community-tag-lead {
-  margin: 0.45rem 0 0.85rem;
-  font-size: 0.88rem;
+  margin: 0.4rem 0 0.5rem;
+  font-size: 0.9rem;
   line-height: 1.45;
-  color: var(--text-muted, var(--muted));
+  color: var(--ink);
+  max-width: 36em;
 }
 
 .community-tag-form .field {
